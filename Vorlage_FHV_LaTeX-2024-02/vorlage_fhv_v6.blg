@@ -1,0 +1,15 @@
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'vorlage_fhv_v6.blg'
+[74] biber:340> INFO - === Mi Feb 28, 2024, 09:51:50
+[90] Biber.pm:419> INFO - Reading 'vorlage_fhv_v6.bcf'
+[149] Biber.pm:979> INFO - Found 15 citekeys in bib section 0
+[165] Biber.pm:4419> INFO - Processing section 0
+[176] Biber.pm:4610> INFO - Looking for bibtex file 'Zotero-Beispiele.bib' for section 0
+[180] bibtex.pm:1713> INFO - LaTeX decoding ...
+[277] bibtex.pm:1519> INFO - Found BibTeX data source 'Zotero-Beispiele.bib'
+[387] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[387] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[387] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'de-DE'
+[387] Biber.pm:4245> INFO - No sort tailoring available for locale 'de-DE'
+[399] bbl.pm:660> INFO - Writing 'vorlage_fhv_v6.bbl' with encoding 'UTF-8'
+[403] bbl.pm:763> INFO - Output to vorlage_fhv_v6.bbl
