@@ -13,7 +13,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}    % Silbentrennung bei Sonderzeichen
 \usepackage{graphicx}       % Bilder einbinden
-\usepackage[ngerman]{babel} % Deutsche Sprachanpassungen
+\usepackage[english]{babel} % Deutsche Sprachanpassungen
 \usepackage{csquotes}       % When using babel or polyglossia with biblatex, loading csquotes is recommended to ensure that quoted texts are typeset according to the rules of your main language.
 \usepackage{acronym}  % für optionales Abkürzungsverzeichnis
 \usepackage{eurosym}  % z. B. \EUR{12345,68}
@@ -96,9 +96,16 @@ Die vorliegende Arbeit ist bis zum [DATUM] für die öffentliche Nutzung zu sper
 
 % evtl. Widmung:
 \newpage
-\section*{[evtl. Widmung]}   % evtl. ersetzen durch \section*{Widmung}
 
-[Text der Widmung]
+\section*{Dedication}
+
+\vspace{1cm} 
+\begin{center}
+    \emph{Dedicated to my younger self, who never stopped chasing his dream and never will!}\\[0.5cm]
+    \emph{And to my parents, who supported me throughout this journey.}\\[0.5cm]
+    \textbf{Thank you.}
+\end{center}
+\vspace{1cm}
 
 % Kurzreferat:
 \newpage
@@ -141,28 +148,28 @@ The practical goal of this work is to implement a sandbox service that can be ca
 
 \clearpage
 \phantomsection
-\addcontentsline{toc}{chapter}{Abbildungsverzeichnis}
+\addcontentsline{toc}{chapter}{List of Figures}
 \listoffigures
 
 \clearpage
 \phantomsection
-\addcontentsline{toc}{chapter}{Tabellenverzeichnis}
+\addcontentsline{toc}{chapter}{List of Tables}
 \listoftables
 
 % evtl. Abkürzungsverzeichnis:
 \clearpage
 \phantomsection
-\addcontentsline{toc}{chapter}{[evtl. Abkürzungsverzeichnis]}  % evtl. ersetzen durch \addcontentsline{toc}{chapter}{Abkürzungsverzeichnis}
-\chapter*{[evtl. Abkürzungsverzeichnis]} % evtl. ersetzen durch \chapter*{Abkürzungsverzeichnis}
+\addcontentsline{toc}{chapter}{List of Abbreviations}  % evtl. ersetzen durch \addcontentsline{toc}{chapter}{Abkürzungsverzeichnis}
+\chapter*{List of Abbreviations} % evtl. ersetzen durch \chapter*{Abkürzungsverzeichnis}
 \begin{acronym}[SQL]
- \acro{ETW}{Energietechnik und Energiewirtschaft}
+ \acro{GPS}{Global Positioning System}
  \acro{SQL}{Structured Query Language}
  \acro{Bash}{Bourne-again shell}
 \end{acronym}
 
 %% Die Kapitelstruktur ist mit der betreuungsperson abzustimmen!
 
-\chapter{[Kapitel]}
+\chapter{Introduction}
 Formatvorlage für den Fließtext. Formatvorlage für den Fließtext. Formatvorlage für den Fließtext. Formatvorlage für den Fließtext. Formatvorlage für den Fließtext. Formatvorlage für den Fließtext. Formatvorlage für den Fließtext. Formatvorlage für den Fließtext. Formatvorlage für den Fließtext. Formatvorlage für den Fließtext. Formatvorlage für den Fließtext.
 \begin{quote}
   Formatvorlage für ein längeres direktes Zitat. Formatvorlage für ein längeres direktes Zitat. Formatvorlage für ein längeres direktes Zitat. Formatvorlage für ein längeres direktes Zitat. Formatvorlage für ein längeres direktes Zitat. Formatvorlage für ein längeres direktes Zitat….
@@ -170,7 +177,16 @@ Formatvorlage für den Fließtext. Formatvorlage für den Fließtext. Formatvorl
 
 \EUR{12345,68}, \href{https://www.wikibooks.org}{Wikibooks home}
 
-\chapter{[Kapitel]}
+\section{Problem Statement}
+
+\section{Motivation}
+
+\section{Solution Approach}
+
+\section{Structure of the Work}
+
+
+\chapter{Background and Related Work}
 Formatvorlage für den Fließtext.
 Hier eine Liste.
 \begin{enumerate}
@@ -180,7 +196,7 @@ Hier eine Liste.
 \end{enumerate}
 
 
-\section{[Unterkapitel zweite Ebene]}
+\section{Technical Background}
 Formatvorlage für den Fließtext. Die Abbildung~\ref{fig:ex} auf Seite \pageref{fig:ex} zeigt drei Entladungskurven eines biphasischen Defibrillators.
 \begin{figure}[htb]
   \centering
@@ -190,7 +206,7 @@ Formatvorlage für den Fließtext. Die Abbildung~\ref{fig:ex} auf Seite \pageref
 \end{figure}
 
 
-\section{[Unterkapitel zweite Ebene]}
+\section{Related Work}
 Formatvorlage für den Fließtext.
 Jetzt eine Fußnote\footnote{Dies ist eine Fußnote.}
 Die quadratischen Gleichung (\ref{equ:foo}) hat wieviele Nullstellen?
@@ -233,15 +249,51 @@ Formatvorlage für den Fließtext.
 Verweise: zu einem Buch mit Details \cite[vgl.][Kapitel 2]{bathe_finite-elemente-methoden_1990} oder ohne Details \cite{bathe_finite-elemente-methoden_1990}, ein Buchteil \cite{areger_problem-based_2007}, eine Dissertation \cite{sporn_interaktives_2000}, ein Dokument \cite{industriellenvereinigung_beste_2014}, ein Enzyklopädieartikel \cite{brockhaus_kreativitat_1872}, ein Film \cite{de_wilde_through_2008}, ein Konferenz-Paper \cite{weber_podcasts._2006}, ein Magazin-Artikel \cite{autornachname1_magazinartikeltitel_1995}, ein Pordcast \cite{paulus_horen_????}, eine Tonaufnahme \cite{horowitz_horowitz_2003}, eine Videoaufnahme \cite{fhvlearningsupport_was_2008}, ein Vortrag \cite{kohls_literaturverwaltung_2008}, eine Website \cite{wedekind_von_2008}, ein Zeitschriftenartikel \cite{hofer_wir_2008} und ein Zeitungsartikel \cite{schenkel_tsunami_2012}.
 
 
-\chapter{[Kapitel]}
+\chapter{Problem Definition and Solution Approach}
 
-\section{[Unterkapitel zweite Ebene]}
+\section{Description of Datasets}
 Formatvorlage für den Fließtext.
 
 \subsection{[Unterkapitel dritte Ebene]}
 Formatvorlage für den Fließtext.
 
 \subsubsection{[Unterkapitel vierte Ebene]}
+Formatvorlage für den Fließtext.
+
+\section{Big Picture}
+Formatvorlage für den Fließtext.
+
+\section{Solution Approach}
+Formatvorlage für den Fließtext.
+
+
+\chapter{Implementation}
+
+\section{Implementation of the Big Picture}
+Formatvorlage für den Fließtext.
+
+\section{Integration with existing systems}
+Formatvorlage für den Fließtext.
+
+
+\chapter{Evaluation and Discussion}
+
+\section{Definition of the data sets used for the evaluation}
+Formatvorlage für den Fließtext.
+
+\section{Evaluation of the results}
+Formatvorlage für den Fließtext.
+
+\section{Reflection on the results}
+Formatvorlage für den Fließtext.
+
+
+\chapter{Conclusion}
+
+\section{Future Directions}
+Formatvorlage für den Fließtext.
+
+\section{Limitations}
 Formatvorlage für den Fließtext.
 
 
