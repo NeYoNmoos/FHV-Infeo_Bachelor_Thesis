@@ -104,9 +104,12 @@ Die vorliegende Arbeit ist bis zum [DATUM] für die öffentliche Nutzung zu sper
 \newpage
 \section*{Kurzreferat}
 
-\subsection*{[Deutscher Titel Ihrer Arbeit]}
+\subsection*{Klassifizierung von GPS-Spurdaten mit Unterstützung von KI-Methoden am Beispiel von Abfallsammelfahrzeugen}
 
-[Text des Kurzreferats]
+In der Abfallwirtschaft ist die strategische Tourenplanung ein wichtiger Prozess, in dem durch optimale Gebietsaufteilung eine maximal effiziente Fuhrparkauslastung bei möglichst geringen Kosten ermittelt wird. Dies geschieht in Entsorgungsbetrieben sowohl für bestehende Auftragsgebiete, als auch bei der Kalkulation von neuen Ausschreibungen. Vor Allem bei Regionen, in denen keine Erfahrungswerte vorliegen müssen für eine robuste Tourenplanung zahlreiche unscharfe Annahmen getroffen und manchmal auch Schätzungen vorgenommen werden. Um diese Unsicherheiten durch die Analyse von geographischen Strukturen zur verringern soll eine Technologie in die bestehende Tourenplanungssoftware der Firma integriert werden, die folgende Aufgabenstellung automatisiert lösen kann: Anhand von bestehenden GPS-Aufzeichnungen sollen strukturelle Eigenschaften der jeweilige Sammelgebiete numerisch bewertet und klassifiziert werden. Gleichermaßen sollen anhand von geographischen (und möglichst frei verfügbaren Strukturdaten) aus noch unbekannten Gebieten erhoben werden können um diese auf die selbe Art und Weise klassifizieren zu können. Dadurch entsteht einerseits eine Referenzdatenmenge (von bestehenden Sammeltouren) und eine Vergleichsdatenmenge (aus den neuen Ausschreibungsgebieten). Dort wo die Klassifizierungsdaten übereinstimmen, kann davon ausgegangen werden, dass die planungsrelevanten Kennzahlen aus bestehenden Auftragsgebieten ohne gewagte Annahmen einfach übernommen werden können. Die Klassifizierung von GPS-Daten und geographischen Strukturdaten soll mit Hilfe von künstlicher Intelligenz automatisiert erstellt werden können. Auch die Überlegung, welche geographischen Strukturdaten denn überhaupt aussagekräftig sind um einen Vergleich anzustreben, sollen ggf. mit Hilfe von KI Technologien erfolgen. 
+
+Das Ziel der praktischen Arbeit ist es einen Sandbox-Service zu implementieren, der von der bestehenden Software der infeo aufgerufen und mit Daten befüllt werden kann um so "auf Knopfdruck" Klassifizierungen und Vergleiche von GPS-Daten und Ausschreibungs-Strukturdaten zu erstellen. Die Anwender:innen haben dadurch die Möglichkeit für neue Ausschreibungen entsprechend passende Planungsparameter aus ihren bestehenden Auftragsgebieten zu berechnen und somit die Unsicherheiten bei der Ausschreibungskalkulation deutlich zu reduzieren.
+
 \vspace{0.5cm}
 
 \noindent
@@ -115,9 +118,11 @@ Die vorliegende Arbeit ist bis zum [DATUM] für die öffentliche Nutzung zu sper
 % Abstract:
 \newpage
 \section*{Abstract}
-\subsection*{[English Title of your thesis]}
+\subsection*{Classification of GPS Track Data Using AI Methods: A Case Study of Waste Collection Vehicles}
 
-[text of the abstract]
+In waste management, strategic route planning is a crucial process where optimal fleet utilization is determined through the efficient division of service areas, with the goal of minimizing costs. This process is applied by waste disposal companies both for existing service areas and when calculating bids for new tenders. Especially in regions where there is no prior experience, numerous uncertain assumptions and estimates must be made for robust route planning. To reduce these uncertainties through the analysis of geographical structures, a technology will be integrated into the company’s existing route planning software, which can automatically solve the following task: Based on existing GPS records, the structural characteristics of the respective collection areas should be numerically evaluated and classified. Additionally, geographical structural data (preferably from freely available sources) from unknown areas should be collected and classified in the same way. This approach will create both a reference data set (from existing collection routes) and a comparison data set (from new tender areas). Where the classification data match, it can be assumed that planning-relevant parameters from existing service areas can be applied to the new areas without risky assumptions. The classification of GPS data and geographical structural data should be automated using artificial intelligence. Furthermore, the consideration of which geographical structural data are meaningful for comparison should, if necessary, also be supported by AI technologies.
+
+The practical goal of this work is to implement a sandbox service that can be called and populated with data by the existing software of infeo, enabling the creation of classifications and comparisons of GPS data and tender structural data "at the push of a button." This will provide users with the ability to calculate appropriate planning parameters from their existing service areas for new tenders, thereby significantly reducing uncertainties in bid calculations.
 \vspace{0.5cm}
 
 \noindent
@@ -252,13 +257,18 @@ Formatvorlage für den Fließtext.
 Formatvorlage für den Fließtext.
 
 
-\chapter*{Eidesstattliche Erklärung}
-\addcontentsline{toc}{chapter}{Eidesstattliche Erklärung}
-Ich erkläre hiermit an Eides statt, dass ich die vorliegende [Master - bzw. Bachelor]arbeit selbstständig und ohne Benutzung anderer als der angegebenen Hilfsmittel angefertigt habe. Die aus fremden Quellen direkt oder indirekt übernommenen Stellen sind als solche kenntlich gemacht. Die Arbeit wurde bisher weder in gleicher noch in ähnlicher Form einer anderen Prüfungsbehörde vorgelegt und auch noch nicht veröffentlicht.
+\chapter*{Affidavit}
+\addcontentsline{toc}{chapter}{Affidavit}
+I hereby declare in lieu of oath that I have written this Bachelor
+thesis independently and without the use of aids other than those specified.
+aids other than those specified. The passages taken directly or indirectly from other sources
+directly or indirectly from other sources are marked as such. The thesis has not been
+neither in the same nor in a similar form to any other examination authority
+nor has it been published.
 
 \vspace{3cm}
 \noindent
-Dornbirn, am [Tag. Monat Jahr anführen]\hfill [Vor- und Nachname Verfasser*in]
+Dornbirn, on 15. May 2025\hfill Matthias Hefel
 
 
 \end{document}

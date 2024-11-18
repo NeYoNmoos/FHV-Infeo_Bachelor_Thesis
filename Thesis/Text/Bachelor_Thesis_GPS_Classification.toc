@@ -15,5 +15,5 @@
 \contentsline {subsubsection}{\numberline {3.1.1.1}[Unterkapitel vierte Ebene]}{16}{subsubsection.3.1.1.1}%
 \contentsline {chapter}{Literaturverzeichnis}{17}{section*.19}%
 \contentsline {chapter}{[evtl. Anhang]}{17}{chapter*.20}%
-\contentsline {chapter}{Eidesstattliche Erklärung}{18}{chapter*.21}%
+\contentsline {chapter}{Affidavit}{18}{chapter*.21}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
