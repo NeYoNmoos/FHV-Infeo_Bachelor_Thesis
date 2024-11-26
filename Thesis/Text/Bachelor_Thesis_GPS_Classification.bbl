@@ -1,0 +1,66 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{none/global//global/global}
+  \entry{9615047}{article}{}
+    \name{author}{4}{}{%
+      {{hash=SNCA}{%
+         family={Sallang},
+         familyi={S\bibinitperiod},
+         given={Nicholas Chieng\bibnamedelima Anak},
+         giveni={N\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim
+  A\bibinitperiod},
+      }}%
+      {{hash=IMT}{%
+         family={Islam},
+         familyi={I\bibinitperiod},
+         given={Mohammad\bibnamedelima Tariqul},
+         giveni={M\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+      {{hash=IMS}{%
+         family={Islam},
+         familyi={I\bibinitperiod},
+         given={Mohammad\bibnamedelima Shahidul},
+         giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=AH}{%
+         family={Arshad},
+         familyi={A\bibinitperiod},
+         given={Haslina},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \keyw{Waste management;Monitoring;Acoustics;Internet of
+  Things;GSM;Microcontrollers;Deep learning;Waste classification;CNN;object
+  detection;LoRa-GPS shield;Internet of Things}
+    \strng{namehash}{SNCAIMTIMS+1}
+    \strng{fullhash}{SNCAIMTIMSAH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1109/ACCESS.2021.3128314
+    \endverb
+    \field{pages}{153560\bibrangedash 153574}
+    \field{title}{A CNN-Based Smart Waste Management System Using TensorFlow
+  Lite and LoRa-GPS Shield in Internet of Things Environment}
+    \field{volume}{9}
+    \field{journaltitle}{IEEE Access}
+    \field{year}{2021}
+  \endentry
+\enddatalist
+\endinput

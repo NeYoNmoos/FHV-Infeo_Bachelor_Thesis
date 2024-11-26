@@ -83,7 +83,6 @@
     </requires>
     <requires type="editable">
       <file>references.bib</file>
-      <file>Bachelor_Thesis_GPS_Classification.bib</file>
       <file>Zotero-Beispiele.bib</file>
     </requires>
   </external>

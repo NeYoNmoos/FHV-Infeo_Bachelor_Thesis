@@ -2345,40 +2345,13 @@
   <!-- CITATION DATA -->
   <!-- SECTION 0 -->
   <bcf:bibdata section="0">
+    <bcf:datasource type="file" datatype="bibtex" glob="false">references.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex" glob="false">Bachelor_Thesis_GPS_Classification.bib</bcf:datasource>
     <bcf:datasource type="file" datatype="bibtex" glob="false">Zotero-Beispiele.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">bathe_finite-elemente-methoden_1990</bcf:citekey>
-    <bcf:citekey order="2">bathe_finite-elemente-methoden_1990</bcf:citekey>
-    <bcf:citekey order="3">areger_problem-based_2007</bcf:citekey>
-    <bcf:citekey order="4">sporn_interaktives_2000</bcf:citekey>
-    <bcf:citekey order="5">industriellenvereinigung_beste_2014</bcf:citekey>
-    <bcf:citekey order="6">brockhaus_kreativitat_1872</bcf:citekey>
-    <bcf:citekey order="7">de_wilde_through_2008</bcf:citekey>
-    <bcf:citekey order="8">weber_podcasts._2006</bcf:citekey>
-    <bcf:citekey order="9">autornachname1_magazinartikeltitel_1995</bcf:citekey>
-    <bcf:citekey order="10">paulus_horen_????</bcf:citekey>
-    <bcf:citekey order="11">horowitz_horowitz_2003</bcf:citekey>
-    <bcf:citekey order="12">fhvlearningsupport_was_2008</bcf:citekey>
-    <bcf:citekey order="13">kohls_literaturverwaltung_2008</bcf:citekey>
-    <bcf:citekey order="14">wedekind_von_2008</bcf:citekey>
-    <bcf:citekey order="15">hofer_wir_2008</bcf:citekey>
-    <bcf:citekey order="16">schenkel_tsunami_2012</bcf:citekey>
-    <bcf:citekey order="17">bathe_finite-elemente-methoden_1990</bcf:citekey>
-    <bcf:citekey order="18">areger_problem-based_2007</bcf:citekey>
-    <bcf:citekey order="19">sporn_interaktives_2000</bcf:citekey>
-    <bcf:citekey order="20">industriellenvereinigung_beste_2014</bcf:citekey>
-    <bcf:citekey order="21">brockhaus_kreativitat_1872</bcf:citekey>
-    <bcf:citekey order="22">de_wilde_through_2008</bcf:citekey>
-    <bcf:citekey order="23">weber_podcasts._2006</bcf:citekey>
-    <bcf:citekey order="24">autornachname1_magazinartikeltitel_1995</bcf:citekey>
-    <bcf:citekey order="25">paulus_horen_????</bcf:citekey>
-    <bcf:citekey order="26">horowitz_horowitz_2003</bcf:citekey>
-    <bcf:citekey order="27">fhvlearningsupport_was_2008</bcf:citekey>
-    <bcf:citekey order="28">kohls_literaturverwaltung_2008</bcf:citekey>
-    <bcf:citekey order="29">wedekind_von_2008</bcf:citekey>
-    <bcf:citekey order="30">hofer_wir_2008</bcf:citekey>
-    <bcf:citekey order="31">schenkel_tsunami_2012</bcf:citekey>
+    <bcf:citekey order="1">9615047</bcf:citekey>
+    <bcf:citekey order="2">9615047</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
