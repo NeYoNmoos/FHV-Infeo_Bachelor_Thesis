@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.10.25)  26 NOV 2024 22:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.10.25)  9 DEC 2024 15:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -900,44 +900,39 @@ chapter 1.
 
 ]
 chapter 2.
-<Abbildungen/Amann_TechnAbb.jpg, id=161, 820.9872pt x 573.1011pt>
-File: Abbildungen/Amann_TechnAbb.jpg Graphic file (type jpg)
-<use Abbildungen/Amann_TechnAbb.jpg>
-Package pdftex.def Info: Abbildungen/Amann_TechnAbb.jpg  used on input line 206.
-(pdftex.def)             Requested size: 284.52756pt x 198.6208pt.
 [15
 
- <./Abbildungen/Amann_TechnAbb.jpg>] [16]
+]
 chapter 3.
-[17
+[16
 
 ]
 chapter 4.
-[18
+[17
 
 ]
 chapter 5.
-[19
+[18
 
 ]
 chapter 6.
-[20
+[19
 
 ]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 279.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 266.
  (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-Overfull \hbox (0.9503pt too wide) in paragraph at lines 280--280
+Overfull \hbox (0.9503pt too wide) in paragraph at lines 267--267
 \T1/cmr/m/n/12 Chowd-hury, ^^P  Deep clas-si-fi-ca-tion of frequently-changing ac-tiv-i-ties from GPS
  []
 
-[21
+[20
 
+
+] [21
 
 ] [22
-
-] [23
 
 ] (./Bachelor_Thesis_GPS_Classification.aux)
 
@@ -950,18 +945,18 @@ Package logreq Info: Writing requests to 'Bachelor_Thesis_GPS_Classification.run
 
  ) 
 Here is how much of TeX's memory you used:
- 29770 strings out of 478287
- 536002 string characters out of 5849288
- 1335949 words of memory out of 5000000
- 47548 multiletter control sequences out of 15000+600000
+ 29738 strings out of 478287
+ 535293 string characters out of 5849288
+ 1335878 words of memory out of 5000000
+ 47522 multiletter control sequences out of 15000+600000
  479171 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,8n,106p,10675b,3662s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 108i,7n,106p,10675b,3662s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/eurosym/feymr10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on Bachelor_Thesis_GPS_Classification.pdf (23 pages, 2227350 bytes).
+Output written on Bachelor_Thesis_GPS_Classification.pdf (22 pages, 1586878 bytes).
 PDF statistics:
- 371 PDF objects out of 1000 (max. 8388607)
- 318 compressed objects within 4 object streams
- 80 named destinations out of 1000 (max. 500000)
- 271 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 358 PDF objects out of 1000 (max. 8388607)
+ 307 compressed objects within 4 object streams
+ 75 named destinations out of 1000 (max. 500000)
+ 266 words of extra memory for PDF output out of 10000 (max. 10000000)
 
