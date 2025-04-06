@@ -285,16 +285,126 @@ Kek schmeck \cite{eftelioglu_deep_2022} ssddfasdfd
 \chapter{Problem Definition and Solution Approach}
 
 \section{Description of the Dataset}
-Formatvorlage für den Fließtext.
 
 \subsection{Overview}
-Formatvorlage für den Fließtext.
+The dataset used is a collection of GPS tracking data collected by
+wastecollection vehicles from various wastecollection businesses and provided
+by infeo GmbH. It represents real-world data
+collected during regular wastecollection operation in the DACH region.
 
 \subsection{Source and Collection Method}
-Formatvorlage für den Fließtext.
+The data was obtained by the onboard tracking systems installed by infeo GmbH,
+which collects GPS coordinates in regular intervals during regular operation.
+Each tracking represents a complete wastecollection route taken and includes
+metadata aswell as a list of GPS coordinates.
 
 \subsection{Structure of the Data}
-Formatvorlage für den Fließtext.
+Each dataset entry represents a single recorded route refered to as
+\textit{tracking} and contains metadata aswell as a time ordered list of gps
+coordinates.
+
+Each tracking contains the following metadata fields:
+\begin{table}[]
+  \centering
+  \caption{Structure of a Tracking Entry}
+  \label{tab:tracking_structure}
+  \begin{tabular}{|l|l|p{8cm}|}
+    \hline
+    \textbf{Field}       & \textbf{Type}  & \textbf{Description}
+    \\
+    \hline
+    \texttt{id}          & Integer        & Unique identifier of the tracking
+    entry.
+
+    \\
+    \hline
+    \texttt{name}        & String         & Name of the tracking (randomized
+    for anonymization)
+    identification.
+    \\
+    \hline
+    \texttt{description} & String         & Route metadata, often includes
+    internal codes.
+    \\
+    \hline
+    \texttt{recorded}    & DateTime       & Start date and time of the
+    tracking.
+    \\
+    \hline
+    \texttt{length}      & Float          & Total length of the route in
+    kilometers.
+    \\
+    \hline
+    \texttt{duration}    & Integer        & Total duration of the tracking in
+    nanoseconds.
+    \\
+    \hline
+    \texttt{vehicleId}   & Integer / Null & ID of the vehicle (nullified for
+    anonymization).
+    \\
+    \hline
+    \texttt{tourId}      & Integer / Null & ID of the associated tour
+    (nullified for anonymization).
+    \\
+    \hline
+    \texttt{isExported}  & Boolean        & Flag indicating if the tracking was
+    exported.
+    \\
+    \hline
+    \texttt{editState}   & Integer        & Edit state used by the system.
+    \\
+    \hline
+  \end{tabular}
+\end{table}
+
+\begin{table}[H]
+  \centering
+  \caption{Structure of a GPS Point Entry}
+  \label{tab:gps_point_structure}
+  \begin{tabular}{|l|l|p{8cm}|}
+    \hline
+    \textbf{Field}         & \textbf{Type} & \textbf{Description}
+    \\
+    \hline
+    \texttt{id}            & Integer       & Unique identifier of the GPS
+    point.
+    \\
+    \hline
+    \texttt{time}          & DateTime      & Timestamp of when the point was
+    recorded.
+    \\
+    \hline
+    \texttt{latitude}      & Float         & Latitude coordinate.
+    \\
+    \hline
+    \texttt{longitude}     & Float         & Longitude coordinate.
+    \\
+    \hline
+    \texttt{speed}         & Float         & Instantaneous speed at the time
+    (in km/h).
+    \\
+    \hline
+    \texttt{heading}       & Float         & Direction of movement in degrees.
+    \\
+    \hline
+    \texttt{sequence}      & Integer       & Position of the point in the
+    tracking
+    sequence.
+    \\
+    \hline
+    \texttt{metaTag}       & Integer       & Custom metadata tag.
+    \\
+    \hline
+    \texttt{metaValue}     & String        & Value associated with the metadata
+    tag.
+    \\
+    \hline
+    \texttt{pointBaseType} & Integer       & Internal point type used by the
+    system.
+    \\
+    \hline
+  \end{tabular}
+\end{table}
 
 \subsection{Size and Coverage}
 Formatvorlage für den Fließtext.
