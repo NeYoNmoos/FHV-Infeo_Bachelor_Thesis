@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.10.25)  6 APR 2025 20:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.10.25)  6 APR 2025 21:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -840,9 +840,6 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 6.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 6.
-
-Underfull \vbox (badness 1117) has occurred while \output is active []
-
  [9
 
 ])
@@ -907,40 +904,58 @@ chapter 2.
 
 ]
 chapter 3.
+<Figures/sample_pairplot.png, id=181, 1527.0651pt x 1420.8282pt>
+File: Figures/sample_pairplot.png Graphic file (type png)
+<use Figures/sample_pairplot.png>
+Package pdftex.def Info: Figures/sample_pairplot.png  used on input line 316.
+(pdftex.def)             Requested size: 402.32022pt x 374.328pt.
 [16
 
 ]
+<Figures/sample_correlation_matrix.png, id=187, 492.1587pt x 407.3619pt>
+File: Figures/sample_correlation_matrix.png Graphic file (type png)
+<use Figures/sample_correlation_matrix.png>
+Package pdftex.def Info: Figures/sample_correlation_matrix.png  used on input line 325.
+(pdftex.def)             Requested size: 402.32022pt x 333.00085pt.
+<Figures/sample_point_density_boxplot.png, id=188, 432.4155pt x 327.8649pt>
+File: Figures/sample_point_density_boxplot.png Graphic file (type png)
+<use Figures/sample_point_density_boxplot.png>
+Package pdftex.def Info: Figures/sample_point_density_boxplot.png  used on input line 336.
+(pdftex.def)             Requested size: 402.32022pt x 305.05127pt.
+ [17 <./Figures/sample_pairplot.png>] [18 <./Figures/sample_correlation_matrix.png>] [19 <./Figures/sample_point_density_boxplot.png>] [20
+
+]
 chapter 4.
-[17
+[21
 
 ]
 chapter 5.
-[18
+[22
 
 ]
 chapter 6.
-[19
+[23
 
 ]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 336.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 378.
  (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-Overfull \hbox (15.96591pt too wide) in paragraph at lines 337--337
+Overfull \hbox (15.96591pt too wide) in paragraph at lines 379--379
 []\T1/cmr/m/n/12 ^^P  The world's most valu-able re-source is no longer oil, but data,^^Q \T1/cmr/m/it/12 The Economist\T1/cmr/m/n/12 ,
  []
 
 
-Overfull \hbox (0.9503pt too wide) in paragraph at lines 337--337
+Overfull \hbox (0.9503pt too wide) in paragraph at lines 379--379
 \T1/cmr/m/n/12 Chowd-hury, ^^P  Deep clas-si-fi-ca-tion of frequently-changing ac-tiv-i-ties from GPS
  []
 
-[20
+[24
 
 
-] [21
+] [25
 
-] [22
+] [26
 
 ] (./Bachelor_Thesis_GPS_Classification.aux)
 
@@ -953,18 +968,18 @@ Package logreq Info: Writing requests to 'Bachelor_Thesis_GPS_Classification.run
 
  ) 
 Here is how much of TeX's memory you used:
- 29741 strings out of 478287
- 535465 string characters out of 5849288
- 1335952 words of memory out of 5000000
- 47524 multiletter control sequences out of 15000+600000
+ 29777 strings out of 478287
+ 536165 string characters out of 5849288
+ 1337235 words of memory out of 5000000
+ 47545 multiletter control sequences out of 15000+600000
  479054 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,7n,106p,10675b,3662s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on Bachelor_Thesis_GPS_Classification.pdf (22 pages, 1581954 bytes).
+Output written on Bachelor_Thesis_GPS_Classification.pdf (26 pages, 2650948 bytes).
 PDF statistics:
- 362 PDF objects out of 1000 (max. 8388607)
- 313 compressed objects within 4 object streams
- 77 named destinations out of 1000 (max. 500000)
- 274 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 414 PDF objects out of 1000 (max. 8388607)
+ 355 compressed objects within 4 object streams
+ 88 named destinations out of 1000 (max. 500000)
+ 321 words of extra memory for PDF output out of 10000 (max. 10000000)
 
