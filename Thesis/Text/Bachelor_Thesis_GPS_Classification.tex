@@ -22,6 +22,8 @@
 \usepackage{caption} % Abbildungslegenden
 \captionsetup{format=hang, justification=raggedright}
 
+\usepackage{float} % prevent LaTeX table repositioning
+
 \usepackage[a-2b,mathxmp]{pdfx}[2018/12/22]
 
 \usepackage[style=ieee,citestyle=ieee,backend=biber]{biblatex}
@@ -277,11 +279,6 @@ which infeo is interested in.
 
 \section{[Unterkapitel z  weite Ebene]}
 
-According to \cite{9615047}, GPS data management plays a crucial role in
-transport systems.
-
-Kek schmeck \cite{eftelioglu_deep_2022} ssddfasdfd
-
 \chapter{Problem Definition and Solution Approach}
 
 \section{Description of the Dataset}
@@ -303,8 +300,8 @@ Each dataset entry represents a single recorded route refered to as
 \textit{tracking} and contains metadata aswell as a time ordered list of gps
 coordinates.
 
-Each tracking contains the following metadata fields:
-\begin{table}[]
+Each tracking contains the following fields:
+\begin{table}[H]
   \centering
   \caption{Structure of a Tracking Entry}
   \label{tab:tracking_structure}
@@ -357,6 +354,7 @@ Each tracking contains the following metadata fields:
   \end{tabular}
 \end{table}
 
+Each GPS point contains the following fields:
 \begin{table}[H]
   \centering
   \caption{Structure of a GPS Point Entry}
@@ -406,6 +404,7 @@ Each tracking contains the following metadata fields:
   \end{tabular}
 \end{table}
 
+\clearpage
 \subsection{Size and Coverage}
 Formatvorlage für den Fließtext.
 

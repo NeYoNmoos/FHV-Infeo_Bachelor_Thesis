@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.10.25)  6 APR 2025 22:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.10.25)  6 APR 2025 22:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -335,9 +335,16 @@ File: caption-koma.sto 2020/09/21 v2.0b Adaption of the caption package to the K
 \c@caption@flags=\count285
 \c@continuedfloat=\count286
 Package caption Info: hyperref package is loaded.
+) (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count287
+\float@exts=\toks22
+\float@box=\box53
+\@float@everytoks=\toks23
+\@floatcapt=\box54
 ) (/usr/share/texlive/texmf-dist/tex/latex/pdfx/pdfx.sty
 Package: pdfx 2019/02/27 v1.6.3 PDF/X and PDF/A support (CVR/HTH/RRM/PS)
-\pdfx@minorversion=\count287
+\pdfx@minorversion=\count288
  (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifpdf.sty
 Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
 ) (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifxetex.sty
@@ -354,7 +361,7 @@ File: l8ugrk-penc.def 2018/11/28 v0.6 Greek support for UTF8 in XMP metadata
 ) (/usr/share/texlive/texmf-dist/tex/latex/pdfx/l8umath-penc.def
 File: l8umath-penc.def 2017/06/23 v0.6 Custom LaTeX file, for UTF8 encoded math symbols
 ))
-\pdfxsafeforxmp@toks=\toks22
+\pdfxsafeforxmp@toks=\toks24
  (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
  (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
@@ -371,7 +378,7 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
 )
-\pdfx@tmptoks=\toks23
+\pdfx@tmptoks=\toks25
 
 
 Package hyperref Warning: Option `pdftex' has already been used,
@@ -419,52 +426,52 @@ Using XMP template file: pdfa.xmp
 Package: biblatex 2022/02/02 v3.17 programmable bibliographies (PK/MW)
  (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count288
+\lrq@indent=\count289
  (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-\c@tabx@nest=\count289
-\c@listtotal=\count290
-\c@listcount=\count291
-\c@liststart=\count292
-\c@liststop=\count293
-\c@citecount=\count294
-\c@citetotal=\count295
-\c@multicitecount=\count296
-\c@multicitetotal=\count297
-\c@instcount=\count298
-\c@maxnames=\count299
-\c@minnames=\count300
-\c@maxitems=\count301
-\c@minitems=\count302
-\c@citecounter=\count303
-\c@maxcitecounter=\count304
-\c@savedcitecounter=\count305
-\c@uniquelist=\count306
-\c@uniquename=\count307
-\c@refsection=\count308
-\c@refsegment=\count309
-\c@maxextratitle=\count310
-\c@maxextratitleyear=\count311
-\c@maxextraname=\count312
-\c@maxextradate=\count313
-\c@maxextraalpha=\count314
-\c@abbrvpenalty=\count315
-\c@highnamepenalty=\count316
-\c@lownamepenalty=\count317
-\c@maxparens=\count318
-\c@parenlevel=\count319
-\blx@tempcnta=\count320
-\blx@tempcntb=\count321
-\blx@tempcntc=\count322
-\c@blx@maxsection=\count323
-\c@blx@maxsegment@0=\count324
-\blx@notetype=\count325
-\blx@parenlevel@text=\count326
-\blx@parenlevel@foot=\count327
-\c@blx@sectionciteorder@0=\count328
-\blx@entrysetcounter=\count329
-\blx@biblioinstance=\count330
+\c@tabx@nest=\count290
+\c@listtotal=\count291
+\c@listcount=\count292
+\c@liststart=\count293
+\c@liststop=\count294
+\c@citecount=\count295
+\c@citetotal=\count296
+\c@multicitecount=\count297
+\c@multicitetotal=\count298
+\c@instcount=\count299
+\c@maxnames=\count300
+\c@minnames=\count301
+\c@maxitems=\count302
+\c@minitems=\count303
+\c@citecounter=\count304
+\c@maxcitecounter=\count305
+\c@savedcitecounter=\count306
+\c@uniquelist=\count307
+\c@uniquename=\count308
+\c@refsection=\count309
+\c@refsegment=\count310
+\c@maxextratitle=\count311
+\c@maxextratitleyear=\count312
+\c@maxextraname=\count313
+\c@maxextradate=\count314
+\c@maxextraalpha=\count315
+\c@abbrvpenalty=\count316
+\c@highnamepenalty=\count317
+\c@lownamepenalty=\count318
+\c@maxparens=\count319
+\c@parenlevel=\count320
+\blx@tempcnta=\count321
+\blx@tempcntb=\count322
+\blx@tempcntc=\count323
+\c@blx@maxsection=\count324
+\c@blx@maxsegment@0=\count325
+\blx@notetype=\count326
+\blx@parenlevel@text=\count327
+\blx@parenlevel@foot=\count328
+\c@blx@sectionciteorder@0=\count329
+\blx@entrysetcounter=\count330
+\blx@biblioinstance=\count331
 \labelnumberwidth=\skip65
 \labelalphawidth=\skip66
 \biblabelsep=\skip67
@@ -476,9 +483,9 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 \blx@bcfin=\read4
 \blx@bcfout=\write4
 \blx@langwohyphens=\language88
-\c@mincomprange=\count331
-\c@maxcomprange=\count332
-\c@mincompwidth=\count333
+\c@mincomprange=\count332
+\c@maxcomprange=\count333
+\c@mincompwidth=\count334
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
  (/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-dm.def
@@ -488,74 +495,74 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'ieee.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count334
-\c@savedafterword=\count335
-\c@annotator=\count336
-\c@savedannotator=\count337
-\c@author=\count338
-\c@savedauthor=\count339
-\c@bookauthor=\count340
-\c@savedbookauthor=\count341
-\c@commentator=\count342
-\c@savedcommentator=\count343
-\c@editor=\count344
-\c@savededitor=\count345
-\c@editora=\count346
-\c@savededitora=\count347
-\c@editorb=\count348
-\c@savededitorb=\count349
-\c@editorc=\count350
-\c@savededitorc=\count351
-\c@foreword=\count352
-\c@savedforeword=\count353
-\c@holder=\count354
-\c@savedholder=\count355
-\c@introduction=\count356
-\c@savedintroduction=\count357
-\c@namea=\count358
-\c@savednamea=\count359
-\c@nameb=\count360
-\c@savednameb=\count361
-\c@namec=\count362
-\c@savednamec=\count363
-\c@translator=\count364
-\c@savedtranslator=\count365
-\c@shortauthor=\count366
-\c@savedshortauthor=\count367
-\c@shorteditor=\count368
-\c@savedshorteditor=\count369
-\c@labelname=\count370
-\c@savedlabelname=\count371
-\c@institution=\count372
-\c@savedinstitution=\count373
-\c@lista=\count374
-\c@savedlista=\count375
-\c@listb=\count376
-\c@savedlistb=\count377
-\c@listc=\count378
-\c@savedlistc=\count379
-\c@listd=\count380
-\c@savedlistd=\count381
-\c@liste=\count382
-\c@savedliste=\count383
-\c@listf=\count384
-\c@savedlistf=\count385
-\c@location=\count386
-\c@savedlocation=\count387
-\c@organization=\count388
-\c@savedorganization=\count389
-\c@origlocation=\count390
-\c@savedoriglocation=\count391
-\c@origpublisher=\count392
-\c@savedorigpublisher=\count393
-\c@publisher=\count394
-\c@savedpublisher=\count395
-\c@language=\count396
-\c@savedlanguage=\count397
-\c@origlanguage=\count398
-\c@savedoriglanguage=\count399
-\c@pageref=\count400
-\c@savedpageref=\count401
+\c@afterword=\count335
+\c@savedafterword=\count336
+\c@annotator=\count337
+\c@savedannotator=\count338
+\c@author=\count339
+\c@savedauthor=\count340
+\c@bookauthor=\count341
+\c@savedbookauthor=\count342
+\c@commentator=\count343
+\c@savedcommentator=\count344
+\c@editor=\count345
+\c@savededitor=\count346
+\c@editora=\count347
+\c@savededitora=\count348
+\c@editorb=\count349
+\c@savededitorb=\count350
+\c@editorc=\count351
+\c@savededitorc=\count352
+\c@foreword=\count353
+\c@savedforeword=\count354
+\c@holder=\count355
+\c@savedholder=\count356
+\c@introduction=\count357
+\c@savedintroduction=\count358
+\c@namea=\count359
+\c@savednamea=\count360
+\c@nameb=\count361
+\c@savednameb=\count362
+\c@namec=\count363
+\c@savednamec=\count364
+\c@translator=\count365
+\c@savedtranslator=\count366
+\c@shortauthor=\count367
+\c@savedshortauthor=\count368
+\c@shorteditor=\count369
+\c@savedshorteditor=\count370
+\c@labelname=\count371
+\c@savedlabelname=\count372
+\c@institution=\count373
+\c@savedinstitution=\count374
+\c@lista=\count375
+\c@savedlista=\count376
+\c@listb=\count377
+\c@savedlistb=\count378
+\c@listc=\count379
+\c@savedlistc=\count380
+\c@listd=\count381
+\c@savedlistd=\count382
+\c@liste=\count383
+\c@savedliste=\count384
+\c@listf=\count385
+\c@savedlistf=\count386
+\c@location=\count387
+\c@savedlocation=\count388
+\c@organization=\count389
+\c@savedorganization=\count390
+\c@origlocation=\count391
+\c@savedoriglocation=\count392
+\c@origpublisher=\count393
+\c@savedorigpublisher=\count394
+\c@publisher=\count395
+\c@savedpublisher=\count396
+\c@language=\count397
+\c@savedlanguage=\count398
+\c@origlanguage=\count399
+\c@savedoriglanguage=\count400
+\c@pageref=\count401
+\c@savedpageref=\count402
 \shorthandwidth=\skip73
 \shortjournalwidth=\skip74
 \shortserieswidth=\skip75
@@ -579,19 +586,19 @@ Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
  (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2022/02/02 v3.17 biblatex compatibility (PK/MW)
-\c@textcitecount=\count402
-\c@textcitetotal=\count403
-\c@textcitemaxnames=\count404
-\c@biburlbigbreakpenalty=\count405
-\c@biburlbreakpenalty=\count406
-\c@biburlnumpenalty=\count407
-\c@biburlucpenalty=\count408
-\c@biburllcpenalty=\count409
+\c@textcitecount=\count403
+\c@textcitetotal=\count404
+\c@textcitemaxnames=\count405
+\c@biburlbigbreakpenalty=\count406
+\c@biburlbreakpenalty=\count407
+\c@biburlnumpenalty=\count408
+\c@biburlucpenalty=\count409
+\c@biburllcpenalty=\count410
 \biburlbigskip=\muskip17
 \biburlnumskip=\muskip18
 \biburlucskip=\muskip19
 \biburllcskip=\muskip20
-\c@smartand=\count410
+\c@smartand=\count411
 )
 Package biblatex Info: Trying to load bibliography style 'ieee'...
 Package biblatex Info: ... file 'ieee.bbx' found.
@@ -609,8 +616,8 @@ Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
  (/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2022/02/02 v3.17 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count411
-\c@bbx:relatedtotal=\count412
+\c@bbx:relatedcount=\count412
+\c@bbx:relatedtotal=\count413
 ))))
 Package biblatex Info: Trying to load citation style 'ieee'...
 Package biblatex Info: ... file 'ieee.cbx' found.
@@ -620,10 +627,10 @@ Package biblatex Info: Trying to load citation style 'numeric-comp'...
 Package biblatex Info: ... file 'numeric-comp.cbx' found.
  (/usr/share/texlive/texmf-dist/tex/latex/biblatex/cbx/numeric-comp.cbx
 File: numeric-comp.cbx 2022/02/02 v3.17 biblatex citation style (PK/MW)
-\c@cbx@tempcnta=\count413
-\c@cbx@tempcntb=\count414
-\c@cbx@tempcntc=\count415
-\c@cbx@tempcntd=\count416
+\c@cbx@tempcnta=\count414
+\c@cbx@tempcntb=\count415
+\c@cbx@tempcntc=\count416
+\c@cbx@tempcntd=\count417
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
@@ -651,8 +658,8 @@ Package biblatex Info: Document encoding is UTF8 ....
 Package: expl3 2022-01-21 L3 programming layer (loader) 
  (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count417
-\l__pdf_internal_box=\box53
+\l__color_backend_stack_int=\count418
+\l__pdf_internal_box=\box55
 ))
 Package biblatex Info: ... and expl3
 (biblatex)             2022-01-21 L3 programming layer (loader) 
@@ -670,47 +677,47 @@ Package csquotes Info: Redefining alias 'default' -> 'english'.
  (./Bachelor_Thesis_GPS_Classification.aux)
 \openout1 = `Bachelor_Thesis_GPS_Classification.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-Package scrbase Info: activating english \contentsname on input line 45.
-Package scrbase Info: activating english \listfigurename on input line 45.
-Package scrbase Info: activating english \listtablename on input line 45.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+Package scrbase Info: activating english \contentsname on input line 47.
+Package scrbase Info: activating english \listfigurename on input line 47.
+Package scrbase Info: activating english \listtablename on input line 47.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count418
+\scratchcounter=\count419
 \scratchdimen=\dimen161
-\scratchbox=\box54
-\nofMPsegments=\count419
-\nofMParguments=\count420
-\everyMPshowfont=\toks24
-\MPscratchCnt=\count421
+\scratchbox=\box56
+\nofMPsegments=\count420
+\nofMParguments=\count421
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count422
 \MPscratchDim=\dimen162
-\MPnumerator=\count422
-\makeMPintoPDFobject=\count423
-\everyMPtoPDFconversion=\toks25
+\MPnumerator=\count423
+\makeMPintoPDFobject=\count424
+\everyMPtoPDFconversion=\toks27
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 45.
+Package hyperref Info: Link coloring OFF on input line 47.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
@@ -718,11 +725,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count424
+\c@section@level=\count425
 )
-LaTeX Info: Redefining \ref on input line 45.
-LaTeX Info: Redefining \pageref on input line 45.
-LaTeX Info: Redefining \nameref on input line 45.
+LaTeX Info: Redefining \ref on input line 47.
+LaTeX Info: Redefining \pageref on input line 47.
+LaTeX Info: Redefining \nameref on input line 47.
  (./Bachelor_Thesis_GPS_Classification.out) (./Bachelor_Thesis_GPS_Classification.out)
 \@outlinefile=\write5
 \openout5 = `Bachelor_Thesis_GPS_Classification.out'.
@@ -734,12 +741,12 @@ Class scrreprt Info: loading recommended package `bookmark'.
 (scrreprt)           `bookmarkpackage=false' before \begin{document} and
 (scrreprt)           you can avoid this message adding:
 (scrreprt)             \usepackage{bookmark}
-(scrreprt)           before \begin{document} on input line 45.
+(scrreprt)           before \begin{document} on input line 47.
  (/usr/share/texlive/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
  (/usr/share/texlive/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
 File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
-\BKM@id=\count425
+\BKM@id=\count426
 ))
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -777,6 +784,7 @@ File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
@@ -791,9 +799,9 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Bachelor_Thesis_GPS_Classification.bbl' found.
  (./Bachelor_Thesis_GPS_Classification.bbl)
-Package biblatex Info: Reference section=0 on input line 45.
-Package biblatex Info: Reference segment=0 on input line 45.
-LaTeX Font Info:    Trying to load font information for T1+cmss on input line 54.
+Package biblatex Info: Reference section=0 on input line 47.
+Package biblatex Info: Reference segment=0 on input line 47.
+LaTeX Font Info:    Trying to load font information for T1+cmss on input line 56.
  (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 ) [1
@@ -805,28 +813,28 @@ File: t1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 <Abbildungen/Wort-Bild-Marke-cmyk.jpg, id=19, 5259.65pt x 1275.76625pt>
 File: Abbildungen/Wort-Bild-Marke-cmyk.jpg Graphic file (type jpg)
 <use Abbildungen/Wort-Bild-Marke-cmyk.jpg>
-Package pdftex.def Info: Abbildungen/Wort-Bild-Marke-cmyk.jpg  used on input line 70.
+Package pdftex.def Info: Abbildungen/Wort-Bild-Marke-cmyk.jpg  used on input line 72.
 (pdftex.def)             Requested size: 160.92563pt x 39.03053pt.
  [3
 
 
  <./Abbildungen/Wort-Bild-Marke-cmyk.jpg>] [4]
-Overfull \hbox (22.5477pt too wide) in paragraph at lines 123--147
+Overfull \hbox (22.5477pt too wide) in paragraph at lines 125--149
 \T1/cmr/m/n/12 las-tung bei möglichst gerin-gen Kosten er-mit-telt wird. Dies geschieht in Entsorgungs-
  []
 
 
-Overfull \hbox (4.12225pt too wide) in paragraph at lines 148--155
+Overfull \hbox (4.12225pt too wide) in paragraph at lines 150--157
 \T1/cmr/m/n/12 der:innen haben dadurch die Möglichkeit für neue Auss-chrei-bun-gen entsprechend
  []
 
 
-Overfull \hbox (2.19917pt too wide) in paragraph at lines 148--155
+Overfull \hbox (2.19917pt too wide) in paragraph at lines 150--157
 \T1/cmr/m/n/12 passende Pla-nungspa-ram-e-ter aus ihren beste-hen-den Auf-trags-ge-bi-eten zu berech-
  []
 
 [5]
-Overfull \hbox (2.44202pt too wide) in paragraph at lines 198--201
+Overfull \hbox (2.44202pt too wide) in paragraph at lines 200--203
 \T1/cmr/m/n/12 GPS Data Clas-si-fi-ca-tion, Waste Man-age-ment, Ar-ti-fi-cial In-tel-li-gence, Ge-o-graphic
  []
 
@@ -862,40 +870,55 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 ]
 
-LaTeX Warning: Hyper reference `acro:GPS' on page 13 undefined on input line 229.
+LaTeX Warning: Hyper reference `acro:GPS' on page 13 undefined on input line 231.
 
 
-LaTeX Warning: Hyper reference `acro:GPS' on page 13 undefined on input line 229.
+LaTeX Warning: Hyper reference `acro:GPS' on page 13 undefined on input line 231.
 
 
-LaTeX Warning: Hyper reference `acro:AI' on page 13 undefined on input line 230.
+LaTeX Warning: Hyper reference `acro:AI' on page 13 undefined on input line 232.
 
 
-LaTeX Warning: Hyper reference `acro:AI' on page 13 undefined on input line 230.
+LaTeX Warning: Hyper reference `acro:AI' on page 13 undefined on input line 232.
 
 
-LaTeX Warning: Hyper reference `acro:ML' on page 13 undefined on input line 231.
+LaTeX Warning: Hyper reference `acro:ML' on page 13 undefined on input line 233.
 
 
-LaTeX Warning: Hyper reference `acro:ML' on page 13 undefined on input line 231.
+LaTeX Warning: Hyper reference `acro:ML' on page 13 undefined on input line 233.
 
 
-LaTeX Warning: Hyper reference `acro:API' on page 13 undefined on input line 232.
+LaTeX Warning: Hyper reference `acro:API' on page 13 undefined on input line 234.
 
 
-LaTeX Warning: Hyper reference `acro:API' on page 13 undefined on input line 232.
+LaTeX Warning: Hyper reference `acro:API' on page 13 undefined on input line 234.
 
 
-LaTeX Warning: Hyper reference `acro:CSV' on page 13 undefined on input line 233.
+LaTeX Warning: Hyper reference `acro:CSV' on page 13 undefined on input line 235.
 
 
-LaTeX Warning: Hyper reference `acro:CSV' on page 13 undefined on input line 233.
+LaTeX Warning: Hyper reference `acro:CSV' on page 13 undefined on input line 235.
 
 [13
 
 
 ]
 chapter 1.
+
+Class scrreprt Warning: \float@addtolists detected!
+(scrreprt)              Implementation of \float@addtolist became
+(scrreprt)              deprecated in KOMA-Script v3.01 2008/11/14 and
+(scrreprt)              has been replaced by several more flexible
+(scrreprt)              features of package `tocbasic`.
+(scrreprt)              Since Version 3.12 support for deprecated
+(scrreprt)              \float@addtolist interface has been
+(scrreprt)              restricted to only some of the KOMA-Script
+(scrreprt)              features and been removed from others.
+(scrreprt)              Loading of package `scrhack' may help to
+(scrreprt)              avoid this warning, if you are using a
+(scrreprt)              a package that still implements the
+(scrreprt)              deprecated \float@addtolist interface.
+
 [14
 
 ]
@@ -904,93 +927,82 @@ chapter 2.
 
 ]
 chapter 3.
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 307.
-
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 316.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 313.
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-Underfull \hbox (badness 3758) in paragraph at lines 321--325
+Underfull \hbox (badness 3758) in paragraph at lines 318--322
 []\T1/cmr/m/n/12 Name of the track-ing (ran-dom-ized for
  []
 
 
-Underfull \hbox (badness 2142) in paragraph at lines 326--329
+Underfull \hbox (badness 2142) in paragraph at lines 323--326
 []\T1/cmr/m/n/12 Route meta-data, of-ten in-cludes in-ter-nal
  []
 
 
-Underfull \hbox (badness 2057) in paragraph at lines 346--349
+Underfull \hbox (badness 2057) in paragraph at lines 343--346
 []\T1/cmr/m/n/12 ID of the as-so-ci-ated tour (nul-li-fied for
  []
 
 
-Overfull \hbox (0.66364pt too wide) in paragraph at lines 311--358
+Overfull \hbox (0.66364pt too wide) in paragraph at lines 308--355
  [][] 
  []
 
 
-/home/neyon/fhv/bachelor_thesis_infeo/Thesis/Text/Bachelor_Thesis_GPS_Classification.tex:360: LaTeX Error: Unknown float option `H'.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.360 \begin{table}[H]
-                      
-Option `H' ignored and `p' used.
-
-[16
+ [16
 
 ] [17]
-<Figures/sample_pairplot.png, id=194, 1527.0651pt x 1420.8282pt>
+<Figures/sample_pairplot.png, id=190, 1527.0651pt x 1420.8282pt>
 File: Figures/sample_pairplot.png Graphic file (type png)
 <use Figures/sample_pairplot.png>
-Package pdftex.def Info: Figures/sample_pairplot.png  used on input line 426.
+Package pdftex.def Info: Figures/sample_pairplot.png  used on input line 425.
 (pdftex.def)             Requested size: 402.32022pt x 374.328pt.
-<Figures/sample_correlation_matrix.png, id=196, 492.1587pt x 407.3619pt>
+<Figures/sample_correlation_matrix.png, id=192, 492.1587pt x 407.3619pt>
 File: Figures/sample_correlation_matrix.png Graphic file (type png)
 <use Figures/sample_correlation_matrix.png>
-Package pdftex.def Info: Figures/sample_correlation_matrix.png  used on input line 435.
+Package pdftex.def Info: Figures/sample_correlation_matrix.png  used on input line 434.
 (pdftex.def)             Requested size: 402.32022pt x 333.00085pt.
- [18 <./Figures/sample_pairplot.png>]
-<Figures/sample_point_density_boxplot.png, id=202, 432.4155pt x 327.8649pt>
+<Figures/sample_point_density_boxplot.png, id=193, 432.4155pt x 327.8649pt>
 File: Figures/sample_point_density_boxplot.png Graphic file (type png)
 <use Figures/sample_point_density_boxplot.png>
-Package pdftex.def Info: Figures/sample_point_density_boxplot.png  used on input line 446.
+Package pdftex.def Info: Figures/sample_point_density_boxplot.png  used on input line 445.
 (pdftex.def)             Requested size: 402.32022pt x 305.05127pt.
- [19 <./Figures/sample_correlation_matrix.png>] [20 <./Figures/sample_point_density_boxplot.png>] [21
+ [18
+
+] [19 <./Figures/sample_pairplot.png>] [20 <./Figures/sample_correlation_matrix.png>] [21 <./Figures/sample_point_density_boxplot.png>] [22
 
 ]
 chapter 4.
-[22
-
-]
-chapter 5.
 [23
 
 ]
-chapter 6.
+chapter 5.
 [24
 
 ]
-Overfull \hbox (15.96591pt too wide) in paragraph at lines 489--489
+chapter 6.
+[25
+
+]
+Overfull \hbox (15.96591pt too wide) in paragraph at lines 488--488
 []\T1/cmr/m/n/12 ^^P  The world's most valu-able re-source is no longer oil, but data,^^Q \T1/cmr/m/it/12 The Economist\T1/cmr/m/n/12 ,
  []
 
 
-Overfull \hbox (0.9503pt too wide) in paragraph at lines 489--489
+Overfull \hbox (0.9503pt too wide) in paragraph at lines 488--488
 \T1/cmr/m/n/12 Chowd-hury, ^^P  Deep clas-si-fi-ca-tion of frequently-changing ac-tiv-i-ties from GPS
  []
 
-[25
+[26
 
-
-] [26
 
 ] [27
+
+] [28
 
 ] (./Bachelor_Thesis_GPS_Classification.aux)
 
@@ -998,23 +1010,28 @@ LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `Bachelor_Thesis_GPS_Classification.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                Bachelor_Thesis_GPS_Classification
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'Bachelor_Thesis_GPS_Classification.run.xml'.
 \openout1 = `Bachelor_Thesis_GPS_Classification.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29786 strings out of 478287
- 536340 string characters out of 5849288
- 1341374 words of memory out of 5000000
- 47551 multiletter control sequences out of 15000+600000
+ 29847 strings out of 478287
+ 537392 string characters out of 5849288
+ 1342813 words of memory out of 5000000
+ 47607 multiletter control sequences out of 15000+600000
  479054 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,11n,106p,10675b,3662s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on Bachelor_Thesis_GPS_Classification.pdf (27 pages, 2656953 bytes).
+Output written on Bachelor_Thesis_GPS_Classification.pdf (28 pages, 2657219 bytes).
 PDF statistics:
- 423 PDF objects out of 1000 (max. 8388607)
- 363 compressed objects within 4 object streams
- 91 named destinations out of 1000 (max. 500000)
+ 425 PDF objects out of 1000 (max. 8388607)
+ 364 compressed objects within 4 object streams
+ 92 named destinations out of 1000 (max. 500000)
  321 words of extra memory for PDF output out of 10000 (max. 10000000)
 

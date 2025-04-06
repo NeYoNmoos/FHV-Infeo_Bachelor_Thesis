@@ -2351,11 +2351,7 @@
   </bcf:bibdata>
   <bcf:section number="0">
     <bcf:citekey order="1">noauthor_worlds_nodate</bcf:citekey>
-    <bcf:citekey order="2">9615047</bcf:citekey>
-    <bcf:citekey order="3">eftelioglu_deep_2022</bcf:citekey>
-    <bcf:citekey order="4">noauthor_worlds_nodate</bcf:citekey>
-    <bcf:citekey order="5">9615047</bcf:citekey>
-    <bcf:citekey order="6">eftelioglu_deep_2022</bcf:citekey>
+    <bcf:citekey order="2">noauthor_worlds_nodate</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
