@@ -19,6 +19,27 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global}
+    \entry{noauthor_worlds_nodate}{article}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{issn}{0013-0613}
+      \field{journaltitle}{The Economist}
+      \field{title}{The world’s most valuable resource is no longer oil, but data}
+      \field{urlday}{6}
+      \field{urlmonth}{4}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb The Economist Snapshot:C\:\\Users\\matth\\Zotero\\storage\\MMCX238R\\the-worlds-most-valuable-resource-is-no-longer-oil-but-data.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.economist.com/leaders/2017/05/06/the-worlds-most-valuable-resource-is-no-longer-oil-but-data
+      \endverb
+      \verb{url}
+      \verb https://www.economist.com/leaders/2017/05/06/the-worlds-most-valuable-resource-is-no-longer-oil-but-data
+      \endverb
+    \endentry
     \entry{9615047}{article}{}
       \name{author}{4}{}{%
         {{hash=393c7cdc01dc566cd4247318f4a9c58b}{%
@@ -48,8 +69,8 @@
       \strng{authorbibnamehash}{18ff8ae916332fa55509eb0aaf5133c9}
       \strng{authornamehash}{56364b3890c9fdd3706241ca49ff6de1}
       \strng{authorfullhash}{18ff8ae916332fa55509eb0aaf5133c9}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{IEEE Access}
@@ -103,8 +124,8 @@
       \strng{authorbibnamehash}{90eb2ec261267ef4fb5ad6bcc73b303c}
       \strng{authornamehash}{f787fec60f9169e020faf94fbbe060b4}
       \strng{authorfullhash}{90eb2ec261267ef4fb5ad6bcc73b303c}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Classifying trip modalities, i.e. driving, walking, etc., from GPS trajectories is one of the fundamental tasks for urban mobility analytics. It can be used for efficient route planning, human activity recognition, and public transportation design where understanding the time and location of transitioning to different modalities may provide additional insights. Informally, given a GPS trajectory consisting of temporally ordered GPS locations, trip modality/activity classification aims to assign trip modes to each GPS point. It is a challenging task due to the associated noise with the GPS data, the lack of knowledge about the underlying road network as well as the driving traffic conditions which may affect the trip behavior (e.g. driving slower than walking speed at rush hour traffic). Despite its widespread applications, the existing methods are either dependent on multi-sensor data (such as GPS, IMU, Camera, etc.) or use heuristic-based filtering to classify modalities of the trajectory datasets. Moreover, they consider limited number of transitions per trip making them inadequate for more frequent activity changes. In this paper, we propose a novel deep neural network architecture, Frequent Activity Classification Network FACNet, leveraging a bi-directional LSTM network and a custom Attention module to infer modality of GPS points in a trajectory with frequent modality changes. Our supervised learning approach depends only on the GPS trace without any additional inputs, making it applicable to a wide variety of modality related problems. Experiments confirm the superiority of our method compared to the related work as well as heuristic approaches. Finally, we provide access to a set of anonymized GPS trajectories that is made available to the broader research community to provide opportunities to further improve the existing research on the topic.}

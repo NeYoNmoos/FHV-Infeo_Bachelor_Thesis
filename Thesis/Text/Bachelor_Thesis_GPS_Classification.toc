@@ -16,7 +16,8 @@
 \contentsline {subsection}{\numberline {3.1.1}[Unterkapitel dritte Ebene]}{16}{subsection.3.1.1}%
 \contentsline {subsubsection}{\numberline {3.1.1.1}[Unterkapitel vierte Ebene]}{16}{subsubsection.3.1.1.1}%
 \contentsline {section}{\numberline {3.2}Big Picture}{16}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Solution Approach}{16}{section.3.3}%
+\contentsline {section}{\numberline {3.3}Dataset Analysis}{16}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Solution Approach}{16}{section.3.4}%
 \contentsline {chapter}{\numberline {4}Implementation}{17}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Implementation of the Big Picture}{17}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Integration with existing systems}{17}{section.4.2}%

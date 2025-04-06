@@ -1,0 +1,5 @@
+[0] Config.pm:307> INFO - This is Biber 2.17
+[0] Config.pm:310> INFO - Logfile is 'Bachelor_Thesis_GPS_Classification.bib.blg'
+[111] biber:340> INFO - === Sun Apr  6, 2025, 19:46:36
+[341] Utils.pm:398> ERROR - Cannot find 'Bachelor_Thesis_GPS_Classification.bib.bcf'!
+[341] Biber.pm:135> INFO - ERRORS: 1
