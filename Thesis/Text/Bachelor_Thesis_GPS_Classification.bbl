@@ -31,7 +31,7 @@
       \field{urlyear}{2025}
       \field{urldateera}{ce}
       \verb{file}
-      \verb The Economist Snapshot:C\:\\Users\\matth\\Zotero\\storage\\MMCX238R\\the-worlds-most-valuable-resource-is-no-longer-oil-but-data.html:text/html
+      \verb The Economist Snapshot:files/29/the-worlds-most-valuable-resource-is-no-longer-oil-but-data.html:text/html
       \endverb
       \verb{urlraw}
       \verb https://www.economist.com/leaders/2017/05/06/the-worlds-most-valuable-resource-is-no-longer-oil-but-data
@@ -40,118 +40,42 @@
       \verb https://www.economist.com/leaders/2017/05/06/the-worlds-most-valuable-resource-is-no-longer-oil-but-data
       \endverb
     \endentry
-    \entry{9615047}{article}{}
-      \name{author}{4}{}{%
-        {{hash=393c7cdc01dc566cd4247318f4a9c58b}{%
-           family={Sallang},
-           familyi={S\bibinitperiod},
-           given={Nicholas\bibnamedelimb Chieng\bibnamedelima Anak},
-           giveni={N\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-        {{hash=abc5b016c594b0613df9ac34113a29cd}{%
-           family={Islam},
-           familyi={I\bibinitperiod},
-           given={Mohammad\bibnamedelima Tariqul},
-           giveni={M\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
-        {{hash=9bb2216d17510a4ccf302f282d2c6afc}{%
-           family={Islam},
-           familyi={I\bibinitperiod},
-           given={Mohammad\bibnamedelima Shahidul},
-           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
-        {{hash=aafec6f0cd616adfe79773d1f3c4c790}{%
-           family={Arshad},
-           familyi={A\bibinitperiod},
-           given={Haslina},
-           giveni={H\bibinitperiod}}}%
+    \entry{petroc_data_nodate}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=9e45e0156cf6e51d72139afa54b737ff}{%
+           family={Petroc},
+           familyi={P\bibinitperiod},
+           given={Taylor},
+           giveni={T\bibinitperiod}}}%
       }
-      \strng{namehash}{56364b3890c9fdd3706241ca49ff6de1}
-      \strng{fullhash}{18ff8ae916332fa55509eb0aaf5133c9}
-      \strng{bibnamehash}{18ff8ae916332fa55509eb0aaf5133c9}
-      \strng{authorbibnamehash}{18ff8ae916332fa55509eb0aaf5133c9}
-      \strng{authornamehash}{56364b3890c9fdd3706241ca49ff6de1}
-      \strng{authorfullhash}{18ff8ae916332fa55509eb0aaf5133c9}
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{9e45e0156cf6e51d72139afa54b737ff}
+      \strng{fullhash}{9e45e0156cf6e51d72139afa54b737ff}
+      \strng{bibnamehash}{9e45e0156cf6e51d72139afa54b737ff}
+      \strng{authorbibnamehash}{9e45e0156cf6e51d72139afa54b737ff}
+      \strng{authornamehash}{9e45e0156cf6e51d72139afa54b737ff}
+      \strng{authorfullhash}{9e45e0156cf6e51d72139afa54b737ff}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{IEEE Access}
-      \field{title}{A CNN-Based Smart Waste Management System Using TensorFlow Lite and LoRa-GPS Shield in Internet of Things Environment}
-      \field{volume}{9}
-      \field{year}{2021}
-      \field{pages}{153560\bibrangedash 153574}
-      \range{pages}{15}
-      \verb{doi}
-      \verb 10.1109/ACCESS.2021.3128314
-      \endverb
-      \keyw{Waste management;Monitoring;Acoustics;Internet of Things;GSM;Microcontrollers;Deep learning;Waste classification;CNN;object detection;LoRa-GPS shield;Internet of Things}
-    \endentry
-    \entry{eftelioglu_deep_2022}{inproceedings}{}
-      \name{author}{5}{}{%
-        {{hash=0df61e3de57370a783e3f68f4c3856fd}{%
-           family={Eftelioglu},
-           familyi={E\bibinitperiod},
-           given={Emre},
-           giveni={E\bibinitperiod}}}%
-        {{hash=7bbc3b604ecf7ffc632bc3080dc9edb7}{%
-           family={Wolff},
-           familyi={W\bibinitperiod},
-           given={Gil},
-           giveni={G\bibinitperiod}}}%
-        {{hash=bc1dc760a183fbbdf37b21b0cc97ab3f}{%
-           family={Nimmagadda},
-           familyi={N\bibinitperiod},
-           given={Sai\bibnamedelimb Krishna\bibnamedelima Tejaswi},
-           giveni={S\bibinitperiod\bibinitdelim K\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
-        {{hash=9512e16d13aa7856fa8fcf5cdd628121}{%
-           family={Kumar},
-           familyi={K\bibinitperiod},
-           given={Vishal},
-           giveni={V\bibinitperiod}}}%
-        {{hash=7c8bcc1a93946b3efa1a6fd7e78c013d}{%
-           family={Chowdhury},
-           familyi={C\bibinitperiod},
-           given={Amber\bibnamedelima Roy},
-           giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {New York, NY, USA}%
-      }
-      \list{publisher}{1}{%
-        {Association for Computing Machinery}%
-      }
-      \strng{namehash}{f787fec60f9169e020faf94fbbe060b4}
-      \strng{fullhash}{90eb2ec261267ef4fb5ad6bcc73b303c}
-      \strng{bibnamehash}{90eb2ec261267ef4fb5ad6bcc73b303c}
-      \strng{authorbibnamehash}{90eb2ec261267ef4fb5ad6bcc73b303c}
-      \strng{authornamehash}{f787fec60f9169e020faf94fbbe060b4}
-      \strng{authorfullhash}{90eb2ec261267ef4fb5ad6bcc73b303c}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Classifying trip modalities, i.e. driving, walking, etc., from GPS trajectories is one of the fundamental tasks for urban mobility analytics. It can be used for efficient route planning, human activity recognition, and public transportation design where understanding the time and location of transitioning to different modalities may provide additional insights. Informally, given a GPS trajectory consisting of temporally ordered GPS locations, trip modality/activity classification aims to assign trip modes to each GPS point. It is a challenging task due to the associated noise with the GPS data, the lack of knowledge about the underlying road network as well as the driving traffic conditions which may affect the trip behavior (e.g. driving slower than walking speed at rush hour traffic). Despite its widespread applications, the existing methods are either dependent on multi-sensor data (such as GPS, IMU, Camera, etc.) or use heuristic-based filtering to classify modalities of the trajectory datasets. Moreover, they consider limited number of transitions per trip making them inadequate for more frequent activity changes. In this paper, we propose a novel deep neural network architecture, Frequent Activity Classification Network FACNet, leveraging a bi-directional LSTM network and a custom Attention module to infer modality of GPS points in a trajectory with frequent modality changes. Our supervised learning approach depends only on the GPS trace without any additional inputs, making it applicable to a wide variety of modality related problems. Experiments confirm the superiority of our method compared to the related work as well as heuristic approaches. Finally, we provide access to a set of anonymized GPS trajectories that is made available to the broader research community to provide opportunities to further improve the existing research on the topic.}
-      \field{booktitle}{Proceedings of the 15th {ACM} {SIGSPATIAL} {International} {Workshop} on {Computational} {Transportation} {Science}}
-      \field{isbn}{978-1-4503-9539-7}
-      \field{month}{11}
-      \field{series}{{IWCTS} '22}
-      \field{title}{Deep classification of frequently-changing activities from {GPS} trajectories}
-      \field{urlday}{26}
-      \field{urlmonth}{11}
-      \field{urlyear}{2024}
-      \field{year}{2022}
+      \field{abstract}{The total global volume of data is set to explode over the coming years, amounting to an expected 394 zettabytes by 2028, up from just two zettabytes in 2010.}
+      \field{journaltitle}{Statista}
+      \field{title}{Data growth worldwide 2010-2028}
+      \field{urlday}{11}
+      \field{urlmonth}{4}
+      \field{urlyear}{2025}
       \field{urldateera}{ce}
-      \field{pages}{1\bibrangedash 10}
-      \range{pages}{10}
-      \verb{doi}
-      \verb 10.1145/3557991.3567784
-      \endverb
       \verb{file}
-      \verb Full Text PDF:C\:\\Users\\matth\\Zotero\\storage\\SL7L4ZPH\\Eftelioglu et al. - 2022 - Deep classification of frequently-changing activit.pdf:application/pdf
+      \verb Snapshot:files/31/worldwide-data-created.html:text/html
       \endverb
       \verb{urlraw}
-      \verb https://dl.acm.org/doi/10.1145/3557991.3567784
+      \verb https://www.statista.com/statistics/871513/worldwide-data-created/
       \endverb
       \verb{url}
-      \verb https://dl.acm.org/doi/10.1145/3557991.3567784
+      \verb https://www.statista.com/statistics/871513/worldwide-data-created/
       \endverb
     \endentry
   \enddatalist
