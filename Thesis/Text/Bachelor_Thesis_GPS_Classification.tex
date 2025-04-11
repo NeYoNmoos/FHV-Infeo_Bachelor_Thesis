@@ -21,7 +21,7 @@
 \usepackage[bindingoffset=8mm]{geometry}% Bindeverlust von 8mm einbeziehen. Mit dem geometry-Paket können Sie die Ränder auch ganz individuell anpassen.
 \usepackage{caption} % Abbildungslegenden
 \captionsetup{format=hang, justification=raggedright}
-
+\usepackage{placeins}
 \usepackage{float} % prevent LaTeX table repositioning
 
 \usepackage[a-2b,mathxmp]{pdfx}[2018/12/22]
@@ -418,14 +418,63 @@ Formatvorlage für den Fließtext.
 Formatvorlage für den Fließtext.
 
 \subsection{Sample Analysis}
-Formatvorlage für den Fließtext.
+
+A small, manually selected sample of 8 tracking routes was selected for initial
+exploratory data analysis. Each route was inspected on the AWM-Map-Tool and
+then categorized into on of the four area type labels: RURAL, SUBURBAN, TOWN or
+URBAN. Each Label is represented by 2 tracking routes in the sample data to
+ensure a balanced representation.
+
+Feature extraction was performed to calculate route-level metrics such as
+length, duration, bounding box area, point density, number of stops and average
+distance between points.
+
+The goal of this sample is to explore patterns, validate assumptions, and
+identify features useful for future automatic classification.
 
 \begin{figure}[htbp]
   \centering
+
   \includegraphics[width=\textwidth]{Figures/sample_tracking_routes_mapgrid.png}
   \caption{Mapgrid for selected sample trackings}
   \label{fig:sample_mapgrid}
 \end{figure}
+\FloatBarrier
+The mapgrid shows spatial layout of each tracking route overlayed on a visual
+map. Each subplot corresponds to a single tracking and is colorcoded with the
+assigned lable (RURAL=Red, SUBURBAN=Orange, TOWN=Blue, URBAN=Green). This
+visual representation clearly shows the difference in route shapes and sizes
+between the four different area types.
+
+\textbf{Urban:}
+\begin{itemize}
+  \item Routes are geographically compact and highly localized.
+  \item Movement appears dense with short travel distances between stops.
+  \item Often confined to a small cluster of city blocks or neighborhoods.
+\end{itemize}
+
+\textbf{Town:}
+\begin{itemize}
+  \item Coverage is slightly more dispersed than urban routes.
+  \item Still relatively compact but less tightly packed.
+  \item Serves a central area and nearby residential surroundings.
+\end{itemize}
+
+\textbf{Suburban:}
+\begin{itemize}
+  \item Routes extend farther and cover wider areas than town routes.
+  \item Show transitional behavior between urban and rural structures.
+  \item Less dense stop distribution, indicating more spaced-out residential
+        zones.
+\end{itemize}
+
+\textbf{Rural:}
+\begin{itemize}
+  \item Routes are long and span large geographical areas.
+  \item Stops are widely spaced, often connecting small, isolated settlements.
+  \item The shape and path vary significantly, often following main roads
+        between distant collection points.
+\end{itemize}
 
 \begin{figure}[htbp]
   \centering
@@ -433,8 +482,14 @@ Formatvorlage für den Fließtext.
   \caption{Pairplot of selected GPS route features grouped by area label}
   \label{fig:sample_pairplot}
 \end{figure}
+\FloatBarrier
 
-Pairplot
+The pairplot compares the relationships between the extracted features (eg.,
+length, duration, number of points, bounding box area, point density, average
+segmengt distance and number of stops). Rural and urban trackings show a clear
+difference in multiple features. Point density and average segment distance are
+especially good discriminators. Suburban and town trackings show more variance
+and occasionally overlap with eachother, giving a not so clear distinction.
 
 \begin{figure}[htbp]
   \centering
@@ -443,20 +498,36 @@ Pairplot
     label}
   \label{fig:sample_correlation_matrix}
 \end{figure}
+\FloatBarrier
 
-Correlation matrix
+The Correlation Matrix highlights the strong correlations between features in
+the selected sample.
+A high posive correlation between length, duration and number of points can be
+observerd. Additionally the point density has a strong negative correlation
+with the tracking length, number of points and average segment distance.
 
-\begin{figure}[htbp]
+This correlation is to be expected and confirms the consistency of the data,
+since the points (GPS coordinates) are recorded in uniform intervals. This plot
+also indicates the possible redundance of features such as number of points and
+number of stops.
+
+\begin{figure}[h]
   \centering
 
   \includegraphics[width=\textwidth]{Figures/sample_point_density_boxplot.png}
   \caption{Boxplot of point density grouped by area label}
   \label{fig:sample_boxplot}
 \end{figure}
+\FloatBarrier
 
-Boxplot
+The point density boxplots for each label shows a clear difference between the
+labels. Urban trackings appear to have the highest density and rural trackings
+the lowest, with suburban and town trackings falling in the middle with a wider
+variability.
 
-\clearpage
+This validates that the point density is a strong feature for classifying
+trackings to the four labels.
+
 \section{Solution Approach}
 Formatvorlage für den Fließtext.
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.10.25)  11 APR 2025 12:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.10.25)  11 APR 2025 14:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -335,6 +335,8 @@ File: caption-koma.sto 2020/09/21 v2.0b Adaption of the caption package to the K
 \c@caption@flags=\count285
 \c@continuedfloat=\count286
 Package caption Info: hyperref package is loaded.
+) (/usr/share/texlive/texmf-dist/tex/latex/placeins/placeins.sty
+Package: placeins 2005/04/18  v 2.2
 ) (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count287
@@ -959,28 +961,32 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 <Figures/sample_tracking_routes_mapgrid.png, id=194, 1445.4pt x 722.7pt>
 File: Figures/sample_tracking_routes_mapgrid.png Graphic file (type png)
 <use Figures/sample_tracking_routes_mapgrid.png>
-Package pdftex.def Info: Figures/sample_tracking_routes_mapgrid.png  used on input line 425.
+Package pdftex.def Info: Figures/sample_tracking_routes_mapgrid.png  used on input line 438.
 (pdftex.def)             Requested size: 402.32022pt x 201.15262pt.
-<Figures/sample_pairplot.png, id=196, 1527.0651pt x 1420.8282pt>
-File: Figures/sample_pairplot.png Graphic file (type png)
-<use Figures/sample_pairplot.png>
-Package pdftex.def Info: Figures/sample_pairplot.png  used on input line 432.
-(pdftex.def)             Requested size: 402.32022pt x 374.328pt.
-<Figures/sample_correlation_matrix.png, id=197, 492.1587pt x 407.3619pt>
-File: Figures/sample_correlation_matrix.png Graphic file (type png)
-<use Figures/sample_correlation_matrix.png>
-Package pdftex.def Info: Figures/sample_correlation_matrix.png  used on input line 441.
-(pdftex.def)             Requested size: 402.32022pt x 333.00085pt.
-<Figures/sample_point_density_boxplot.png, id=198, 432.4155pt x 327.8649pt>
-File: Figures/sample_point_density_boxplot.png Graphic file (type png)
-<use Figures/sample_point_density_boxplot.png>
-Package pdftex.def Info: Figures/sample_point_density_boxplot.png  used on input line 452.
-(pdftex.def)             Requested size: 402.32022pt x 305.05127pt.
  [18
 
- <./Figures/sample_tracking_routes_mapgrid.png>] [19 <./Figures/sample_pairplot.png>] [20 <./Figures/sample_correlation_matrix.png>] [21 <./Figures/sample_point_density_boxplot.png>] [22
+] [19 <./Figures/sample_tracking_routes_mapgrid.png>]
+<Figures/sample_pairplot.png, id=207, 1527.0651pt x 1420.8282pt>
+File: Figures/sample_pairplot.png Graphic file (type png)
+<use Figures/sample_pairplot.png>
+Package pdftex.def Info: Figures/sample_pairplot.png  used on input line 481.
+(pdftex.def)             Requested size: 402.32022pt x 374.328pt.
+ [20 <./Figures/sample_pairplot.png>]
+<Figures/sample_correlation_matrix.png, id=213, 492.1587pt x 407.3619pt>
+File: Figures/sample_correlation_matrix.png Graphic file (type png)
+<use Figures/sample_correlation_matrix.png>
+Package pdftex.def Info: Figures/sample_correlation_matrix.png  used on input line 496.
+(pdftex.def)             Requested size: 402.32022pt x 333.00085pt.
+<Figures/sample_point_density_boxplot.png, id=214, 432.4155pt x 327.8649pt>
+File: Figures/sample_point_density_boxplot.png Graphic file (type png)
+<use Figures/sample_point_density_boxplot.png>
+Package pdftex.def Info: Figures/sample_point_density_boxplot.png  used on input line 517.
+(pdftex.def)             Requested size: 402.32022pt x 305.05127pt.
 
-]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[21 <./Figures/sample_correlation_matrix.png>] [22 <./Figures/sample_point_density_boxplot.png>]
 chapter 4.
 [23
 
@@ -993,12 +999,12 @@ chapter 6.
 [25
 
 ]
-Overfull \hbox (15.96591pt too wide) in paragraph at lines 495--495
+Overfull \hbox (15.96591pt too wide) in paragraph at lines 566--566
 []\T1/cmr/m/n/12 ^^P  The world's most valu-able re-source is no longer oil, but data,^^Q \T1/cmr/m/it/12 The Economist\T1/cmr/m/n/12 ,
  []
 
 
-Overfull \hbox (4.52322pt too wide) in paragraph at lines 495--495
+Overfull \hbox (4.52322pt too wide) in paragraph at lines 566--566
 []\T1/cmr/m/n/12 T. Petroc, \T1/cmr/m/it/12 Data growth world-wide 2010-2028\T1/cmr/m/n/12 , en. [On-line]. Avail-able: []$\T1/cmtt/m/n/12 https :
  []
 
@@ -1020,18 +1026,18 @@ Package logreq Info: Writing requests to 'Bachelor_Thesis_GPS_Classification.run
 
  ) 
 Here is how much of TeX's memory you used:
- 29843 strings out of 478287
- 537375 string characters out of 5849288
- 1342695 words of memory out of 5000000
- 47602 multiletter control sequences out of 15000+600000
- 479054 words of font info for 47 fonts, out of 8000000 for 9000
+ 29877 strings out of 478287
+ 538208 string characters out of 5849288
+ 1342784 words of memory out of 5000000
+ 47631 multiletter control sequences out of 15000+600000
+ 479391 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,11n,106p,10675b,3662s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on Bachelor_Thesis_GPS_Classification.pdf (28 pages, 17810096 bytes).
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on Bachelor_Thesis_GPS_Classification.pdf (28 pages, 17815520 bytes).
 PDF statistics:
- 428 PDF objects out of 1000 (max. 8388607)
- 365 compressed objects within 4 object streams
+ 432 PDF objects out of 1000 (max. 8388607)
+ 368 compressed objects within 4 object streams
  92 named destinations out of 1000 (max. 500000)
  326 words of extra memory for PDF output out of 10000 (max. 10000000)
 
