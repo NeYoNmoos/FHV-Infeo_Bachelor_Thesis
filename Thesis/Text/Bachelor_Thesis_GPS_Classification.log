@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.10.25)  11 APR 2025 14:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.10.25)  11 APR 2025 15:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -959,4 +959,143 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ] [17]
 <Figures/sample_tracking_routes_mapgrid.png, id=198, 1445.4pt x 722.7pt>
-File: Figures/sample_tracking_ro
+File: Figures/sample_tracking_routes_mapgrid.png Graphic file (type png)
+<use Figures/sample_tracking_routes_mapgrid.png>
+Package pdftex.def Info: Figures/sample_tracking_routes_mapgrid.png  used on input line 438.
+(pdftex.def)             Requested size: 402.32022pt x 201.15262pt.
+ [18
+
+] [19 <./Figures/sample_tracking_routes_mapgrid.png>]
+<Figures/sample_pairplot.png, id=211, 1527.0651pt x 1420.8282pt>
+File: Figures/sample_pairplot.png Graphic file (type png)
+<use Figures/sample_pairplot.png>
+Package pdftex.def Info: Figures/sample_pairplot.png  used on input line 481.
+(pdftex.def)             Requested size: 402.32022pt x 374.328pt.
+ [20 <./Figures/sample_pairplot.png>]
+<Figures/sample_correlation_matrix.png, id=217, 492.1587pt x 407.3619pt>
+File: Figures/sample_correlation_matrix.png Graphic file (type png)
+<use Figures/sample_correlation_matrix.png>
+Package pdftex.def Info: Figures/sample_correlation_matrix.png  used on input line 496.
+(pdftex.def)             Requested size: 402.32022pt x 333.00085pt.
+<Figures/sample_point_density_boxplot.png, id=218, 432.4155pt x 327.8649pt>
+File: Figures/sample_point_density_boxplot.png Graphic file (type png)
+<use Figures/sample_point_density_boxplot.png>
+Package pdftex.def Info: Figures/sample_point_density_boxplot.png  used on input line 517.
+(pdftex.def)             Requested size: 402.32022pt x 305.05127pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[21 <./Figures/sample_correlation_matrix.png>] [22 <./Figures/sample_point_density_boxplot.png>]
+chapter 4.
+[23
+
+]
+chapter 5.
+[24
+
+]
+chapter 6.
+[25
+
+]
+Overfull \hbox (15.96591pt too wide) in paragraph at lines 566--566
+[]\T1/cmr/m/n/12 ^^P  The world's most valu-able re-source is no longer oil, but data,^^Q \T1/cmr/m/it/12 The Economist\T1/cmr/m/n/12 ,
+ []
+
+
+Overfull \hbox (4.52322pt too wide) in paragraph at lines 566--566
+[]\T1/cmr/m/n/12 T. Petroc, \T1/cmr/m/it/12 Data growth world-wide 2010-2028\T1/cmr/m/n/12 , en. [On-line]. Avail-able: []$\T1/cmtt/m/n/12 https :
+ []
+
+[26
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 680--680
+[]\T1/cmr/m/n/12 Narrow down
+ []
+
+
+Underfull \hbox (badness 1259) in paragraph at lines 680--680
+[]\T1/cmr/m/n/12 Good for out-lin-ing sec-tions.
+ []
+
+
+Underfull \hbox (badness 7504) in paragraph at lines 680--680
+[]\T1/cmr/m/n/12 Paraphrase con-
+ []
+
+
+Underfull \hbox (badness 2903) in paragraph at lines 680--680
+[]\T1/cmr/m/n/12 Helpful to gen-er-ate con-cise
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 680--680
+[]\T1/cmr/m/n/12 Write in-tro-duc-
+ []
+
+
+Underfull \hbox (badness 1005) in paragraph at lines 680--680
+[]\T1/cmr/m/n/12 Provided in-spi-ra-tion but re-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 680--680
+[]\T1/cmr/m/n/12 Used for struc-tur-ing and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 680--680
+[]\T1/cmr/m/n/12 Helpful for re-for-mu-lat-ing
+ []
+
+
+Underfull \hbox (badness 2547) in paragraph at lines 680--680
+[]\T1/cmr/m/n/12 Revise text for-
+ []
+
+
+Underfull \hbox (badness 3078) in paragraph at lines 680--680
+[]\T1/cmr/m/n/12 Polished sen-tences and im-
+ []
+
+
+Underfull \hbox (badness 1454) in paragraph at lines 680--680
+[]\T1/cmr/m/n/12 Assisted with gram-mar and
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[27
+
+] [28] [29
+
+] (./Bachelor_Thesis_GPS_Classification.aux)
+
+LaTeX Warning: There were undefined references.
+
+Package rerunfilecheck Info: File `Bachelor_Thesis_GPS_Classification.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+Package logreq Info: Writing requests to 'Bachelor_Thesis_GPS_Classification.run.xml'.
+\openout1 = `Bachelor_Thesis_GPS_Classification.run.xml'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 29882 strings out of 478287
+ 538262 string characters out of 5849288
+ 1344861 words of memory out of 5000000
+ 47633 multiletter control sequences out of 15000+600000
+ 479391 words of font info for 48 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 108i,11n,106p,10675b,3662s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on Bachelor_Thesis_GPS_Classification.pdf (29 pages, 17818633 bytes).
+PDF statistics:
+ 443 PDF objects out of 1000 (max. 8388607)
+ 378 compressed objects within 4 object streams
+ 95 named destinations out of 1000 (max. 500000)
+ 334 words of extra memory for PDF output out of 10000 (max. 10000000)
+
