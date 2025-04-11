@@ -32,7 +32,7 @@
 \contentsline {chapter}{\numberline {6}Conclusion}{25}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Future Directions}{25}{section.6.1}%
 \contentsline {section}{\numberline {6.2}Limitations}{25}{section.6.2}%
-\contentsline {chapter}{Literaturverzeichnis}{26}{section*.22}%
-\contentsline {chapter}{[evtl. Anhang]}{27}{chapter*.24}%
-\contentsline {chapter}{Affidavit}{28}{chapter*.25}%
+\contentsline {chapter}{Literaturverzeichnis}{26}{section*.23}%
+\contentsline {chapter}{[evtl. Anhang]}{27}{chapter*.25}%
+\contentsline {chapter}{Affidavit}{28}{chapter*.26}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
