@@ -2354,11 +2354,12 @@
     <bcf:citekey order="3">noauthor_europe_nodate</bcf:citekey>
     <bcf:citekey order="4">noauthor_solid_nodate</bcf:citekey>
     <bcf:citekey order="5">noauthor_gemeinsam_nodate</bcf:citekey>
-    <bcf:citekey order="6">noauthor_worlds_nodate</bcf:citekey>
-    <bcf:citekey order="7">petroc_data_nodate</bcf:citekey>
-    <bcf:citekey order="8">noauthor_europe_nodate</bcf:citekey>
-    <bcf:citekey order="9">noauthor_solid_nodate</bcf:citekey>
-    <bcf:citekey order="10">noauthor_gemeinsam_nodate</bcf:citekey>
+    <bcf:citekey order="6">noauthor_gemeinsam_nodate</bcf:citekey>
+    <bcf:citekey order="7">noauthor_worlds_nodate</bcf:citekey>
+    <bcf:citekey order="8">petroc_data_nodate</bcf:citekey>
+    <bcf:citekey order="9">noauthor_europe_nodate</bcf:citekey>
+    <bcf:citekey order="10">noauthor_solid_nodate</bcf:citekey>
+    <bcf:citekey order="11">noauthor_gemeinsam_nodate</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

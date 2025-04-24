@@ -282,7 +282,8 @@ The waste management sector is considered critical infrastructure and is under
 growing pressure to adapt to personnel shortages, blackouts, and rising costs.
 In many cases, the only viable solution is to optimize and automate operational
 processes. Digital transformation plays a key role in making day-to-day
-operations significantly more robust and efficient.
+operations significantly more robust and
+efficient.\cite{noauthor_gemeinsam_nodate}
 
 This is the mission of \textit{infeo GmbH}, the software company for which this
 thesis is being conducted:
@@ -314,17 +315,22 @@ can help create more accurate and less risky assessments for unknown collection
 locations. This can help reduce uncertainties and improve the accuracy of bid
 calculations.
 
-\section{Solution Approach}
+\section{Solution Approach and Goal}
 
-\section{Structure of the Work}
-
-\chapter{Background and Related Work}
-
-\section{Technical Background}
-
-\section{Related Work}
-
-\subsection{Comparison of GPS-Routes}
+Therefore, the goal of this work is to reduce uncertainty for waste collection
+companies expanding their business to new service areas using existing GPS
+tracking data.
+The approach involves classifying the GPS tracking data from known service
+areas into four categories ranging from urban to rural.
+AI methods are then used to cluster the data into these categories and to
+train a classifier able to automate the categorization.
+Furthermore, algorithms and AI techniques to compare patterns found in the
+exisiting data with
+public geographic data from OpenStreetMap.
+This functionality is then bundled into a
+ready to use API service.
+The endgoal is to provide an API which suggests planning parameters for a
+given input geofence.
 
 \chapter{Problem Definition and Solution Approach}
 
@@ -577,7 +583,55 @@ This validates that the point density is a strong feature for classifying
 trackings to the four labels.
 
 \section{Solution Approach}
-Formatvorlage für den Fließtext.
+
+\subsection{Exploratory Data Analysis}
+
+The foundation of this thesis is the dataset provided by \textit{infeo GmbH}.
+It contains anonymized GPS track data collected by waste collection vehicles
+during real world operation. Due to its large size of more than 100.000 GPS
+tracks and its anonymization, a clear picture of the data needed to be
+established as the first step.
+With visual examination of different random trackings a sample of eight
+manually labeled trackings was gathered.
+The selected trackings were labeled to four categories, two trackings per
+category.
+
+\begin{itemize}
+  \item Urban (Dense building structures, complex road networks, and minimal
+        spacing between stops)
+  \item Suburban (Moderately spaced residential areas with organized street
+        layouts)
+  \item Town (Smaller clustered settlements with simpler road structures)
+  \item Rural (Sparse housing, long roads, large distances between collection
+        points)
+\end{itemize}
+
+With the manually selected trackings varying in geographical structure, a
+exploratory data
+analysis helped transfer the visual distinction to clear differences found in
+the data of each tracking category.
+
+\subsection{Feature Extraction from Sample Dataset}
+
+\subsection{Filtering and Preprocessing the Full Dataset}
+
+\subsection{Clustering and Pattern Discovery}
+
+\subsection{Training a Classification Model}
+
+\subsection{Comparison with OSM Geofences}
+
+\subsection{API Integration}
+
+\section{Structure of the Work}
+
+\chapter{Background and Related Work}
+
+\section{Technical Background}
+
+\section{Related Work}
+
+\subsection{Comparison of GPS-Routes}
 
 \chapter{Implementation}
 
