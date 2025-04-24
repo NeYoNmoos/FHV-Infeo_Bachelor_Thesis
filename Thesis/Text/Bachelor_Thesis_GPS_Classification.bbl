@@ -78,6 +78,76 @@
       \verb https://www.statista.com/statistics/871513/worldwide-data-created/
       \endverb
     \endentry
+    \entry{noauthor_europe_nodate}{misc}{}
+      \list{language}{1}{%
+        {en}%
+      }
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Europe Waste Management Market size was valued at USD 116.21 billion in 2023, and it is projected to reach USD 169.37 billion by 2030, at a CAGR of 4.5\%.}
+      \field{title}{Europe {Waste} {Management} {Market} {Size} and {Share} {Analysis} 2030}
+      \field{urlday}{24}
+      \field{urlmonth}{4}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Snapshot:files/37/europe-waste-management-market.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nextmsc.com/report/europe-waste-management-market
+      \endverb
+      \verb{url}
+      \verb https://www.nextmsc.com/report/europe-waste-management-market
+      \endverb
+    \endentry
+    \entry{noauthor_solid_nodate}{misc}{}
+      \list{language}{1}{%
+        {en}%
+      }
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Waste will drastically outpace population growth by more than double by 2050, according to recent studies. As an essential service to maintain sanitation in urban areas, waste management affects everyone and needs urgent actions.}
+      \field{title}{Solid waste management}
+      \field{urlday}{24}
+      \field{urlmonth}{4}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Snapshot:files/39/index.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.eib.org/en/projects/topics/energy-natural-resources/solid-waste/index
+      \endverb
+      \verb{url}
+      \verb https://www.eib.org/en/projects/topics/energy-natural-resources/solid-waste/index
+      \endverb
+    \endentry
+    \entry{noauthor_gemeinsam_nodate}{misc}{}
+      \list{language}{1}{%
+        {de-AT}%
+      }
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Kreislaufwirtschaft Eine Kreislaufwirtschaft (englisch circular economy) ist ein regeneratives System, in dem Ressourceneinsatz und Abfallproduktion, Emissionen und Energieverschwendung durch das Verlangsamen, Verringern und Schließen von Energie- und Materialkreisläufen minimiert werden. In unserem Kontext steht die Kreislaufwirtschaft für die Produktion, Sortierung, Sammlung und den Transport von Wertstoffen, recycelbaren Materialien und dem klassischen „Müll“ der in die thermische Verwertung überführt wird. Digitale Revolution Die […]}
+      \field{journaltitle}{infeo GmbH}
+      \field{title}{Gemeinsam mit unseren {Kunden} revolutionieren wir die digitale {Kreislaufwirtschaft}}
+      \field{urlday}{24}
+      \field{urlmonth}{4}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Snapshot:files/41/revolution.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://infeo.at/index.php/revolution/
+      \endverb
+      \verb{url}
+      \verb https://infeo.at/index.php/revolution/
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

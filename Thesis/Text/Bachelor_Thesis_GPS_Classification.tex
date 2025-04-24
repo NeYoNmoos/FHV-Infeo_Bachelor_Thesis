@@ -147,7 +147,8 @@ geographischen Strukturdaten denn überhaupt aussagekräftig sind um einen
 Vergleich anzustreben, sollen ggf. mit Hilfe von KI Technologien erfolgen.
 
 Das Ziel der praktischen Arbeit ist es einen Sandbox-Service zu implementieren,
-der von der bestehenden Software der infeo aufgerufen und mit Daten befüllt
+der von der bestehenden Software der \textit{infeo GmbH} aufgerufen und mit
+Daten befüllt
 werden kann um so "auf Knopfdruck" Klassifizierungen und Vergleiche von
 GPS-Daten und Ausschreibungs-Strukturdaten zu erstellen. Die Anwender:innen
 haben dadurch die Möglichkeit für neue Ausschreibungen entsprechend passende
@@ -189,7 +190,8 @@ geographical structural data are meaningful for comparison should, if
 necessary, also be supported by AI technologies.
 
 The practical goal of this work is to implement a sandbox service that can be
-called and populated with data by the existing software of infeo, enabling the
+called and populated with data by the existing software of \textit{infeo GmbH},
+enabling the
 creation of classifications and comparisons of GPS data and tender structural
 data "at the push of a button." This will provide users with the ability to
 calculate appropriate planning parameters from their existing service areas for
@@ -253,6 +255,55 @@ One industry in which data-driven decision-making is becoming increasingly
 important is the
 waste management industry.
 
+\section{Motivation}
+\begin{quote}
+  ``The Europe Waste Management Market size was valued at USD 116.21
+  billion in
+  2023, and is predicted to reach USD 169.37 billion by 2030, at a CAGR of
+  4.5\% from 2024 to 2030.''\cite{noauthor_europe_nodate}
+\end{quote}
+
+This growth reflects the increasing need for efficient and sustainable waste
+management practices, in response to rising waste volumes across residential,
+commercial, and industrial sectors.
+
+\begin{quote}
+  ``The rapid population growth, urbanisation and economic development over the
+  last decades has led to an increase in the generation of solid waste across
+  the
+  world. Providing high-quality waste management services is crucial to
+  safeguard
+  public health and protect the environment, but also to support resource
+  efficiency, climate change mitigation and job creation.''
+  \cite{noauthor_solid_nodate}
+\end{quote}
+
+The waste management sector is considered critical infrastructure and is under
+growing pressure to adapt to personnel shortages, blackouts, and rising costs.
+In many cases, the only viable solution is to optimize and automate operational
+processes. Digital transformation plays a key role in making day-to-day
+operations significantly more robust and efficient.
+
+This is the mission of \textit{infeo GmbH}, the software company for which this
+thesis is being conducted:
+
+\begin{quotation}
+  ``Die Abfallwirtschaft ist ein systemkritischer Wirtschaftsbereich und zählt
+  zur kritischen Infrastruktur. Die Branche muss sich vor Personalausfällen,
+  Blackouts und Kostensteigerungen schützen. Das gelingt oft nur durch
+  Automatisierung und Optimierung von Prozessen, die das Tagesgeschäft
+  maßgeblich robuster und effektiver machen. ''\cite{noauthor_gemeinsam_nodate}
+\end{quotation}
+
+This thesis supports the mission of \textit{infeo GmbH} to revolutionize
+digital processes in the
+waste management sector by implementing AI-powered tools to automatically
+classify and compare GPS track data and geographical structural data. The
+resulting service enables waste management companies to efficiently gather
+planning-relevant parameters from existing service areas and apply them to new
+regions, reducing uncertainty, increasing planning accuracy, and
+accelerating decision-making.
+
 \section{Problem Statement}
 
 Companies operating in the waste collection business have trouble calculating
@@ -262,10 +313,6 @@ concerning the operation cost in new service areas. A data driven estimation
 can help create more accurate and less risky assessments for unknown collection
 locations. This can help reduce uncertainties and improve the accuracy of bid
 calculations.
-\section{Motivation}
-Notes:
-GPS Data is one of the most informativ data and can lead to many insights,
-which infeo is interested in.
 
 \section{Solution Approach}
 
@@ -286,11 +333,12 @@ which infeo is interested in.
 \subsection{Overview}
 The dataset used is a collection of GPS tracking data collected by
 wastecollection vehicles from various wastecollection businesses and provided
-by infeo GmbH. It represents real-world data
+by \textit{infeo GmbH}. It represents real-world data
 collected during regular wastecollection operation in the DACH region.
 
 \subsection{Source and Collection Method}
-The data was obtained by the onboard tracking systems installed by infeo GmbH,
+The data was obtained by the onboard tracking systems installed by
+\textit{infeo GmbH},
 which collects GPS coordinates in regular intervals during regular operation.
 Each tracking represents a complete wastecollection route taken and includes
 metadata aswell as a list of GPS coordinates.
@@ -674,6 +722,12 @@ Formatvorlage für den Fließtext.
                                              & OpenAI GPT-4o
                                              & Assisted with grammar and
       punctuation checking.
+      \\
+      \hline
+      Code generation                        & yes
+                                             & OpenAI GPT-4o, Github Copilot
+                                             & Assisted with generating code
+      and fixing bugs
       \\
       \hline
     \end{tabular}%
