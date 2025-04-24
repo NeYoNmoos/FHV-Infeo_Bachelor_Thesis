@@ -333,6 +333,22 @@ ready to use API service.
 The endgoal is to provide an API which suggests planning parameters for a
 given input geofence.
 
+\chapter{Background and Related Work}
+
+\section{Technical Background}
+
+\subsection{Feature Engineering for Geographic data}
+Notes
+Feature extraction methods using GPS datasets.
+
+\subsection{Clustering Algorithms}
+Notes
+DBSCAN, KMEANS, combining both of them
+
+\section{Related Work}
+
+\subsection{Comparison of GPS-Routes}
+
 \chapter{Problem Definition and Solution Approach}
 
 \section{Description of the Dataset}
@@ -618,6 +634,14 @@ the data of each tracking category.
 
 \subsection{Clustering and Pattern Discovery}
 
+Notes:
+First i used kmeans to cluster the data into four clusters, but soon found out
+that cluster two in particular was only contained of outliers.
+I then refined my notebook to first use dbscan clustering to detect outliers
+and remove those from the dataset. Then afterwards use kmeans clustering to
+cluster into the four category clutsers, which gave a way better results that
+without dbscan clustering.
+
 \subsection{Training a Classification Model}
 
 \subsection{Comparison with OSM Geofences}
@@ -625,14 +649,6 @@ the data of each tracking category.
 \subsection{API Integration}
 
 \section{Structure of the Work}
-
-\chapter{Background and Related Work}
-
-\section{Technical Background}
-
-\section{Related Work}
-
-\subsection{Comparison of GPS-Routes}
 
 \chapter{Implementation}
 

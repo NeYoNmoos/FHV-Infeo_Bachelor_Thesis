@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.10.25)  24 APR 2025 19:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.10.25)  24 APR 2025 21:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -936,68 +936,68 @@ Overfull \hbox (14.41673pt too wide) in paragraph at lines 293--298
 
 ] [15]
 chapter 2.
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 368.
+[16
+
+]
+chapter 3.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 384.
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-Underfull \hbox (badness 3758) in paragraph at lines 373--377
+Underfull \hbox (badness 3758) in paragraph at lines 389--393
 []\T1/cmr/m/n/12 Name of the track-ing (ran-dom-ized for
  []
 
 
-Underfull \hbox (badness 2142) in paragraph at lines 378--381
+Underfull \hbox (badness 2142) in paragraph at lines 394--397
 []\T1/cmr/m/n/12 Route meta-data, of-ten in-cludes in-ter-nal
  []
 
 
-Underfull \hbox (badness 2057) in paragraph at lines 398--401
+Underfull \hbox (badness 2057) in paragraph at lines 414--417
 []\T1/cmr/m/n/12 ID of the as-so-ci-ated tour (nul-li-fied for
  []
 
 
-Overfull \hbox (0.66364pt too wide) in paragraph at lines 363--410
+Overfull \hbox (0.66364pt too wide) in paragraph at lines 379--426
  [][] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [16
+ [17
 
-] [17]
-<Figures/sample_tracking_routes_mapgrid.png, id=220, 1445.4pt x 722.7pt>
+] [18]
+<Figures/sample_tracking_routes_mapgrid.png, id=228, 1445.4pt x 722.7pt>
 File: Figures/sample_tracking_routes_mapgrid.png Graphic file (type png)
 <use Figures/sample_tracking_routes_mapgrid.png>
-Package pdftex.def Info: Figures/sample_tracking_routes_mapgrid.png  used on input line 493.
+Package pdftex.def Info: Figures/sample_tracking_routes_mapgrid.png  used on input line 509.
 (pdftex.def)             Requested size: 402.32022pt x 201.15262pt.
- [18
+ [19
 
-] [19 <./Figures/sample_tracking_routes_mapgrid.png>]
-<Figures/sample_pairplot.png, id=233, 1527.0651pt x 1420.8282pt>
+] [20 <./Figures/sample_tracking_routes_mapgrid.png>]
+<Figures/sample_pairplot.png, id=241, 1527.0651pt x 1420.8282pt>
 File: Figures/sample_pairplot.png Graphic file (type png)
 <use Figures/sample_pairplot.png>
-Package pdftex.def Info: Figures/sample_pairplot.png  used on input line 536.
+Package pdftex.def Info: Figures/sample_pairplot.png  used on input line 552.
 (pdftex.def)             Requested size: 402.32022pt x 374.328pt.
- [20 <./Figures/sample_pairplot.png>]
-<Figures/sample_correlation_matrix.png, id=239, 492.1587pt x 407.3619pt>
+ [21 <./Figures/sample_pairplot.png>]
+<Figures/sample_correlation_matrix.png, id=247, 492.1587pt x 407.3619pt>
 File: Figures/sample_correlation_matrix.png Graphic file (type png)
 <use Figures/sample_correlation_matrix.png>
-Package pdftex.def Info: Figures/sample_correlation_matrix.png  used on input line 551.
+Package pdftex.def Info: Figures/sample_correlation_matrix.png  used on input line 567.
 (pdftex.def)             Requested size: 402.32022pt x 333.00085pt.
-<Figures/sample_point_density_boxplot.png, id=240, 432.4155pt x 327.8649pt>
+<Figures/sample_point_density_boxplot.png, id=248, 432.4155pt x 327.8649pt>
 File: Figures/sample_point_density_boxplot.png Graphic file (type png)
 <use Figures/sample_point_density_boxplot.png>
-Package pdftex.def Info: Figures/sample_point_density_boxplot.png  used on input line 572.
+Package pdftex.def Info: Figures/sample_point_density_boxplot.png  used on input line 588.
 (pdftex.def)             Requested size: 402.32022pt x 305.05127pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[21 <./Figures/sample_correlation_matrix.png>] [22 <./Figures/sample_point_density_boxplot.png>] [23]
-chapter 3.
-[24
-
-]
+[22 <./Figures/sample_correlation_matrix.png>] [23 <./Figures/sample_point_density_boxplot.png>] [24]
 chapter 4.
 [25
 
@@ -1010,12 +1010,12 @@ chapter 6.
 [27
 
 ]
-Overfull \hbox (15.96591pt too wide) in paragraph at lines 669--669
+Overfull \hbox (15.96591pt too wide) in paragraph at lines 685--685
 []\T1/cmr/m/n/12 ^^P  The world's most valu-able re-source is no longer oil, but data,^^Q \T1/cmr/m/it/12 The Economist\T1/cmr/m/n/12 ,
  []
 
 
-Overfull \hbox (4.52322pt too wide) in paragraph at lines 669--669
+Overfull \hbox (4.52322pt too wide) in paragraph at lines 685--685
 []\T1/cmr/m/n/12 T. Petroc, \T1/cmr/m/it/12 Data growth world-wide 2010-2028\T1/cmr/m/n/12 , en. [On-line]. Avail-able: []$\T1/cmtt/m/n/12 https :
  []
 
@@ -1023,57 +1023,57 @@ Overfull \hbox (4.52322pt too wide) in paragraph at lines 669--669
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 789--789
+Underfull \hbox (badness 10000) in paragraph at lines 805--805
 []\T1/cmr/m/n/12 Narrow down
  []
 
 
-Underfull \hbox (badness 1259) in paragraph at lines 789--789
+Underfull \hbox (badness 1259) in paragraph at lines 805--805
 []\T1/cmr/m/n/12 Good for out-lin-ing sec-tions.
  []
 
 
-Underfull \hbox (badness 7504) in paragraph at lines 789--789
+Underfull \hbox (badness 7504) in paragraph at lines 805--805
 []\T1/cmr/m/n/12 Paraphrase con-
  []
 
 
-Underfull \hbox (badness 2903) in paragraph at lines 789--789
+Underfull \hbox (badness 2903) in paragraph at lines 805--805
 []\T1/cmr/m/n/12 Helpful to gen-er-ate con-cise
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 789--789
+Underfull \hbox (badness 10000) in paragraph at lines 805--805
 []\T1/cmr/m/n/12 Write in-tro-duc-
  []
 
 
-Underfull \hbox (badness 1005) in paragraph at lines 789--789
+Underfull \hbox (badness 1005) in paragraph at lines 805--805
 []\T1/cmr/m/n/12 Provided in-spi-ra-tion but re-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 789--789
+Underfull \hbox (badness 10000) in paragraph at lines 805--805
 []\T1/cmr/m/n/12 Used for struc-tur-ing and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 789--789
+Underfull \hbox (badness 10000) in paragraph at lines 805--805
 []\T1/cmr/m/n/12 Helpful for re-for-mu-lat-ing
  []
 
 
-Underfull \hbox (badness 2547) in paragraph at lines 789--789
+Underfull \hbox (badness 2547) in paragraph at lines 805--805
 []\T1/cmr/m/n/12 Revise text for-
  []
 
 
-Underfull \hbox (badness 3078) in paragraph at lines 789--789
+Underfull \hbox (badness 3078) in paragraph at lines 805--805
 []\T1/cmr/m/n/12 Polished sen-tences and im-
  []
 
 
-Underfull \hbox (badness 1454) in paragraph at lines 789--789
+Underfull \hbox (badness 1454) in paragraph at lines 805--805
 []\T1/cmr/m/n/12 Assisted with gram-mar and
  []
 
@@ -1095,18 +1095,18 @@ Package logreq Info: Writing requests to 'Bachelor_Thesis_GPS_Classification.run
 
  ) 
 Here is how much of TeX's memory you used:
- 29913 strings out of 478287
- 539039 string characters out of 5849288
+ 29917 strings out of 478287
+ 539083 string characters out of 5849288
  1346138 words of memory out of 5000000
- 47651 multiletter control sequences out of 15000+600000
+ 47653 multiletter control sequences out of 15000+600000
  479391 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,11n,106p,10675b,3662s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on Bachelor_Thesis_GPS_Classification.pdf (31 pages, 17835867 bytes).
+Output written on Bachelor_Thesis_GPS_Classification.pdf (31 pages, 17836755 bytes).
 PDF statistics:
- 504 PDF objects out of 1000 (max. 8388607)
- 436 compressed objects within 5 object streams
- 108 named destinations out of 1000 (max. 500000)
- 390 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 516 PDF objects out of 1000 (max. 8388607)
+ 448 compressed objects within 5 object streams
+ 110 named destinations out of 1000 (max. 500000)
+ 406 words of extra memory for PDF output out of 10000 (max. 10000000)
 
