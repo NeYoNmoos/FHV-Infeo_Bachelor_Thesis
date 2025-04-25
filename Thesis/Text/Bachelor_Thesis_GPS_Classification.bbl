@@ -20,8 +20,8 @@
 \refsection{0}
   \datalist[entry]{none/global//global/global}
     \entry{noauthor_worlds_nodate}{article}{}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labeltitlesource}{title}
       \field{issn}{0013-0613}
       \field{journaltitle}{The Economist}
@@ -57,8 +57,8 @@
       \strng{authorbibnamehash}{9e45e0156cf6e51d72139afa54b737ff}
       \strng{authornamehash}{9e45e0156cf6e51d72139afa54b737ff}
       \strng{authorfullhash}{9e45e0156cf6e51d72139afa54b737ff}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The total global volume of data is set to explode over the coming years, amounting to an expected 394 zettabytes by 2028, up from just two zettabytes in 2010.}
@@ -82,8 +82,8 @@
       \list{language}{1}{%
         {en}%
       }
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labeltitlesource}{title}
       \field{abstract}{Europe Waste Management Market size was valued at USD 116.21 billion in 2023, and it is projected to reach USD 169.37 billion by 2030, at a CAGR of 4.5\%.}
       \field{title}{Europe {Waste} {Management} {Market} {Size} and {Share} {Analysis} 2030}
@@ -105,8 +105,8 @@
       \list{language}{1}{%
         {en}%
       }
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labeltitlesource}{title}
       \field{abstract}{Waste will drastically outpace population growth by more than double by 2050, according to recent studies. As an essential service to maintain sanitation in urban areas, waste management affects everyone and needs urgent actions.}
       \field{title}{Solid waste management}
@@ -128,8 +128,8 @@
       \list{language}{1}{%
         {de-AT}%
       }
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labeltitlesource}{title}
       \field{abstract}{Kreislaufwirtschaft Eine Kreislaufwirtschaft (englisch circular economy) ist ein regeneratives System, in dem Ressourceneinsatz und Abfallproduktion, Emissionen und Energieverschwendung durch das Verlangsamen, Verringern und Schließen von Energie- und Materialkreisläufen minimiert werden. In unserem Kontext steht die Kreislaufwirtschaft für die Produktion, Sortierung, Sammlung und den Transport von Wertstoffen, recycelbaren Materialien und dem klassischen „Müll“ der in die thermische Verwertung überführt wird. Digitale Revolution Die […]}
       \field{journaltitle}{infeo GmbH}
@@ -146,6 +146,48 @@
       \endverb
       \verb{url}
       \verb https://infeo.at/index.php/revolution/
+      \endverb
+    \endentry
+    \entry{ester_density-based_nodate}{article}{}
+      \name{author}{4}{}{%
+        {{hash=2c062e64ed26aacc08a62155e7944f04}{%
+           family={Ester},
+           familyi={E\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=9559fe65ed2c0877cf14a66fe1f8e9b3}{%
+           family={Kriegel},
+           familyi={K\bibinitperiod},
+           given={Hans-Peter},
+           giveni={H\bibinithyphendelim P\bibinitperiod}}}%
+        {{hash=802157026f850823b2027c2100cb359a}{%
+           family={Sander},
+           familyi={S\bibinitperiod},
+           given={Jörg},
+           giveni={J\bibinitperiod}}}%
+        {{hash=2dda16c0a5d50fc830d0d4a3787937fa}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Xiaowei},
+           giveni={X\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{93f88297c66aca5bc89c3c5131ea9566}
+      \strng{fullhash}{3270dfaa31e8210b3bd04b1bcf4a29a3}
+      \strng{bibnamehash}{3270dfaa31e8210b3bd04b1bcf4a29a3}
+      \strng{authorbibnamehash}{3270dfaa31e8210b3bd04b1bcf4a29a3}
+      \strng{authornamehash}{93f88297c66aca5bc89c3c5131ea9566}
+      \strng{authorfullhash}{3270dfaa31e8210b3bd04b1bcf4a29a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Clustering algorithms are attractive for the task of class identiﬁcation in spatial databases. However, the application to large spatial databases rises the following requirements for clustering algorithms: minimal requirements of domain knowledge to determine the input parameters, discovery of clusters with arbitrary shape and good efﬁciency on large databases. The well-known clustering algorithms offer no solution to the combination of these requirements. In this paper, we present the new clustering algorithm DBSCAN relying on a density-based notion of clusters which is designed to discover clusters of arbitrary shape. DBSCAN requires only one input parameter and supports the user in determining an appropriate value for it. We performed an experimental evaluation of the effectiveness and efﬁciency of DBSCAN using synthetic data and real data of the SEQUOIA 2000 benchmark. The results of our experiments demonstrate that (1) DBSCAN is signiﬁcantly more effective in discovering clusters of arbitrary shape than the well-known algorithm CLARANS, and that (2) DBSCAN outperforms CLARANS by a factor of more than 100 in terms of efﬁciency.}
+      \field{title}{A {Density}-{Based} {Algorithm} for {Discovering} {Clusters} in {Large} {Spatial} {Databases} with {Noise}}
+      \verb{file}
+      \verb PDF:files/42/Ester et al. - A Density-Based Algorithm for Discovering Clusters in Large Spatial Databases with Noise.pdf:application/pdf
       \endverb
     \endentry
   \enddatalist

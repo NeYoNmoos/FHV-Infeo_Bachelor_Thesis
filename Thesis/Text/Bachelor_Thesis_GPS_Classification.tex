@@ -235,6 +235,8 @@ Data Analysis, Machine Learning, Automation
   \acro{API}{Application Programming Interface}
   \acro{CSV}{Comma-Seperated Values}
   \acro{DACH}{Germany, Austria and Switzerland}
+  \acro{DBSCAN}{Density-Based Algorithm for Discovering Clutsers in Large
+    Spatial Databases with Noise}
 \end{acronym}
 
 \chapter{Introduction}
@@ -342,6 +344,78 @@ Notes
 Feature extraction methods using GPS datasets.
 
 \subsection{Clustering Algorithms}
+
+\subsubsection{Density-Based Clustering with DBSCAN}
+
+\textit{DBSCAN} (Density-Based Algorithm for Discovering Clutsers in Large
+Spatial Databases with Noise) was
+introduced by Martin Ester, Hans-Peter Kriegel, Jörg Sander, and Xiowei Xu as
+an algorithm to
+identify
+clusters of arbitrary shape in spatial databases and distinguish noise. It
+relies on the notion of density-reachability among points based on a distance
+threshold \textit{Eps} and a minimum number of points
+\textit{MinPts}.\cite{ester_density-based_nodate}
+
+Let \textit{D} be a database of points and let \textit{dist(p, q)} be the
+distance between points \textit{p} and \textit{q} (typically Euclidean).
+
+\begin{itemize}
+  \item The \textbf{Eps-neighborhood} of a point $p$ is defined as:
+        \[
+          N_{\textit{Eps}}(p) = \{q \in D \mid \textit{dist(p, q)} \leq
+          \textit{Eps} \}
+        \]
+
+  \item A point $p$ is a \textbf{core point} if:
+        \[
+          |N_{\textit{Eps}}(p)| \geq \textit{MinPts}
+        \]
+
+  \item A point $q$ is \textbf{directly density-reachable} from $p$ if:
+        \[
+          q \in N_{\textit{Eps}}(p) \textit{ and } p \textit{ is a core point}
+        \]
+
+        \begin{figure}[htbp]
+          \centering
+
+          \includegraphics[width=0.7\textwidth]{Figures/background/dbscan_core_points_and_border_points.png}
+          \caption{DBSCAN: Core points and border points
+            \cite{ester_density-based_nodate}}
+          \label{fig:dbscan-reachability-and-connectivity}
+        \end{figure}
+
+  \item A point $q$ is \textbf{density-reachable} from $p$ if there is a chain
+        of points
+        $p_1, p_2, ..., p_n$ such that $p_1 = p$, $p_n = q$, and each $p_{i+1}$
+        is
+        directly
+        density-reachable from $p_i$.
+
+  \item Two points $p$ and $q$ are \textbf{density-connected} if there exists a
+        point
+        $o$ such that both $p$ and $q$ are density-reachable from $o$.
+\end{itemize}
+
+\begin{figure}[htbp]
+  \centering
+
+  \includegraphics[width=0.7\textwidth]{Figures/background/dbscan_density_reachability_connectivity.png}
+  \caption{DBSCAN: (a) Density-reachability and (b) density-connectivity
+    \cite{ester_density-based_nodate}}
+  \label{fig:dbscan-reachability-and-connectivity}
+\end{figure}
+
+This concept allows DBSCAN to detect clusters without
+requiring the number of clusters as input, unlike other clustering algorithms
+such as K-Means and CLARANS, making it effective for outlier detection.
+\cite{ester_density-based_nodate}
+
+\subsubsection{k-means Clustering}
+
+\subsubsection{Combining DBSCAN and k-means}
+
 Notes
 DBSCAN, KMEANS, combining both of them
 

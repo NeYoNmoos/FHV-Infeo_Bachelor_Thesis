@@ -2349,17 +2349,24 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">Bachelor_Thesis_GPS_Classification/Bachelor_Thesis_GPS_Classification.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">noauthor_worlds_nodate</bcf:citekey>
-    <bcf:citekey order="2">petroc_data_nodate</bcf:citekey>
-    <bcf:citekey order="3">noauthor_europe_nodate</bcf:citekey>
-    <bcf:citekey order="4">noauthor_solid_nodate</bcf:citekey>
-    <bcf:citekey order="5">noauthor_gemeinsam_nodate</bcf:citekey>
-    <bcf:citekey order="6">noauthor_gemeinsam_nodate</bcf:citekey>
-    <bcf:citekey order="7">noauthor_worlds_nodate</bcf:citekey>
-    <bcf:citekey order="8">petroc_data_nodate</bcf:citekey>
-    <bcf:citekey order="9">noauthor_europe_nodate</bcf:citekey>
-    <bcf:citekey order="10">noauthor_solid_nodate</bcf:citekey>
-    <bcf:citekey order="11">noauthor_gemeinsam_nodate</bcf:citekey>
+    <bcf:citekey order="3">noauthor_worlds_nodate</bcf:citekey>
+    <bcf:citekey order="4">petroc_data_nodate</bcf:citekey>
+    <bcf:citekey order="5">noauthor_europe_nodate</bcf:citekey>
+    <bcf:citekey order="6">noauthor_solid_nodate</bcf:citekey>
+    <bcf:citekey order="7">noauthor_gemeinsam_nodate</bcf:citekey>
+    <bcf:citekey order="8">noauthor_gemeinsam_nodate</bcf:citekey>
+    <bcf:citekey order="9">ester_density-based_nodate</bcf:citekey>
+    <bcf:citekey order="10">ester_density-based_nodate</bcf:citekey>
+    <bcf:citekey order="11">ester_density-based_nodate</bcf:citekey>
+    <bcf:citekey order="12">ester_density-based_nodate</bcf:citekey>
+    <bcf:citekey order="13">ester_density-based_nodate</bcf:citekey>
+    <bcf:citekey order="14">ester_density-based_nodate</bcf:citekey>
+    <bcf:citekey order="15">noauthor_worlds_nodate</bcf:citekey>
+    <bcf:citekey order="16">petroc_data_nodate</bcf:citekey>
+    <bcf:citekey order="17">noauthor_europe_nodate</bcf:citekey>
+    <bcf:citekey order="18">noauthor_solid_nodate</bcf:citekey>
+    <bcf:citekey order="19">noauthor_gemeinsam_nodate</bcf:citekey>
+    <bcf:citekey order="20">ester_density-based_nodate</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

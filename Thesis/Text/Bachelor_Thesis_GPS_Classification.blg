@@ -1,18 +1,18 @@
 [0] Config.pm:307> INFO - This is Biber 2.17
 [0] Config.pm:310> INFO - Logfile is 'Bachelor_Thesis_GPS_Classification.blg'
-[93] biber:340> INFO - === Thu Apr 24, 2025, 17:51:22
-[115] Biber.pm:418> INFO - Reading 'Bachelor_Thesis_GPS_Classification.bcf'
-[192] Biber.pm:972> INFO - Found 5 citekeys in bib section 0
-[207] Biber.pm:4383> INFO - Processing section 0
-[221] Biber.pm:4574> INFO - Looking for bibtex file 'references.bib' for section 0
-[223] bibtex.pm:1713> INFO - LaTeX decoding ...
-[235] bibtex.pm:1518> INFO - Found BibTeX data source 'references.bib'
-[236] Biber.pm:4574> INFO - Looking for bibtex file 'Bachelor_Thesis_GPS_Classification/Bachelor_Thesis_GPS_Classification.bib' for section 0
-[240] bibtex.pm:1713> INFO - LaTeX decoding ...
-[275] bibtex.pm:1518> INFO - Found BibTeX data source 'Bachelor_Thesis_GPS_Classification/Bachelor_Thesis_GPS_Classification.bib'
-[330] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[330] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[331] Biber.pm:4203> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[331] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-US'
-[341] bbl.pm:654> INFO - Writing 'Bachelor_Thesis_GPS_Classification.bbl' with encoding 'UTF-8'
-[344] bbl.pm:757> INFO - Output to Bachelor_Thesis_GPS_Classification.bbl
+[147] biber:340> INFO - === Fri Apr 25, 2025, 11:39:51
+[178] Biber.pm:418> INFO - Reading 'Bachelor_Thesis_GPS_Classification.bcf'
+[268] Biber.pm:972> INFO - Found 6 citekeys in bib section 0
+[293] Biber.pm:4383> INFO - Processing section 0
+[315] Biber.pm:4574> INFO - Looking for bibtex file 'references.bib' for section 0
+[318] bibtex.pm:1713> INFO - LaTeX decoding ...
+[331] bibtex.pm:1518> INFO - Found BibTeX data source 'references.bib'
+[333] Biber.pm:4574> INFO - Looking for bibtex file 'Bachelor_Thesis_GPS_Classification/Bachelor_Thesis_GPS_Classification.bib' for section 0
+[337] bibtex.pm:1713> INFO - LaTeX decoding ...
+[379] bibtex.pm:1518> INFO - Found BibTeX data source 'Bachelor_Thesis_GPS_Classification/Bachelor_Thesis_GPS_Classification.bib'
+[460] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[461] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[461] Biber.pm:4203> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[461] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-US'
+[480] bbl.pm:654> INFO - Writing 'Bachelor_Thesis_GPS_Classification.bbl' with encoding 'UTF-8'
+[486] bbl.pm:757> INFO - Output to Bachelor_Thesis_GPS_Classification.bbl
