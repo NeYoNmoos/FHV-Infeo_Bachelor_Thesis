@@ -3,11 +3,12 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces DBSCAN: Core points and border points \blx@tocontentsinit {0}\cite {ester_density-based_nodate}\relax }}{17}{figure.caption.17}%
 \contentsline {figure}{\numberline {2.2}{\ignorespaces DBSCAN: (a) Density-reachability and (b) density-connectivity \blx@tocontentsinit {0}\cite {ester_density-based_nodate}\relax }}{17}{figure.caption.18}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Comparison: k-means, DBSCAN clustering algorithms \blx@tocontentsinit {0}\cite {noauthor_graph-based_2024}\relax }}{18}{figure.caption.19}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Mapgrid for selected sample trackings\relax }}{21}{figure.caption.21}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Pairplot of selected GPS route features grouped by area label\relax }}{22}{figure.caption.22}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Correlation Matrix of selected GPS route features grouped by area label\relax }}{23}{figure.caption.23}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Boxplot of point density grouped by area label\relax }}{24}{figure.caption.24}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Mapgrid for selected sample trackings\relax }}{22}{figure.caption.22}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Pairplot of selected GPS route features grouped by area label\relax }}{23}{figure.caption.23}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Correlation Matrix of selected GPS route features grouped by area label\relax }}{24}{figure.caption.24}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Boxplot of point density grouped by area label\relax }}{25}{figure.caption.25}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

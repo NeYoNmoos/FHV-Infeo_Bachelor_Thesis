@@ -344,6 +344,13 @@ Notes
 Feature extraction methods using GPS datasets.
 
 \subsection{Clustering Algorithms}
+\begin{quote}
+  ``Clustering is a useful tool in data science. It is a method for
+  finding cluster structure in a data set that is characterized by
+  the greatest similarity within the same cluster and the
+  greatest dissimilarity between different
+  clusters.''\cite{sinaga_pdf_2024}
+\end{quote}
 
 \subsubsection{Density-Based Clustering with DBSCAN}
 
@@ -413,11 +420,56 @@ such as K-Means and CLARANS, making it effective for outlier detection.
 \cite{ester_density-based_nodate}
 
 \subsubsection{k-means Clustering}
+K-Means is the first unsupervised algorithm used to cluster data in an
+euclidean space and is still widely used to partition a dataset
+$ \{x_1, x_2, \dots, x_n\}$ of size
+$n$ into $k \leq n$ sets $S = \{S_1, S_2, \dots, S_k\}$ \cite{sinaga_pdf_2024}
+
+The goal to minimize the within-cluster sum of squares (WCSS) can be shown with
+following function:
+\[
+  J = \sum_{i=1}^{k} \sum_{x_j \in S_i} \| x_j - \mu_i \|^2
+\]
+
+The implementation of the algorithm uses an iterative refinenement technique,
+also known as Lloyd's Algorithm.
+An initial set of \textit{k} means is selected, randomly or are more
+sophisticatedly initialzed in adaptations such as k-means++.
+Then the algorithm repeats the following two steps until the assignments do not
+change and k-means therefore converges:
+
+\begin{enumerate}
+  \item \textbf{Assignment:} Assign each data point to the cluster with the
+        least squared Euclidean distance (mean):
+        \[
+          S_i = \{x_j : \| x_j - \mu_i \|^2 \leq \| x_j - \mu_l \|^2, \,
+          \forall \, 1
+          \leq l \leq k\}
+        \]
+  \item \textbf{Update:} Update the means of data points assigned to each
+        cluster:
+        \[
+          \mu_i = \frac{1}{|S_i|} \sum_{x_j \in S_i} x_j
+        \]
+\end{enumerate}
 
 \subsubsection{Combining DBSCAN and k-means}
+DBSCAN can be used to identify anomalies by dividing the data set into two
+clusters. Cluster 0 with the valid data and cluster -1 with anomalies. Using
+the output of DBSCAN and removing the detected anomaly cluster -1 as the input
+for k-means, a more effective partitioning of the data into k number of groups
+can be achieved.
+Without DBSCAN, k-means clustering will likely assing one cluster to outliers
+of faulty data.
 
-Notes
-DBSCAN, KMEANS, combining both of them
+\begin{figure}[htbp]
+  \centering
+
+  \includegraphics[width=0.7\textwidth]{Figures/background/k-means-and-DBSCAN-clustering-results-on-Chainlink-data-set.png}
+  \caption{Comparison: k-means, DBSCAN clustering algorithms
+    \cite{noauthor_graph-based_2024}}
+  \label{fig:dbscan_against_k-means}
+\end{figure}
 
 \section{Related Work}
 
@@ -555,6 +607,18 @@ Formatvorlage für den Fließtext.
 
 \subsection{Limitations}
 Missing Values: GPS gaps etc, useless trackings etc.
+
+With a lot of data, also comes a lot of unfurbished and faulty data. Through
+communication with
+\textit{infeo GmbH} and through visual examination, it is clear that many
+trackings are not collected properly.
+Since the tracking devices installed on the garbage collecting vehicles are
+operated partly manually,
+some trackings showed GPS tracks only on the parking facility and not in
+operation,
+while others showed that the tracking device being turned on over night, while
+no
+operation was taking place either.
 
 \section{Big Picture}
 Formatvorlage für den Fließtext.
@@ -709,7 +773,8 @@ the data of each tracking category.
 \subsection{Clustering and Pattern Discovery}
 
 Notes:
-First i used kmeans to cluster the data into four clusters, but soon found out
+First i used kmeans (specifically kmeans++ from scikit-klearn python) to
+cluster the data into four clusters, but soon found out
 that cluster two in particular was only contained of outliers.
 I then refined my notebook to first use dbscan clustering to detect outliers
 and remove those from the dataset. Then afterwards use kmeans clustering to
