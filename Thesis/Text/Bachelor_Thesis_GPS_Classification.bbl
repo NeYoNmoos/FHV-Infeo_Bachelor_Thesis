@@ -418,6 +418,25 @@
       \endverb
       \keyw{Computer Science - Machine Learning}
     \endentry
+    \entry{noauthor_route_nodate}{misc}{}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labeltitlesource}{title}
+      \field{title}{Route zum {Nachfahren} bereitstellen – awm}
+      \field{urlday}{5}
+      \field{urlmonth}{6}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Route zum Nachfahren bereitstellen – awm:files/73/Route_zum_Nachfahren_bereitstellen.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://wiki.awm.infeo.at/index.php/Route_zum_Nachfahren_bereitstellen#Aufzeichnung_komprimieren
+      \endverb
+      \verb{url}
+      \verb https://wiki.awm.infeo.at/index.php/Route_zum_Nachfahren_bereitstellen#Aufzeichnung_komprimieren
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

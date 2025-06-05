@@ -46,21 +46,21 @@
 \begin{document}
 
 % evtl. Sperrvermerkseite
-\thispagestyle{empty}
+% \thispagestyle{empty}
 
-\noindent
-[Achtung: Verwenden Sie einen Sperrvermerk nur in sehr gut begründeten Fällen
-]
+% \noindent
+% [Achtung: Verwenden Sie einen Sperrvermerk nur in sehr gut begründeten Fällen
+% ]
 
-\section*{[evtl. Sperrvermerk]}   % evtl. ersetzen durch \section*{Sperrvermerk}
-Die vorliegende Arbeit ist bis zum [DATUM] für die öffentliche Nutzung zu
-sperren. Veröffentlichung, Vervielfältigung und Einsichtnahme sind ohne meine
-ausdrückliche Genehmigung nicht gestattet. Der Titel der Arbeit sowie das
-Kurzreferat/Abstract dürfen veröffentlicht werden.
+% \section*{[evtl. Sperrvermerk]}   % evtl. ersetzen durch \section*{Sperrvermerk}
+% Die vorliegende Arbeit ist bis zum [DATUM] für die öffentliche Nutzung zu
+% sperren. Veröffentlichung, Vervielfältigung und Einsichtnahme sind ohne meine
+% ausdrückliche Genehmigung nicht gestattet. Der Titel der Arbeit sowie das
+% Kurzreferat/Abstract dürfen veröffentlicht werden.
 
-\vspace{3cm}
+% \vspace{3cm}
 
-\noindent Dornbirn, \hfill Unterschrift Verfasser*in
+% \noindent Dornbirn, \hfill Unterschrift Verfasser*in
 
 % Titelblatt:
 % \newpage\mbox{}\newpage
@@ -203,10 +203,10 @@ GPS Data Classification, Waste Management, Artificial Intelligence, Geographic
 Data Analysis, Machine Learning, Automation
 
 % evtl. Vorwort:
-\newpage
-\section*{Preface}   % evtl. ersetzen durch \section*{Widmung}
+% \newpage
+% \section*{Preface}   % evtl. ersetzen durch \section*{Widmung}
 
- [Preface Text]
+%  [Preface Text]
 
 % Inhaltsverzeichnis:
 \cleardoublepage   % force output to a right page
@@ -247,7 +247,7 @@ Data Analysis, Machine Learning, Automation
 \end{quote}
 In today's digital age, where electronic devices are a part of everyones daily
 lives, increasing amounts of data
-are being generating every day, and this trend shows no signs of slowing down.
+are being generated every day, and this trend shows no signs of slowing down.
 \cite{petroc_data_nodate}
 With this increase in data, businesses ranging across all industries recognize
 the importance of leveraging it for decision-making and operational efficiency.
@@ -417,6 +417,7 @@ distance between points \textit{p} and \textit{q} (typically Euclidean).
     \cite{ester_density-based_nodate}}
   \label{fig:dbscan-reachability-and-connectivity}
 \end{figure}
+\FloatBarrier
 
 This concept allows DBSCAN to detect clusters without
 requiring the number of clusters as input, unlike other clustering algorithms
@@ -463,7 +464,7 @@ clusters. Cluster 0 with the valid data and cluster -1 with anomalies. Using
 the output of DBSCAN and removing the detected anomaly cluster -1 as the input
 for k-means, a more effective partitioning of the data into k number of groups
 can be achieved.
-Without DBSCAN, k-means clustering will likely assing one cluster to outliers
+Without DBSCAN, k-means clustering will likely assign one cluster to outliers
 of faulty data.
 
 \begin{figure}[htbp]
@@ -474,6 +475,7 @@ of faulty data.
     \cite{liang_graph-based_2024}}
   \label{fig:dbscan_against_k-means}
 \end{figure}
+\FloatBarrier
 
 \section{Related Work}
 GPS-Data analysis and classificatino has been studied in various sutdies and
@@ -494,22 +496,22 @@ normalization.
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=\textwidth]{Figures/related_work/etemad_pipeline.png}
-  \caption{Steps of the proposed framework for predicting of transportation
-    modes by Etemad et al.~\cite{etemad_predicting_2018}}
+  \caption{Steps of the framework for predicting of transportation
+    modes proposed by Etemad et al.~\cite{etemad_predicting_2018}}
   \label{fig:etemad_framework_prediction}
 \end{figure}
+\FloatBarrier
 
 Their framework achieves competitive results with the
 classifier scoring 96.5\% accuracy and a f1 score of 96.3\%. The study shows
 the
 importance of noise reduction and feature engineering when working with GPS
-trace data.
+trace data.~\cite{etemad_predicting_2018}
 
 While their work focuses on the classification of transportation modes (e.g.,
 walking, bike, car, etc.), the techniques used for extracting features and
 noise reduction, are also applicable for the structural classification of waste
 collection routes, which is the focus of this thesis.
-\cite{etemad_predicting_2018}
 
 \subsection{Clustering of GPS Data using Distance-based Features}
 Koh et al.~\cite{koh_clustering_2022} present a framework to cluster users
@@ -538,6 +540,7 @@ percentage of trips to each POI category).~\cite{koh_clustering_2022}
     al.~\cite{koh_clustering_2022}}
   \label{fig:koh_clustering_framework}
 \end{figure}
+\FloatBarrier
 
 The work of Koh et al. shows that meaningful patterns can be extracted from GPS
 data using unsupervised clustering methods. This approach is highly relevent
@@ -554,7 +557,51 @@ waste collection vehicles.
 
 \chapter{Problem Definition and Solution Approach}
 
+\section{Big Picture}
+
+GPS trackings are collected by waste collection vehicles during real-world
+operation in the DACH region.
+These raw trackings are compressed by \textit{infeo GmbH} to reduce storage
+size while
+keeping necessary route information, and then saved in a centralized database.
+The data provided is a subset approved by \textit{infeo GmbH} for analysis in
+this thesis.
+
+The aim of this thesis is to develop a pipeline that can autoamtically classify
+GPS trackings to four categories (e.g., rural, town, suburban and urban).
+
+The proposed solution follows a high-level workflow with the following steps:
+
+\begin{enumerate}
+  \item \textbf{Data Preperation}: Data is cleaned and filtered to remove
+        invalid or incomplete trackings.
+  \item \textbf{Feature Extraction}: Meaningful features such as point density
+        and bounding box area are calculated for each tracking.
+  \item \textbf{Outlier Detection}: Secondary detection of invalid trackings
+        and trackings that significantly deviate from expected patterns are
+        removed
+        using density-based clustering (DBSCAN).
+  \item \textbf{Clustering}: The cleaned tracking data is grouped into four
+        clusters based on similarity using K-Means.
+  \item \textbf{Classification}: A Classifier is trained to generalize the
+        clustering results and allow automated classification of new trackings.
+\end{enumerate}
+
+% Image eventually to detailed for big picture -> might use further down with implementation
+\begin{figure}[htbp]
+  \centering
+
+  \includegraphics[width=\textwidth]{Diagrams/drawio/big_picture.png}
+  \caption{High-level overview of training the GPS track classifier}
+  \label{fig:big_picture_diagram}
+\end{figure}
+\FloatBarrier
+
 \section{Description of the Dataset}
+Gaining an understanding of the provided data structure is crucial for
+identifying the available information and its limitations.
+This analysis enables the derivation of meaningful features and which types of
+information can be extracted from the dataset, and which cannot.
 
 \subsection{Overview}
 The dataset used is a collection of GPS tracking data collected by
@@ -680,7 +727,52 @@ Each GPS point contains the following fields:
 
 \clearpage
 \subsection{Size and Coverage}
-Formatvorlage für den Fließtext.
+
+The dataset consists of 91,452 individual trackings with a combined number of
+123,785,460 waypoints.
+Trackings were recorded by waste collection vehicles operating in the DACH
+region.
+
+\subsection{Data compression}
+The dataset used in this thesis is pre-compressed internaly by \textit{infeo
+  GmbH} while keeping essential route information~\cite{noauthor_route_nodate}:
+
+\begin{enumerate}
+  \item \textbf{Delete same waypoints}: Consecutive waypoints with identical
+        GPS position are deleted.
+  \item \textbf{Delete waypoints with distance smaller than (x)}: Delete all
+        Consecutive waypoints with a distance to each other of less than (x)
+        meters.
+  \item \textbf{Delete waypoints with path curvature smaller than
+          (x)\textsuperscript{s}}: For every group of three consecutive
+        waypoints \( A \), \( B \), and \( C \), the middle point \( B \) is
+        deleted if
+        all the following criteria are met:
+        \begin{enumerate}
+          \item The distance \( \overline{AB} \) is less than a specified
+                threshold (e.g., 100 meters), \textbf{or} \( \overline{BC} \)
+                is less than the
+                threshold.
+          \item The distance \( \overline{AC} \) is less than a specified
+                threshold (e.g., 1000 meters).
+          \item The change in heading \( \alpha \) between segments \(
+                \overline{AB} \) and \( \overline{BC} \) is smaller than a
+                defined angle (e.g.,
+                \(10^\circ\)).
+        \end{enumerate}
+        \begin{figure}[H]
+          \centering
+          \vspace{-1em}
+
+          \includegraphics[width=0.7\textwidth]{Figures/problem_definition/Aufzeichnune-komprimieren-winkelreduktion.png}
+          \caption{Waypoint curvature calculation used for compression by
+            \textit{infeo GmbH}}~\cite{noauthor_route_nodate}
+          \label{fig:waypoint_curvature_calculation}
+          \vspace{-1em}
+        \end{figure}
+        \FloatBarrier
+
+\end{enumerate}
 
 \subsection{Limitations}
 Missing Values: GPS gaps etc, useless trackings etc.
@@ -691,14 +783,11 @@ communication with
 trackings are not collected properly.
 Since the tracking devices installed on the garbage collecting vehicles are
 operated partly manually,
-some trackings showed GPS tracks only on the parking facility and not in
+some trackings show GPS tracks only on the parking facility and not in
 operation,
-while others showed that the tracking device being turned on over night, while
+while others show that the tracking device being turned on over night, while
 no
-operation was taking place either.
-
-\section{Big Picture}
-Formatvorlage für den Fließtext.
+operation are taking place either.
 
 \section{Dataset Analysis}
 Formatvorlage für den Fließtext.
@@ -893,11 +982,11 @@ Formatvorlage für den Fließtext.
 \section{Limitations}
 Formatvorlage für den Fließtext.
 
-% Literaturverzeichnis:
-% \clearpage
-% \phantomsection
-% \addcontentsline{toc}{chapter}{Literaturverzeichnis}
-% \printbibliography
+Literaturverzeichnis:
+\clearpage
+\phantomsection
+\addcontentsline{toc}{chapter}{Literaturverzeichnis}
+\printbibliography
 
 % \chapter*{[evtl. Anhang]}  % evtl. ersetzen mit \chapter*{Anhang}
 % \addcontentsline{toc}{chapter}{[evtl. Anhang]}
