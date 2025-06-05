@@ -2349,30 +2349,40 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">Bachelor_Thesis_GPS_Classification/Bachelor_Thesis_GPS_Classification.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="4">noauthor_worlds_nodate</bcf:citekey>
-    <bcf:citekey order="5">petroc_data_nodate</bcf:citekey>
-    <bcf:citekey order="6">noauthor_europe_nodate</bcf:citekey>
-    <bcf:citekey order="7">noauthor_solid_nodate</bcf:citekey>
-    <bcf:citekey order="8">noauthor_gemeinsam_nodate</bcf:citekey>
-    <bcf:citekey order="9">noauthor_gemeinsam_nodate</bcf:citekey>
-    <bcf:citekey order="10">sinaga_pdf_2024</bcf:citekey>
-    <bcf:citekey order="11">ester_density-based_nodate</bcf:citekey>
-    <bcf:citekey order="12">ester_density-based_nodate</bcf:citekey>
+    <bcf:citekey order="6">noauthor_worlds_nodate</bcf:citekey>
+    <bcf:citekey order="7">petroc_data_nodate</bcf:citekey>
+    <bcf:citekey order="8">noauthor_europe_nodate</bcf:citekey>
+    <bcf:citekey order="9">noauthor_solid_nodate</bcf:citekey>
+    <bcf:citekey order="10">noauthor_gemeinsam_nodate</bcf:citekey>
+    <bcf:citekey order="11">noauthor_gemeinsam_nodate</bcf:citekey>
+    <bcf:citekey order="12">sinaga_pdf_2024</bcf:citekey>
     <bcf:citekey order="13">ester_density-based_nodate</bcf:citekey>
     <bcf:citekey order="14">ester_density-based_nodate</bcf:citekey>
     <bcf:citekey order="15">ester_density-based_nodate</bcf:citekey>
     <bcf:citekey order="16">ester_density-based_nodate</bcf:citekey>
-    <bcf:citekey order="17">sinaga_pdf_2024</bcf:citekey>
-    <bcf:citekey order="18">noauthor_graph-based_2024</bcf:citekey>
-    <bcf:citekey order="19">noauthor_graph-based_2024</bcf:citekey>
-    <bcf:citekey order="20">noauthor_worlds_nodate</bcf:citekey>
-    <bcf:citekey order="21">petroc_data_nodate</bcf:citekey>
-    <bcf:citekey order="22">noauthor_europe_nodate</bcf:citekey>
-    <bcf:citekey order="23">noauthor_solid_nodate</bcf:citekey>
-    <bcf:citekey order="24">noauthor_gemeinsam_nodate</bcf:citekey>
-    <bcf:citekey order="25">sinaga_pdf_2024</bcf:citekey>
-    <bcf:citekey order="26">ester_density-based_nodate</bcf:citekey>
-    <bcf:citekey order="27">noauthor_graph-based_2024</bcf:citekey>
+    <bcf:citekey order="17">ester_density-based_nodate</bcf:citekey>
+    <bcf:citekey order="18">ester_density-based_nodate</bcf:citekey>
+    <bcf:citekey order="19">sinaga_pdf_2024</bcf:citekey>
+    <bcf:citekey order="20">liang_graph-based_2024</bcf:citekey>
+    <bcf:citekey order="21">liang_graph-based_2024</bcf:citekey>
+    <bcf:citekey order="22">etemad_predicting_2018</bcf:citekey>
+    <bcf:citekey order="23">etemad_predicting_2018</bcf:citekey>
+    <bcf:citekey order="24">etemad_predicting_2018</bcf:citekey>
+    <bcf:citekey order="25">etemad_predicting_2018</bcf:citekey>
+    <bcf:citekey order="26">koh_clustering_2022</bcf:citekey>
+    <bcf:citekey order="27">koh_clustering_2022</bcf:citekey>
+    <bcf:citekey order="28">koh_clustering_2022</bcf:citekey>
+    <bcf:citekey order="29">koh_clustering_2022</bcf:citekey>
+    <bcf:citekey order="30">noauthor_worlds_nodate</bcf:citekey>
+    <bcf:citekey order="31">petroc_data_nodate</bcf:citekey>
+    <bcf:citekey order="32">noauthor_europe_nodate</bcf:citekey>
+    <bcf:citekey order="33">noauthor_solid_nodate</bcf:citekey>
+    <bcf:citekey order="34">noauthor_gemeinsam_nodate</bcf:citekey>
+    <bcf:citekey order="35">sinaga_pdf_2024</bcf:citekey>
+    <bcf:citekey order="36">ester_density-based_nodate</bcf:citekey>
+    <bcf:citekey order="37">liang_graph-based_2024</bcf:citekey>
+    <bcf:citekey order="38">etemad_predicting_2018</bcf:citekey>
+    <bcf:citekey order="39">koh_clustering_2022</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
@@ -2381,13 +2391,4 @@
     </bcf:sort>
   </bcf:sortingtemplate>
   <!-- DATALISTS -->
-  <bcf:datalist section="0"
-                name="none/global//global/global"
-                type="entry"
-                sortingtemplatename="none"
-                sortingnamekeytemplatename="global"
-                labelprefix=""
-                uniquenametemplatename="global"
-                labelalphanametemplatename="global">
-  </bcf:datalist>
 </bcf:controlfile>

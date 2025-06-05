@@ -471,13 +471,86 @@ of faulty data.
 
   \includegraphics[width=0.7\textwidth]{Figures/background/k-means-and-DBSCAN-clustering-results-on-Chainlink-data-set.png}
   \caption{Comparison: k-means, DBSCAN clustering algorithms
-    \cite{noauthor_graph-based_2024}}
+    \cite{liang_graph-based_2024}}
   \label{fig:dbscan_against_k-means}
 \end{figure}
 
 \section{Related Work}
+GPS-Data analysis and classificatino has been studied in various sutdies and
+projects, such as indetifying transportation modes or movement behavior.
+This section highlights related approaches to the classification and comparison
+of
+GPS data are relevant to the problem of this thesis.
 
-\subsection{Comparison of GPS-Routes}
+\subsection{Transportation Mode Prediction with Feature Engineering}
+Etemad, Soared and Matwin \cite{etemad_predicting_2018} propose a five step
+framework to predict the
+underlying transportation mode from GPS traces. The steps of this framewok
+include in order the preparation of data, point feature extraction (e.g.,
+distance, speed, bearing rate and its derivatitves), trajectory feature
+extraction (e.g., min, max, mean and std., percentiles), noise removal and
+normalization.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth]{Figures/related_work/etemad_pipeline.png}
+  \caption{Steps of the proposed framework for predicting of transportation
+    modes by Etemad et al.~\cite{etemad_predicting_2018}}
+  \label{fig:etemad_framework_prediction}
+\end{figure}
+
+Their framework achieves competitive results with the
+classifier scoring 96.5\% accuracy and a f1 score of 96.3\%. The study shows
+the
+importance of noise reduction and feature engineering when working with GPS
+trace data.
+
+While their work focuses on the classification of transportation modes (e.g.,
+walking, bike, car, etc.), the techniques used for extracting features and
+noise reduction, are also applicable for the structural classification of waste
+collection routes, which is the focus of this thesis.
+\cite{etemad_predicting_2018}
+
+\subsection{Clustering of GPS Data using Distance-based Features}
+Koh et al.~\cite{koh_clustering_2022} present a framework to cluster users
+based on their movement patterns captured via an application on their mobile
+phones.
+The authors proposes a new metric, \textit{Daily Characteristic Dinstance
+  (DCD)},
+which is used to create a fair comparison between working and nonworking users
+on on workdays and offdays and extract features in combination with
+\textit{Origin-Destination (OD)} matrix features.
+
+The features derived from the DCD are combined with OD matrix
+features
+and are used in a k-means clustering algorithm to group the users into three
+behavior groups. The study analyses the resulting clusters with two newly
+proposed
+metrics: \textit{User Commonality} (percenctage of users that visited each
+point of interest (POI) category) and \textit{Average Frequency} (average
+percentage of trips to each POI category).~\cite{koh_clustering_2022}
+
+\begin{figure}[htbp]
+  \centering
+
+  \includegraphics[width=\textwidth]{Figures/related_work/koh_clustering_framwork_flowchart.png}
+  \caption{Steps of the framework proposed by Koh et
+    al.~\cite{koh_clustering_2022}}
+  \label{fig:koh_clustering_framework}
+\end{figure}
+
+The work of Koh et al. shows that meaningful patterns can be extracted from GPS
+data using unsupervised clustering methods. This approach is highly relevent
+for this thesis,
+as it demonstrates that structural characteristics can be derived from
+engineered features
+and effectively used for clustering and classification. Although the papers
+focus is on
+gps traces of individual people and captures data with mobile phones, the
+underlying methods can
+be applied for identifying patterns and simlaritiess in GPS track data
+collected by
+waste collection vehicles.
 
 \chapter{Problem Definition and Solution Approach}
 
@@ -821,132 +894,132 @@ Formatvorlage für den Fließtext.
 Formatvorlage für den Fließtext.
 
 % Literaturverzeichnis:
-\clearpage
-\phantomsection
-\addcontentsline{toc}{chapter}{Literaturverzeichnis}
-\printbibliography
+% \clearpage
+% \phantomsection
+% \addcontentsline{toc}{chapter}{Literaturverzeichnis}
+% \printbibliography
 
-\chapter*{[evtl. Anhang]}  % evtl. ersetzen mit \chapter*{Anhang}
-\addcontentsline{toc}{chapter}{[evtl. Anhang]}
-% evtl. ersetzen mit \addcontentsline{toc}{chapter}{Anhang}
-Formatvorlage für den Fließtext.
+% \chapter*{[evtl. Anhang]}  % evtl. ersetzen mit \chapter*{Anhang}
+% \addcontentsline{toc}{chapter}{[evtl. Anhang]}
+% % evtl. ersetzen mit \addcontentsline{toc}{chapter}{Anhang}
+% Formatvorlage für den Fließtext.
 
-\section{Use of AI tools}
+% \section{Use of AI tools}
 
-\begin{table}[h]
-  \centering
-  \caption{Use of AI tools during the creation process}
-  \label{tab:ai_usage}
-  \resizebox{\textwidth}{!}{%
-    \begin{tabular}{|p{3.2cm}|c|c|p{5.5cm}|}
-      \hline
-      \textbf{Working step}                  & \textbf{AI used}
-                                             & \textbf{AI
-      tool(s)}                               &
-      \textbf{Experiences / recommendations / irritations}
-      \\
-      \hline
-      Find a topic idea                      & no
-                                             & -
-                                             & -
-      \\
-      \hline
-      Narrow down topic / Formulate question & no
-                                             & -
-                                             & -
-      \\
-      \hline
-      Find sources                           & yes
-                                             & OpenAI GPT-4o
-                                             & Helped identify relevant
-      keywords and
-      topic clusters.
-      \\
-      \hline
-      Explain terms                          & yes
-                                             & OpenAI GPT-4o
-                                             & Useful for quick definitions and
-      simple explanations.
-      \\
-      \hline
-      Design text structure                  & yes
-                                             & OpenAI GPT-4o
-                                             & Good for outlining sections.
-      Required manual adjustments.
-      \\
-      \hline
-      Have content read aloud                & no
-                                             & -
-                                             & -
-      \\
-      \hline
-      Translate content                      & no
-                                             & -
-                                             & -
-      \\
-      \hline
-      Dictate content                        & no
-                                             & -
-                                             & -
-      \\
-      \hline
-      Paraphrase content, summarise          & yes
-                                             & OpenAI GPT-4o
-                                             & Helpful to generate
-      concise summaries of long text.
-      \\
-      \hline
-      Write introduction                     & yes
-                                             & OpenAI GPT-4o
-                                             & Provided inspiration but
-      required rewording.
-      \\
-      \hline
-      Write main chapter                     & yes
-                                             & OpenAI GPT-4o
-                                             & Used for structuring and
-      rephrasing, not full writing.
-      \\
-      \hline
-      Write a summary                        & yes
-                                             & OpenAI GPT-4o
-                                             & Used to condense main points
-      effectively.
-      \\
-      \hline
-      Obtain text feedback                   & yes
-                                             & OpenAI GPT-4o
-                                             & Used to review tone, clarity,
-      and consistency.
-      \\
-      \hline
-      Revise text statement                  & yes
-                                             & OpenAI GPT-4o
-                                             & Helpful for reformulating
-      statements.
-      \\
-      \hline
-      Revise text formulation                & yes
-                                             & OpenAI GPT-4o
-                                             & Polished sentences and
-      improved flow.
-      \\
-      \hline
-      Correct text formally                  & yes
-                                             & OpenAI GPT-4o
-                                             & Assisted with grammar and
-      punctuation checking.
-      \\
-      \hline
-      Code generation                        & yes
-                                             & OpenAI GPT-4o, Github Copilot
-                                             & Assisted with generating code
-      and fixing bugs
-      \\
-      \hline
-    \end{tabular}%
-  }
-\end{table}
+% \begin{table}[h]
+%   \centering
+%   \caption{Use of AI tools during the creation process}
+%   \label{tab:ai_usage}
+%   \resizebox{\textwidth}{!}{%
+%     \begin{tabular}{|p{3.2cm}|c|c|p{5.5cm}|}
+%       \hline
+%       \textbf{Working step}                  & \textbf{AI used}
+%                                              & \textbf{AI
+%       tool(s)}                               &
+%       \textbf{Experiences / recommendations / irritations}
+%       \\
+%       \hline
+%       Find a topic idea                      & no
+%                                              & -
+%                                              & -
+%       \\
+%       \hline
+%       Narrow down topic / Formulate question & no
+%                                              & -
+%                                              & -
+%       \\
+%       \hline
+%       Find sources                           & yes
+%                                              & OpenAI GPT-4o
+%                                              & Helped identify relevant
+%       keywords and
+%       topic clusters.
+%       \\
+%       \hline
+%       Explain terms                          & yes
+%                                              & OpenAI GPT-4o
+%                                              & Useful for quick definitions and
+%       simple explanations.
+%       \\
+%       \hline
+%       Design text structure                  & yes
+%                                              & OpenAI GPT-4o
+%                                              & Good for outlining sections.
+%       Required manual adjustments.
+%       \\
+%       \hline
+%       Have content read aloud                & no
+%                                              & -
+%                                              & -
+%       \\
+%       \hline
+%       Translate content                      & no
+%                                              & -
+%                                              & -
+%       \\
+%       \hline
+%       Dictate content                        & no
+%                                              & -
+%                                              & -
+%       \\
+%       \hline
+%       Paraphrase content, summarise          & yes
+%                                              & OpenAI GPT-4o
+%                                              & Helpful to generate
+%       concise summaries of long text.
+%       \\
+%       \hline
+%       Write introduction                     & yes
+%                                              & OpenAI GPT-4o
+%                                              & Provided inspiration but
+%       required rewording.
+%       \\
+%       \hline
+%       Write main chapter                     & yes
+%                                              & OpenAI GPT-4o
+%                                              & Used for structuring and
+%       rephrasing, not full writing.
+%       \\
+%       \hline
+%       Write a summary                        & yes
+%                                              & OpenAI GPT-4o
+%                                              & Used to condense main points
+%       effectively.
+%       \\
+%       \hline
+%       Obtain text feedback                   & yes
+%                                              & OpenAI GPT-4o
+%                                              & Used to review tone, clarity,
+%       and consistency.
+%       \\
+%       \hline
+%       Revise text statement                  & yes
+%                                              & OpenAI GPT-4o
+%                                              & Helpful for reformulating
+%       statements.
+%       \\
+%       \hline
+%       Revise text formulation                & yes
+%                                              & OpenAI GPT-4o
+%                                              & Polished sentences and
+%       improved flow.
+%       \\
+%       \hline
+%       Correct text formally                  & yes
+%                                              & OpenAI GPT-4o
+%                                              & Assisted with grammar and
+%       punctuation checking.
+%       \\
+%       \hline
+%       Code generation                        & yes
+%                                              & OpenAI GPT-4o, Github Copilot
+%                                              & Assisted with generating code
+%       and fixing bugs
+%       \\
+%       \hline
+%     \end{tabular}%
+%   }
+% \end{table}
 
 \chapter*{Affidavit}
 \addcontentsline{toc}{chapter}{Affidavit}
