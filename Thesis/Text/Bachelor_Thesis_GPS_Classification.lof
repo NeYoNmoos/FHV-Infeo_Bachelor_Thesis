@@ -8,12 +8,13 @@
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Steps of the framework proposed by Koh et al.~\blx@tocontentsinit {0}\cite {koh_clustering_2022}\relax }}{16}{figure.caption.19}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces High-level overview of training the GPS track classifier\relax }}{18}{figure.caption.20}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Waypoint curvature calculation used for compression by \textit {infeo GmbH}\relax }}{20}{figure.caption.23}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Mapgrid for selected sample trackings\relax }}{22}{figure.caption.24}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Pairplot of selected GPS route features grouped by area label\relax }}{23}{figure.caption.25}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Correlation Matrix of selected GPS route features grouped by area label\relax }}{24}{figure.caption.26}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Boxplot of point density grouped by area label\relax }}{25}{figure.caption.27}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Waypoint curvature calculation used for compression by \textit {infeo GmbH}\relax }}{21}{figure.caption.23}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Mapgrid for selected sample trackings\relax }}{23}{figure.caption.24}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Pairplot of selected GPS route features grouped by area label\relax }}{24}{figure.caption.25}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Correlation Matrix of selected GPS route features grouped by area label\relax }}{25}{figure.caption.26}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Boxplot of point density grouped by area label\relax }}{26}{figure.caption.27}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Big picture implementation pipeline\relax }}{30}{figure.caption.28}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

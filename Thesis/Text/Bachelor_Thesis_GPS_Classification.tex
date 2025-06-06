@@ -591,7 +591,7 @@ The proposed solution follows a high-level workflow with the following steps:
 \begin{figure}[htbp]
   \centering
 
-  \includegraphics[width=\textwidth]{Diagrams/drawio/big_picture.png}
+  \includegraphics[width=0.8\textwidth]{Diagrams/drawio/big_picture.png}
   \caption{High-level overview of training the GPS track classifier}
   \label{fig:big_picture_diagram}
 \end{figure}
@@ -1051,7 +1051,95 @@ address the objective of classifying GPS trackings into structural categories.
 \chapter{Implementation}
 
 \section{Implementation of the Big Picture}
-Formatvorlage für den Fließtext.
+
+% oal: Translate the conceptual steps (from the big picture diagram) into real
+% implementation stages.
+
+% Bullet Points:
+
+% Refer back to the high-level diagram from Chapter 3.
+
+% Describe how each step (preprocessing, feature extraction, clustering,
+% classification) is implemented in code (Python).
+
+% Mention tools/libraries used: pandas, scikit-learn, geopy, DBSCAN, etc.
+
+% Include a graphic: re-use or simplify the big-picture pipeline (could annotate
+% it with function/module names).
+
+% Optionally show a small code snippet or function signature for each step.
+
+\begin{figure}[htbp]
+  \centering
+
+  \includegraphics[width=\textwidth]{Diagrams/drawio/big_picture_implementation.png}
+  \caption{Big picture implementation pipeline}
+  \label{fig:big_picture_implemetation_diagram}
+\end{figure}
+\FloatBarrier
+
+\section{Data Handling and Preprocessing}
+Preprocessing is a crucial step in the machine learning pipeline.
+
+Each row in the dataset is a single GPS waypoint and consist of the following
+columns:
+
+\begin{itemize}
+  \item \textbf{id\_tracking:}
+  \item \textbf{sequence:}
+  \item \textbf{latitude:}
+  \item \textbf{longitude:}
+  \item \textbf{speed:}
+  \item \textbf{tracking\_duration:}
+  \item \textbf{tracking\_length:}
+\end{itemize}
+
+\subsection{Loading and Structuring the Dataset}
+
+\subsection{Filtering Faulty Trackings}
+The raw data included many invalid or irrelevant trackings that could impact
+the analysis and clustering. These trackings were removed based on these
+criteria:
+
+\begin{itemize}
+  \item \textbf{Duration Filter:} Trackings shorter than 30 minutes or longer
+        than 10 hours were excluded.
+  \item \textbf{Length Filter:} Trackings with a total length lower than 50 km
+        or above 850km were excluded.
+  \item \textbf{Minimal Waypoint Count:} Trackings with less than 10 recorded
+        waypoints were excluded.
+  \item \textbf{Minimal Bounding Box:} Trackings with a bounding box smaller
+        than about 50 meters in latitude or longitude were excluded. This was a
+        helpful
+        step to reduce the amount of trackings that were exclusively recorded
+        in a
+        parking lot.
+\end{itemize}
+
+The filters were included directly in the SQL query during the data loading, to
+reduce the amount of data stored and reduce computation time of further steps.
+
+\section{Feature Extraction}
+
+\subsection{Available Metadata Features}
+
+\subsection{Computed Features from Waypoints}
+
+\subsection{Feature Storage and Output}
+
+\section{Clustering Implementation}
+
+\subsection{DBSCAN for Outlier Removal}
+
+\subsection{K-Means++ for Category Discovery}
+
+\section{Classification Model}
+
+\subsection{Model Selection and Training}
+
+\subsection{Feature Importance Analysis}
+
+\subsection{Saving and Exporting the Classifier}
 
 \section{Integration with existing systems}
 Formatvorlage für den Fließtext.
