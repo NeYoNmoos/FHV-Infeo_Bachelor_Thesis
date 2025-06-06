@@ -573,17 +573,17 @@ GPS trackings to four categories (e.g., rural, town, suburban and urban).
 The proposed solution follows a high-level workflow with the following steps:
 
 \begin{enumerate}
-  \item \textbf{Data Preperation}: Data is cleaned and filtered to remove
+  \item \textbf{Data Preperation:} Data is cleaned and filtered to remove
         invalid or incomplete trackings.
-  \item \textbf{Feature Extraction}: Meaningful features such as point density
+  \item \textbf{Feature Extraction:} Meaningful features such as point density
         and bounding box area are calculated for each tracking.
-  \item \textbf{Outlier Detection}: Secondary detection of invalid trackings
+  \item \textbf{Outlier Detection:} Secondary detection of invalid trackings
         and trackings that significantly deviate from expected patterns are
         removed
         using density-based clustering (DBSCAN).
-  \item \textbf{Clustering}: The cleaned tracking data is grouped into four
+  \item \textbf{Clustering:} The cleaned tracking data is grouped into four
         clusters based on similarity using K-Means.
-  \item \textbf{Classification}: A Classifier is trained to generalize the
+  \item \textbf{Classification:} A Classifier is trained to generalize the
         clustering results and allow automated classification of new trackings.
 \end{enumerate}
 
@@ -738,13 +738,13 @@ The dataset used in this thesis is pre-compressed internaly by \textit{infeo
   GmbH} while keeping essential route information~\cite{noauthor_route_nodate}:
 
 \begin{enumerate}
-  \item \textbf{Delete same waypoints}: Consecutive waypoints with identical
+  \item \textbf{Delete same waypoints:} Consecutive waypoints with identical
         GPS position are deleted.
-  \item \textbf{Delete waypoints with distance smaller than (x)}: Delete all
+  \item \textbf{Delete waypoints with distance smaller than (x):} Delete all
         Consecutive waypoints with a distance to each other of less than (x)
         meters.
   \item \textbf{Delete waypoints with path curvature smaller than
-          (x)\textsuperscript{s}}: For every group of three consecutive
+          (x)\textsuperscript{s}:} For every group of three consecutive
         waypoints \( A \), \( B \), and \( C \), the middle point \( B \) is
         deleted if
         all the following criteria are met:
@@ -904,6 +904,14 @@ This validates that the point density is a strong feature for classifying
 trackings to the four labels.
 
 \section{Solution Approach}
+This chapter outlines the methods used to analyse and claaify the GPS tracking
+data collected by waste collection vehicles.
+The approach is structured in multiple stages, beginning with exploratory data
+analysis, proceeding with feature extraction, data cleaning, outlier detection,
+clustering and finally training a classifier.
+The goal is to identify tracking patterns that allow for structural
+classification of trackings into four categories: Urban, Suburban, Town and
+Rural.
 
 \subsection{Exploratory Data Analysis}
 
@@ -933,28 +941,113 @@ analysis helped transfer the visual distinction to clear differences found in
 the data of each tracking category.
 
 \subsection{Feature Extraction from Sample Dataset}
+To enable the use of machine learning algorithms, each tracking originally
+represented by a consecutive list of GPS waypoints with latitude and longitude
+must be transformed into feature vectors. Feature extraction methods were
+applied to derive representative metrics for each tracking.
+
+This approach is well established and used in similar studies such as the
+classification
+of transportation modes by Etemad et al.~\cite{etemad_predicting_2018} and
+clustering of GPS data using distance-based features by Koh et
+al.~\cite{koh_clustering_2022}
+
+\subsubsection{Features Available in Trackings}
+
+\begin{enumerate}
+  \item \textbf{Length:} Total distance of the route, in kilometers.
+  \item \textbf{Duration:} Total time spent for the trackings, captured in
+        nanoseconds (converted to seconds).
+\end{enumerate}
+
+\subsubsection{Features Extracted from Waypoints}
+
+\begin{enumerate}
+  \item \textbf{Number of Points:} The total number of GPS waypoints recorded
+        in the tracking.
+  \item \textbf{Bounding Box Area:} The area of the minimum bounding box that
+        encloses all latitude and longitude waypoints in one tracking.
+  \item \textbf{Point density:} The number of waypoints divided by the bounding
+        box area. This feature indicates how closes packed the points are.
+  \item \textbf{Average segment distance:} The mean distance between
+        consecutive waypoints, computed using geodisc distance.
+  \item \textbf{Number of Stops:} Waypoints with speed of zero. Originally
+        considered as a potential feature, it was found out to be redundant as
+        most
+        waypoints have a speed of zero.
+\end{enumerate}
 
 \subsection{Filtering and Preprocessing the Full Dataset}
+There are a lot of faulty datapoints that are not relevant for the
+clustering, that are filtered out. Before applying machine learning methods,
+extensive filtering was required to
+remove invalid and irrelevant data from the dataset. These included:
+
+\begin{enumerate}
+  \item Trackings with a too low duration to be realistic collection trackings.
+
+  \item Trackings that recorded movement only in and around a parking lot.
+  \item Trackings left running overnight with no significant movement.
+  \item Trackings with unrealistic GPS jumps and anomalies (possibly due to
+        device errors or compression errors introduced by \textit{infeo GmbH}).
+\end{enumerate}
+
+Removing these faulty datapoints was curcial for ensuring the quality of the
+clustering and reducing the computation times.
 
 \subsection{Clustering and Pattern Discovery}
+To discover patterns in the unlabeled dataset, clustering algorithhms were
+applied.
+Initially, K-Means++ was used to cluster the data into four clusters. However
+the result showed that one cluster mostly consisted of outlier routes, with
+unrealistic GPS jumps.
 
-Notes:
-First i used kmeans (specifically kmeans++ from scikit-klearn python) to
-cluster the data into four clusters, but soon found out
-that cluster two in particular was only contained of outliers.
-I then refined my notebook to first use dbscan clustering to detect outliers
-and remove those from the dataset. Then afterwards use kmeans clustering to
-cluster into the four category clutsers, which gave a way better results that
-without dbscan clustering.
+To solve this issue, the process was improved by detecting and removing
+outliers using DBSCAN (Density-Based Spatial Clustering for Applications with
+Noise). DBSCAN effectively removed most anomalies in the dataset. After
+filtering the outliers with DBSCAN, K-Means++ clustering was applied again,
+resulting clusters that represented the four defined categories better.
 
 \subsection{Training a Classification Model}
+% TODO: need to write more in this section
+To automatically classify new trackings into one of the four categories (Urban,
+Suburban, Town, Rural), a supervised machine learning model was trained using
+the labeled dataset from the clustering step.
 
+The labeled dataset was split into training and test sets using an 80/20 split.
+Evaluation of the classifier on the test sset showed a high overall accuracy.
+
+The trained classifier was saved for the later use in a sandbox API to classify
+new trackings.
+
+% TODO: Determine if the following three sections should be in the thesis or not
 \subsection{Comparison with OSM Geofences}
 
 \subsection{API Integration}
 
 \section{Structure of the Work}
 
+The remainder of this thesis is structured in the following chapters:
+
+\begin{itemize}
+  \item \textbf{Chapter 4: Implementation:} Provides a detailed description of
+        how the previously introduced methos and algorithms were implemented.
+        This
+        includes the data preprocessing, feature extraction, clustering
+        pipeline and
+        classifier training.
+  \item \textbf{Chapter 5: Evaluation and Discussion:} Presents the results of
+        the clustering and classification. Performance metrics, visualizations,
+        and
+        analysis of the results are discussed alongside future reasearch and
+        application.
+  \item \textbf{Chapter 6: Conclusion:} Summarization of the contributions of
+        the thesis, highlighting key takeaways and shortcomings.
+\end{itemize}
+
+This structure follows the development of the project, from understanding the
+problem and analysing the data, to buildinng and evaluating a solution to
+address the objective of classifying GPS trackings into structural categories.
 \chapter{Implementation}
 
 \section{Implementation of the Big Picture}
