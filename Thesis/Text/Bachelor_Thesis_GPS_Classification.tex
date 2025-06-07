@@ -24,6 +24,22 @@
 \usepackage{placeins}
 \usepackage{float} % prevent LaTeX table repositioning
 
+% sql formatting
+\usepackage{listings}
+\usepackage{xcolor}
+\lstdefinestyle{sql}{
+  language=SQL,
+  basicstyle=\ttfamily\small,
+  keywordstyle=\color{blue}\bfseries,
+  commentstyle=\color{gray},
+  stringstyle=\color{orange},
+  morekeywords={SELECT, FROM, WHERE, JOIN, AND, OR, EXISTS, BETWEEN, AS, ON,
+      HAVING},
+  breaklines=true,
+  frame=single,
+  captionpos=b
+}
+
 \usepackage[a-2b,mathxmp]{pdfx}[2018/12/22]
 
 \usepackage[style=ieee,citestyle=ieee,backend=biber]{biblatex}
@@ -653,8 +669,7 @@ Each tracking contains the following fields:
     kilometers.
     \\
     \hline
-    \texttt{duration}    & Integer        & Total duration of the tracking in
-    nanoseconds.
+    \texttt{duration}    & Integer        & Total duration of the tracking.
     \\
     \hline
     \texttt{vehicleId}   & Integer / Null & ID of the vehicle (nullified for
@@ -956,8 +971,7 @@ al.~\cite{koh_clustering_2022}
 
 \begin{enumerate}
   \item \textbf{Length:} Total distance of the route, in kilometers.
-  \item \textbf{Duration:} Total time spent for the trackings, captured in
-        nanoseconds (converted to seconds).
+  \item \textbf{Duration:} Total time spent for the trackings, captured.
 \end{enumerate}
 
 \subsubsection{Features Extracted from Waypoints}
@@ -1085,13 +1099,12 @@ Each row in the dataset is a single GPS waypoint and consist of the following
 columns:
 
 \begin{itemize}
-  \item \textbf{id\_tracking:}
-  \item \textbf{sequence:}
-  \item \textbf{latitude:}
-  \item \textbf{longitude:}
-  \item \textbf{speed:}
-  \item \textbf{tracking\_duration:}
-  \item \textbf{tracking\_length:}
+  \item \textbf{id\_tracking:} Unique identifier for each tracking.
+  \item \textbf{sequence:} The order of the waypoint in the tracking.
+  \item \textbf{latitude/longitude:} GPS coordinates.
+  \item \textbf{speed:} Vehicle speed at the waypoint.
+  \item \textbf{tracking\_duration:} Total time of the tracking.
+  \item \textbf{tracking\_length:} Total dinstance of the tracking in km.
 \end{itemize}
 
 \subsection{Loading and Structuring the Dataset}
@@ -1116,22 +1129,208 @@ criteria:
         parking lot.
 \end{itemize}
 
-The filters were included directly in the SQL query during the data loading, to
-reduce the amount of data stored and reduce computation time of further steps.
+The filters were directly implemented as a SQL query executed in an jupyter
+notebook. This reduced the further computatinal times for clustering and
+training the classifier model. The SQL query implementing these filters looked
+as follows:
+\begin{lstlisting}[style=sql,caption={SQL query used for filtering the GPS tracking dataset},label={lst:sql-filter}]
+  SELECT 
+      wp.id_tracking, wp.id, wp.time, wp.type, wp.sequence, wp.comment, 
+      wp.speed, wp.heading, wp.duration, wp.block_type, wp.log, 
+      wp.latitude, wp.longitude, wp.altitude, wp.meta_tag, wp.meta_value,
+      t.length AS tracking_length, 
+      t.duration AS tracking_duration
+  FROM waypoint wp
+  JOIN tracking t ON wp.id_tracking = t.id
+  WHERE 
+      t.duration BETWEEN 18000000000 AND 360000000000  
+      -- 0.5 to 10 hours
+      AND t.length BETWEEN 50 AND 850  -- 50 to 850 km
+      AND EXISTS (
+          SELECT 1 FROM waypoint w 
+          WHERE w.id_tracking = t.id
+          HAVING COUNT(*) > 10  -- Min. 10 waypoints
+      )
+      AND (
+          (SELECT MAX(latitude) FROM waypoint WHERE id_tracking = t.id) - 
+          (SELECT MIN(latitude) FROM waypoint WHERE id_tracking = t.id)
+      ) > 0.0005  -- Min. ~50m latitude span
+      AND (
+          (SELECT MAX(longitude) FROM waypoint WHERE id_tracking = t.id) - 
+          (SELECT MIN(longitude) FROM waypoint WHERE id_tracking = t.id)
+      ) > 0.0005;  -- Min. ~50m longitude span
+  \end{lstlisting}
+
+Each Filter step reduces the dataset by this many trackings:
+\begin{table}[ht]
+  \centering
+  \begin{tabular}{|l|r|r|r|}
+    \hline
+    \textbf{Filter Step}     & \textbf{Remaining Trackings} &
+    \textbf{Removed}
+                             &
+    \textbf{Reduction (\%)}
+    \\
+    \hline
+    All trackings            & 101353                       & --
+                             & --
+    \\
+    Duration filter          & 66477                        &
+    34876
+                             &
+    34.410\%
+    \\
+    Length filter            & 45668                        &
+    20809
+                             &
+    31.303\%
+    \\
+    Minimal Waypoints filter & 45599                        &
+    69
+                             &
+    0.151\%
+    \\
+    Min Lat/Long span filter & 45598                        &
+    1
+                             &
+    0.002\%
+    \\
+    \hline
+    \textbf{Total Remaining} & \textbf{45598}               &
+    \textbf{55755}
+                             &
+    \textbf{55.011\%}
+    \\
+    \hline
+  \end{tabular}
+  \caption{Tracking reduction per filtering step}
+  \label{tab:filtering_summary}
+\end{table}
+\FloatBarrier
 
 \section{Feature Extraction}
 
 \subsection{Available Metadata Features}
 
+\textbf{Tracking length}
+\textbf{Tracking duration}
+
 \subsection{Computed Features from Waypoints}
+
+\paragraph{Number of points}
+
+The total number of valid GPS points $n_p$ for a given route:
+\[
+  n_p = |\{(lat_i, lon_i)\}|
+\]
+
+\paragraph{Bounding box area}
+
+The bounding box area $A_{bbox}$ is calculated as:
+\[
+  A_{bbox} = (\max(lat_i) - \min(lat_i)) \cdot (\max(lon_i) - \min(lon_i))
+\]
+This gives an approximation of the route’s spatial extent. A similar measure is
+used in \cite{yang2009spatial} for comparing track spread.
+
+\paragraph{Point density}
+
+To measure how dense the GPS sampling is in space, we define point density
+$d_p$ as:
+\[
+  d_p = \frac{n_p}{A_{bbox} + \varepsilon}
+\]
+where $\varepsilon$ is a small constant to avoid division by zero.
+
+\paragraph{Average segment distance}
+
+The average distance between consecutive waypoints $d_{avg}$:
+\[
+  d_{avg} = \frac{1}{n_p - 1} \sum_{i=1}^{n_p - 1} dist(p_i, p_{i+1})
+\]
+where \textit{dist} refers to the geodesic distance between two GPS points (in
+meters), calculated using the WGS84 ellipsoid model.
+
+\paragraph{Number of stops}
+
+A stop is defined as a waypoint where the recorded speed equals zero. The
+number of such points $n_s$ is computed as:
+\[
+  n_s = |\{i \mid speed_i = 0\}|
+\]
 
 \subsection{Feature Storage and Output}
 
+The extracted features were stored in a structured csv file, with one row per
+tracking\_id and all corresponding features. This resulting dataset forms the
+basis for all future analysis, clustering and classification applications in
+the next steps of the pipeline.
+
+\begin{table}[h]
+  \centering
+  \begin{tabular}{ll}
+    \textbf{Feature}                & \textbf{Description}
+    \\
+    \texttt{num\_points}            & Total GPS waypoints in the track
+    \\
+    \texttt{bbox\_area}             & Area covered by the track’s bounding box
+    \\
+    \texttt{point\_density}         & Points per unit area
+    \\
+    \texttt{avg\_segment\_distance} & Mean distance between consecutive
+    points
+    \\
+    \texttt{num\_stops}             & Count of zero-speed positions
+    \\
+    \texttt{duration}               & Duration of tracking (from metadata)
+    \\
+    \texttt{length}                 & Route length in meters (from metadata)
+    \\
+  \end{tabular}
+  \caption{Overview of extracted features per tracking.}
+\end{table}
+
 \section{Clustering Implementation}
+
+\begin{figure}[htbp]
+  \centering
+
+  \includegraphics[width=1\textwidth]{Figures/histogram_feature_data_pre_clustering.png}
+  \caption{Histogram}
+  \label{fig:histogram-feature-engineered-data}
+\end{figure}
+\FloatBarrier
+
+\begin{figure}[htbp]
+  \centering
+
+  \includegraphics[width=1\textwidth]{Figures/correlation_matrix_pre_clustering.png}
+  \caption{Correlation matrix}
+  \label{fig:correlation-matrix}
+\end{figure}
+\FloatBarrier
 
 \subsection{DBSCAN for Outlier Removal}
 
+\begin{figure}[htbp]
+  \centering
+
+  \includegraphics[width=0.9\textwidth]{Figures/dbscan_diagram_feature_data.png}
+  \caption{DBSCAN}
+  \label{fig:dbscan-clustering-outlier-removal}
+\end{figure}
+\FloatBarrier
+
 \subsection{K-Means++ for Category Discovery}
+
+\begin{figure}[htbp]
+  \centering
+
+  \includegraphics[width=0.9\textwidth]{Figures/kmeans_diagram_feature_data.png}
+  \caption{K-means++ clustering}
+  \label{fig:kmeans-clustering}
+\end{figure}
+\FloatBarrier
 
 \section{Classification Model}
 
