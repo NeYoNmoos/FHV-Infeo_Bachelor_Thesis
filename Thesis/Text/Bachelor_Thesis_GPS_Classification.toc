@@ -54,7 +54,7 @@
 \contentsline {subsection}{\numberline {4.3.3}Feature Storage and Output}{35}{subsection.4.3.3}%
 \contentsline {section}{\numberline {4.4}Clustering Implementation}{35}{section.4.4}%
 \contentsline {subsection}{\numberline {4.4.1}DBSCAN for Outlier Removal}{37}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}K-Means++ for Category Discovery}{37}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.2}K-Means for Category Discovery}{37}{subsection.4.4.2}%
 \contentsline {section}{\numberline {4.5}Classification Model}{38}{section.4.5}%
 \contentsline {subsection}{\numberline {4.5.1}Model Selection and Training}{38}{subsection.4.5.1}%
 \contentsline {subsection}{\numberline {4.5.2}Feature Importance Analysis}{38}{subsection.4.5.2}%
@@ -63,10 +63,10 @@
 \contentsline {chapter}{\numberline {5}Evaluation and Discussion}{39}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Definition of the data sets used for the evaluation}{39}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Evaluation of the results}{39}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Reflection on the results}{39}{section.5.3}%
-\contentsline {chapter}{\numberline {6}Conclusion}{40}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Future Directions}{40}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Limitations}{40}{section.6.2}%
-\contentsline {chapter}{Literaturverzeichnis}{41}{section*.35}%
-\contentsline {chapter}{Affidavit}{43}{chapter*.37}%
+\contentsline {section}{\numberline {5.3}Reflection on the results}{42}{section.5.3}%
+\contentsline {chapter}{\numberline {6}Conclusion}{43}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Future Directions}{43}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Limitations}{43}{section.6.2}%
+\contentsline {chapter}{Literaturverzeichnis}{44}{section*.38}%
+\contentsline {chapter}{Affidavit}{46}{chapter*.40}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

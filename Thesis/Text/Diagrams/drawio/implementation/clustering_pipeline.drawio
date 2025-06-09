@@ -1,0 +1,58 @@
+<mxfile host="65bd71144e">
+    <diagram id="DJHpV_MpXIw3TD5-279P" name="Page-1">
+        <mxGraphModel dx="755" dy="973" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="10" value="K-Means Clustering" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="410" y="310" width="170" height="210" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="Feature Weights" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="10">
+                    <mxGeometry x="15" y="125" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="Intial Centroids" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="10">
+                    <mxGeometry x="15" y="35" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rotation=90;size=53.75;fillColor=none;fontStyle=1" vertex="1" parent="1">
+                    <mxGeometry x="366.25" y="50" width="257.5" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rotation=90;size=51.86999999999989;fillColor=none;fontStyle=1" vertex="1" parent="1">
+                    <mxGeometry x="378.13" y="580" width="233.75" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="2" target="11">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="Labeled&lt;div&gt;Sample&lt;/div&gt;&lt;div&gt;Dataset&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+                    <mxGeometry x="680" y="380" width="60" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="11" target="6">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="11" target="5">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="" style="triangle;whiteSpace=wrap;html=1;rotation=-180;" vertex="1" parent="1">
+                    <mxGeometry x="600" y="380" width="60" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="Cleaned&lt;div&gt;Dataset&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+                    <mxGeometry x="453.75" y="110" width="82.5" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rotation=90;size=50.930000000000064;fillColor=none;fontStyle=1" vertex="1" parent="1">
+                    <mxGeometry x="319.53" y="321.41" width="350.94" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="URBAN" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+                    <mxGeometry x="410" y="625" width="80" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="SUBURBAN" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+                    <mxGeometry x="500" y="625" width="80" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="TOWN" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+                    <mxGeometry x="410" y="685" width="80" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="RURAL" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+                    <mxGeometry x="500" y="685" width="80" height="50" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

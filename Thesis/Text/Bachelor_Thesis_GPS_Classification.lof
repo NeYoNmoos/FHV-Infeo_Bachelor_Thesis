@@ -18,7 +18,10 @@
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Histogram\relax }}{36}{figure.caption.31}%
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Correlation matrix\relax }}{36}{figure.caption.32}%
 \contentsline {figure}{\numberline {4.4}{\ignorespaces DBSCAN\relax }}{37}{figure.caption.33}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces K-means++ clustering\relax }}{38}{figure.caption.34}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces K-means clustering\relax }}{38}{figure.caption.34}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Bounding Box Boxplot\relax }}{39}{figure.caption.35}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Point Density Boxplot\relax }}{40}{figure.caption.36}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Randomforest classifier predictions on testset\relax }}{41}{figure.caption.37}%
 \addvspace {10\p@ }
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
