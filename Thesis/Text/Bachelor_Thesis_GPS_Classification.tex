@@ -40,6 +40,8 @@
   captionpos=b
 }
 
+\usepackage{amsfonts}
+
 \usepackage[a-2b,mathxmp]{pdfx}[2018/12/22]
 
 \usepackage[style=ieee,citestyle=ieee,backend=biber]{biblatex}
@@ -919,7 +921,7 @@ This validates that the point density is a strong feature for classifying
 trackings to the four labels.
 
 \section{Solution Approach}
-This chapter outlines the methods used to analyse and claaify the GPS tracking
+This chapter outlines the methods used to analyse and classify the GPS tracking
 data collected by waste collection vehicles.
 The approach is structured in multiple stages, beginning with exploratory data
 analysis, proceeding with feature extraction, data cleaning, outlier detection,
@@ -970,8 +972,10 @@ al.~\cite{koh_clustering_2022}
 \subsubsection{Features Available in Trackings}
 
 \begin{enumerate}
-  \item \textbf{Length:} Total distance of the route, in kilometers.
-  \item \textbf{Duration:} Total time spent for the trackings, captured.
+  \item \textbf{Length:} Total distance of the tracking, in kilometers as
+        recorded in the database.
+  \item \textbf{Duration:} Total time duration for the tracking, captured and
+        recorded in the databse.
 \end{enumerate}
 
 \subsubsection{Features Extracted from Waypoints}
@@ -983,12 +987,23 @@ al.~\cite{koh_clustering_2022}
         encloses all latitude and longitude waypoints in one tracking.
   \item \textbf{Point density:} The number of waypoints divided by the bounding
         box area. This feature indicates how closes packed the points are.
-  \item \textbf{Average segment distance:} The mean distance between
+  \item \textbf{Average Segment Distance:} The mean distance between
         consecutive waypoints, computed using geodisc distance.
-  \item \textbf{Number of Stops:} Waypoints with speed of zero. Originally
-        considered as a potential feature, it was found out to be redundant as
-        most
-        waypoints have a speed of zero.
+  \item \textbf{Total Distance:} The sum of all segment distances between
+        consecutive waypoints. (Later removed, since it is a more unreliable
+        length
+        metric compared to the length in the tracking metadata)
+  \item \textbf{Straightness:} The ratio between the geodesic distance from the
+        first to the last point and the total distance of the route. Values
+        close to 1
+        indicate a straight path, while lower values indicate loops and
+        detours.
+  \item \textbf{Mean Heading Change:} The average change in bearing between
+        consecutive segments of the path, in radians. It reflects how often and
+        how
+        severe the vehicle changes direction.
+  \item \textbf{Number of Stops:} Waypoints with speed of zero. (Later removed,
+        due to low variance as most waypoints have a speed of zero)
 \end{enumerate}
 
 \subsection{Filtering and Preprocessing the Full Dataset}
@@ -1107,7 +1122,29 @@ columns:
   \item \textbf{tracking\_length:} Total dinstance of the tracking in km.
 \end{itemize}
 
-\subsection{Loading and Structuring the Dataset}
+\subsection{Data volume and loading}
+
+The data was provided via a MySQL database, containing two main tables relevant
+for this analysis.
+Trackings table containing the metadata of 101353 trackings and the waypoints
+table containing the corresponding GPS waypoints of the trackings.
+Due to the substantial size of database \textbf{~13.5 GB} in total, with
+\textbf{~12.6 MB} from the tracking table and \textbf{~11.6 GB} from the
+waypoint table,
+an efficient data handling pipeline was necessary.
+
+To handle the data at a lower scale, the filtering query was executed directly
+within the database using SQL (see Listing~\ref{lst:sql-filter}). The resulting
+filtered dataset was streamed in chunks of \texttt{1,000,000} rows using
+\texttt{pandas.read\_sql()} and saved incrementally to a compressed Apache
+Parquet file using \texttt{pyarrow}. The final Parquet file had a reduced size
+of approximately \textbf{1.5 GB}.
+
+This chunk-wise approach ensured memory efficient loading without crashing the
+kernel with the limited hardware available.
+The full export operation took about two hours to fully complete, with an
+average processing speed of \texttt{6.40 iterations/second} (row group read and
+write cycles).
 
 \subsection{Filtering Faulty Trackings}
 The raw data included many invalid or irrelevant trackings that could impact
@@ -1219,44 +1256,73 @@ Each Filter step reduces the dataset by this many trackings:
 
 \paragraph{Number of points}
 
-The total number of valid GPS points $n_p$ for a given route:
+The total number of waypoints $n$ in a tracking:
 \[
-  n_p = |\{(lat_i, lon_i)\}|
+  num\_points = n
 \]
 
 \paragraph{Bounding box area}
 
-The bounding box area $A_{bbox}$ is calculated as:
+Computed from the geodesic height $h$ and width $w$ of the minimal enclosing
+rectangle:
 \[
-  A_{bbox} = (\max(lat_i) - \min(lat_i)) \cdot (\max(lon_i) - \min(lon_i))
+  bbox\_area = h \cdot w
 \]
-This gives an approximation of the route’s spatial extent. A similar measure is
-used in \cite{yang2009spatial} for comparing track spread.
+\[
+  h = d((lat_{\min}, long_{\min}), (lat_{\max}, long_{\min})), \quad w =
+  d((lat_{\min}, lon_{\min}), (lat_{\min}, long_{\max}))
+\]
+where $d(\cdot, \cdot)$ refers to the geodesic distance between two GPS points
+(in
+meters), calculated using the WGS84 ellipsoid model.
 
 \paragraph{Point density}
 
-To measure how dense the GPS sampling is in space, we define point density
-$d_p$ as:
+Density of GPS waypoints in the bounding box:
 \[
-  d_p = \frac{n_p}{A_{bbox} + \varepsilon}
+  point\_density = \frac{n}{bbox\_area + \varepsilon}, \quad
+  \varepsilon = 10^{-6}
 \]
 where $\varepsilon$ is a small constant to avoid division by zero.
 
 \paragraph{Average segment distance}
 
-The average distance between consecutive waypoints $d_{avg}$:
+The average geodesic distance between consequtive waypoints:
 \[
-  d_{avg} = \frac{1}{n_p - 1} \sum_{i=1}^{n_p - 1} dist(p_i, p_{i+1})
+  avg\_segment\_distance = \frac{1}{n-1} \sum_{i=1}^{n-1} d(p_i, p_{i+1})
 \]
-where \textit{dist} refers to the geodesic distance between two GPS points (in
-meters), calculated using the WGS84 ellipsoid model.
+where $d(\cdot, \cdot)$ refers to geodesic distance.
 
-\paragraph{Number of stops}
-
-A stop is defined as a waypoint where the recorded speed equals zero. The
-number of such points $n_s$ is computed as:
+\paragraph{Total Distance}
+The cumulative travel distance:
 \[
-  n_s = |\{i \mid speed_i = 0\}|
+  total\_distance = \sum_{i=1}^{n-1} d(p_i, p_{i+1})
+\]
+
+\paragraph{Straightness}
+Ratio between the start-end distance and the total path length:
+\[
+  straightness = \frac{d(p_1, p_n)}{\sum_{i=1}^{n-1} d(p_i, p_{i+1})}
+\]
+
+\paragraph{Mean Heading Change}
+Average angle change between consecutive direction vectors (in radians):
+\[
+  \delta_i = \min(|\theta_{i+1} - \theta_i|, 2\pi - |\theta_{i+1} - \theta_i|),
+  \quad
+  mean\_heading\_change = \frac{1}{n-2} \sum_{i=1}^{n-2} \delta_i
+\]
+with bearings $\theta_i$ computed via:
+\[
+  \theta = \arctan2\left( \sin(\Delta \lambda) \cos(\phi_2),
+  \cos(\phi_1)\sin(\phi_2) - \sin(\phi_1)\cos(\phi_2)\cos(\Delta \lambda)
+  \right)
+\]
+
+\paragraph{Number of Stops}
+Amount of waypoints where the truck had a speed of zero:
+\[
+  num\_stops = \sum_{i=1}^{n} \mathbb{1}(speed_i = 0)
 \]
 
 \subsection{Feature Storage and Output}
@@ -1266,28 +1332,48 @@ tracking\_id and all corresponding features. This resulting dataset forms the
 basis for all future analysis, clustering and classification applications in
 the next steps of the pipeline.
 
-\begin{table}[h]
+\begin{table}[ht]
   \centering
-  \begin{tabular}{ll}
-    \textbf{Feature}                & \textbf{Description}
+  \begin{tabular}{|l|l|l|}
+    \hline
+    \textbf{Feature}                & \textbf{Unit} & \textbf{Description}
     \\
-    \texttt{num\_points}            & Total GPS waypoints in the track
+    \hline
+    \texttt{num\_points}            & Count         & Number of GPS waypoints
+    in a tracking                                                              \\
+    \texttt{bbox\_area}             & $m^2$         & Area of bounding box
+    enclosing all GPS points
     \\
-    \texttt{bbox\_area}             & Area covered by the track’s bounding box
+    \texttt{point\_density}         & points/m$^2$  & Number of points per
+    square meter
+    of bounding box
     \\
-    \texttt{point\_density}         & Points per unit area
+    \texttt{avg\_segment\_distance} & m             & Mean geodesic distance
+    between
+    consecutive waypoints
     \\
-    \texttt{avg\_segment\_distance} & Mean distance between consecutive
-    points
+    \texttt{total\_distance}        & m             & Total geodesic distance
+    covered by the
+    tracking
     \\
-    \texttt{num\_stops}             & Count of zero-speed positions
+    \texttt{straightness}           & Ratio (0–1)   & Direct distance from
+    start to end /
+    total distance
     \\
-    \texttt{duration}               & Duration of tracking (from metadata)
+    \texttt{mean\_heading\_change}  & rad           & Average absolute angle
+    change
+    between segments
     \\
-    \texttt{length}                 & Route length in meters (from metadata)
-    \\
+    \texttt{num\_stops}             & Count         & Number of waypoints with
+    speed = 0                                                                  \\
+    \texttt{duration}               & 100 ns        & Total tracking
+    duration in nanoseconds                                                    \\
+    \texttt{length}                 & km            & Total tracking length
+    from the database                                                          \\
+    \hline
   \end{tabular}
-  \caption{Overview of extracted features per tracking.}
+  \caption{Extracted features with their units and descriptions}
+  \label{tab:feature_units}
 \end{table}
 
 \section{Clustering Implementation}
@@ -1326,9 +1412,27 @@ the next steps of the pipeline.
 \begin{figure}[htbp]
   \centering
 
-  \includegraphics[width=0.9\textwidth]{Figures/kmeans_diagram_feature_data.png}
-  \caption{K-means clustering}
-  \label{fig:kmeans-clustering}
+  \includegraphics[width=1\textwidth]{Figures/histogram_feature_data_pre_clustering.png}
+  \caption{Histogram}
+  \label{fig:histogram-feature-engineered-data}
+\end{figure}
+\FloatBarrier
+
+\begin{figure}[htbp]
+  \centering
+
+  \includegraphics[width=0.4\textwidth]{Diagrams/drawio/implementation/clustering_pipeline.png}
+  \caption{K-Means semi supervised clustering pipeline}
+  \label{fig:kmeans-clustering-pipline}
+\end{figure}
+\FloatBarrier
+
+\begin{figure}[htbp]
+  \centering
+
+  \includegraphics[width=0.9\textwidth]{Figures/feature_weights.png}
+  \caption{Data driven feature weights used for K-means clustering}
+  \label{fig:kmeans-clustering-feature-weight}
 \end{figure}
 \FloatBarrier
 
@@ -1381,11 +1485,37 @@ Formatvorlage für den Fließtext.
 
 \chapter{Conclusion}
 
+it is possible with current technologies to create a classifier that can
+accurately classify the structure of the streetlayout a garbage truck is
+driving on its route.
+With limitations and some overlap between classes
+
+maybe three classes would be a better representation.
+
+comparison with OSM geofence really difficult as it is completely different
+format.
+
 \section{Future Directions}
-Formatvorlage für den Fließtext.
+
+Notes:
+
+-> Augmentation with OSM Data for real live structural info not only derived
+from gps trackings.
+
+-> removing anfahrt from data do only calculate with the actual collecting area
 
 \section{Limitations}
-Formatvorlage für den Fließtext.
+Notes:
+
+Not raw data -> compression by infeo might skew some data
+-> no comparison between raw data and this dataset as it is compressed
+
+-> not suitable for comparison with OSM streetdata
+-> data has the be enriched or completely derived from OSM to make a comparison
+possible
+
+-> unreliable data other than gps points
+-> metadata such as stops mostly missing, speed completely missing
 
 Literaturverzeichnis:
 \clearpage

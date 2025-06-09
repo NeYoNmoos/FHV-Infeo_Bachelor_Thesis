@@ -1,16 +1,19 @@
 <mxfile host="65bd71144e">
     <diagram id="DJHpV_MpXIw3TD5-279P" name="Page-1">
-        <mxGraphModel dx="755" dy="973" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="356" dy="973" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
+                <mxCell id="18" value="" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rotation=90;size=50.930000000000064;fillColor=none;fontStyle=1" vertex="1" parent="1">
+                    <mxGeometry x="319.53" y="321.41" width="350.94" height="200" as="geometry"/>
+                </mxCell>
                 <mxCell id="10" value="K-Means Clustering" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
                     <mxGeometry x="410" y="310" width="170" height="210" as="geometry"/>
                 </mxCell>
                 <mxCell id="5" value="Feature Weights" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="10">
                     <mxGeometry x="15" y="125" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="6" value="Intial Centroids" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="10">
+                <mxCell id="6" value="Initial Centroids" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="10">
                     <mxGeometry x="15" y="35" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="17" value="" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rotation=90;size=53.75;fillColor=none;fontStyle=1" vertex="1" parent="1">
@@ -36,9 +39,6 @@
                 </mxCell>
                 <mxCell id="4" value="Cleaned&lt;div&gt;Dataset&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
                     <mxGeometry x="453.75" y="110" width="82.5" height="110" as="geometry"/>
-                </mxCell>
-                <mxCell id="18" value="" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rotation=90;size=50.930000000000064;fillColor=none;fontStyle=1" vertex="1" parent="1">
-                    <mxGeometry x="319.53" y="321.41" width="350.94" height="200" as="geometry"/>
                 </mxCell>
                 <mxCell id="19" value="URBAN" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
                     <mxGeometry x="410" y="625" width="80" height="50" as="geometry"/>

@@ -14,14 +14,16 @@
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Correlation Matrix of selected GPS route features grouped by area label\relax }}{26}{figure.caption.26}%
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Boxplot of point density grouped by area label\relax }}{27}{figure.caption.27}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Big picture implementation pipeline\relax }}{31}{figure.caption.28}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Histogram\relax }}{36}{figure.caption.31}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Correlation matrix\relax }}{36}{figure.caption.32}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces DBSCAN\relax }}{37}{figure.caption.33}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces K-means clustering\relax }}{38}{figure.caption.34}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Big picture implementation pipeline\relax }}{32}{figure.caption.28}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Histogram\relax }}{38}{figure.caption.31}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Correlation matrix\relax }}{38}{figure.caption.32}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces DBSCAN\relax }}{39}{figure.caption.33}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Histogram\relax }}{40}{figure.caption.34}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces K-Means semi supervised clustering pipeline\relax }}{41}{figure.caption.35}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Data driven feature weights used for K-means clustering\relax }}{42}{figure.caption.36}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Bounding Box Boxplot\relax }}{39}{figure.caption.35}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Point Density Boxplot\relax }}{40}{figure.caption.36}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Randomforest classifier predictions on testset\relax }}{41}{figure.caption.37}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Bounding Box Boxplot\relax }}{43}{figure.caption.37}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Point Density Boxplot\relax }}{44}{figure.caption.38}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Randomforest classifier predictions on testset\relax }}{45}{figure.caption.39}%
 \addvspace {10\p@ }
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

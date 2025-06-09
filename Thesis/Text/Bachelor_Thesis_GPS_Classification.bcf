@@ -2377,19 +2377,17 @@
     <bcf:citekey order="31">noauthor_route_nodate</bcf:citekey>
     <bcf:citekey order="32">etemad_predicting_2018</bcf:citekey>
     <bcf:citekey order="33">koh_clustering_2022</bcf:citekey>
-    <bcf:citekey order="34">yang2009spatial</bcf:citekey>
-    <bcf:citekey order="35">noauthor_worlds_nodate</bcf:citekey>
-    <bcf:citekey order="36">petroc_data_nodate</bcf:citekey>
-    <bcf:citekey order="37">noauthor_europe_nodate</bcf:citekey>
-    <bcf:citekey order="38">noauthor_solid_nodate</bcf:citekey>
-    <bcf:citekey order="39">noauthor_gemeinsam_nodate</bcf:citekey>
-    <bcf:citekey order="40">sinaga_pdf_2024</bcf:citekey>
-    <bcf:citekey order="41">ester_density-based_nodate</bcf:citekey>
-    <bcf:citekey order="42">liang_graph-based_2024</bcf:citekey>
-    <bcf:citekey order="43">etemad_predicting_2018</bcf:citekey>
-    <bcf:citekey order="44">koh_clustering_2022</bcf:citekey>
-    <bcf:citekey order="45">noauthor_route_nodate</bcf:citekey>
-    <bcf:citekey order="46">yang2009spatial</bcf:citekey>
+    <bcf:citekey order="34">noauthor_worlds_nodate</bcf:citekey>
+    <bcf:citekey order="35">petroc_data_nodate</bcf:citekey>
+    <bcf:citekey order="36">noauthor_europe_nodate</bcf:citekey>
+    <bcf:citekey order="37">noauthor_solid_nodate</bcf:citekey>
+    <bcf:citekey order="38">noauthor_gemeinsam_nodate</bcf:citekey>
+    <bcf:citekey order="39">sinaga_pdf_2024</bcf:citekey>
+    <bcf:citekey order="40">ester_density-based_nodate</bcf:citekey>
+    <bcf:citekey order="41">liang_graph-based_2024</bcf:citekey>
+    <bcf:citekey order="42">etemad_predicting_2018</bcf:citekey>
+    <bcf:citekey order="43">koh_clustering_2022</bcf:citekey>
+    <bcf:citekey order="44">noauthor_route_nodate</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

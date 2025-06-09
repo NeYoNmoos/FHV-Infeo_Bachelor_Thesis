@@ -5,8 +5,8 @@
 \contentsline {table}{\numberline {3.1}{\ignorespaces Structure of a Tracking Entry\relax }}{21}{table.caption.21}%
 \contentsline {table}{\numberline {3.2}{\ignorespaces Structure of a GPS Point Entry\relax }}{21}{table.caption.22}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Tracking reduction per filtering step\relax }}{34}{table.caption.29}%
-\contentsline {table}{\numberline {4.2}{\ignorespaces Overview of extracted features per tracking.\relax }}{35}{table.caption.30}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces Tracking reduction per filtering step\relax }}{35}{table.caption.29}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Extracted features with their units and descriptions\relax }}{37}{table.caption.30}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
