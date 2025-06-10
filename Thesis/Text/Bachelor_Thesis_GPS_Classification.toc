@@ -57,19 +57,22 @@
 \contentsline {subsection}{\numberline {4.3.3}Feature Storage and Output}{37}{subsection.4.3.3}%
 \contentsline {section}{\numberline {4.4}Clustering Implementation}{37}{section.4.4}%
 \contentsline {subsection}{\numberline {4.4.1}DBSCAN for Outlier Removal}{39}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}K-Means for Category Discovery}{39}{subsection.4.4.2}%
-\contentsline {section}{\numberline {4.5}Classification Model}{42}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}Model Selection and Training}{42}{subsection.4.5.1}%
-\contentsline {subsection}{\numberline {4.5.2}Feature Importance Analysis}{42}{subsection.4.5.2}%
-\contentsline {subsection}{\numberline {4.5.3}Saving and Exporting the Classifier}{42}{subsection.4.5.3}%
-\contentsline {section}{\numberline {4.6}Integration with existing systems}{42}{section.4.6}%
-\contentsline {chapter}{\numberline {5}Evaluation and Discussion}{43}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Definition of the data sets used for the evaluation}{43}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Evaluation of the results}{43}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Reflection on the results}{46}{section.5.3}%
-\contentsline {chapter}{\numberline {6}Conclusion}{47}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Future Directions}{47}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Limitations}{47}{section.6.2}%
-\contentsline {chapter}{Literaturverzeichnis}{48}{section*.40}%
-\contentsline {chapter}{Affidavit}{50}{chapter*.42}%
+\contentsline {subsection}{\numberline {4.4.2}Semi-Supervised Clustering with Weighted and Seeded K-Means}{39}{subsection.4.4.2}%
+\contentsline {subsubsection}{\numberline {4.4.2.1}Feature Weighting Based on Sample Label Spread}{41}{subsubsection.4.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.4.2.2}Seeded Cluster Initialization}{42}{subsubsection.4.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.4.2.3}Constrained K-Means Clustering}{42}{subsubsection.4.4.2.3}%
+\contentsline {section}{\numberline {4.5}Classification Model}{43}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Model Selection and Training}{43}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Feature Importance Analysis}{43}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.5.3}Saving and Exporting the Classifier}{43}{subsection.4.5.3}%
+\contentsline {section}{\numberline {4.6}Integration with existing systems}{43}{section.4.6}%
+\contentsline {chapter}{\numberline {5}Evaluation and Discussion}{44}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Definition of the data sets used for the evaluation}{44}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Evaluation of the results}{44}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Reflection on the results}{47}{section.5.3}%
+\contentsline {chapter}{\numberline {6}Conclusion}{48}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Future Directions}{48}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Limitations}{48}{section.6.2}%
+\contentsline {chapter}{Literaturverzeichnis}{49}{section*.40}%
+\contentsline {chapter}{Affidavit}{51}{chapter*.42}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

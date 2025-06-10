@@ -124,7 +124,8 @@
 
 \vspace{1cm}
 \begin{center}
-  \emph{Dedicated to my younger self, who found a fascination in software from
+  \emph{Dedicated to my younger self, who found a fascination in writing
+    software from
     a young age and decided to follow his dreams!}\\[0.5cm]
   \emph{And to my parents, who wholeheartedly supported me throughout this
     journey.}\\[0.5cm]
@@ -354,8 +355,10 @@ The endgoal is to provide an API which suggests planning parameters for a
 given input geofence.
 
 \chapter{Background and Related Work}
+% TODO: write introduction into background and related work chapter
 
 \section{Technical Background}
+% TODO: put some more technical background points
 
 \subsection{Feature Engineering for Geographic data}
 Geospatial data is not inherently suitable for machine learning algorithms,
@@ -375,6 +378,7 @@ and time
 \end{quote}
 
 \subsubsection{Density-Based Clustering with DBSCAN}
+% TODO: refine section with more detail and sources
 
 \textit{DBSCAN} (Density-Based Algorithm for Discovering Clutsers in Large
 Spatial Databases with Noise) was
@@ -496,6 +500,7 @@ of faulty data.
 \FloatBarrier
 
 \section{Related Work}
+% TODO: Put some more thesises used for example for feature extraction here
 GPS-Data analysis and classificatino has been studied in various sutdies and
 projects, such as indetifying transportation modes or movement behavior.
 This section highlights related approaches to the classification and comparison
@@ -808,6 +813,7 @@ operation are taking place either.
 
 \section{Dataset Analysis}
 Formatvorlage für den Fließtext.
+% TODO: einleitung schreiben für diese section
 
 \subsection{Sample Analysis}
 
@@ -1340,7 +1346,8 @@ the next steps of the pipeline.
     \\
     \hline
     \texttt{num\_points}            & Count         & Number of GPS waypoints
-    in a tracking                                                              \\
+    in a tracking
+    \\
     \texttt{bbox\_area}             & $m^2$         & Area of bounding box
     enclosing all GPS points
     \\
@@ -1365,11 +1372,14 @@ the next steps of the pipeline.
     between segments
     \\
     \texttt{num\_stops}             & Count         & Number of waypoints with
-    speed = 0                                                                  \\
+    speed = 0
+    \\
     \texttt{duration}               & 100 ns        & Total tracking
-    duration in nanoseconds                                                    \\
+    duration in nanoseconds
+    \\
     \texttt{length}                 & km            & Total tracking length
-    from the database                                                          \\
+    from the database
+    \\
     \hline
   \end{tabular}
   \caption{Extracted features with their units and descriptions}
@@ -1407,8 +1417,7 @@ the next steps of the pipeline.
 \end{figure}
 \FloatBarrier
 
-\subsection{K-Means for Category Discovery}
-
+\subsection{Semi-Supervised Clustering with Weighted and Seeded K-Means}
 \begin{figure}[htbp]
   \centering
 
@@ -1418,14 +1427,47 @@ the next steps of the pipeline.
 \end{figure}
 \FloatBarrier
 
+% TODO: Rewrite this section -> 100% AI 
+
+To improve the interpretability and performance of clustering, a
+semi-supervised approach was used to guide the K-Means algorithm. A manually
+labeled subset of 8 samples, evenly distributed across the four target
+categories (\texttt{URBAN}, \texttt{SUBURBAN}, \texttt{TOWN}, \texttt{RURAL}),
+was utilized to derive feature weights and initialize cluster centroids. This
+allowed the unsupervised clustering algorithm to be seeded with domain
+knowledge.
+
 \begin{figure}[htbp]
   \centering
 
-  \includegraphics[width=0.4\textwidth]{Diagrams/drawio/implementation/clustering_pipeline.png}
+  \includegraphics[width=0.9\textwidth]{Diagrams/drawio/implementation/clustering_pipeline.png}
   \caption{K-Means semi supervised clustering pipeline}
   \label{fig:kmeans-clustering-pipline}
 \end{figure}
 \FloatBarrier
+
+\subsubsection{Feature Weighting Based on Sample Label Spread}
+
+In order to emphasize features that varied significantly across known classes
+and downweight features with less discriminative power, relative variability of
+feature medians between the categories was used. Specifically, for each feature
+$f_i$, the relative median range was calculated as:
+
+\[
+  w_i = \frac{max_i - min_i}{mean_i}
+\]
+
+where $max_i$, $min_i$, and $mean_i$ represent the
+maximum, minimum, and mean median value of feature $f_i$ across the four
+labeled classes. These weights were then normalized by dividing by the mean of
+all $w_i$ to ensure comparability:
+
+\[
+  w_i^{norm} = \frac{w_i}{\frac{1}{n}\sum_{j=1}^n w_j}
+\]
+
+Finally, the weights were clipped to the range $[0.5, 2.0]$ to avoid extreme
+scaling effects.
 
 \begin{figure}[htbp]
   \centering
@@ -1435,6 +1477,39 @@ the next steps of the pipeline.
   \label{fig:kmeans-clustering-feature-weight}
 \end{figure}
 \FloatBarrier
+
+\subsubsection{Seeded Cluster Initialization}
+
+The cluster centers were initialized using the scaled and weighted medians of
+the labeled sample set. For each class, the feature medians were calculated,
+scaled using the \texttt{StandardScaler}, and then multiplied by the learned
+feature weights. The resulting $4 \times d$ matrix was used to seed the $k$
+centroids of the K-Means algorithm:
+
+\[
+  \mu_k = scale(median_k) \cdot w_i^{norm}
+  \quad for each k \in \{1, 2, 3, 4\}
+\]
+
+This strategy ensured that the initial centroids already reflected meaningful
+differences in the data as identified by the sample set.
+
+\subsubsection{Constrained K-Means Clustering}
+
+The clustering was performed using the \texttt{KMeansConstrained} algorithm
+with the following configuration:
+
+\begin{itemize}
+  \item Number of clusters: 4
+  \item Initialization: Manual (from scaled, weighted medians)
+  \item Minimum cluster size: 5\% of total data
+  \item Maximum cluster size: 60\% of total data
+  \item Number of restarts: 10
+\end{itemize}
+
+This method produced clusters that closely aligned with the known class
+distribution and improved the stability and interpretability of the clustering
+outcome compared to random initialization.
 
 \section{Classification Model}
 
