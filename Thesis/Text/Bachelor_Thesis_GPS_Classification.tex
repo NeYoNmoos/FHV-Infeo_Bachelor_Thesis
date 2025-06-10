@@ -750,7 +750,7 @@ Each GPS point contains the following fields:
 \clearpage
 \subsection{Size and Coverage}
 
-The dataset consists of 91,452 individual trackings with a combined number of
+The dataset consists of 101.353 individual trackings with a combined number of
 123,785,460 waypoints.
 Trackings were recorded by waste collection vehicles operating in the DACH
 region.
@@ -797,30 +797,67 @@ The dataset used in this thesis is pre-compressed internaly by \textit{infeo
 \end{enumerate}
 
 \subsection{Limitations}
-Missing Values: GPS gaps etc, useless trackings etc.
+% Missing Values: GPS gaps etc, useless trackings etc.
 
-With a lot of data, also comes a lot of unfurbished and faulty data. Through
-communication with
-\textit{infeo GmbH} and through visual examination, it is clear that many
-trackings are not collected properly.
-Since the tracking devices installed on the garbage collecting vehicles are
-operated partly manually,
-some trackings show GPS tracks only on the parking facility and not in
-operation,
-while others show that the tracking device being turned on over night, while
-no
-operation are taking place either.
+% With a lot of data, also comes a lot of unfurbished and faulty data. Through
+% communication with
+% \textit{infeo GmbH} and through visual examination, it is clear that many
+% trackings are not collected properly.
+% Since the tracking devices installed on the garbage collecting vehicles are
+% operated partly manually,
+% some trackings show GPS tracks only on the parking facility and not in
+% operation,
+% while others show that the tracking device being turned on over night, while
+% no
+% operation are taking place either.
+
+A significant limitation of this study is due to the nature of the dataset.
+While the dataset is extensive, offering a large sum of trackings, many prove
+to be irrelevant or misleading for analysis.
+According to discussion with \textit{infeo GmBH} and manual visual inspection,
+the primary cause of these data issues is the manual operation of the tracking
+device in the waste collection vehicles.
+
+The most common issues were:
+
+\begin{itemize}
+  \item \textbf{Depot-only trackings:} Many trackings were exclusively
+        recording the movement in the vehicle parking facility, capturing no
+        real waste
+        collection operation.
+  \item \textbf{Non-operational trackings:} Tracking devices were left active
+        for long periods of time, outside of operational hours, such as
+        overnight,
+        resulting in long trackings with little movement.
+  \item \textbf{Large Signal gagps:} Some trackings suffered from significant
+        gaps in the GPS track, resulting from signal loss of the tracker or
+        possibly from the compression step introduced by \textit{infeo GmbH}.
+\end{itemize}
+
+As a consequence of these issues in the dataset, a comprehensive preprocessing
+and filtering was necessary to ensure the quality of the dataset used for
+analysis and
+classification.
+While the cleaning process was designed to be as robust as possible, it is
+possible that some faulty trackings persist in the filtered dataset and that
+some valid trackings were wrongfully discarded.
 
 \section{Dataset Analysis}
-Formatvorlage für den Fließtext.
-% TODO: einleitung schreiben für diese section
+Before a classification model can be developed, it is important to understand
+the underlying data it will be trained on.
+This section presents an exploratory data analysis of the cleaned dataset with
+the goal of identifying relationsships of extracted features that help separate
+the
+four categories.
 
 \subsection{Sample Analysis}
 
 A small, manually selected sample of 8 tracking routes was selected for initial
-exploratory data analysis. Each route was inspected on the AWM-Map-Tool and
-then categorized into on of the four area type labels: RURAL, SUBURBAN, TOWN or
-URBAN. Each Label is represented by 2 tracking routes in the sample data to
+exploratory data analysis. Each route was inspected on the
+\textit{AWM-Map-Tool} and
+then categorized into on of the four area type labels: \texttt{URBAN},
+\texttt{SUBURBAN}, \texttt{TOWN} or \texttt{RURAL}. Each Label is represented
+by 2 tracking routes in the sample data to
 ensure a balanced representation.
 
 Feature extraction was performed to calculate route-level metrics such as
@@ -1040,7 +1077,7 @@ unrealistic GPS jumps.
 To solve this issue, the process was improved by detecting and removing
 outliers using DBSCAN (Density-Based Spatial Clustering for Applications with
 Noise). DBSCAN effectively removed most anomalies in the dataset. After
-filtering the outliers with DBSCAN, K-Means++ clustering was applied again,
+filtering the outliers with DBSCAN, K-Means clustering was applied again,
 resulting clusters that represented the four defined categories better.
 
 \subsection{Training a Classification Model}
@@ -1056,9 +1093,9 @@ The trained classifier was saved for the later use in a sandbox API to classify
 new trackings.
 
 % TODO: Determine if the following three sections should be in the thesis or not
-\subsection{Comparison with OSM Geofences}
+% \subsection{Comparison with OSM Geofences}
 
-\subsection{API Integration}
+% \subsection{API Integration}
 
 \section{Structure of the Work}
 
@@ -1388,25 +1425,25 @@ the next steps of the pipeline.
 
 \section{Clustering Implementation}
 
-\begin{figure}[htbp]
-  \centering
+% \begin{figure}[htbp]
+%   \centering
 
-  \includegraphics[width=1\textwidth]{Figures/histogram_feature_data_pre_clustering.png}
-  \caption{Histogram}
-  \label{fig:histogram-feature-engineered-data}
-\end{figure}
-\FloatBarrier
+%   \includegraphics[width=1\textwidth]{Figures/histogram_feature_data_pre_clustering.png}
+%   \caption{Histogram}
+%   \label{fig:histogram-feature-engineered-data}
+% \end{figure}
+% \FloatBarrier
 
-\begin{figure}[htbp]
-  \centering
+% \begin{figure}[htbp]
+%   \centering
 
-  \includegraphics[width=1\textwidth]{Figures/correlation_matrix_pre_clustering.png}
-  \caption{Correlation matrix}
-  \label{fig:correlation-matrix}
-\end{figure}
-\FloatBarrier
+%   \includegraphics[width=1\textwidth]{Figures/correlation_matrix_pre_clustering.png}
+%   \caption{Correlation matrix}
+%   \label{fig:correlation-matrix}
+% \end{figure}
+% \FloatBarrier
 
-\subsection{DBSCAN for Outlier Removal}
+\subsection{Outlier Removal with DBSCAN}
 
 \begin{figure}[htbp]
   \centering
@@ -1427,7 +1464,7 @@ the next steps of the pipeline.
 \end{figure}
 \FloatBarrier
 
-% TODO: Rewrite this section -> 100% AI 
+% TODO: Rewrite this entire section -> 100% AI 
 
 To improve the interpretability and performance of clustering, a
 semi-supervised approach was used to guide the K-Means algorithm. A manually
@@ -1512,12 +1549,96 @@ distribution and improved the stability and interpretability of the clustering
 outcome compared to random initialization.
 
 \section{Classification Model}
+% TODO: Rewrite entire section -> written 100% by AI
+To predict the category of new or unlabeled GPS trackings, a classification
+model was trained using the extracted and clustered features. A Random Forest
+classifier was chosen due to its robustness, ability to handle high-dimensional
+data, and interpretability via feature importance.
 
 \subsection{Model Selection and Training}
 
+The full labeled dataset, enriched with cluster labels from the K-Means
+process, was split into a training and a test set using a 2:1 ratio. A grid
+search with 3-fold cross-validation was performed to identify the best
+hyperparameters for the Random Forest model. The following parameter grid was
+used:
+
+\begin{itemize}
+  \item Number of estimators: \texttt{[100, 200, 300]}
+  \item Maximum depth: \texttt{[10, 15, 20]}
+  \item Minimum samples split: \texttt{[2, 5]}
+  \item Minimum samples leaf: \texttt{[1, 2]}
+  \item Class weight: \texttt{[None, 'balanced']}
+\end{itemize}
+
+The best model was found with 300 trees, a maximum depth of 20, and default
+class weights. The model achieved an accuracy of
+98.3\% on the test set.
+
+\subsection{Model Evaluation}
+
+The classifier was evaluated using standard metrics:
+
+\begin{itemize}
+  \item \textbf{Accuracy:} 0.983
+  \item \textbf{Macro F1-score:} 0.981
+  \item \textbf{Weighted F1-score:} 0.983
+  \item \textbf{Cohen's Kappa:} High agreement with actual labels
+\end{itemize}
+
+A confusion matrix and class distribution bar plots were created to assess
+prediction quality. All classes were well-separated with minimal confusion. The
+silhouette score of -0.1393, although typical for high-dimensional data,
+reflects some overlap near decision boundaries.
+
 \subsection{Feature Importance Analysis}
 
+The feature importance plot revealed which GPS tracking characteristics had the
+strongest influence on classification. The most informative features included
+bounding box area, point density and length.
+
+SHAP (SHapley Additive exPlanations) values were also computed to explain
+individual predictions. Global and per-class SHAP summary plots confirmed the
+consistency of the feature contributions with domain expectations.
+
+\subsection{Prediction Analysis and Visualization}
+
+Several visual analyses were performed on the test set:
+
+\begin{itemize}
+  \item \textbf{Boxplots} showing feature distribution across predicted labels
+  \item \textbf{Normalized heatmaps} comparing average feature values per
+        predicted class
+  \item \textbf{PCA scatterplot} visualizing predicted clusters in 2D space
+  \item \textbf{Geographic maps} of randomly sampled predicted routes for each
+        label
+\end{itemize}
+
+These visualizations support that the classifier not only performs well
+statistically but also produces geographically and behaviorally consistent
+results.
+
 \subsection{Saving and Exporting the Classifier}
+
+The trained Random Forest model was serialized using \texttt{joblib} and
+exported as \texttt{rf\_area\_classifier\_full.pkl}. This model can be directly
+integrated into production pipelines or reused for further research.
+Predictions from the classifier were stored for visualization and evaluation
+purposes in a CSV file.
+
+\subsection{Cross-Validation Results}
+
+To validate model stability, 10-fold stratified cross-validation was applied to
+the full dataset. The mean accuracy across folds was approximately
+98% with a very low standard deviation, confirming the generalizability of the classifier.
+
+\subsection{Conclusion}
+
+The Random Forest classifier achieved high performance and provided
+interpretable insights into how GPS tracking data reflects urban, suburban,
+town, and rural driving patterns. The combination of clustering,
+semi-supervised learning, and explainable AI techniques created a robust
+classification pipeline for real-world tracking analysis.
 
 \section{Integration with existing systems}
 Formatvorlage für den Fließtext.

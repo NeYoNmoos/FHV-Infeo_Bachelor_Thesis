@@ -35,36 +35,38 @@
 \contentsline {subsection}{\numberline {3.4.3}Filtering and Preprocessing the Full Dataset}{29}{subsection.3.4.3}%
 \contentsline {subsection}{\numberline {3.4.4}Clustering and Pattern Discovery}{30}{subsection.3.4.4}%
 \contentsline {subsection}{\numberline {3.4.5}Training a Classification Model}{30}{subsection.3.4.5}%
-\contentsline {subsection}{\numberline {3.4.6}Comparison with OSM Geofences}{30}{subsection.3.4.6}%
-\contentsline {subsection}{\numberline {3.4.7}API Integration}{30}{subsection.3.4.7}%
 \contentsline {section}{\numberline {3.5}Structure of the Work}{30}{section.3.5}%
-\contentsline {chapter}{\numberline {4}Implementation}{32}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Implementation of the Big Picture}{32}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Data Handling and Preprocessing}{33}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Data volume and loading}{33}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Filtering Faulty Trackings}{33}{subsection.4.2.2}%
-\contentsline {section}{\numberline {4.3}Feature Extraction}{35}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Available Metadata Features}{35}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Computed Features from Waypoints}{35}{subsection.4.3.2}%
-\contentsline {paragraph}{\numberline {4.3.2.0.1}Number of points}{35}{paragraph.4.3.2.0.1}%
-\contentsline {paragraph}{\numberline {4.3.2.0.2}Bounding box area}{35}{paragraph.4.3.2.0.2}%
-\contentsline {paragraph}{\numberline {4.3.2.0.3}Point density}{36}{paragraph.4.3.2.0.3}%
-\contentsline {paragraph}{\numberline {4.3.2.0.4}Average segment distance}{36}{paragraph.4.3.2.0.4}%
-\contentsline {paragraph}{\numberline {4.3.2.0.5}Total Distance}{36}{paragraph.4.3.2.0.5}%
-\contentsline {paragraph}{\numberline {4.3.2.0.6}Straightness}{36}{paragraph.4.3.2.0.6}%
-\contentsline {paragraph}{\numberline {4.3.2.0.7}Mean Heading Change}{36}{paragraph.4.3.2.0.7}%
-\contentsline {paragraph}{\numberline {4.3.2.0.8}Number of Stops}{36}{paragraph.4.3.2.0.8}%
-\contentsline {subsection}{\numberline {4.3.3}Feature Storage and Output}{37}{subsection.4.3.3}%
-\contentsline {section}{\numberline {4.4}Clustering Implementation}{37}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}DBSCAN for Outlier Removal}{39}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Semi-Supervised Clustering with Weighted and Seeded K-Means}{39}{subsection.4.4.2}%
-\contentsline {subsubsection}{\numberline {4.4.2.1}Feature Weighting Based on Sample Label Spread}{41}{subsubsection.4.4.2.1}%
-\contentsline {subsubsection}{\numberline {4.4.2.2}Seeded Cluster Initialization}{42}{subsubsection.4.4.2.2}%
-\contentsline {subsubsection}{\numberline {4.4.2.3}Constrained K-Means Clustering}{42}{subsubsection.4.4.2.3}%
-\contentsline {section}{\numberline {4.5}Classification Model}{43}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}Model Selection and Training}{43}{subsection.4.5.1}%
-\contentsline {subsection}{\numberline {4.5.2}Feature Importance Analysis}{43}{subsection.4.5.2}%
-\contentsline {subsection}{\numberline {4.5.3}Saving and Exporting the Classifier}{43}{subsection.4.5.3}%
+\contentsline {chapter}{\numberline {4}Implementation}{31}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Implementation of the Big Picture}{31}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Data Handling and Preprocessing}{32}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Data volume and loading}{32}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Filtering Faulty Trackings}{32}{subsection.4.2.2}%
+\contentsline {section}{\numberline {4.3}Feature Extraction}{34}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Available Metadata Features}{34}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Computed Features from Waypoints}{34}{subsection.4.3.2}%
+\contentsline {paragraph}{\numberline {4.3.2.0.1}Number of points}{34}{paragraph.4.3.2.0.1}%
+\contentsline {paragraph}{\numberline {4.3.2.0.2}Bounding box area}{34}{paragraph.4.3.2.0.2}%
+\contentsline {paragraph}{\numberline {4.3.2.0.3}Point density}{35}{paragraph.4.3.2.0.3}%
+\contentsline {paragraph}{\numberline {4.3.2.0.4}Average segment distance}{35}{paragraph.4.3.2.0.4}%
+\contentsline {paragraph}{\numberline {4.3.2.0.5}Total Distance}{35}{paragraph.4.3.2.0.5}%
+\contentsline {paragraph}{\numberline {4.3.2.0.6}Straightness}{35}{paragraph.4.3.2.0.6}%
+\contentsline {paragraph}{\numberline {4.3.2.0.7}Mean Heading Change}{35}{paragraph.4.3.2.0.7}%
+\contentsline {paragraph}{\numberline {4.3.2.0.8}Number of Stops}{35}{paragraph.4.3.2.0.8}%
+\contentsline {subsection}{\numberline {4.3.3}Feature Storage and Output}{36}{subsection.4.3.3}%
+\contentsline {section}{\numberline {4.4}Clustering Implementation}{36}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Outlier Removal with DBSCAN}{36}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Semi-Supervised Clustering with Weighted and Seeded K-Means}{37}{subsection.4.4.2}%
+\contentsline {subsubsection}{\numberline {4.4.2.1}Feature Weighting Based on Sample Label Spread}{39}{subsubsection.4.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.4.2.2}Seeded Cluster Initialization}{40}{subsubsection.4.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.4.2.3}Constrained K-Means Clustering}{40}{subsubsection.4.4.2.3}%
+\contentsline {section}{\numberline {4.5}Classification Model}{41}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Model Selection and Training}{41}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Model Evaluation}{41}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.5.3}Feature Importance Analysis}{42}{subsection.4.5.3}%
+\contentsline {subsection}{\numberline {4.5.4}Prediction Analysis and Visualization}{42}{subsection.4.5.4}%
+\contentsline {subsection}{\numberline {4.5.5}Saving and Exporting the Classifier}{42}{subsection.4.5.5}%
+\contentsline {subsection}{\numberline {4.5.6}Cross-Validation Results}{42}{subsection.4.5.6}%
+\contentsline {subsection}{\numberline {4.5.7}Conclusion}{43}{subsection.4.5.7}%
 \contentsline {section}{\numberline {4.6}Integration with existing systems}{43}{section.4.6}%
 \contentsline {chapter}{\numberline {5}Evaluation and Discussion}{44}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Definition of the data sets used for the evaluation}{44}{section.5.1}%
@@ -73,6 +75,6 @@
 \contentsline {chapter}{\numberline {6}Conclusion}{48}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Future Directions}{48}{section.6.1}%
 \contentsline {section}{\numberline {6.2}Limitations}{48}{section.6.2}%
-\contentsline {chapter}{Literaturverzeichnis}{49}{section*.40}%
-\contentsline {chapter}{Affidavit}{51}{chapter*.42}%
+\contentsline {chapter}{Literaturverzeichnis}{49}{section*.38}%
+\contentsline {chapter}{Affidavit}{51}{chapter*.40}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
