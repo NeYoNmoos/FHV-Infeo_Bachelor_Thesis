@@ -75,6 +75,7 @@
 \contentsline {chapter}{\numberline {6}Conclusion}{48}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Future Directions}{48}{section.6.1}%
 \contentsline {section}{\numberline {6.2}Limitations}{48}{section.6.2}%
-\contentsline {chapter}{Literaturverzeichnis}{49}{section*.38}%
-\contentsline {chapter}{Affidavit}{51}{chapter*.40}%
+\contentsline {section}{\numberline {6.3}Final Remarks}{49}{section.6.3}%
+\contentsline {chapter}{Bibliography}{50}{section*.38}%
+\contentsline {chapter}{Affidavit}{52}{chapter*.40}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

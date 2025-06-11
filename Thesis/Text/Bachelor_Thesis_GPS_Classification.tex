@@ -797,19 +797,6 @@ The dataset used in this thesis is pre-compressed internaly by \textit{infeo
 \end{enumerate}
 
 \subsection{Limitations}
-% Missing Values: GPS gaps etc, useless trackings etc.
-
-% With a lot of data, also comes a lot of unfurbished and faulty data. Through
-% communication with
-% \textit{infeo GmbH} and through visual examination, it is clear that many
-% trackings are not collected properly.
-% Since the tracking devices installed on the garbage collecting vehicles are
-% operated partly manually,
-% some trackings show GPS tracks only on the parking facility and not in
-% operation,
-% while others show that the tracking device being turned on over night, while
-% no
-% operation are taking place either.
 
 A significant limitation of this study is due to the nature of the dataset.
 While the dataset is extensive, offering a large sum of trackings, many prove
@@ -1681,42 +1668,81 @@ Formatvorlage für den Fließtext.
 
 \chapter{Conclusion}
 
-it is possible with current technologies to create a classifier that can
-accurately classify the structure of the streetlayout a garbage truck is
-driving on its route.
-With limitations and some overlap between classes
-
-maybe three classes would be a better representation.
-
-comparison with OSM geofence really difficult as it is completely different
-format.
+This thesis demonstrates that it is feasible to classify the structure of road
+networks
+using only GPS tracking data collected by waste collection vehicles.
+A robust pipeline to categorize trackings into four distinct urban structure
+types: \texttt{URBAN}, \texttt{SUBURBAN}, \texttt{TOWN} and \texttt{RURAL} was
+developed using feature engineering, semi-supervised clustering, and supervised
+classification.
 
 \section{Future Directions}
 
-Notes:
+Several opportunities exist to improve and extend this work.
 
--> Augmentation with OSM Data for real live structural info not only derived
-from gps trackings.
+One promising direction involves the integration of OpenStreetMap (OSM) data to
+augment the GPS based features with real-world structural information. On the
+one hand this could improve the classifier's ability to differentiate between
+trackings with similar GPS structure, while on the other hand enabling the
+comparison with areas where no data is collected.
 
--> removing anfahrt from data do only calculate with the actual collecting area
+Additionally, enhancing the preprocessing pipeline with a filter to remove
+transit segmets between depots and services areas in the trackings can focus
+the
+analysis on the actual waste collection behavior.
+
+Improving the selected sample for the semi-supervised clustering process, both
+in terms of amount and variation of manually labeled trackings
+could improve the feature weights and initial centroids heavily affecting the
+clustering process.
+
+Finally, deploying the trained clasifier as a REST API, would enable
+waste management companies to automatically classify GPS trackings in
+real-time,
+potentially enabling smarter planning, anomaly detection, and route
+optimization.
 
 \section{Limitations}
-Notes:
 
-Not raw data -> compression by infeo might skew some data
--> no comparison between raw data and this dataset as it is compressed
+Despite the promising results of the classification pipeline, several
+limitations must be acknoladged.
 
--> not suitable for comparison with OSM streetdata
--> data has the be enriched or completely derived from OSM to make a comparison
-possible
+Firstly, the dataset used in this work is not raw GPS data but rather a
+compressed and preprocessed version provided by \textit{infeo GmbH}.
+While this process is necessary for storage and performance, it might have
+removed information that could improve the clustering and classification
+accuracy and reveal more fine grained distinction between the categories.
 
--> unreliable data other than gps points
--> metadata such as stops mostly missing, speed completely missing
+Secondly, while the dataset provides accurate GPS coordinates, the metadata is
+limited or unreliable. Attributes such as speed are missing entirely, and
+loading and
+unloading events were only sparsely available. As a result only GPS-based
+features
+were used for feature extraction, potentially limiting the detection of
+behavior patterns
+initially deemed as valuable differentiators between classes, such as distance
+between loadings of the vehicles.
 
-Literaturverzeichnis:
+Furthermore, the dataset is not suitable for a direct comparison with
+OpenStreetMap (OSM) street data. Such a comparison would require the enrichment
+of the dataset with strucutral data from OSM or a complete derivation of route
+segments from OSM.
+
+Lastly, the classification pipeline relies heavily on the semi-supervised
+clustering
+to generate labels. While it is effective for this dataset, it might require
+adjustments
+when extending the dataset to other cities and regions.
+
+\section{Final Remarks}
+Overall, this thesis provides a practical framework for analysing and
+classifying GPS tracking data in the waste management domain. It bridges the
+gap between raw GPS data and operational insights,
+laying the foundation for smarter, data-driven waste management systems.
+
 \clearpage
 \phantomsection
-\addcontentsline{toc}{chapter}{Literaturverzeichnis}
+\addcontentsline{toc}{chapter}{Bibliography}
 \printbibliography
 
 % \chapter*{[evtl. Anhang]}  % evtl. ersetzen mit \chapter*{Anhang}

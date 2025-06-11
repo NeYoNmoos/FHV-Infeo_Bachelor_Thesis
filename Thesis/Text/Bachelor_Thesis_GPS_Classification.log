@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.10.25)  10 JUN 2025 23:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.10.25)  11 JUN 2025 15:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -977,37 +977,37 @@ chapter 2.
 [13
 
 ]
-<Figures/background/dbscan_core_points_and_border_points.png, id=322, 383.93437pt x 96.36pt>
+<Figures/background/dbscan_core_points_and_border_points.png, id=320, 383.93437pt x 96.36pt>
 File: Figures/background/dbscan_core_points_and_border_points.png Graphic file (type png)
 <use Figures/background/dbscan_core_points_and_border_points.png>
 Package pdftex.def Info: Figures/background/dbscan_core_points_and_border_points.png  used on input line 416.
 (pdftex.def)             Requested size: 281.62292pt x 70.68625pt.
-<Figures/background/dbscan_density_reachability_connectivity.png, id=326, 375.4025pt x 93.34875pt>
+<Figures/background/dbscan_density_reachability_connectivity.png, id=324, 375.4025pt x 93.34875pt>
 File: Figures/background/dbscan_density_reachability_connectivity.png Graphic file (type png)
 <use Figures/background/dbscan_density_reachability_connectivity.png>
 Package pdftex.def Info: Figures/background/dbscan_density_reachability_connectivity.png  used on input line 437.
 (pdftex.def)             Requested size: 281.62292pt x 70.03416pt.
  [14 <./Figures/background/dbscan_core_points_and_border_points.png> <./Figures/background/dbscan_density_reachability_connectivity.png>]
-<Figures/background/k-means-and-DBSCAN-clustering-results-on-Chainlink-data-set.png, id=342, 204.765pt x 81.1833pt>
+<Figures/background/k-means-and-DBSCAN-clustering-results-on-Chainlink-data-set.png, id=340, 204.765pt x 81.1833pt>
 File: Figures/background/k-means-and-DBSCAN-clustering-results-on-Chainlink-data-set.png Graphic file (type png)
 <use Figures/background/k-means-and-DBSCAN-clustering-results-on-Chainlink-data-set.png>
 Package pdftex.def Info: Figures/background/k-means-and-DBSCAN-clustering-results-on-Chainlink-data-set.png  used on input line 495.
 (pdftex.def)             Requested size: 281.62292pt x 111.66269pt.
  [15 <./Figures/background/k-means-and-DBSCAN-clustering-results-on-Chainlink-data-set.png>]
-<Figures/related_work/etemad_pipeline.png, id=354, 1088.868pt x 418.56375pt>
+<Figures/related_work/etemad_pipeline.png, id=352, 1088.868pt x 418.56375pt>
 File: Figures/related_work/etemad_pipeline.png Graphic file (type png)
 <use Figures/related_work/etemad_pipeline.png>
 Package pdftex.def Info: Figures/related_work/etemad_pipeline.png  used on input line 521.
 (pdftex.def)             Requested size: 402.32022pt x 154.6554pt.
  [16 <./Figures/related_work/etemad_pipeline.png>]
-<Figures/related_work/koh_clustering_framwork_flowchart.png, id=365, 936.49875pt x 325.215pt>
+<Figures/related_work/koh_clustering_framwork_flowchart.png, id=363, 936.49875pt x 325.215pt>
 File: Figures/related_work/koh_clustering_framwork_flowchart.png Graphic file (type png)
 <use Figures/related_work/koh_clustering_framwork_flowchart.png>
 Package pdftex.def Info: Figures/related_work/koh_clustering_framwork_flowchart.png  used on input line 561.
 (pdftex.def)             Requested size: 402.32022pt x 139.71565pt.
  [17 <./Figures/related_work/koh_clustering_framwork_flowchart.png>]
 chapter 3.
-<Diagrams/drawio/big_picture.png, id=373, 462.72874pt x 457.71pt>
+<Diagrams/drawio/big_picture.png, id=371, 462.72874pt x 457.71pt>
 File: Diagrams/drawio/big_picture.png Graphic file (type png)
 <use Diagrams/drawio/big_picture.png>
 Package pdftex.def Info: Diagrams/drawio/big_picture.png  used on input line 617.
@@ -1042,7 +1042,7 @@ Overfull \hbox (0.66364pt too wide) in paragraph at lines 652--698
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [20] [21]
-<Figures/problem_definition/Aufzeichnune-komprimieren-winkelreduktion.png, id=399, 347.2975pt x 144.54pt>
+<Figures/problem_definition/Aufzeichnune-komprimieren-winkelreduktion.png, id=397, 347.2975pt x 144.54pt>
 File: Figures/problem_definition/Aufzeichnune-komprimieren-winkelreduktion.png Graphic file (type png)
 <use Figures/problem_definition/Aufzeichnune-komprimieren-winkelreduktion.png>
 Package pdftex.def Info: Figures/problem_definition/Aufzeichnune-komprimieren-winkelreduktion.png  used on input line 789.
@@ -1050,27 +1050,27 @@ Package pdftex.def Info: Figures/problem_definition/Aufzeichnune-komprimieren-wi
  [22
 
  <./Figures/problem_definition/Aufzeichnune-komprimieren-winkelreduktion.png>]
-<Figures/sample_tracking_routes_mapgrid.png, id=413, 1445.4pt x 722.7pt>
+<Figures/sample_tracking_routes_mapgrid.png, id=411, 1445.4pt x 722.7pt>
 File: Figures/sample_tracking_routes_mapgrid.png Graphic file (type png)
 <use Figures/sample_tracking_routes_mapgrid.png>
-Package pdftex.def Info: Figures/sample_tracking_routes_mapgrid.png  used on input line 873.
+Package pdftex.def Info: Figures/sample_tracking_routes_mapgrid.png  used on input line 860.
 (pdftex.def)             Requested size: 402.32022pt x 201.15262pt.
  [23] [24 <./Figures/sample_tracking_routes_mapgrid.png>]
-<Figures/sample_pairplot.png, id=423, 2063.7903pt x 1952.0127pt>
+<Figures/sample_pairplot.png, id=421, 2063.7903pt x 1952.0127pt>
 File: Figures/sample_pairplot.png Graphic file (type png)
 <use Figures/sample_pairplot.png>
-Package pdftex.def Info: Figures/sample_pairplot.png  used on input line 916.
+Package pdftex.def Info: Figures/sample_pairplot.png  used on input line 903.
 (pdftex.def)             Requested size: 402.32022pt x 380.50691pt.
  [25 <./Figures/sample_pairplot.png>]
-<Figures/sample_correlation_matrix.png, id=430, 493.1223pt x 408.3255pt>
+<Figures/sample_correlation_matrix.png, id=428, 493.1223pt x 408.3255pt>
 File: Figures/sample_correlation_matrix.png Graphic file (type png)
 <use Figures/sample_correlation_matrix.png>
-Package pdftex.def Info: Figures/sample_correlation_matrix.png  used on input line 931.
+Package pdftex.def Info: Figures/sample_correlation_matrix.png  used on input line 918.
 (pdftex.def)             Requested size: 402.32022pt x 333.15305pt.
-<Figures/sample_point_density_boxplot.png, id=431, 435.7881pt x 327.8649pt>
+<Figures/sample_point_density_boxplot.png, id=429, 435.7881pt x 327.8649pt>
 File: Figures/sample_point_density_boxplot.png Graphic file (type png)
 <use Figures/sample_point_density_boxplot.png>
-Package pdftex.def Info: Figures/sample_point_density_boxplot.png  used on input line 952.
+Package pdftex.def Info: Figures/sample_point_density_boxplot.png  used on input line 939.
 (pdftex.def)             Requested size: 402.32022pt x 302.68495pt.
 
 
@@ -1078,81 +1078,81 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [26 <./Figures/sample_correlation_matrix.png>] [27 <./Figures/sample_point_density_boxplot.png>] [28] [29] [30]
 chapter 4.
-<Diagrams/drawio/big_picture_implementation.png, id=471, 814.04124pt x 798.985pt>
+<Diagrams/drawio/big_picture_implementation.png, id=469, 814.04124pt x 798.985pt>
 File: Diagrams/drawio/big_picture_implementation.png Graphic file (type png)
 <use Diagrams/drawio/big_picture_implementation.png>
-Package pdftex.def Info: Diagrams/drawio/big_picture_implementation.png  used on input line 1147.
+Package pdftex.def Info: Diagrams/drawio/big_picture_implementation.png  used on input line 1134.
 (pdftex.def)             Requested size: 402.32022pt x 394.87093pt.
 [31
 
  <./Diagrams/drawio/big_picture_implementation.png>] [32] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 1216.
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 1203.
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 1217.
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 1204.
  [33]
-Overfull \hbox (40.09035pt too wide) in paragraph at lines 1247--1286
+Overfull \hbox (40.09035pt too wide) in paragraph at lines 1234--1273
  [][] 
  []
 
 
-Overfull \hbox (20.33795pt too wide) detected at line 1317
+Overfull \hbox (20.33795pt too wide) detected at line 1304
 \OML/cmm/m/it/12 h \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 d\OT1/cmr/m/n/12 ((\OML/cmm/m/it/12 lat[]; long[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 lat[]; long[]\OT1/cmr/m/n/12 ))\OML/cmm/m/it/12 ;  w \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 d\OT1/cmr/m/n/12 ((\OML/cmm/m/it/12 lat[]; lon[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 lat[]; long[]\OT1/cmr/m/n/12 ))
  []
 
 [34]
-Overfull \hbox (98.8869pt too wide) in paragraph at lines 1380--1422
+Overfull \hbox (98.8869pt too wide) in paragraph at lines 1367--1409
  [][] 
  []
 
 [35]
-<Figures/dbscan_diagram_feature_data.png, id=523, 722.7pt x 433.62pt>
+<Figures/dbscan_diagram_feature_data.png, id=521, 722.7pt x 433.62pt>
 File: Figures/dbscan_diagram_feature_data.png Graphic file (type png)
 <use Figures/dbscan_diagram_feature_data.png>
-Package pdftex.def Info: Figures/dbscan_diagram_feature_data.png  used on input line 1451.
+Package pdftex.def Info: Figures/dbscan_diagram_feature_data.png  used on input line 1438.
 (pdftex.def)             Requested size: 362.08574pt x 217.25276pt.
  [36]
-<Figures/histogram_feature_data_pre_clustering.png, id=528, 867.24pt x 578.16pt>
+<Figures/histogram_feature_data_pre_clustering.png, id=526, 867.24pt x 578.16pt>
 File: Figures/histogram_feature_data_pre_clustering.png Graphic file (type png)
 <use Figures/histogram_feature_data_pre_clustering.png>
-Package pdftex.def Info: Figures/histogram_feature_data_pre_clustering.png  used on input line 1461.
+Package pdftex.def Info: Figures/histogram_feature_data_pre_clustering.png  used on input line 1448.
 (pdftex.def)             Requested size: 402.32022pt x 268.21526pt.
  [37 <./Figures/dbscan_diagram_feature_data.png>]
-Overfull \hbox (11.96191pt too wide) in paragraph at lines 1469--1476
+Overfull \hbox (11.96191pt too wide) in paragraph at lines 1456--1463
 []\T1/cmr/m/n/12 To im-prove the in-ter-pretabil-ity and per-for-mance of clus-ter-ing, a semi-supervised
  []
 
-<Diagrams/drawio/implementation/clustering_pipeline.png, id=535, 814.04124pt x 302.12875pt>
+<Diagrams/drawio/implementation/clustering_pipeline.png, id=533, 814.04124pt x 302.12875pt>
 File: Diagrams/drawio/implementation/clustering_pipeline.png Graphic file (type png)
 <use Diagrams/drawio/implementation/clustering_pipeline.png>
-Package pdftex.def Info: Diagrams/drawio/implementation/clustering_pipeline.png  used on input line 1480.
+Package pdftex.def Info: Diagrams/drawio/implementation/clustering_pipeline.png  used on input line 1467.
 (pdftex.def)             Requested size: 362.08574pt x 134.38463pt.
 [38 <./Figures/histogram_feature_data_pre_clustering.png>]
-<Figures/feature_weights.png, id=541, 858.5676pt x 496.7358pt>
+<Figures/feature_weights.png, id=539, 858.5676pt x 496.7358pt>
 File: Figures/feature_weights.png Graphic file (type png)
 <use Figures/feature_weights.png>
-Package pdftex.def Info: Figures/feature_weights.png  used on input line 1512.
+Package pdftex.def Info: Figures/feature_weights.png  used on input line 1499.
 (pdftex.def)             Requested size: 362.08574pt x 209.4841pt.
  [39 <./Diagrams/drawio/implementation/clustering_pipeline.png>] [40 <./Figures/feature_weights.png>] [41] [42] [43]
 chapter 5.
-<Figures/classifier/boxplots/classifier_bbox_area_boxplot.png, id=566, 578.16pt x 289.08pt>
+<Figures/classifier/boxplots/classifier_bbox_area_boxplot.png, id=564, 578.16pt x 289.08pt>
 File: Figures/classifier/boxplots/classifier_bbox_area_boxplot.png Graphic file (type png)
 <use Figures/classifier/boxplots/classifier_bbox_area_boxplot.png>
-Package pdftex.def Info: Figures/classifier/boxplots/classifier_bbox_area_boxplot.png  used on input line 1657.
+Package pdftex.def Info: Figures/classifier/boxplots/classifier_bbox_area_boxplot.png  used on input line 1644.
 (pdftex.def)             Requested size: 362.08574pt x 181.04066pt.
-<Figures/classifier/boxplots/classifier_point_density_boxplot.png, id=567, 578.16pt x 289.08pt>
+<Figures/classifier/boxplots/classifier_point_density_boxplot.png, id=565, 578.16pt x 289.08pt>
 File: Figures/classifier/boxplots/classifier_point_density_boxplot.png Graphic file (type png)
 <use Figures/classifier/boxplots/classifier_point_density_boxplot.png>
-Package pdftex.def Info: Figures/classifier/boxplots/classifier_point_density_boxplot.png  used on input line 1665.
+Package pdftex.def Info: Figures/classifier/boxplots/classifier_point_density_boxplot.png  used on input line 1652.
 (pdftex.def)             Requested size: 362.08574pt x 181.04066pt.
 [44
 
  <./Figures/classifier/boxplots/classifier_bbox_area_boxplot.png>]
-<Figures/classifier/four_final_predictions_per_class.png, id=573, 1445.4pt x 1445.4pt>
+<Figures/classifier/four_final_predictions_per_class.png, id=571, 1445.4pt x 1445.4pt>
 File: Figures/classifier/four_final_predictions_per_class.png Graphic file (type png)
 <use Figures/classifier/four_final_predictions_per_class.png>
-Package pdftex.def Info: Figures/classifier/four_final_predictions_per_class.png  used on input line 1674.
+Package pdftex.def Info: Figures/classifier/four_final_predictions_per_class.png  used on input line 1661.
 (pdftex.def)             Requested size: 402.32022pt x 402.30525pt.
  [45 <./Figures/classifier/boxplots/classifier_point_density_boxplot.png>] [46 <./Figures/classifier/four_final_predictions_per_class.png>] [47
 
@@ -1160,25 +1160,25 @@ Package pdftex.def Info: Figures/classifier/four_final_predictions_per_class.png
 chapter 6.
 [48
 
-]
-Overfull \hbox (6.04228pt too wide) in paragraph at lines 1721--1721
+] [49]
+Overfull \hbox (6.04228pt too wide) in paragraph at lines 1747--1747
 \T1/cmr/m/it/12 Economist\T1/cmr/m/n/12 , \T1/cmr/m/sc/12 issn\T1/cmr/m/n/12 : 0013-0613. [On-line]. Avail-able: []$\T1/cmtt/m/n/12 https : / / www . economist .
  []
 
 
-Overfull \hbox (17.13297pt too wide) in paragraph at lines 1721--1721
+Overfull \hbox (17.13297pt too wide) in paragraph at lines 1747--1747
 \T1/cmtt/m/n/12 publication / 340813602 _ Unsupervised _ K -[] Means _ Clustering _ Algorithm$[]
  []
 
-[49
+[50
 
 
 ]
-Overfull \hbox (16.63297pt too wide) in paragraph at lines 1721--1721
+Overfull \hbox (16.63297pt too wide) in paragraph at lines 1747--1747
 \T1/cmtt/m/n/12 wiki . awm . infeo . at / index . php / Route _ zum _ Nachfahren _ bereitstellen #
  []
 
-[50] [51
+[51] [52
 
 ] (./Bachelor_Thesis_GPS_Classification.aux)
 
@@ -1194,22 +1194,18 @@ Package logreq Info: Writing requests to 'Bachelor_Thesis_GPS_Classification.run
 
  ) 
 Here is how much of TeX's memory you used:
- 32213 strings out of 478287
- 575798 string characters out of 5849288
+ 32214 strings out of 478287
+ 575790 string characters out of 5849288
  1554058 words of memory out of 5000000
- 49764 multiletter control sequences out of 15000+600000
+ 49765 multiletter control sequences out of 15000+600000
  483159 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,11n,106p,10675b,3678s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{subsection.3.4.7} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.3.4.6} has been referenced but does not exist, replaced by a fixed one
-
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on Bachelor_Thesis_GPS_Classification.pdf (51 pages, 48765752 bytes).
+Output written on Bachelor_Thesis_GPS_Classification.pdf (52 pages, 48767810 bytes).
 PDF statistics:
- 1015 PDF objects out of 1200 (max. 8388607)
- 867 compressed objects within 9 object streams
+ 1020 PDF objects out of 1200 (max. 8388607)
+ 871 compressed objects within 9 object streams
  238 named destinations out of 1000 (max. 500000)
- 737 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 745 words of extra memory for PDF output out of 10000 (max. 10000000)
 
