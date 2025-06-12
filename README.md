@@ -1,8 +1,8 @@
-# GPS-Based Urban Structure Classification for Waste Collection
+# Classification of GPS Track Data Using AI Methods: A Case Study of Waste Collection Vehicles
 
 This repository contains the full implementation and documentation for my Bachelor Thesis:
 
-**"Classification of Urban Structures Based on GPS Tracking Data of Waste Collection Vehicles"**
+**"Classification of GPS Track Data Using AI Methods: A Case Study of Waste Collection Vehicles"**
 
 ## Abstract
 
