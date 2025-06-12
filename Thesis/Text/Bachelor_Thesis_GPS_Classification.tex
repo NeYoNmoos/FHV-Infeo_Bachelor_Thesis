@@ -1085,7 +1085,7 @@ new trackings.
 % TODO: Determine if the following three sections should be in the thesis or not
 % \subsection{Comparison with OSM Geofences}
 
-% \subsection{API Integration}
+\subsection{API Integration}
 
 \section{Structure of the Work}
 
@@ -1620,8 +1620,25 @@ town, and rural driving patterns. The combination of clustering,
 semi-supervised learning, and explainable AI techniques created a robust
 classification pipeline for real-world tracking analysis.
 
-\section{Integration with existing systems}
-Formatvorlage für den Fließtext.
+\section{Integration with API}
+
+\begin{figure}[htbp]
+  \centering
+
+  \includegraphics[width=0.9\textwidth]{Diagrams/drawio/api/api_implementation.png}
+  \caption{API Implementation Diagram}
+  \label{fig:fastapi_docs}
+\end{figure}
+\FloatBarrier
+
+\begin{figure}[htbp]
+  \centering
+
+  \includegraphics[width=0.9\textwidth]{Figures/api/fastapi_documentation.png}
+  \caption{FastAPI documentation of classificationo API}
+  \label{fig:fastapi_docs}
+\end{figure}
+\FloatBarrier
 
 % TODO: hier noch kurz eine api implementieren -> tracking id als input und klasse ausgeben
 
@@ -1740,7 +1757,7 @@ separation.
     \label{fig:clustering_map_visulaization_vorarlberg}
   \end{subfigure}
 
-  \caption{Map Visualization of Clustered trackings (Red: \texttt{URBAN},
+  \caption{Map Visualization of Clustered Trackings (Red: \texttt{URBAN},
     Orange: \texttt{SUBURBAN}, Blue: \texttt{TOWN}, Green: \texttt{RURAL})}
   \label{fig:clstering_map_visualizations}
 \end{figure}
