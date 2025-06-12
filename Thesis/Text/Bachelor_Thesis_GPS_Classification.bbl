@@ -296,6 +296,170 @@
       \verb https://www.researchgate.net/publication/351571830_Graph-based_semi-supervised_learning_via_improving_the_quality_of_the_graph_dynamically
       \endverb
     \endentry
+    \entry{voron_building_2023}{book}{}
+      \name{author}{1}{}{%
+        {{hash=643357e1fc4e0bfdad908b5453567fa1}{%
+           family={Voron},
+           familyi={V\bibinitperiod},
+           given={François},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{location}{1}{%
+        {Place of publication not identified}%
+      }
+      \list{publisher}{1}{%
+        {Packt Publishing}%
+      }
+      \strng{namehash}{643357e1fc4e0bfdad908b5453567fa1}
+      \strng{fullhash}{643357e1fc4e0bfdad908b5453567fa1}
+      \strng{bibnamehash}{643357e1fc4e0bfdad908b5453567fa1}
+      \strng{authorbibnamehash}{643357e1fc4e0bfdad908b5453567fa1}
+      \strng{authornamehash}{643357e1fc4e0bfdad908b5453567fa1}
+      \strng{authorfullhash}{643357e1fc4e0bfdad908b5453567fa1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Building Data Science Applications with FastAPI is the go-to resource for creating efficient and dependable data science API backends. This second edition incorporates the latest Python and FastAPI advancements, along with two new AI projects - a real-time object detection system and a text-to-image generation platform using Stable Diffusion. The book starts with the basics of FastAPI and modern Python programming. You'll grasp FastAPI's robust dependency injection system, which facilitates seamless database communication, authentication implementation, and ML model integration. As you progress, you'll learn testing and deployment best practices, guaranteeing high-quality, resilient applications. Throughout the book, you'll build data science applications using FastAPI with the help of projects covering common AI use cases, such as object detection and text-to-image generation. These hands-on experiences will deepen your understanding of using FastAPI in real-world scenarios. By the end of this book, you'll be well equipped to maintain, design, and monitor applications to meet the highest programming standards using FastAPI, empowering you to create fast and reliable data science API backends with ease while keeping up with the latest advancements}
+      \field{edition}{2nd ed}
+      \field{isbn}{978-1-83763-274-9 978-1-83763-726-3}
+      \field{shorttitle}{Building data science applications with {FastAPI}}
+      \field{title}{Building data science applications with {FastAPI}: develop, manage, and deploy efficient machine learning applications with {Python}, second edition}
+      \field{year}{2023}
+      \verb{file}
+      \verb PDF:files/102/Voron - 2023 - Building data science applications with FastAPI develop, manage, and deploy efficient machine learn.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{noauthor_deploying_nodate}{misc}{}
+      \list{language}{1}{%
+        {en-US}%
+      }
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Your All-in-One Learning Portal: GeeksforGeeks is a comprehensive educational platform that empowers learners across domains-spanning computer science and programming, school education, upskilling, commerce, software tools, competitive exams, and more.}
+      \field{journaltitle}{GeeksforGeeks}
+      \field{note}{Section: Machine Learning}
+      \field{title}{Deploying {ML} {Models} as {API} using {FastAPI}}
+      \field{urlday}{12}
+      \field{urlmonth}{6}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Snapshot:files/105/deploying-ml-models-as-api-using-fastapi.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.geeksforgeeks.org/deploying-ml-models-as-api-using-fastapi/
+      \endverb
+      \verb{url}
+      \verb https://www.geeksforgeeks.org/deploying-ml-models-as-api-using-fastapi/
+      \endverb
+    \endentry
+    \entry{song_access_2021}{article}{}
+      \name{author}{3}{}{%
+        {{hash=ba3ebc3dd4e63d11c0c335609befbe83}{%
+           family={Song},
+           familyi={S\bibinitperiod},
+           given={Yacheng},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=5ddec46e090404e1224890533cbaa882}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Ye},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=40abc548259339e7309967818ff7d1bf}{%
+           family={Han},
+           familyi={H\bibinitperiod},
+           given={Dongqing},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {EN}%
+      }
+      \strng{namehash}{31a8b53e2719fc333515b4bc79fde257}
+      \strng{fullhash}{31a8b53e2719fc333515b4bc79fde257}
+      \strng{bibnamehash}{31a8b53e2719fc333515b4bc79fde257}
+      \strng{authorbibnamehash}{31a8b53e2719fc333515b4bc79fde257}
+      \strng{authornamehash}{31a8b53e2719fc333515b4bc79fde257}
+      \strng{authorfullhash}{31a8b53e2719fc333515b4bc79fde257}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Although various hierarchical structures have been investigated with respect to the different elements of urban form, the hierarchical spatial order of access from streets to plots and buildings has not been adequately explicated and objectively assessed. In this article, a new method, access structure, is presented to bridge this knowledge gap. Based on Krop’s generic multilevel diagram of urban form, different types of access structure are developed and symbolically represented. They are then quantitatively measured and compared using three metrics and an associated ternary diagram. Subsequently, the new method is tested first in analysing the internal structure of an individual urban block and then in distinguishing urban blocks with different structural characteristics. Eight urban blocks across the city of Nanjing, China, are selected as case examples. The results show that access structure is capable of accurately describing and evaluating complex spatial relationships between streets, plots and buildings. Access structure is potentially a useful method for studying the complex emerging built form of rapidly changing cities, especially in developing countries such as China.}
+      \field{issn}{2399-8083}
+      \field{journaltitle}{Environment and Planning B: Urban Analytics and City Science}
+      \field{month}{11}
+      \field{note}{Publisher: SAGE Publications Ltd STM}
+      \field{number}{9}
+      \field{title}{Access structure}
+      \field{urlday}{12}
+      \field{urlmonth}{6}
+      \field{urlyear}{2025}
+      \field{volume}{48}
+      \field{year}{2021}
+      \field{urldateera}{ce}
+      \field{pages}{2808\bibrangedash 2826}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1177/2399808320988560
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1177/2399808320988560
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1177/2399808320988560
+      \endverb
+    \endentry
+    \entry{zhou_research_2022}{article}{}
+      \name{author}{1}{}{%
+        {{hash=469176199814d5cdc71f0ec8d42cc0eb}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Na},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{469176199814d5cdc71f0ec8d42cc0eb}
+      \strng{fullhash}{469176199814d5cdc71f0ec8d42cc0eb}
+      \strng{bibnamehash}{469176199814d5cdc71f0ec8d42cc0eb}
+      \strng{authorbibnamehash}{469176199814d5cdc71f0ec8d42cc0eb}
+      \strng{authornamehash}{469176199814d5cdc71f0ec8d42cc0eb}
+      \strng{authorfullhash}{469176199814d5cdc71f0ec8d42cc0eb}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A large number of cities in China have proposed the spatial development strategy of polycentric in their planning, but whether the evolution of polycentric structure meets the planning expectation and whether the polycentric structure and function can be identified through effective ways has become a hot topic of academic research at present. Compared with the traditional survey and identification methods of population, land use and industry, the emergence of urban big data provides an opportunity for polycentric identification, especially the analysis based on POI (Point of Interest) big data is more accurate and efficient than the traditional methods. Chongqing, as a typical representative of mountainous cities, has chosen the development model of polycentric clusters at an early stage and strengthened it in the planning, forming a real polycentric city with both form and function, which makes it typical and representative among polycentric cities in China. Based on the POI data of Chongqing's main urban area, the paper identifies the polycentric structure of the city as a whole and different functions and its influence range based on the spatial distribution characteristics and aggregation degree of the overall and different types of POI data. The results show that Chongqing, as a mountainous city, exhibits an obvious “polycentric and clustered” structure under natural constraints and planning guidance. The study of Chongqing can reveal the differences between the polycentric characteristics of mountain cities and plain cities, summarize the effectiveness and shortcomings of polycentric development, and provide useful reference for urban planning. This paper collects all kinds of geospatial data, network big data and all kinds of historical statistical yearbook data in the main urban area of Chongqing. The experimental results show that by using the double constraints of POI big data and geographical environment, Chongqing is in urban polycentric structure, different functional types of urban centers, and employment function space and leisure and recreation function space have many advantages.}
+      \field{issn}{1018-3647}
+      \field{journaltitle}{Journal of King Saud University - Science}
+      \field{month}{4}
+      \field{number}{3}
+      \field{title}{Research on urban spatial structure based on the dual constraints of geographic environment and {POI} big data}
+      \field{urlday}{12}
+      \field{urlmonth}{6}
+      \field{urlyear}{2025}
+      \field{volume}{34}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \field{pages}{101887}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.jksus.2022.101887
+      \endverb
+      \verb{file}
+      \verb ScienceDirect Snapshot:files/101/S1018364722000684.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S1018364722000684
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S1018364722000684
+      \endverb
+      \keyw{Geography,POI,Polycentric,Space syntax,Urban spatial structure}
+    \endentry
     \entry{etemad_predicting_2018}{incollection}{}
       \name{author}{3}{}{%
         {{hash=f017c3c650ac42e467f154e2b9271814}{%
@@ -391,8 +555,8 @@
       \strng{authorbibnamehash}{dad5662cbbaa2e919b40d7d6fe253054}
       \strng{authornamehash}{4ae81c63e2bbf6a9cbf82a63f4d5046d}
       \strng{authorfullhash}{dad5662cbbaa2e919b40d7d6fe253054}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The proliferation of smartphones has accelerated mobility studies by largely increasing the type and volume of mobility data available. One such source of mobility data is from GPS technology, which is becoming increasingly common and helps the research community understand mobility patterns of people. However, there lacks a standardized framework for studying the different mobility patterns created by the non-Work, non-Home locations of Working and Nonworking users on Workdays and Offdays using machine learning methods. We propose a new mobility metric, Daily Characteristic Distance, and use it to generate features for each user together with Origin-Destination matrix features. We then use those features with an unsupervised machine learning method, \$k\$-means clustering, and obtain three clusters of users for each type of day (Workday and Offday). Finally, we propose two new metrics for the analysis of the clustering results, namely User Commonality and Average Frequency. By using the proposed metrics, interesting user behaviors can be discerned and it helps us to better understand the mobility patterns of the users.}
@@ -525,8 +689,8 @@
       \strng{authorbibnamehash}{6482b2930aae0624329a32e856876b41}
       \strng{authornamehash}{6482b2930aae0624329a32e856876b41}
       \strng{authorfullhash}{6482b2930aae0624329a32e856876b41}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Variable and feature selection have become the focus of much research in areas of application for which datasets with tens or hundreds of thousands of variables are available. These areas include text processing of internet documents, gene expression array analysis, and combinatorial chemistry. The objective of variable selection is three-fold: improving the prediction performance of the predictors, providing faster and more cost-effective predictors, and providing a better understanding of the underlying process that generated the data. The contributions of this special issue cover a wide range of aspects of such problems: providing a better deﬁnition of the objective function, feature construction, feature ranking, multivariate feature selection, efﬁcient search methods, and feature validity assessment methods.}

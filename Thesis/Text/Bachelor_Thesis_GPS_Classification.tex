@@ -93,7 +93,7 @@
     % https://www.fhv.at/fh/presse/logo-bildmaterial
   \end{flushright}
   \begin{flushleft}
-    \section*{Classification of GPS Track Data Using AI Methods}
+    \section*{Classification of GPS Track Data Using Machine Learning Methods}
     \subsection*{A Case Study of Waste Collection Vehicles}
     \vspace{1cm}
 
@@ -140,8 +140,8 @@
 \newpage
 \section*{Kurzreferat}
 
-\subsection*{Klassifizierung von GPS-Spurdaten mit Unterstützung von
-  KI-Methoden am Beispiel von Abfallsammelfahrzeugen}
+\subsection*{Klassifizierung von GPS-Spurdaten mit Unterstützung von Machine
+  Learning Methoden am Beispiel von Abfallsammelfahrzeugen}
 
 In der Abfallwirtschaft ist die strategische Tourenplanung ein wichtiger
 Prozess, in dem durch optimale Gebietsaufteilung eine maximal effiziente
@@ -186,9 +186,11 @@ Geografische Datenanalyse, Maschinelles Lernen, Automatisierung
 % Abstract:
 \newpage
 \section*{Abstract}
-\subsection*{Classification of GPS Track Data Using AI Methods: A Case Study of
+\subsection*{Classification of GPS Track Data Using Machine Learningn Methods:
+  A Case Study of
   Waste Collection Vehicles}
 
+% TODO: Abstract anpassen, da es mit OSM nicht ganz genau die originalen anforderungen gelungen ist
 In waste management, strategic route planning is a crucial process where
 optimal fleet utilization is determined through the efficient division of
 service areas, with the goal of minimizing costs. This process is applied by
@@ -257,11 +259,13 @@ Data Analysis, Machine Learning, Automation
   \acro{API}{Application Programming Interface}
   \acro{CSV}{Comma-Seperated Values}
   \acro{DACH}{Germany, Austria and Switzerland}
-  \acro{DBSCAN}{Density-Based Algorithm for Discovering Clutsers in Large
+  \acro{DBSCAN}{Density-Based Algorithm for Discovering Clusters in Large
     Spatial Databases with Noise}
 \end{acronym}
 
 \chapter{Introduction}
+
+% TODO: REWRITE, since i didnt implement the osm parameter calulation
 
 \begin{quote}
   \textit{``The world's most valuable resource is no longer oil, but data''}
@@ -358,18 +362,33 @@ The endgoal is to provide an API which suggests planning parameters for a
 given input geofence.
 
 \chapter{Background and Related Work}
-% TODO: write introduction into background and related work chapter
+This chapter provides an overview of the technical and scientific basis
+relevant for this thesis.
+Relevant methods include feature extraction to gain meaningful information
+from GPS data, clustering algorithms for unsupervised learning and related work
+showing approaches to similar problems.The presented work builds upon already
+existing methods by combinding
+clustering and classification to identify structural properties of waste
+collection routes from GPS trackings.
 
 \section{Technical Background}
-% TODO: put some more technical background points
+In order to develop a system that can analyse and classify structural patterns
+in GPS data, it is necessary to understand how geographic data can be
+transformed into meaningful features and how to leverage them by applying
+machine learning techniques.
+This section outlines the key technical components that support this thesis.
 
 \subsection{Feature Engineering for Geographic data}
-Geospatial data is not inherently suitable for machine learning algorithms,
-which is why the extraction
-of features for each tracking is crucial for a performant and accurate
-classifier.
-Extraction of features for GPS data points consisting of latitude, longitude
-and time
+Geospatial data, composed of sequential latitude and longitude points,
+is not inherently suitable for machine learning and requires transformation
+into numerical features to be suitable for machine learning.
+Key features commonly used in literature include: speed, acceleration, bearing
+and distance between consecutive points~\cite{etemad_predicting_2018}.
+These extracted features serve as a representation of the underlying movement
+behavior of the GPS route.
+In this work, a combination of geometric (e.g., bounding box area, point
+density) and dynamic (e.g., heading change) features were used to represent
+each waste collection tracking.
 
 \subsection{Clustering Algorithms}
 \begin{quote}
@@ -383,7 +402,7 @@ and time
 \subsubsection{Density-Based Clustering with DBSCAN}
 % TODO: refine section with more detail and sources
 
-\textit{DBSCAN} (Density-Based Algorithm for Discovering Clutsers in Large
+\textit{DBSCAN} (Density-Based Algorithm for Discovering clusters in Large
 Spatial Databases with Noise) was
 introduced by Martin Ester, Hans-Peter Kriegel, Jörg Sander, and Xiowei Xu as
 an algorithm to
@@ -461,10 +480,10 @@ following function:
   J = \sum_{i=1}^{k} \sum_{x_j \in S_i} \| x_j - \mu_i \|^2
 \]
 
-The implementation of the algorithm uses an iterative refinenement technique,
+The implementation of the algorithm uses an iterative refinement technique,
 also known as Lloyd's Algorithm.
 An initial set of \textit{k} means is selected, randomly or are more
-sophisticatedly initialzed in adaptations such as k-means++.
+sophisticatedly initilaized in adaptations such as k-means++.
 Then the algorithm repeats the following two steps until the assignments do not
 change and k-means therefore converges:
 
@@ -491,6 +510,9 @@ for k-means, a more effective partitioning of the data into k number of groups
 can be achieved.
 Without DBSCAN, k-means clustering will likely assign one cluster to outliers
 of faulty data.
+In the context of waste colletion, where GPS signals may be faulty, this
+combined method improves the robustness of the clustering by eliminating
+irregular datapoints, which do not show regular operation of the vehicle.
 
 \begin{figure}[htbp]
   \centering
@@ -502,19 +524,39 @@ of faulty data.
 \end{figure}
 \FloatBarrier
 
+\subsection{Machine Learning Model Deployment with APIs}
+
+To enable the integration of machine learning models into other applications,
+model deployment via Application Programming Interfaces (APIs) is a crucial
+step.
+APIs allow the models to be exposed and queried by external systems and return
+predictions based on the user-provided inputs.
+This thesis uses FastAPI to deploy the trained model and follows modern
+software engineering
+principles~\cite{voron_building_2023,noauthor_deploying_nodate}.
+
 \section{Related Work}
-% TODO: Put some more thesises used for example for feature extraction here
-GPS-Data analysis and classificatino has been studied in various sutdies and
-projects, such as indetifying transportation modes or movement behavior.
-This section highlights related approaches to the classification and comparison
-of
-GPS data are relevant to the problem of this thesis.
+While much research conerned with GPS-Data analysis and classification problems
+focused on transportation mode detection and trajectory mining. Few studies
+have investigated the classification of urban structure
+based on waste collection trackings.
+This work addresses this gap by proposing a pipeline to distinguish between
+urban, suburban, town and rural structures from tracking data alone.
+
+\subsection{Urban structure analytics}
+The strucutre of urban areas has been analysed in many studies.
+Song et al., proposes a framework that uses access structure to describe and
+evaluate spatial relationships between streets, plots and
+buildings~\cite{song_access_2021}. While Zhou et al., proposes a big data
+approach to
+analyse the urban spatial structures of different
+areas~\cite{zhou_research_2022}.
 
 \subsection{Transportation Mode Prediction with Feature Engineering}
-Etemad, Soared and Matwin \cite{etemad_predicting_2018} propose a five step
+Etemad, Soared and Matwin~\cite{etemad_predicting_2018} propose a five step
 framework to predict the
-underlying transportation mode from GPS traces. The steps of this framewok
-include in order the preparation of data, point feature extraction (e.g.,
+underlying transportation mode from GPS traces. The framewok
+includes in order the preparation of data, point feature extraction (e.g.,
 distance, speed, bearing rate and its derivatitves), trajectory feature
 extraction (e.g., min, max, mean and std., percentiles), noise removal and
 normalization.
@@ -543,10 +585,10 @@ collection routes, which is the focus of this thesis.
 Koh et al.~\cite{koh_clustering_2022} present a framework to cluster users
 based on their movement patterns captured via an application on their mobile
 phones.
-The authors proposes a new metric, \textit{Daily Characteristic Dinstance
+The authors propose a new metric, \textit{Daily Characteristic Dinstance
   (DCD)},
 which is used to create a fair comparison between working and nonworking users
-on on workdays and offdays and extract features in combination with
+on workdays and offdays and extract features in combination with
 \textit{Origin-Destination (OD)} matrix features.
 
 The features derived from the DCD are combined with OD matrix
@@ -577,11 +619,12 @@ and effectively used for clustering and classification. Although the papers
 focus is on
 gps traces of individual people and captures data with mobile phones, the
 underlying methods can
-be applied for identifying patterns and simlaritiess in GPS track data
+be applied for identifying patterns and similarities in GPS track data
 collected by
 waste collection vehicles.
 
 \chapter{Problem Definition and Solution Approach}
+% TODO: put small introduction to chapter
 
 \section{Big Picture}
 
@@ -703,7 +746,7 @@ Each tracking contains the following fields:
 Each GPS point contains the following fields:
 \begin{table}[H]
   \centering
-  \caption{Structure of a GPS Point Entry}
+  \caption{Structure of a GPS Waypoint Entry}
   \label{tab:gps_point_structure}
   \begin{tabular}{|l|l|p{8cm}|}
     \hline
@@ -755,7 +798,8 @@ Each GPS point contains the following fields:
 
 The dataset consists of 101.353 individual trackings with a combined number of
 123,785,460 waypoints.
-Trackings were recorded by waste collection vehicles operating in the DACH
+Trackings were recorded by waste collection vehicles during real-world
+operation in the DACH
 region.
 
 \subsection{Data compression}
@@ -1075,17 +1119,20 @@ resulting clusters that represented the four defined categories better.
 To automatically classify new trackings into one of the four categories (Urban,
 Suburban, Town, Rural), a supervised machine learning model was trained using
 the labeled dataset from the clustering step.
-
 The labeled dataset was split into training and test sets using an 80/20 split.
-Evaluation of the classifier on the test sset showed a high overall accuracy.
-
+Evaluation of the classifier on the test set showed a high overall accuracy.
 The trained classifier was saved for the later use in a sandbox API to classify
 new trackings.
 
-% TODO: Determine if the following three sections should be in the thesis or not
-% \subsection{Comparison with OSM Geofences}
-
 \subsection{API Integration}
+To make the trained classification model accessible and usable in a practical
+sense, the solution includes the integration of a lightweight REST API.
+This enables external systems to send requests to the API endpoint, and
+receive a classification result in real-time.
+The API is designed to receive a \texttt{tracking\_id} and fetch the tracking
+data directly from the \textit{infeo GmbH} platform, preprocess it using the
+same logic as the training pipeline, and apply the Random Forest classifier to
+return the predicted label.
 
 \section{Structure of the Work}
 
@@ -1112,21 +1159,20 @@ problem and analysing the data, to buildinng and evaluating a solution to
 address the objective of classifying GPS trackings into structural categories.
 \chapter{Implementation}
 
-% The implementation 
-
-\section{Implementation of the Big Picture}
-
-This section translates the conceptual pipeline from Chapter 3 into its
+This Chapter translates the conceptual pipeline from Chapter 3 into its
 concrete Python-based implementation.
 Each stage of the pipeline, from data processing to feature extraction,
 clustering and classification, was implemented in modular Jupyter Notebooks
 using libraries such as \texttt{pandas}, \texttt{scikit-learn}, \texttt{geopy}
-and \texttt{pyarrow}.
+and \texttt{pyarrow}.Each module was designed to run independently, allowing
+for quick
+experimentation and reproducability of results.
 
-Each module was designed to run independently, allowing for quick
-experimentation and reproducability of results. The diagram in
+% \section{Implementation of the Big Picture}
+
+The
 Figure~\ref{fig:big_picture_implemetation_diagram} shows a more detailed view
-of the pipeline implementation.
+of the pipeline introduced int Chapter 3.
 
 \begin{figure}[htbp]
   \centering
@@ -1141,7 +1187,7 @@ of the pipeline implementation.
 Preprocessing is a crucial step in the machine learning pipeline.
 
 Each row in the dataset is a single GPS waypoint and consist of the following
-columns:
+relevant columns:
 
 \begin{itemize}
   \item \textbf{id\_tracking:} Unique identifier for each tracking.
@@ -1278,15 +1324,36 @@ Each Filter step reduces the dataset by this many trackings:
 \section{Feature Extraction}
 TODO: small text for section
 
+This section describes how raw GPS tracking data was transformed into
+meaningful features that enable the use of machine learning methods in later
+steps.
+The features were selected based on literature and domain knowledge to capture
+the characteristics of the waste collection routes.
+The resulting features were used for clustering and for training the supervised
+classifier. Each feature was extracted using Python libraries such as
+\texttt{pandas}, \texttt{numpy}, and \texttt{geopy} and stored in a CSV file.
+
 \subsection{Available Metadata Features}
-TODO: small text for subsection
+
+Metadata features are directly provided in the dataset for each tracking. They
+serve as a
+baseline for route length and duration.
 
 \paragraph{Tracking length}
+The total recorded travel distane in kilometers, as stored in the metadata.
 
 \paragraph{Tracking duration}
+The full duration from the first to the last recorded waypoint, in
+100-nanosecond intervals.
 
 \subsection{Computed Features from Waypoints}
 TODO: small text for subsection
+These features are derived from the sequence of waypoint for each tracking.
+They enrich the metadata by describing the geometry and dynamics of each
+tracking.
+All calculations were implemented using the \texttt{geopy} library for geodesic
+distances and \texttt{numpy} for vectorized operations.
+The most relevant features are described below.
 
 \paragraph{Number of points}
 
@@ -1308,9 +1375,8 @@ rectangle:
 \]
 where $d(\cdot, \cdot)$ refers to the geodesic distance between two GPS points
 (in
-meters), calculated using the WGS84 ellipsoid model through \textit{geopy}
-library
-\cite{noauthor_welcome_nodate}.
+meters), calculated using the WGS84 ellipsoid model through the \textit{geopy}
+Python library~\cite{noauthor_welcome_nodate}.
 
 \paragraph{Point density}
 
@@ -1365,8 +1431,8 @@ Amount of waypoints where the truck had a speed of zero:
 
 \subsection{Feature Storage and Output}
 
-The extracted features were stored in a structured csv file, with one row per
-tracking\_id and all corresponding features. This resulting dataset forms the
+The extracted features were stored in a structured CSV file, with one row per
+tracking and all corresponding features. This resulting dataset forms the
 basis for all future analysis, clustering and classification applications in
 the next steps of the pipeline.
 
@@ -1414,7 +1480,7 @@ the next steps of the pipeline.
     \\
     \hline
   \end{tabular}
-  \caption{Extracted features with their units and descriptions}
+  \caption{Extracted features with units and descriptions}
   \label{tab:feature_units}
 \end{table}
 
@@ -1554,99 +1620,108 @@ The best model was found with 300 trees, a maximum depth of 20, and default
 class weights. The model achieved an accuracy of
 98.3\% on the test set.
 
-\subsection{Model Evaluation}
+% \subsection{Model Evaluation}
 
-The classifier was evaluated using standard metrics:
+% The classifier was evaluated using standard metrics:
 
-\begin{itemize}
-  \item \textbf{Accuracy:} 0.983
-  \item \textbf{Macro F1-score:} 0.981
-  \item \textbf{Weighted F1-score:} 0.983
-  \item \textbf{Cohen's Kappa:} High agreement with actual labels
-\end{itemize}
+% \begin{itemize}
+%   \item \textbf{Accuracy:} 0.983
+%   \item \textbf{Macro F1-score:} 0.981
+%   \item \textbf{Weighted F1-score:} 0.983
+%   \item \textbf{Cohen's Kappa:} High agreement with actual labels
+% \end{itemize}
 
-A confusion matrix and class distribution bar plots were created to assess
-prediction quality. All classes were well-separated with minimal confusion. The
-silhouette score of -0.1393, although typical for high-dimensional data,
-reflects some overlap near decision boundaries.
+% A confusion matrix and class distribution bar plots were created to assess
+% prediction quality. All classes were well-separated with minimal confusion. The
+% silhouette score of -0.1393, although typical for high-dimensional data,
+% reflects some overlap near decision boundaries.
 
-\subsection{Feature Importance Analysis}
+% \subsection{Feature Importance Analysis}
 
-The feature importance plot revealed which GPS tracking characteristics had the
-strongest influence on classification. The most informative features included
-bounding box area, point density and length.
+% The feature importance plot revealed which GPS tracking characteristics had the
+% strongest influence on classification. The most informative features included
+% bounding box area, point density and length.
 
-SHAP (SHapley Additive exPlanations) values were also computed to explain
-individual predictions. Global and per-class SHAP summary plots confirmed the
-consistency of the feature contributions with domain expectations.
+% SHAP (SHapley Additive exPlanations) values were also computed to explain
+% individual predictions. Global and per-class SHAP summary plots confirmed the
+% consistency of the feature contributions with domain expectations.
 
-\subsection{Prediction Analysis and Visualization}
+% \subsection{Prediction Analysis and Visualization}
 
-Several visual analyses were performed on the test set:
+% Several visual analyses were performed on the test set:
 
-\begin{itemize}
-  \item \textbf{Boxplots} showing feature distribution across predicted labels
-  \item \textbf{Normalized heatmaps} comparing average feature values per
-        predicted class
-  \item \textbf{PCA scatterplot} visualizing predicted clusters in 2D space
-  \item \textbf{Geographic maps} of randomly sampled predicted routes for each
-        label
-\end{itemize}
+% \begin{itemize}
+%   \item \textbf{Boxplots} showing feature distribution across predicted labels
+%   \item \textbf{Normalized heatmaps} comparing average feature values per
+%         predicted class
+%   \item \textbf{PCA scatterplot} visualizing predicted clusters in 2D space
+%   \item \textbf{Geographic maps} of randomly sampled predicted routes for each
+%         label
+% \end{itemize}
 
-These visualizations support that the classifier not only performs well
-statistically but also produces geographically and behaviorally consistent
-results.
+% These visualizations support that the classifier not only performs well
+% statistically but also produces geographically and behaviorally consistent
+% results.
 
 \subsection{Saving and Exporting the Classifier}
 
 The trained Random Forest model was serialized using \texttt{joblib} and
-exported as \texttt{rf\_area\_classifier\_full.pkl}. This model can be directly
+exported as a \texttt{.pkl} file. This model can be directly
 integrated into production pipelines or reused for further research.
 Predictions from the classifier were stored for visualization and evaluation
 purposes in a CSV file.
 
-\subsection{Cross-Validation Results}
+% \subsection{Cross-Validation Results}
 
-To validate model stability, 10-fold stratified cross-validation was applied to
-the full dataset. The mean accuracy across folds was approximately
-98\% with a very low standard deviation, confirming the generalizability of the
-classifier.
+% To validate model stability, 10-fold stratified cross-validation was applied to
+% the full dataset. The mean accuracy across folds was approximately
+% 98\% with a very low standard deviation, confirming the generalizability of the
+% classifier.
 
 \subsection{Conclusion}
 
 The Random Forest classifier achieved high performance and provided
 interpretable insights into how GPS tracking data reflects urban, suburban,
 town, and rural driving patterns. The combination of clustering,
-semi-supervised learning, and explainable AI techniques created a robust
+semi-supervised learning, and explainable machine learning techniques created a
+robust
 classification pipeline for real-world tracking analysis.
 
 \section{Integration with API}
+
+To provide real-time classification, a FastAPI-based web service was
+implemented (Figure~\ref{fig:fastapi_implementation_diagram}). The service
+exposes a single endpoint which takes a
+\texttt{tracking\_id} as an input, fetches the corresponding tracking data from
+the \textit{infeo GmbH} API, and processes the tracking data through the same
+preprocessing pipeline used during the model training.
+
+The API loads the trained classifier from a serialized \texttt{.pkl} file and
+predicts the label of processed tracking.
+The endpoint then returns the \texttt{tracking\_id} and the predicted class
+label in a \textit{json} format.
+
+Figure~\ref{fig:fastapi_docs} shows the automatically generated \textit{Swagger
+  UI} documentation of the endpoint.
 
 \begin{figure}[htbp]
   \centering
 
   \includegraphics[width=0.9\textwidth]{Diagrams/drawio/api/api_implementation.png}
   \caption{API Implementation Diagram}
-  \label{fig:fastapi_docs}
+  \label{fig:fastapi_implementation_diagram}
 \end{figure}
-\FloatBarrier
 
 \begin{figure}[htbp]
   \centering
 
   \includegraphics[width=0.9\textwidth]{Figures/api/fastapi_documentation.png}
-  \caption{FastAPI documentation of classificationo API}
+  \caption{Swagger UI documentation of FastAPI Classification Endpoint}
   \label{fig:fastapi_docs}
 \end{figure}
-\FloatBarrier
-
-% TODO: hier noch kurz eine api implementieren -> tracking id als input und klasse ausgeben
 
 \chapter{Evaluation and Discussion}
 % TODO: EXpertenmeinung zu den ergebnissen der classification von florian einbauen (evtl eigene section)
-
-As a result of the implementation, many insights were gathered on the
-characteristics of the clustering and classifier.
 
 This chapter presents a comprehensive evaluation of the clustering and
 classification results.
