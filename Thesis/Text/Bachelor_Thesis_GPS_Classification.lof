@@ -14,14 +14,20 @@
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Correlation Matrix of selected GPS route features grouped by area label\relax }}{26}{figure.caption.26}%
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Boxplot of point density grouped by area label\relax }}{27}{figure.caption.27}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Big picture implementation pipeline\relax }}{31}{figure.caption.28}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces DBSCAN\relax }}{37}{figure.caption.31}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Histogram\relax }}{38}{figure.caption.32}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces K-Means semi supervised clustering pipeline\relax }}{39}{figure.caption.33}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Data driven feature weights used for K-means clustering\relax }}{40}{figure.caption.34}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Big picture implementation pipeline\relax }}{32}{figure.caption.28}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces K-Means semi supervised clustering pipeline\relax }}{38}{figure.caption.31}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Bounding Box Boxplot\relax }}{44}{figure.caption.35}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Point Density Boxplot\relax }}{45}{figure.caption.36}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Randomforest classifier predictions on testset\relax }}{46}{figure.caption.37}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces PCA Projection of DBSCAN clustering for noise removal\relax }}{43}{figure.caption.32}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Feature Weights used for K-Means clustering\relax }}{44}{figure.caption.33}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces PCA Projection of K-Means clustering\relax }}{44}{figure.caption.34}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces SHAP Summary for all Classes\relax }}{45}{figure.caption.35}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Map Visualization of Clustered trackings (Red: \texttt {URBAN}, Orange: \texttt {SUBURBAN}, Blue: \texttt {TOWN}, Green: \texttt {RURAL})\relax }}{46}{figure.caption.36}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Confusion Matrix of Random Forest Classifier\relax }}{47}{figure.caption.37}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Feature Importance Barchart of Random Forest Classifier\relax }}{48}{figure.caption.38}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Normalized Mean Feature Values by Predicted Class\relax }}{48}{figure.caption.39}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces PCA Projection of Test Set with Predicted Labels\relax }}{49}{figure.caption.40}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces SHAP Summary for all Classes\relax }}{50}{figure.caption.41}%
+\contentsline {figure}{\numberline {5.11}{\ignorespaces SHAP summary plots for all classes\relax }}{50}{figure.caption.42}%
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Sample Predictions on Test Set\relax }}{51}{figure.caption.43}%
 \addvspace {10\p@ }
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

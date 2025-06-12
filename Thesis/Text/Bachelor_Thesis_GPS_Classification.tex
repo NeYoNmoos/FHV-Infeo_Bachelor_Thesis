@@ -40,6 +40,9 @@
   captionpos=b
 }
 
+% for sub figures
+\usepackage{subcaption}
+
 \usepackage{amsfonts}
 
 \usepackage[a-2b,mathxmp]{pdfx}[2018/12/22]
@@ -1109,29 +1112,26 @@ problem and analysing the data, to buildinng and evaluating a solution to
 address the objective of classifying GPS trackings into structural categories.
 \chapter{Implementation}
 
+% The implementation 
+
 \section{Implementation of the Big Picture}
 
-% oal: Translate the conceptual steps (from the big picture diagram) into real
-% implementation stages.
+This section translates the conceptual pipeline from Chapter 3 into its
+concrete Python-based implementation.
+Each stage of the pipeline, from data processing to feature extraction,
+clustering and classification, was implemented in modular Jupyter Notebooks
+using libraries such as \texttt{pandas}, \texttt{scikit-learn}, \texttt{geopy}
+and \texttt{pyarrow}.
 
-% Bullet Points:
-
-% Refer back to the high-level diagram from Chapter 3.
-
-% Describe how each step (preprocessing, feature extraction, clustering,
-% classification) is implemented in code (Python).
-
-% Mention tools/libraries used: pandas, scikit-learn, geopy, DBSCAN, etc.
-
-% Include a graphic: re-use or simplify the big-picture pipeline (could annotate
-% it with function/module names).
-
-% Optionally show a small code snippet or function signature for each step.
+Each module was designed to run independently, allowing for quick
+experimentation and reproducability of results. The diagram in
+Figure~\ref{fig:big_picture_implemetation_diagram} shows a more detailed view
+of the pipeline implementation.
 
 \begin{figure}[htbp]
   \centering
 
-  \includegraphics[width=\textwidth]{Diagrams/drawio/big_picture_implementation.png}
+  \includegraphics[width=0.8\textwidth]{Diagrams/drawio/big_picture_implementation.png}
   \caption{Big picture implementation pipeline}
   \label{fig:big_picture_implemetation_diagram}
 \end{figure}
@@ -1276,13 +1276,17 @@ Each Filter step reduces the dataset by this many trackings:
 \FloatBarrier
 
 \section{Feature Extraction}
+TODO: small text for section
 
 \subsection{Available Metadata Features}
+TODO: small text for subsection
 
-\textbf{Tracking length}
-\textbf{Tracking duration}
+\paragraph{Tracking length}
+
+\paragraph{Tracking duration}
 
 \subsection{Computed Features from Waypoints}
+TODO: small text for subsection
 
 \paragraph{Number of points}
 
@@ -1304,7 +1308,9 @@ rectangle:
 \]
 where $d(\cdot, \cdot)$ refers to the geodesic distance between two GPS points
 (in
-meters), calculated using the WGS84 ellipsoid model.
+meters), calculated using the WGS84 ellipsoid model through \textit{geopy}
+library
+\cite{noauthor_welcome_nodate}.
 
 \paragraph{Point density}
 
@@ -1334,6 +1340,7 @@ Ratio between the start-end distance and the total path length:
 \[
   straightness = \frac{d(p_1, p_n)}{\sum_{i=1}^{n-1} d(p_i, p_{i+1})}
 \]
+~\cite{benhamou_how_2004}
 
 \paragraph{Mean Heading Change}
 Average angle change between consecutive direction vectors (in radians):
@@ -1348,6 +1355,7 @@ with bearings $\theta_i$ computed via:
   \cos(\phi_1)\sin(\phi_2) - \sin(\phi_1)\cos(\phi_2)\cos(\Delta \lambda)
   \right)
 \]
+~\cite{etemad_predicting_2018}
 
 \paragraph{Number of Stops}
 Amount of waypoints where the truck had a speed of zero:
@@ -1432,24 +1440,17 @@ the next steps of the pipeline.
 
 \subsection{Outlier Removal with DBSCAN}
 
-\begin{figure}[htbp]
-  \centering
+% doesnt belong here (goes down to evaluation)
+% \begin{figure}[htbp]
+%   \centering
 
-  \includegraphics[width=0.9\textwidth]{Figures/dbscan_diagram_feature_data.png}
-  \caption{DBSCAN}
-  \label{fig:dbscan-clustering-outlier-removal}
-\end{figure}
-\FloatBarrier
+%   \includegraphics[width=0.9\textwidth]{Figures/dbscan_diagram_feature_data.png}
+%   \caption{DBSCAN}
+%   \label{fig:dbscan-clustering-outlier-removal}
+% \end{figure}
+% \FloatBarrier
 
 \subsection{Semi-Supervised Clustering with Weighted and Seeded K-Means}
-\begin{figure}[htbp]
-  \centering
-
-  \includegraphics[width=1\textwidth]{Figures/histogram_feature_data_pre_clustering.png}
-  \caption{Histogram}
-  \label{fig:histogram-feature-engineered-data}
-\end{figure}
-\FloatBarrier
 
 % TODO: Rewrite this entire section -> 100% AI 
 
@@ -1491,16 +1492,7 @@ all $w_i$ to ensure comparability:
 \]
 
 Finally, the weights were clipped to the range $[0.5, 2.0]$ to avoid extreme
-scaling effects.
-
-\begin{figure}[htbp]
-  \centering
-
-  \includegraphics[width=0.9\textwidth]{Figures/feature_weights.png}
-  \caption{Data driven feature weights used for K-means clustering}
-  \label{fig:kmeans-clustering-feature-weight}
-\end{figure}
-\FloatBarrier
+scaling effects ~\cite{guyon_introduction_nodate}.
 
 \subsubsection{Seeded Cluster Initialization}
 
@@ -1617,7 +1609,8 @@ purposes in a CSV file.
 
 To validate model stability, 10-fold stratified cross-validation was applied to
 the full dataset. The mean accuracy across folds was approximately
-98% with a very low standard deviation, confirming the generalizability of the classifier.
+98\% with a very low standard deviation, confirming the generalizability of the
+classifier.
 
 \subsection{Conclusion}
 
@@ -1630,41 +1623,275 @@ classification pipeline for real-world tracking analysis.
 \section{Integration with existing systems}
 Formatvorlage für den Fließtext.
 
+% TODO: hier noch kurz eine api implementieren -> tracking id als input und klasse ausgeben
+
 \chapter{Evaluation and Discussion}
+% TODO: EXpertenmeinung zu den ergebnissen der classification von florian einbauen (evtl eigene section)
+
+As a result of the implementation, many insights were gathered on the
+characteristics of the clustering and classifier.
+
+This chapter presents a comprehensive evaluation of the clustering and
+classification results.
+It provides insights into the performance, limitations, and robustess of the
+developed system.
 
 \section{Definition of the data sets used for the evaluation}
-Formatvorlage für den Fließtext.
 
-\section{Evaluation of the results}
-Formatvorlage für den Fließtext.
+To assess the quality of the clustering and classification steps, various
+datasets at different stages of the pipeline were used.
+The final labeled dataset was split into training and test sets using a 2:1
+ratio to evaluate the classifier's generalization ability.
+
+\section{Evaluation of the Results}
+
+\subsection{Clustering Results}
+
+The DBSCAN clustering algorithm was used to remove noise points and outliers,
+resulting in the removal of 1,539 trackings.
+The PCA projection in Figure~\ref{fig:pca_dbscan} shows the detected outlier
+cluster (-1), sbusequently removed resulting in a cleaner structure for the
+K-Means clustering.
 
 \begin{figure}[htbp]
   \centering
 
-  \includegraphics[width=0.9\textwidth]{Figures/classifier/boxplots/classifier_bbox_area_boxplot.png}
-  \caption{Bounding Box Boxplot}
-  \label{fig:bbox_boxplot_classifier}
+  \includegraphics[width=0.9\textwidth]{Figures/dbscan_diagram_feature_data.png}
+  \caption{PCA Projection of DBSCAN clustering for noise removal}
+  \label{fig:pca_dbscan}
 \end{figure}
 \FloatBarrier
+
+The feature weights calulated from the manually selected sample data showed
+that \texttt{bbox\_area}, \texttt{point\_density},
+\texttt{straigthness} and \texttt{length} were the most informative features.
+The concrete values are depipicted
+in Figure ~\ref{fig:feature_weights_for_kmeans}.
+
+Weighted K-Means clustering with custom initial centroids produced four
+distinct clusters. Each cluster was mapped to a label (\texttt{0-URBAN},
+\texttt{1-SUBURBAN}, \texttt{2-TOWN}, \texttt{3-RURAL}) based on feature
+statistic and visual inspection.
+The PCA projection in Figure ~\ref{fig:pca_kmeans} visualized the resulting
+cluster structure, with a final silhouette score of \textbf{0.2621} indicates a
+moderate clustering
+separation.
+
 \begin{figure}[htbp]
   \centering
 
-  \includegraphics[width=0.9\textwidth]{Figures/classifier/boxplots/classifier_point_density_boxplot.png}
-  \caption{Point Density Boxplot}
-  \label{fig:point_density_boxplot_classifier}
+  \includegraphics[width=0.9\textwidth]{Figures/feature_weights.png}
+  \caption{Feature Weights used for K-Means clustering}
+  \label{fig:feature_weights_for_kmeans}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+
+  \includegraphics[width=0.9\textwidth]{Figures/kmeans_diagram_feature_data.png}
+  \caption{PCA Projection of K-Means clustering}
+  \label{fig:pca_kmeans}
 \end{figure}
 \FloatBarrier
+
+\begin{figure}[htbp]
+  \centering
+
+  \includegraphics[width=0.9\textwidth]{Figures/classifier/shap_summary_for_all_classes.png}
+  \caption{SHAP Summary for all Classes}
+  \label{fig:shap_all_classes}
+\end{figure}
+
+% map visualization of clustered trackings by K-Means
+\begin{figure}[p]
+  \centering
+
+  \begin{subfigure}[b]{0.495\textwidth}
+    \centering
+
+    \includegraphics[width=\textwidth]{Figures/clustering_map/clustering_result_map_rural_area1.png}
+    \caption{Lower Bavaria}
+    \label{fig:clustering_map_visulaization_rural}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.495\textwidth}
+    \centering
+
+    \includegraphics[width=\textwidth]{Figures/clustering_map/clustering_result_map_konstanz_area_town1.png}
+    \caption{Thurgau: Kreuzlingen and Konstanz}
+    \label{fig:clustering_map_visulaization_konstanz}
+  \end{subfigure}
+
+  \vspace{1cm}
+
+  \begin{subfigure}[b]{0.495\textwidth}
+    \centering
+
+    \includegraphics[width=\textwidth]{Figures/clustering_map/clustering_result_map_linz_urban1.png}
+    \caption{Upper Austria: Linz}
+    \label{fig:clustering_map_visulaization_linz}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.495\textwidth}
+    \centering
+
+    \includegraphics[width=\textwidth]{Figures/clustering_map/clustering_result_map_vorarlberg_closeup.png}
+    \caption{Vorarlberg}
+    \label{fig:clustering_map_visulaization_vorarlberg}
+  \end{subfigure}
+
+  \caption{Map Visualization of Clustered trackings (Red: \texttt{URBAN},
+    Orange: \texttt{SUBURBAN}, Blue: \texttt{TOWN}, Green: \texttt{RURAL})}
+  \label{fig:clstering_map_visualizations}
+\end{figure}
+\FloatBarrier
+
+\subsection{Classifier Results}
+
+A Random Forest classifier was trained with hyperparameter tuning.
+The model achieved high performance on the test set: Accuracy \textbf{98.3\%},
+Macro F1-score: \textbf{98.1\%}, Weighted F1-score \textbf{98.3\%} and Cohen's
+Kappa \textbf{97.3\%}.
+The classifier showed balanced performance across all four classes, with
+precision and recall values above \textbf{97\%} for all classes.
+
+The feature importance analysis (Figure
+~\ref{fig:feature_importance_random_forest})
+highlighted \texttt[length], \texttt{bbox\_area}, \texttt{point\_density} and
+\texttt{num\_points} as key contributing features.
+
+\begin{figure}[htbp]
+  \centering
+
+  \includegraphics[width=0.9\textwidth]{Figures/classifier/confusion_matric_label_prediction.png}
+  \caption{Confusion Matrix of Random Forest Classifier}
+  \label{fig:confusion_matrix_random_forest}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+
+  \includegraphics[width=0.9\textwidth]{Figures/classifier/feature_importance_random_forest.png}
+  \caption{Feature Importance Barchart of Random Forest Classifier}
+  \label{fig:feature_importance_random_forest}
+\end{figure}
+
+The mean feature values across all four classes (Figure
+~\ref{fig:mean_feature_value_matrix_by_class}) confirm a monotonic
+relationships
+between classes in increasing rurality (e.g.,\texttt{URBAN} to
+\texttt{SUBURBAN} to \texttt{TOWN} to
+\texttt{RURAL})
+for the features
+\texttt{bbox\_area}, \texttt{point\_density}, \texttt{avg\_segment\_distance}
+and \texttt{length}.
+
+\begin{figure}[htbp]
+  \centering
+
+  \includegraphics[width=0.9\textwidth]{Figures/classifier/feature_values_normalized.png}
+  \caption{Normalized Mean Feature Values by Predicted Class}
+  \label{fig:mean_feature_value_matrix_by_class}
+\end{figure}
+\FloatBarrier
+
+\begin{figure}[htbp]
+  \centering
+
+  \includegraphics[width=0.9\textwidth]{Figures/classifier/pca_projection_test_set.png}
+  \caption{PCA Projection of Test Set with Predicted Labels}
+  \label{fig:pca_projection_test_set}
+\end{figure}
+\FloatBarrier
+
+\begin{figure}[htbp]
+  \centering
+
+  \includegraphics[width=0.9\textwidth]{Figures/classifier/shap_summary_for_all_classes.png}
+  \caption{SHAP Summary for all Classes}
+  \label{fig:shap_all_classes}
+\end{figure}
+
+\begin{figure}[p]
+  \centering
+
+  \begin{subfigure}[b]{0.495\textwidth}
+    \centering
+
+    \includegraphics[width=\textwidth]{Figures/classifier/shap/shap_summary_for_URBAN.png}
+    \caption{Urban}
+    \label{fig:shap_urban}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.495\textwidth}
+    \centering
+
+    \includegraphics[width=\textwidth]{Figures/classifier/shap/shap_summary_for_SUBURBAN.png}
+    \caption{Suburban}
+    \label{fig:shap_suburban}
+  \end{subfigure}
+
+  \vspace{1cm}
+
+  \begin{subfigure}[b]{0.495\textwidth}
+    \centering
+
+    \includegraphics[width=\textwidth]{Figures/classifier/shap/shap_summary_for_TOWN.png}
+    \caption{Town}
+    \label{fig:shap_town}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.495\textwidth}
+    \centering
+
+    \includegraphics[width=\textwidth]{Figures/classifier/shap/shap_summary_for_RURAL.png}
+    \caption{Rural}
+    \label{fig:shap_rural}
+  \end{subfigure}
+
+  \caption{SHAP summary plots for all classes}
+  \label{fig:shap_all_classes}
+\end{figure}
+
+Finally four random trackings from each category were selected from the
+classified test set and visualized on map segments
+~\ref{fig:four_final_predictions_on_testset}, validating the structural and
+spatial differences of the labels.
 
 \begin{figure}[htbp]
   \centering
 
   \includegraphics[width=\textwidth]{Figures/classifier/four_final_predictions_per_class.png}
-  \caption{Randomforest classifier predictions on testset}
+  \caption{Sample Predictions on Test Set}
   \label{fig:four_final_predictions_on_testset}
 \end{figure}
 \FloatBarrier
-\section{Reflection on the results}
-Formatvorlage für den Fließtext.
+
+\section{Reflection on the Results}
+
+The clustering and classification pipeline effectively distinguishes between
+urban structures based on GPS tracking data, with the classifier achieving high
+accuracy with over \textbf{97\%} in all
+key metrics. While the clustering silhouette score was moderate, visual and
+statistical inspection validate the cluster integrity.
+
+However the negative silhouette score on the test set shows some significant
+overlap between classes. This could
+indicate the need to lower the amount of clusters to three, which
+might prove a better distinction between classes with less overlap.
+
+The features \texttt{bbox\_area}, \texttt{point\_density} and
+\texttt{duration},
+initally deemed suitable for distinction between classes, because of their
+motonic
+behavior, were confirmed to be indicative discriminators.
+Furthermore, the
+classification results show that \texttt{avg\_segment\_distance} and
+\texttt{mean\_heading\_change} also follow motonic behavior among classes,
+reinforcing the efficteveness of this pipeline.
+
+The methods used demostrate a reproducible and scalable framework for GPS-based
+route classification, appllicable to waste management and beyond.
 
 \chapter{Conclusion}
 

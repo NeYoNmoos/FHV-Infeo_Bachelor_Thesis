@@ -437,6 +437,104 @@
       \verb https://wiki.awm.infeo.at/index.php/Route_zum_Nachfahren_bereitstellen#Aufzeichnung_komprimieren
       \endverb
     \endentry
+    \entry{noauthor_welcome_nodate}{misc}{}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labeltitlesource}{title}
+      \field{title}{Welcome to {GeoPy}’s documentation! — {GeoPy} 2.4.1 documentation}
+      \field{urlday}{11}
+      \field{urlmonth}{6}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Welcome to GeoPy’s documentation! — GeoPy 2.4.1 documentation:files/96/stable.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://geopy.readthedocs.io/en/stable/
+      \endverb
+      \verb{url}
+      \verb https://geopy.readthedocs.io/en/stable/
+      \endverb
+    \endentry
+    \entry{benhamou_how_2004}{article}{}
+      \name{author}{1}{}{%
+        {{hash=1ee267eb7bba2d398fd8c7cebafa4ed7}{%
+           family={Benhamou},
+           familyi={B\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{1ee267eb7bba2d398fd8c7cebafa4ed7}
+      \strng{fullhash}{1ee267eb7bba2d398fd8c7cebafa4ed7}
+      \strng{bibnamehash}{1ee267eb7bba2d398fd8c7cebafa4ed7}
+      \strng{authorbibnamehash}{1ee267eb7bba2d398fd8c7cebafa4ed7}
+      \strng{authornamehash}{1ee267eb7bba2d398fd8c7cebafa4ed7}
+      \strng{authorfullhash}{1ee267eb7bba2d398fd8c7cebafa4ed7}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The tortuosity of an animal's path is a key parameter in orientation and searching behaviours. The tortuosity of an oriented path is inversely related to the efficiency of the orientation mechanism involved, the best mechanism being assumed to allow the animal to reach its goal along a straight line movement. The tortuosity of a random search path controls the local searching intensity, allowing the animal to adjust its search effort to the local profitability of the environment. This paper shows that (1) the efficiency of an oriented path can be reliably estimated by a straightness index computed as the ratio between the distance from the starting point to the goal and the path length travelled to reach the goal, but such a simple index, ranging between 0 and 1, cannot be applied to random search paths; (2) the tortuosity of a random search path, ranging between straight line movement and Brownian motion, can be reliably estimated by a sinuosity index which combines the mean cosine of changes of direction with the mean step length; and (3) in the current state of the art, the fractal analysis of animals’ paths, which may appear as an alternative and promising way to measure the tortuosity of a random search path as a fractal dimension ranging between 1 (straight line movement) and 2 (Brownian motion), is only liable to generate artifactual results. This paper also provides some help for distinguishing between oriented and random search paths, and depicts a general, comprehensive framework for analysing individual animals’ paths in a two-dimensional space.}
+      \field{issn}{0022-5193}
+      \field{journaltitle}{Journal of Theoretical Biology}
+      \field{month}{7}
+      \field{number}{2}
+      \field{shorttitle}{How to reliably estimate the tortuosity of an animal's path}
+      \field{title}{How to reliably estimate the tortuosity of an animal's path:: straightness, sinuosity, or fractal dimension?}
+      \field{urlday}{11}
+      \field{urlmonth}{6}
+      \field{urlyear}{2025}
+      \field{volume}{229}
+      \field{year}{2004}
+      \field{urldateera}{ce}
+      \field{pages}{209\bibrangedash 220}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1016/j.jtbi.2004.03.016
+      \endverb
+      \verb{file}
+      \verb ScienceDirect Snapshot:files/94/S0022519304001353.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0022519304001353
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0022519304001353
+      \endverb
+      \keyw{Diffusion,Fractal,Orientation,Random Search}
+    \endentry
+    \entry{guyon_introduction_nodate}{article}{}
+      \name{author}{2}{}{%
+        {{hash=284a778b6c8e17f1aae38e288dc06036}{%
+           family={Guyon},
+           familyi={G\bibinitperiod},
+           given={Isabelle},
+           giveni={I\bibinitperiod}}}%
+        {{hash=2d94e9f30443c60219d6654ae426df98}{%
+           family={Elisseeff},
+           familyi={E\bibinitperiod},
+           given={Andre},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{6482b2930aae0624329a32e856876b41}
+      \strng{fullhash}{6482b2930aae0624329a32e856876b41}
+      \strng{bibnamehash}{6482b2930aae0624329a32e856876b41}
+      \strng{authorbibnamehash}{6482b2930aae0624329a32e856876b41}
+      \strng{authornamehash}{6482b2930aae0624329a32e856876b41}
+      \strng{authorfullhash}{6482b2930aae0624329a32e856876b41}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Variable and feature selection have become the focus of much research in areas of application for which datasets with tens or hundreds of thousands of variables are available. These areas include text processing of internet documents, gene expression array analysis, and combinatorial chemistry. The objective of variable selection is three-fold: improving the prediction performance of the predictors, providing faster and more cost-effective predictors, and providing a better understanding of the underlying process that generated the data. The contributions of this special issue cover a wide range of aspects of such problems: providing a better deﬁnition of the objective function, feature construction, feature ranking, multivariate feature selection, efﬁcient search methods, and feature validity assessment methods.}
+      \field{title}{An {Introduction} to {Variable} and {Feature} {Selection}}
+      \verb{file}
+      \verb PDF:files/97/Guyon and Elisseeff - An Introduction to Variable and Feature Selection.pdf:application/pdf
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

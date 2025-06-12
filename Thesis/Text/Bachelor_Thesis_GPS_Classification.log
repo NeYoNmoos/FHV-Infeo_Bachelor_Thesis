@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.10.25)  11 JUN 2025 15:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.10.25)  12 JUN 2025 03:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -381,6 +381,10 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1372.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
+) (/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2020/10/07 v1.3j Sub-captions (AR)
+\c@subfigure=\count296
+\c@subtable=\count297
 ) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks25
@@ -391,7 +395,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ) (/usr/share/texlive/texmf-dist/tex/latex/pdfx/pdfx.sty
 Package: pdfx 2019/02/27 v1.6.3 PDF/X and PDF/A support (CVR/HTH/RRM/PS)
-\pdfx@minorversion=\count296
+\pdfx@minorversion=\count298
  (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifpdf.sty
 Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
 ) (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifxetex.sty
@@ -457,52 +461,52 @@ Using XMP template file: pdfa.xmp
 Package: biblatex 2022/02/02 v3.17 programmable bibliographies (PK/MW)
  (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count297
+\lrq@indent=\count299
  (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-\c@tabx@nest=\count298
-\c@listtotal=\count299
-\c@listcount=\count300
-\c@liststart=\count301
-\c@liststop=\count302
-\c@citecount=\count303
-\c@citetotal=\count304
-\c@multicitecount=\count305
-\c@multicitetotal=\count306
-\c@instcount=\count307
-\c@maxnames=\count308
-\c@minnames=\count309
-\c@maxitems=\count310
-\c@minitems=\count311
-\c@citecounter=\count312
-\c@maxcitecounter=\count313
-\c@savedcitecounter=\count314
-\c@uniquelist=\count315
-\c@uniquename=\count316
-\c@refsection=\count317
-\c@refsegment=\count318
-\c@maxextratitle=\count319
-\c@maxextratitleyear=\count320
-\c@maxextraname=\count321
-\c@maxextradate=\count322
-\c@maxextraalpha=\count323
-\c@abbrvpenalty=\count324
-\c@highnamepenalty=\count325
-\c@lownamepenalty=\count326
-\c@maxparens=\count327
-\c@parenlevel=\count328
-\blx@tempcnta=\count329
-\blx@tempcntb=\count330
-\blx@tempcntc=\count331
-\c@blx@maxsection=\count332
-\c@blx@maxsegment@0=\count333
-\blx@notetype=\count334
-\blx@parenlevel@text=\count335
-\blx@parenlevel@foot=\count336
-\c@blx@sectionciteorder@0=\count337
-\blx@entrysetcounter=\count338
-\blx@biblioinstance=\count339
+\c@tabx@nest=\count300
+\c@listtotal=\count301
+\c@listcount=\count302
+\c@liststart=\count303
+\c@liststop=\count304
+\c@citecount=\count305
+\c@citetotal=\count306
+\c@multicitecount=\count307
+\c@multicitetotal=\count308
+\c@instcount=\count309
+\c@maxnames=\count310
+\c@minnames=\count311
+\c@maxitems=\count312
+\c@minitems=\count313
+\c@citecounter=\count314
+\c@maxcitecounter=\count315
+\c@savedcitecounter=\count316
+\c@uniquelist=\count317
+\c@uniquename=\count318
+\c@refsection=\count319
+\c@refsegment=\count320
+\c@maxextratitle=\count321
+\c@maxextratitleyear=\count322
+\c@maxextraname=\count323
+\c@maxextradate=\count324
+\c@maxextraalpha=\count325
+\c@abbrvpenalty=\count326
+\c@highnamepenalty=\count327
+\c@lownamepenalty=\count328
+\c@maxparens=\count329
+\c@parenlevel=\count330
+\blx@tempcnta=\count331
+\blx@tempcntb=\count332
+\blx@tempcntc=\count333
+\c@blx@maxsection=\count334
+\c@blx@maxsegment@0=\count335
+\blx@notetype=\count336
+\blx@parenlevel@text=\count337
+\blx@parenlevel@foot=\count338
+\c@blx@sectionciteorder@0=\count339
+\blx@entrysetcounter=\count340
+\blx@biblioinstance=\count341
 \labelnumberwidth=\skip65
 \labelalphawidth=\skip66
 \biblabelsep=\skip67
@@ -514,9 +518,9 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 \blx@bcfin=\read4
 \blx@bcfout=\write4
 \blx@langwohyphens=\language88
-\c@mincomprange=\count340
-\c@maxcomprange=\count341
-\c@mincompwidth=\count342
+\c@mincomprange=\count342
+\c@maxcomprange=\count343
+\c@mincompwidth=\count344
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
  (/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-dm.def
@@ -526,74 +530,74 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'ieee.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count343
-\c@savedafterword=\count344
-\c@annotator=\count345
-\c@savedannotator=\count346
-\c@author=\count347
-\c@savedauthor=\count348
-\c@bookauthor=\count349
-\c@savedbookauthor=\count350
-\c@commentator=\count351
-\c@savedcommentator=\count352
-\c@editor=\count353
-\c@savededitor=\count354
-\c@editora=\count355
-\c@savededitora=\count356
-\c@editorb=\count357
-\c@savededitorb=\count358
-\c@editorc=\count359
-\c@savededitorc=\count360
-\c@foreword=\count361
-\c@savedforeword=\count362
-\c@holder=\count363
-\c@savedholder=\count364
-\c@introduction=\count365
-\c@savedintroduction=\count366
-\c@namea=\count367
-\c@savednamea=\count368
-\c@nameb=\count369
-\c@savednameb=\count370
-\c@namec=\count371
-\c@savednamec=\count372
-\c@translator=\count373
-\c@savedtranslator=\count374
-\c@shortauthor=\count375
-\c@savedshortauthor=\count376
-\c@shorteditor=\count377
-\c@savedshorteditor=\count378
-\c@labelname=\count379
-\c@savedlabelname=\count380
-\c@institution=\count381
-\c@savedinstitution=\count382
-\c@lista=\count383
-\c@savedlista=\count384
-\c@listb=\count385
-\c@savedlistb=\count386
-\c@listc=\count387
-\c@savedlistc=\count388
-\c@listd=\count389
-\c@savedlistd=\count390
-\c@liste=\count391
-\c@savedliste=\count392
-\c@listf=\count393
-\c@savedlistf=\count394
-\c@location=\count395
-\c@savedlocation=\count396
-\c@organization=\count397
-\c@savedorganization=\count398
-\c@origlocation=\count399
-\c@savedoriglocation=\count400
-\c@origpublisher=\count401
-\c@savedorigpublisher=\count402
-\c@publisher=\count403
-\c@savedpublisher=\count404
-\c@language=\count405
-\c@savedlanguage=\count406
-\c@origlanguage=\count407
-\c@savedoriglanguage=\count408
-\c@pageref=\count409
-\c@savedpageref=\count410
+\c@afterword=\count345
+\c@savedafterword=\count346
+\c@annotator=\count347
+\c@savedannotator=\count348
+\c@author=\count349
+\c@savedauthor=\count350
+\c@bookauthor=\count351
+\c@savedbookauthor=\count352
+\c@commentator=\count353
+\c@savedcommentator=\count354
+\c@editor=\count355
+\c@savededitor=\count356
+\c@editora=\count357
+\c@savededitora=\count358
+\c@editorb=\count359
+\c@savededitorb=\count360
+\c@editorc=\count361
+\c@savededitorc=\count362
+\c@foreword=\count363
+\c@savedforeword=\count364
+\c@holder=\count365
+\c@savedholder=\count366
+\c@introduction=\count367
+\c@savedintroduction=\count368
+\c@namea=\count369
+\c@savednamea=\count370
+\c@nameb=\count371
+\c@savednameb=\count372
+\c@namec=\count373
+\c@savednamec=\count374
+\c@translator=\count375
+\c@savedtranslator=\count376
+\c@shortauthor=\count377
+\c@savedshortauthor=\count378
+\c@shorteditor=\count379
+\c@savedshorteditor=\count380
+\c@labelname=\count381
+\c@savedlabelname=\count382
+\c@institution=\count383
+\c@savedinstitution=\count384
+\c@lista=\count385
+\c@savedlista=\count386
+\c@listb=\count387
+\c@savedlistb=\count388
+\c@listc=\count389
+\c@savedlistc=\count390
+\c@listd=\count391
+\c@savedlistd=\count392
+\c@liste=\count393
+\c@savedliste=\count394
+\c@listf=\count395
+\c@savedlistf=\count396
+\c@location=\count397
+\c@savedlocation=\count398
+\c@organization=\count399
+\c@savedorganization=\count400
+\c@origlocation=\count401
+\c@savedoriglocation=\count402
+\c@origpublisher=\count403
+\c@savedorigpublisher=\count404
+\c@publisher=\count405
+\c@savedpublisher=\count406
+\c@language=\count407
+\c@savedlanguage=\count408
+\c@origlanguage=\count409
+\c@savedoriglanguage=\count410
+\c@pageref=\count411
+\c@savedpageref=\count412
 \shorthandwidth=\skip73
 \shortjournalwidth=\skip74
 \shortserieswidth=\skip75
@@ -617,19 +621,19 @@ Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
  (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2022/02/02 v3.17 biblatex compatibility (PK/MW)
-\c@textcitecount=\count411
-\c@textcitetotal=\count412
-\c@textcitemaxnames=\count413
-\c@biburlbigbreakpenalty=\count414
-\c@biburlbreakpenalty=\count415
-\c@biburlnumpenalty=\count416
-\c@biburlucpenalty=\count417
-\c@biburllcpenalty=\count418
+\c@textcitecount=\count413
+\c@textcitetotal=\count414
+\c@textcitemaxnames=\count415
+\c@biburlbigbreakpenalty=\count416
+\c@biburlbreakpenalty=\count417
+\c@biburlnumpenalty=\count418
+\c@biburlucpenalty=\count419
+\c@biburllcpenalty=\count420
 \biburlbigskip=\muskip17
 \biburlnumskip=\muskip18
 \biburlucskip=\muskip19
 \biburllcskip=\muskip20
-\c@smartand=\count419
+\c@smartand=\count421
 )
 Package biblatex Info: Trying to load bibliography style 'ieee'...
 Package biblatex Info: ... file 'ieee.bbx' found.
@@ -647,8 +651,8 @@ Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
  (/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2022/02/02 v3.17 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count420
-\c@bbx:relatedtotal=\count421
+\c@bbx:relatedcount=\count422
+\c@bbx:relatedtotal=\count423
 ))))
 Package biblatex Info: Trying to load citation style 'ieee'...
 Package biblatex Info: ... file 'ieee.cbx' found.
@@ -658,10 +662,10 @@ Package biblatex Info: Trying to load citation style 'numeric-comp'...
 Package biblatex Info: ... file 'numeric-comp.cbx' found.
  (/usr/share/texlive/texmf-dist/tex/latex/biblatex/cbx/numeric-comp.cbx
 File: numeric-comp.cbx 2022/02/02 v3.17 biblatex citation style (PK/MW)
-\c@cbx@tempcnta=\count422
-\c@cbx@tempcntb=\count423
-\c@cbx@tempcntc=\count424
-\c@cbx@tempcntd=\count425
+\c@cbx@tempcnta=\count424
+\c@cbx@tempcntb=\count425
+\c@cbx@tempcntc=\count426
+\c@cbx@tempcntd=\count427
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
@@ -689,7 +693,7 @@ Package biblatex Info: Document encoding is UTF8 ....
 Package: expl3 2022-01-21 L3 programming layer (loader) 
  (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count426
+\l__color_backend_stack_int=\count428
 \l__pdf_internal_box=\box57
 ))
 Package biblatex Info: ... and expl3
@@ -709,42 +713,48 @@ Package csquotes Info: Redefining alias 'default' -> 'english'.
 
 LaTeX Warning: Label `fig:dbscan-reachability-and-connectivity' multiply defined.
 
+
+LaTeX Warning: Label `fig:shap_all_classes' multiply defined.
+
+
+LaTeX Warning: Label `fig:shap_all_classes' multiply defined.
+
 )
 \openout1 = `Bachelor_Thesis_GPS_Classification.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-Package scrbase Info: activating english \contentsname on input line 64.
-Package scrbase Info: activating english \listfigurename on input line 64.
-Package scrbase Info: activating english \listtablename on input line 64.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+Package scrbase Info: activating english \contentsname on input line 67.
+Package scrbase Info: activating english \listfigurename on input line 67.
+Package scrbase Info: activating english \listtablename on input line 67.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count427
+\scratchcounter=\count429
 \scratchdimen=\dimen165
 \scratchbox=\box58
-\nofMPsegments=\count428
-\nofMParguments=\count429
+\nofMPsegments=\count430
+\nofMParguments=\count431
 \everyMPshowfont=\toks28
-\MPscratchCnt=\count430
+\MPscratchCnt=\count432
 \MPscratchDim=\dimen166
-\MPnumerator=\count431
-\makeMPintoPDFobject=\count432
+\MPnumerator=\count433
+\makeMPintoPDFobject=\count434
 \everyMPtoPDFconversion=\toks29
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -752,7 +762,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 64.
+Package hyperref Info: Link coloring OFF on input line 67.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
@@ -760,11 +770,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count433
+\c@section@level=\count435
 )
-LaTeX Info: Redefining \ref on input line 64.
-LaTeX Info: Redefining \pageref on input line 64.
-LaTeX Info: Redefining \nameref on input line 64.
+LaTeX Info: Redefining \ref on input line 67.
+LaTeX Info: Redefining \pageref on input line 67.
+LaTeX Info: Redefining \nameref on input line 67.
  (./Bachelor_Thesis_GPS_Classification.out) (./Bachelor_Thesis_GPS_Classification.out)
 \@outlinefile=\write5
 \openout5 = `Bachelor_Thesis_GPS_Classification.out'.
@@ -776,12 +786,12 @@ Class scrreprt Info: loading recommended package `bookmark'.
 (scrreprt)           `bookmarkpackage=false' before \begin{document} and
 (scrreprt)           you can avoid this message adding:
 (scrreprt)             \usepackage{bookmark}
-(scrreprt)           before \begin{document} on input line 64.
+(scrreprt)           before \begin{document} on input line 67.
  (/usr/share/texlive/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
  (/usr/share/texlive/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
 File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
-\BKM@id=\count434
+\BKM@id=\count436
 ))
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -822,7 +832,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count435
+\c@lstlisting=\count437
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/english.lbx
@@ -836,14 +846,14 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Bachelor_Thesis_GPS_Classification.bbl' found.
  (./Bachelor_Thesis_GPS_Classification.bbl)
-Package biblatex Info: Reference section=0 on input line 64.
-Package biblatex Info: Reference segment=0 on input line 64.
+Package biblatex Info: Reference section=0 on input line 67.
+Package biblatex Info: Reference segment=0 on input line 67.
 <Abbildungen/Wort-Bild-Marke-cmyk.jpg, id=7, 5259.65pt x 1275.76625pt>
 File: Abbildungen/Wort-Bild-Marke-cmyk.jpg Graphic file (type jpg)
 <use Abbildungen/Wort-Bild-Marke-cmyk.jpg>
-Package pdftex.def Info: Abbildungen/Wort-Bild-Marke-cmyk.jpg  used on input line 89.
+Package pdftex.def Info: Abbildungen/Wort-Bild-Marke-cmyk.jpg  used on input line 92.
 (pdftex.def)             Requested size: 160.92563pt x 39.03053pt.
-LaTeX Font Info:    Trying to load font information for T1+cmss on input line 93.
+LaTeX Font Info:    Trying to load font information for T1+cmss on input line 96.
  (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 ) [1
@@ -853,22 +863,22 @@ File: t1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 
 
  <./Abbildungen/Wort-Bild-Marke-cmyk.jpg>] [2]
-Overfull \hbox (22.5477pt too wide) in paragraph at lines 143--167
+Overfull \hbox (22.5477pt too wide) in paragraph at lines 146--170
 \T1/cmr/m/n/12 las-tung bei möglichst gerin-gen Kosten er-mit-telt wird. Dies geschieht in Entsorgungs-
  []
 
 
-Overfull \hbox (39.03319pt too wide) in paragraph at lines 168--176
+Overfull \hbox (39.03319pt too wide) in paragraph at lines 171--179
 \T1/cmr/m/n/12 An-wen-der:innen haben dadurch die Möglichkeit für neue Auss-chrei-bun-gen entsprechend
  []
 
 
-Overfull \hbox (2.19917pt too wide) in paragraph at lines 168--176
+Overfull \hbox (2.19917pt too wide) in paragraph at lines 171--179
 \T1/cmr/m/n/12 passende Pla-nungspa-ram-e-ter aus ihren beste-hen-den Auf-trags-ge-bi-eten zu berech-
  []
 
 [3]
-Overfull \hbox (2.44202pt too wide) in paragraph at lines 220--223
+Overfull \hbox (2.44202pt too wide) in paragraph at lines 223--226
 \T1/cmr/m/n/12 GPS Data Clas-si-fi-ca-tion, Waste Man-age-ment, Ar-ti-fi-cial In-tel-li-gence, Ge-o-graphic
  []
 
@@ -888,7 +898,11 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \tf@toc=\write6
 \openout6 = `Bachelor_Thesis_GPS_Classification.toc'.
 
- [7] (./Bachelor_Thesis_GPS_Classification.lof)
+ [7] (./Bachelor_Thesis_GPS_Classification.lof
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 24.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+))
 \tf@lof=\write7
 \openout7 = `Bachelor_Thesis_GPS_Classification.lof'.
 
@@ -904,46 +918,46 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 ]
 
-LaTeX Warning: Hyper reference `acro:GPS' on page 10 undefined on input line 251.
+LaTeX Warning: Hyper reference `acro:GPS' on page 10 undefined on input line 254.
 
 
-LaTeX Warning: Hyper reference `acro:GPS' on page 10 undefined on input line 251.
+LaTeX Warning: Hyper reference `acro:GPS' on page 10 undefined on input line 254.
 
 
-LaTeX Warning: Hyper reference `acro:AI' on page 10 undefined on input line 252.
+LaTeX Warning: Hyper reference `acro:AI' on page 10 undefined on input line 255.
 
 
-LaTeX Warning: Hyper reference `acro:AI' on page 10 undefined on input line 252.
+LaTeX Warning: Hyper reference `acro:AI' on page 10 undefined on input line 255.
 
 
-LaTeX Warning: Hyper reference `acro:ML' on page 10 undefined on input line 253.
+LaTeX Warning: Hyper reference `acro:ML' on page 10 undefined on input line 256.
 
 
-LaTeX Warning: Hyper reference `acro:ML' on page 10 undefined on input line 253.
+LaTeX Warning: Hyper reference `acro:ML' on page 10 undefined on input line 256.
 
 
-LaTeX Warning: Hyper reference `acro:API' on page 10 undefined on input line 254.
+LaTeX Warning: Hyper reference `acro:API' on page 10 undefined on input line 257.
 
 
-LaTeX Warning: Hyper reference `acro:API' on page 10 undefined on input line 254.
+LaTeX Warning: Hyper reference `acro:API' on page 10 undefined on input line 257.
 
 
-LaTeX Warning: Hyper reference `acro:CSV' on page 10 undefined on input line 255.
+LaTeX Warning: Hyper reference `acro:CSV' on page 10 undefined on input line 258.
 
 
-LaTeX Warning: Hyper reference `acro:CSV' on page 10 undefined on input line 255.
+LaTeX Warning: Hyper reference `acro:CSV' on page 10 undefined on input line 258.
 
 
-LaTeX Warning: Hyper reference `acro:DACH' on page 10 undefined on input line 256.
+LaTeX Warning: Hyper reference `acro:DACH' on page 10 undefined on input line 259.
 
 
-LaTeX Warning: Hyper reference `acro:DACH' on page 10 undefined on input line 256.
+LaTeX Warning: Hyper reference `acro:DACH' on page 10 undefined on input line 259.
 
 
-LaTeX Warning: Hyper reference `acro:DBSCAN' on page 10 undefined on input line 258.
+LaTeX Warning: Hyper reference `acro:DBSCAN' on page 10 undefined on input line 261.
 
 
-LaTeX Warning: Hyper reference `acro:DBSCAN' on page 10 undefined on input line 258.
+LaTeX Warning: Hyper reference `acro:DBSCAN' on page 10 undefined on input line 261.
 
 [10
 
@@ -966,7 +980,7 @@ Class scrreprt Warning: \float@addtolists detected!
 (scrreprt)              deprecated \float@addtolist interface.
 
 
-Overfull \hbox (14.41673pt too wide) in paragraph at lines 314--319
+Overfull \hbox (14.41673pt too wide) in paragraph at lines 317--322
 \T1/cmr/m/n/12 gelingt oft nur durch Au-toma-tisierung und Op-ti-mierung von Prozessen,
  []
 
@@ -977,64 +991,60 @@ chapter 2.
 [13
 
 ]
-<Figures/background/dbscan_core_points_and_border_points.png, id=320, 383.93437pt x 96.36pt>
+<Figures/background/dbscan_core_points_and_border_points.png, id=341, 383.93437pt x 96.36pt>
 File: Figures/background/dbscan_core_points_and_border_points.png Graphic file (type png)
 <use Figures/background/dbscan_core_points_and_border_points.png>
-Package pdftex.def Info: Figures/background/dbscan_core_points_and_border_points.png  used on input line 416.
+Package pdftex.def Info: Figures/background/dbscan_core_points_and_border_points.png  used on input line 419.
 (pdftex.def)             Requested size: 281.62292pt x 70.68625pt.
-<Figures/background/dbscan_density_reachability_connectivity.png, id=324, 375.4025pt x 93.34875pt>
+<Figures/background/dbscan_density_reachability_connectivity.png, id=345, 375.4025pt x 93.34875pt>
 File: Figures/background/dbscan_density_reachability_connectivity.png Graphic file (type png)
 <use Figures/background/dbscan_density_reachability_connectivity.png>
-Package pdftex.def Info: Figures/background/dbscan_density_reachability_connectivity.png  used on input line 437.
+Package pdftex.def Info: Figures/background/dbscan_density_reachability_connectivity.png  used on input line 440.
 (pdftex.def)             Requested size: 281.62292pt x 70.03416pt.
  [14 <./Figures/background/dbscan_core_points_and_border_points.png> <./Figures/background/dbscan_density_reachability_connectivity.png>]
-<Figures/background/k-means-and-DBSCAN-clustering-results-on-Chainlink-data-set.png, id=340, 204.765pt x 81.1833pt>
+<Figures/background/k-means-and-DBSCAN-clustering-results-on-Chainlink-data-set.png, id=362, 204.765pt x 81.1833pt>
 File: Figures/background/k-means-and-DBSCAN-clustering-results-on-Chainlink-data-set.png Graphic file (type png)
 <use Figures/background/k-means-and-DBSCAN-clustering-results-on-Chainlink-data-set.png>
-Package pdftex.def Info: Figures/background/k-means-and-DBSCAN-clustering-results-on-Chainlink-data-set.png  used on input line 495.
+Package pdftex.def Info: Figures/background/k-means-and-DBSCAN-clustering-results-on-Chainlink-data-set.png  used on input line 498.
 (pdftex.def)             Requested size: 281.62292pt x 111.66269pt.
  [15 <./Figures/background/k-means-and-DBSCAN-clustering-results-on-Chainlink-data-set.png>]
-<Figures/related_work/etemad_pipeline.png, id=352, 1088.868pt x 418.56375pt>
+<Figures/related_work/etemad_pipeline.png, id=373, 1088.868pt x 418.56375pt>
 File: Figures/related_work/etemad_pipeline.png Graphic file (type png)
 <use Figures/related_work/etemad_pipeline.png>
-Package pdftex.def Info: Figures/related_work/etemad_pipeline.png  used on input line 521.
+Package pdftex.def Info: Figures/related_work/etemad_pipeline.png  used on input line 524.
 (pdftex.def)             Requested size: 402.32022pt x 154.6554pt.
  [16 <./Figures/related_work/etemad_pipeline.png>]
-<Figures/related_work/koh_clustering_framwork_flowchart.png, id=363, 936.49875pt x 325.215pt>
+<Figures/related_work/koh_clustering_framwork_flowchart.png, id=384, 936.49875pt x 325.215pt>
 File: Figures/related_work/koh_clustering_framwork_flowchart.png Graphic file (type png)
 <use Figures/related_work/koh_clustering_framwork_flowchart.png>
-Package pdftex.def Info: Figures/related_work/koh_clustering_framwork_flowchart.png  used on input line 561.
+Package pdftex.def Info: Figures/related_work/koh_clustering_framwork_flowchart.png  used on input line 564.
 (pdftex.def)             Requested size: 402.32022pt x 139.71565pt.
  [17 <./Figures/related_work/koh_clustering_framwork_flowchart.png>]
 chapter 3.
-<Diagrams/drawio/big_picture.png, id=371, 462.72874pt x 457.71pt>
+<Diagrams/drawio/big_picture.png, id=392, 462.72874pt x 457.71pt>
 File: Diagrams/drawio/big_picture.png Graphic file (type png)
 <use Diagrams/drawio/big_picture.png>
-Package pdftex.def Info: Diagrams/drawio/big_picture.png  used on input line 617.
+Package pdftex.def Info: Diagrams/drawio/big_picture.png  used on input line 620.
 (pdftex.def)             Requested size: 321.85739pt x 318.36943pt.
 [18
 
 ] [19 <./Diagrams/drawio/big_picture.png>]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 657.
- (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
-Underfull \hbox (badness 3758) in paragraph at lines 662--666
+Underfull \hbox (badness 3758) in paragraph at lines 665--669
 []\T1/cmr/m/n/12 Name of the track-ing (ran-dom-ized for
  []
 
 
-Underfull \hbox (badness 2142) in paragraph at lines 667--670
+Underfull \hbox (badness 2142) in paragraph at lines 670--673
 []\T1/cmr/m/n/12 Route meta-data, of-ten in-cludes in-ter-nal
  []
 
 
-Underfull \hbox (badness 2057) in paragraph at lines 686--689
+Underfull \hbox (badness 2057) in paragraph at lines 689--692
 []\T1/cmr/m/n/12 ID of the as-so-ci-ated tour (nul-li-fied for
  []
 
 
-Overfull \hbox (0.66364pt too wide) in paragraph at lines 652--698
+Overfull \hbox (0.66364pt too wide) in paragraph at lines 655--701
  [][] 
  []
 
@@ -1042,35 +1052,35 @@ Overfull \hbox (0.66364pt too wide) in paragraph at lines 652--698
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [20] [21]
-<Figures/problem_definition/Aufzeichnune-komprimieren-winkelreduktion.png, id=397, 347.2975pt x 144.54pt>
+<Figures/problem_definition/Aufzeichnune-komprimieren-winkelreduktion.png, id=417, 347.2975pt x 144.54pt>
 File: Figures/problem_definition/Aufzeichnune-komprimieren-winkelreduktion.png Graphic file (type png)
 <use Figures/problem_definition/Aufzeichnune-komprimieren-winkelreduktion.png>
-Package pdftex.def Info: Figures/problem_definition/Aufzeichnune-komprimieren-winkelreduktion.png  used on input line 789.
+Package pdftex.def Info: Figures/problem_definition/Aufzeichnune-komprimieren-winkelreduktion.png  used on input line 792.
 (pdftex.def)             Requested size: 281.62292pt x 117.21127pt.
  [22
 
  <./Figures/problem_definition/Aufzeichnune-komprimieren-winkelreduktion.png>]
-<Figures/sample_tracking_routes_mapgrid.png, id=411, 1445.4pt x 722.7pt>
+<Figures/sample_tracking_routes_mapgrid.png, id=431, 1445.4pt x 722.7pt>
 File: Figures/sample_tracking_routes_mapgrid.png Graphic file (type png)
 <use Figures/sample_tracking_routes_mapgrid.png>
-Package pdftex.def Info: Figures/sample_tracking_routes_mapgrid.png  used on input line 860.
+Package pdftex.def Info: Figures/sample_tracking_routes_mapgrid.png  used on input line 863.
 (pdftex.def)             Requested size: 402.32022pt x 201.15262pt.
  [23] [24 <./Figures/sample_tracking_routes_mapgrid.png>]
-<Figures/sample_pairplot.png, id=421, 2063.7903pt x 1952.0127pt>
+<Figures/sample_pairplot.png, id=441, 2063.7903pt x 1952.0127pt>
 File: Figures/sample_pairplot.png Graphic file (type png)
 <use Figures/sample_pairplot.png>
-Package pdftex.def Info: Figures/sample_pairplot.png  used on input line 903.
+Package pdftex.def Info: Figures/sample_pairplot.png  used on input line 906.
 (pdftex.def)             Requested size: 402.32022pt x 380.50691pt.
  [25 <./Figures/sample_pairplot.png>]
-<Figures/sample_correlation_matrix.png, id=428, 493.1223pt x 408.3255pt>
+<Figures/sample_correlation_matrix.png, id=448, 493.1223pt x 408.3255pt>
 File: Figures/sample_correlation_matrix.png Graphic file (type png)
 <use Figures/sample_correlation_matrix.png>
-Package pdftex.def Info: Figures/sample_correlation_matrix.png  used on input line 918.
+Package pdftex.def Info: Figures/sample_correlation_matrix.png  used on input line 921.
 (pdftex.def)             Requested size: 402.32022pt x 333.15305pt.
-<Figures/sample_point_density_boxplot.png, id=429, 435.7881pt x 327.8649pt>
+<Figures/sample_point_density_boxplot.png, id=449, 435.7881pt x 327.8649pt>
 File: Figures/sample_point_density_boxplot.png Graphic file (type png)
 <use Figures/sample_point_density_boxplot.png>
-Package pdftex.def Info: Figures/sample_point_density_boxplot.png  used on input line 939.
+Package pdftex.def Info: Figures/sample_point_density_boxplot.png  used on input line 942.
 (pdftex.def)             Requested size: 402.32022pt x 302.68495pt.
 
 
@@ -1078,107 +1088,178 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [26 <./Figures/sample_correlation_matrix.png>] [27 <./Figures/sample_point_density_boxplot.png>] [28] [29] [30]
 chapter 4.
-<Diagrams/drawio/big_picture_implementation.png, id=469, 814.04124pt x 798.985pt>
+<Diagrams/drawio/big_picture_implementation.png, id=490, 814.04124pt x 798.985pt>
 File: Diagrams/drawio/big_picture_implementation.png Graphic file (type png)
 <use Diagrams/drawio/big_picture_implementation.png>
 Package pdftex.def Info: Diagrams/drawio/big_picture_implementation.png  used on input line 1134.
-(pdftex.def)             Requested size: 402.32022pt x 394.87093pt.
+(pdftex.def)             Requested size: 321.85739pt x 315.9065pt.
 [31
 
- <./Diagrams/drawio/big_picture_implementation.png>] [32] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+] [32 <./Diagrams/drawio/big_picture_implementation.png>] [33] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 1203.
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/cmtt/m/n' tried instead on input line 1204.
- [33]
+ [34]
 Overfull \hbox (40.09035pt too wide) in paragraph at lines 1234--1273
  [][] 
  []
 
-
-Overfull \hbox (20.33795pt too wide) detected at line 1304
+[35]
+Overfull \hbox (20.33795pt too wide) detected at line 1308
 \OML/cmm/m/it/12 h \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 d\OT1/cmr/m/n/12 ((\OML/cmm/m/it/12 lat[]; long[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 lat[]; long[]\OT1/cmr/m/n/12 ))\OML/cmm/m/it/12 ;  w \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 d\OT1/cmr/m/n/12 ((\OML/cmm/m/it/12 lat[]; lon[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 lat[]; long[]\OT1/cmr/m/n/12 ))
  []
 
-[34]
-Overfull \hbox (98.8869pt too wide) in paragraph at lines 1367--1409
+[36]
+Overfull \hbox (98.8869pt too wide) in paragraph at lines 1375--1417
  [][] 
  []
 
-[35]
-<Figures/dbscan_diagram_feature_data.png, id=521, 722.7pt x 433.62pt>
-File: Figures/dbscan_diagram_feature_data.png Graphic file (type png)
-<use Figures/dbscan_diagram_feature_data.png>
-Package pdftex.def Info: Figures/dbscan_diagram_feature_data.png  used on input line 1438.
-(pdftex.def)             Requested size: 362.08574pt x 217.25276pt.
- [36]
-<Figures/histogram_feature_data_pre_clustering.png, id=526, 867.24pt x 578.16pt>
-File: Figures/histogram_feature_data_pre_clustering.png Graphic file (type png)
-<use Figures/histogram_feature_data_pre_clustering.png>
-Package pdftex.def Info: Figures/histogram_feature_data_pre_clustering.png  used on input line 1448.
-(pdftex.def)             Requested size: 402.32022pt x 268.21526pt.
- [37 <./Figures/dbscan_diagram_feature_data.png>]
-Overfull \hbox (11.96191pt too wide) in paragraph at lines 1456--1463
-[]\T1/cmr/m/n/12 To im-prove the in-ter-pretabil-ity and per-for-mance of clus-ter-ing, a semi-supervised
+
+Overfull \hbox (0.21478pt too wide) in paragraph at lines 1457--1464
+\T1/cmr/m/n/12 To im-prove the in-ter-pretabil-ity and per-for-mance of clus-ter-ing, a semi-supervised
  []
 
-<Diagrams/drawio/implementation/clustering_pipeline.png, id=533, 814.04124pt x 302.12875pt>
+<Diagrams/drawio/implementation/clustering_pipeline.png, id=550, 814.04124pt x 302.12875pt>
 File: Diagrams/drawio/implementation/clustering_pipeline.png Graphic file (type png)
 <use Diagrams/drawio/implementation/clustering_pipeline.png>
-Package pdftex.def Info: Diagrams/drawio/implementation/clustering_pipeline.png  used on input line 1467.
+Package pdftex.def Info: Diagrams/drawio/implementation/clustering_pipeline.png  used on input line 1468.
 (pdftex.def)             Requested size: 362.08574pt x 134.38463pt.
-[38 <./Figures/histogram_feature_data_pre_clustering.png>]
-<Figures/feature_weights.png, id=539, 858.5676pt x 496.7358pt>
-File: Figures/feature_weights.png Graphic file (type png)
-<use Figures/feature_weights.png>
-Package pdftex.def Info: Figures/feature_weights.png  used on input line 1499.
-(pdftex.def)             Requested size: 362.08574pt x 209.4841pt.
- [39 <./Diagrams/drawio/implementation/clustering_pipeline.png>] [40 <./Figures/feature_weights.png>] [41] [42] [43]
+[37] [38 <./Diagrams/drawio/implementation/clustering_pipeline.png>] [39] [40] [41]
 chapter 5.
-<Figures/classifier/boxplots/classifier_bbox_area_boxplot.png, id=564, 578.16pt x 289.08pt>
-File: Figures/classifier/boxplots/classifier_bbox_area_boxplot.png Graphic file (type png)
-<use Figures/classifier/boxplots/classifier_bbox_area_boxplot.png>
-Package pdftex.def Info: Figures/classifier/boxplots/classifier_bbox_area_boxplot.png  used on input line 1644.
-(pdftex.def)             Requested size: 362.08574pt x 181.04066pt.
-<Figures/classifier/boxplots/classifier_point_density_boxplot.png, id=565, 578.16pt x 289.08pt>
-File: Figures/classifier/boxplots/classifier_point_density_boxplot.png Graphic file (type png)
-<use Figures/classifier/boxplots/classifier_point_density_boxplot.png>
-Package pdftex.def Info: Figures/classifier/boxplots/classifier_point_density_boxplot.png  used on input line 1652.
-(pdftex.def)             Requested size: 362.08574pt x 181.04066pt.
-[44
-
- <./Figures/classifier/boxplots/classifier_bbox_area_boxplot.png>]
-<Figures/classifier/four_final_predictions_per_class.png, id=571, 1445.4pt x 1445.4pt>
-File: Figures/classifier/four_final_predictions_per_class.png Graphic file (type png)
-<use Figures/classifier/four_final_predictions_per_class.png>
-Package pdftex.def Info: Figures/classifier/four_final_predictions_per_class.png  used on input line 1661.
-(pdftex.def)             Requested size: 402.32022pt x 402.30525pt.
- [45 <./Figures/classifier/boxplots/classifier_point_density_boxplot.png>] [46 <./Figures/classifier/four_final_predictions_per_class.png>] [47
+<Figures/dbscan_diagram_feature_data.png, id=578, 722.7pt x 433.62pt>
+File: Figures/dbscan_diagram_feature_data.png Graphic file (type png)
+<use Figures/dbscan_diagram_feature_data.png>
+Package pdftex.def Info: Figures/dbscan_diagram_feature_data.png  used on input line 1659.
+(pdftex.def)             Requested size: 362.08574pt x 217.25276pt.
+[42
 
 ]
-chapter 6.
-[48
+<Figures/feature_weights.png, id=585, 858.5676pt x 496.7358pt>
+File: Figures/feature_weights.png Graphic file (type png)
+<use Figures/feature_weights.png>
+Package pdftex.def Info: Figures/feature_weights.png  used on input line 1683.
+(pdftex.def)             Requested size: 362.08574pt x 209.4841pt.
+<Figures/kmeans_diagram_feature_data.png, id=586, 722.7pt x 433.62pt>
+File: Figures/kmeans_diagram_feature_data.png Graphic file (type png)
+<use Figures/kmeans_diagram_feature_data.png>
+Package pdftex.def Info: Figures/kmeans_diagram_feature_data.png  used on input line 1691.
+(pdftex.def)             Requested size: 362.08574pt x 217.25276pt.
+ [43 <./Figures/dbscan_diagram_feature_data.png>] [44 <./Figures/feature_weights.png> <./Figures/kmeans_diagram_feature_data.png>]
+<Figures/classifier/shap_summary_for_all_classes.png, id=599, 578.16pt x 339.669pt>
+File: Figures/classifier/shap_summary_for_all_classes.png Graphic file (type png)
+<use Figures/classifier/shap_summary_for_all_classes.png>
+Package pdftex.def Info: Figures/classifier/shap_summary_for_all_classes.png  used on input line 1700.
+(pdftex.def)             Requested size: 362.08574pt x 212.72278pt.
+<Figures/clustering_map/clustering_result_map_rural_area1.png, id=600, 1040.08575pt x 626.34pt>
+File: Figures/clustering_map/clustering_result_map_rural_area1.png Graphic file (type png)
+<use Figures/clustering_map/clustering_result_map_rural_area1.png>
+Package pdftex.def Info: Figures/clustering_map/clustering_result_map_rural_area1.png  used on input line 1712.
+(pdftex.def)             Requested size: 199.14653pt x 119.92331pt.
+<Figures/clustering_map/clustering_result_map_konstanz_area_town1.png, id=601, 1044.90375pt x 628.14674pt>
+File: Figures/clustering_map/clustering_result_map_konstanz_area_town1.png Graphic file (type png)
+<use Figures/clustering_map/clustering_result_map_konstanz_area_town1.png>
+Package pdftex.def Info: Figures/clustering_map/clustering_result_map_konstanz_area_town1.png  used on input line 1720.
+(pdftex.def)             Requested size: 199.14653pt x 119.71333pt.
+<Figures/clustering_map/clustering_result_map_linz_urban1.png, id=602, 1045.506pt x 629.9535pt>
+File: Figures/clustering_map/clustering_result_map_linz_urban1.png Graphic file (type png)
+<use Figures/clustering_map/clustering_result_map_linz_urban1.png>
+Package pdftex.def Info: Figures/clustering_map/clustering_result_map_linz_urban1.png  used on input line 1730.
+(pdftex.def)             Requested size: 199.14653pt x 119.99039pt.
+<Figures/clustering_map/clustering_result_map_vorarlberg_closeup.png, id=603, 1042.49475pt x 626.34pt>
+File: Figures/clustering_map/clustering_result_map_vorarlberg_closeup.png Graphic file (type png)
+<use Figures/clustering_map/clustering_result_map_vorarlberg_closeup.png>
+Package pdftex.def Info: Figures/clustering_map/clustering_result_map_vorarlberg_closeup.png  used on input line 1738.
+(pdftex.def)             Requested size: 199.14653pt x 119.64616pt.
+ [45 <./Figures/classifier/shap_summary_for_all_classes.png>] [46 <./Figures/clustering_map/clustering_result_map_rural_area1.png> <./Figures/clustering_map/clustering_result_map_konstanz_area_town1.png> <./Figures/clustering_map/clustering_result_map_linz_urban1.png> <./Figures/clustering_map/clustering_result_map_vorarlberg_closeup.png>]
+Overfull \hbox (4.87614pt too wide) in paragraph at lines 1758--1762
+[]\T1/cmr/m/n/12 The fea-ture im-por-tance anal-y-sis (Fig-ure  []5.7[]) high-lighted \T1/cmtt/m/n/12 [\T1/cmr/m/n/12 length], \T1/cmtt/m/n/12 bbox_area\T1/cmr/m/n/12 ,
+ []
 
-] [49]
-Overfull \hbox (6.04228pt too wide) in paragraph at lines 1747--1747
+<Figures/classifier/confusion_matric_label_prediction.png, id=619, 578.16pt x 433.62pt>
+File: Figures/classifier/confusion_matric_label_prediction.png Graphic file (type png)
+<use Figures/classifier/confusion_matric_label_prediction.png>
+Package pdftex.def Info: Figures/classifier/confusion_matric_label_prediction.png  used on input line 1766.
+(pdftex.def)             Requested size: 362.08574pt x 271.561pt.
+<Figures/classifier/feature_importance_random_forest.png, id=620, 722.7pt x 433.62pt>
+File: Figures/classifier/feature_importance_random_forest.png Graphic file (type png)
+<use Figures/classifier/feature_importance_random_forest.png>
+Package pdftex.def Info: Figures/classifier/feature_importance_random_forest.png  used on input line 1774.
+(pdftex.def)             Requested size: 362.08574pt x 217.25276pt.
+
+Overfull \hbox (1.69775pt too wide) in paragraph at lines 1779--1788
+\T1/cmr/m/n/12 tonic re-la-tion-ships be-tween classes in in-creas-ing ru-ral-ity (e.g.,\T1/cmtt/m/n/12 URBAN \T1/cmr/m/n/12 to \T1/cmtt/m/n/12 SUBURBAN
+ []
+
+
+Overfull \hbox (39.06815pt too wide) in paragraph at lines 1779--1788
+\T1/cmr/m/n/12 to \T1/cmtt/m/n/12 TOWN \T1/cmr/m/n/12 to \T1/cmtt/m/n/12 RURAL\T1/cmr/m/n/12 ) for the fea-tures \T1/cmtt/m/n/12 bbox_area\T1/cmr/m/n/12 , \T1/cmtt/m/n/12 point_density\T1/cmr/m/n/12 , \T1/cmtt/m/n/12 avg_segment_distance
+ []
+
+<Figures/classifier/feature_values_normalized.png, id=622, 722.7pt x 433.62pt>
+File: Figures/classifier/feature_values_normalized.png Graphic file (type png)
+<use Figures/classifier/feature_values_normalized.png>
+Package pdftex.def Info: Figures/classifier/feature_values_normalized.png  used on input line 1792.
+(pdftex.def)             Requested size: 362.08574pt x 217.25276pt.
+[47 <./Figures/classifier/confusion_matric_label_prediction.png>] [48 <./Figures/classifier/feature_importance_random_forest.png> <./Figures/classifier/feature_values_normalized.png>]
+<Figures/classifier/pca_projection_test_set.png, id=634, 578.16pt x 433.62pt>
+File: Figures/classifier/pca_projection_test_set.png Graphic file (type png)
+<use Figures/classifier/pca_projection_test_set.png>
+Package pdftex.def Info: Figures/classifier/pca_projection_test_set.png  used on input line 1801.
+(pdftex.def)             Requested size: 362.08574pt x 271.561pt.
+File: Figures/classifier/shap_summary_for_all_classes.png Graphic file (type png)
+<use Figures/classifier/shap_summary_for_all_classes.png>
+Package pdftex.def Info: Figures/classifier/shap_summary_for_all_classes.png  used on input line 1810.
+(pdftex.def)             Requested size: 362.08574pt x 212.72278pt.
+<Figures/classifier/shap/shap_summary_for_URBAN.png, id=635, 578.16pt x 339.669pt>
+File: Figures/classifier/shap/shap_summary_for_URBAN.png Graphic file (type png)
+<use Figures/classifier/shap/shap_summary_for_URBAN.png>
+Package pdftex.def Info: Figures/classifier/shap/shap_summary_for_URBAN.png  used on input line 1821.
+(pdftex.def)             Requested size: 199.14653pt x 116.99416pt.
+<Figures/classifier/shap/shap_summary_for_SUBURBAN.png, id=636, 578.16pt x 339.669pt>
+File: Figures/classifier/shap/shap_summary_for_SUBURBAN.png Graphic file (type png)
+<use Figures/classifier/shap/shap_summary_for_SUBURBAN.png>
+Package pdftex.def Info: Figures/classifier/shap/shap_summary_for_SUBURBAN.png  used on input line 1829.
+(pdftex.def)             Requested size: 199.14653pt x 116.99416pt.
+<Figures/classifier/shap/shap_summary_for_TOWN.png, id=637, 578.16pt x 339.669pt>
+File: Figures/classifier/shap/shap_summary_for_TOWN.png Graphic file (type png)
+<use Figures/classifier/shap/shap_summary_for_TOWN.png>
+Package pdftex.def Info: Figures/classifier/shap/shap_summary_for_TOWN.png  used on input line 1839.
+(pdftex.def)             Requested size: 199.14653pt x 116.99416pt.
+<Figures/classifier/shap/shap_summary_for_RURAL.png, id=638, 578.16pt x 339.669pt>
+File: Figures/classifier/shap/shap_summary_for_RURAL.png Graphic file (type png)
+<use Figures/classifier/shap/shap_summary_for_RURAL.png>
+Package pdftex.def Info: Figures/classifier/shap/shap_summary_for_RURAL.png  used on input line 1847.
+(pdftex.def)             Requested size: 199.14653pt x 116.99416pt.
+<Figures/classifier/four_final_predictions_per_class.png, id=640, 1445.4pt x 1445.4pt>
+File: Figures/classifier/four_final_predictions_per_class.png Graphic file (type png)
+<use Figures/classifier/four_final_predictions_per_class.png>
+Package pdftex.def Info: Figures/classifier/four_final_predictions_per_class.png  used on input line 1864.
+(pdftex.def)             Requested size: 402.32022pt x 402.30525pt.
+ [49 <./Figures/classifier/pca_projection_test_set.png>] [50 <./Figures/classifier/shap/shap_summary_for_URBAN.png> <./Figures/classifier/shap/shap_summary_for_SUBURBAN.png> <./Figures/classifier/shap/shap_summary_for_TOWN.png> <./Figures/classifier/shap/shap_summary_for_RURAL.png>] [51 <./Figures/classifier/four_final_predictions_per_class.png>] [52]
+chapter 6.
+[53
+
+] [54]
+Overfull \hbox (6.04228pt too wide) in paragraph at lines 1974--1974
 \T1/cmr/m/it/12 Economist\T1/cmr/m/n/12 , \T1/cmr/m/sc/12 issn\T1/cmr/m/n/12 : 0013-0613. [On-line]. Avail-able: []$\T1/cmtt/m/n/12 https : / / www . economist .
  []
 
 
-Overfull \hbox (17.13297pt too wide) in paragraph at lines 1747--1747
+Overfull \hbox (17.13297pt too wide) in paragraph at lines 1974--1974
 \T1/cmtt/m/n/12 publication / 340813602 _ Unsupervised _ K -[] Means _ Clustering _ Algorithm$[]
  []
 
-[50
+[55
 
 
 ]
-Overfull \hbox (16.63297pt too wide) in paragraph at lines 1747--1747
+Overfull \hbox (16.63297pt too wide) in paragraph at lines 1974--1974
 \T1/cmtt/m/n/12 wiki . awm . infeo . at / index . php / Route _ zum _ Nachfahren _ bereitstellen #
  []
 
-[51] [52
+[56] [57
 
 ] (./Bachelor_Thesis_GPS_Classification.aux)
 
@@ -1194,18 +1275,18 @@ Package logreq Info: Writing requests to 'Bachelor_Thesis_GPS_Classification.run
 
  ) 
 Here is how much of TeX's memory you used:
- 32214 strings out of 478287
- 575790 string characters out of 5849288
- 1554058 words of memory out of 5000000
- 49765 multiletter control sequences out of 15000+600000
+ 32426 strings out of 478287
+ 583068 string characters out of 5849288
+ 1556669 words of memory out of 5000000
+ 49945 multiletter control sequences out of 15000+600000
  483159 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,11n,106p,10675b,3678s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on Bachelor_Thesis_GPS_Classification.pdf (52 pages, 48767810 bytes).
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on Bachelor_Thesis_GPS_Classification.pdf (57 pages, 61949743 bytes).
 PDF statistics:
- 1020 PDF objects out of 1200 (max. 8388607)
- 871 compressed objects within 9 object streams
- 238 named destinations out of 1000 (max. 500000)
- 745 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1123 PDF objects out of 1200 (max. 8388607)
+ 944 compressed objects within 10 object streams
+ 256 named destinations out of 1000 (max. 500000)
+ 832 words of extra memory for PDF output out of 10000 (max. 10000000)
 
