@@ -1,35 +1,35 @@
 \babel@toc {english}{}\relax 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces DBSCAN: Core points and border points \blx@tocontentsinit {0}\cite {ester_density-based_nodate}\relax }}{17}{figure.caption.15}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces DBSCAN: (a) Density-reachability and (b) density-connectivity \blx@tocontentsinit {0}\cite {ester_density-based_nodate}\relax }}{18}{figure.caption.16}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Comparison: k-means, DBSCAN clustering algorithms \blx@tocontentsinit {0}\cite {liang_graph-based_2024}\relax }}{19}{figure.caption.17}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Steps of the framework for predicting of transportation modes proposed by Etemad et al.~\blx@tocontentsinit {0}\cite {etemad_predicting_2018}\relax }}{20}{figure.caption.18}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Steps of the framework proposed by Koh et al.~\blx@tocontentsinit {0}\cite {koh_clustering_2022}\relax }}{21}{figure.caption.19}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces DBSCAN: Core points and border points \blx@tocontentsinit {0}\cite {ester_density-based_nodate}\relax }}{15}{figure.caption.15}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces DBSCAN: (a) Density-reachability and (b) density-connectivity \blx@tocontentsinit {0}\cite {ester_density-based_nodate}\relax }}{16}{figure.caption.16}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Comparison: k-means, DBSCAN clustering algorithms \blx@tocontentsinit {0}\cite {liang_graph-based_2024}\relax }}{17}{figure.caption.17}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Steps of the framework for predicting of transportation modes proposed by Etemad et al.~\blx@tocontentsinit {0}\cite {etemad_predicting_2018}\relax }}{18}{figure.caption.18}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Steps of the framework proposed by Koh et al.~\blx@tocontentsinit {0}\cite {koh_clustering_2022}\relax }}{19}{figure.caption.19}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces High-level overview of training the GPS track classifier\relax }}{23}{figure.caption.20}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Waypoint curvature calculation used for compression by \textit {infeo GmbH}\relax }}{26}{figure.caption.23}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Mapgrid for selected sample trackings\relax }}{28}{figure.caption.24}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Pairplot of selected GPS route features grouped by area label\relax }}{29}{figure.caption.25}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Correlation Matrix of selected GPS route features grouped by area label\relax }}{30}{figure.caption.26}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Boxplot of point density grouped by area label\relax }}{31}{figure.caption.27}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces High-level overview of training the GPS track classifier\relax }}{21}{figure.caption.20}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Waypoint curvature calculation used for compression by \textit {infeo GmbH}\relax }}{24}{figure.caption.23}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Mapgrid for selected sample trackings\relax }}{26}{figure.caption.24}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Pairplot of selected GPS route features grouped by area label\relax }}{27}{figure.caption.25}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Correlation Matrix of selected GPS route features grouped by area label\relax }}{28}{figure.caption.26}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Boxplot of point density grouped by area label\relax }}{29}{figure.caption.27}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Big picture implementation pipeline\relax }}{36}{figure.caption.28}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces K-Means semi supervised clustering pipeline\relax }}{42}{figure.caption.31}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces API Implementation Diagram\relax }}{45}{figure.caption.32}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Swagger UI documentation of FastAPI Classification Endpoint\relax }}{46}{figure.caption.33}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Big picture implementation pipeline\relax }}{34}{figure.caption.28}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces K-Means semi supervised clustering pipeline\relax }}{40}{figure.caption.31}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces API Implementation Diagram\relax }}{43}{figure.caption.32}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Swagger UI documentation of FastAPI Classification Endpoint\relax }}{44}{figure.caption.33}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces PCA Projection of DBSCAN clustering for noise removal\relax }}{48}{figure.caption.34}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Feature Weights used for K-Means clustering\relax }}{49}{figure.caption.35}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces PCA Projection of K-Means clustering\relax }}{49}{figure.caption.36}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces SHAP Summary for all Classes\relax }}{50}{figure.caption.37}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Map Visualization of Clustered Trackings (Red: \texttt {URBAN}, Orange: \texttt {SUBURBAN}, Blue: \texttt {TOWN}, Green: \texttt {RURAL})\relax }}{51}{figure.caption.38}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Confusion Matrix of Random Forest Classifier\relax }}{52}{figure.caption.39}%
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Feature Importance Barchart of Random Forest Classifier\relax }}{53}{figure.caption.40}%
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Normalized Mean Feature Values by Predicted Class\relax }}{53}{figure.caption.41}%
-\contentsline {figure}{\numberline {5.9}{\ignorespaces PCA Projection of Test Set with Predicted Labels\relax }}{54}{figure.caption.42}%
-\contentsline {figure}{\numberline {5.10}{\ignorespaces SHAP Summary for all Classes\relax }}{55}{figure.caption.43}%
-\contentsline {figure}{\numberline {5.11}{\ignorespaces SHAP summary plots for all classes\relax }}{55}{figure.caption.44}%
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Sample Predictions on Test Set\relax }}{56}{figure.caption.45}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces PCA Projection of DBSCAN clustering for noise removal\relax }}{46}{figure.caption.34}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Feature Weights used for K-Means clustering\relax }}{47}{figure.caption.35}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces PCA Projection of K-Means clustering\relax }}{47}{figure.caption.36}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces SHAP Summary for all Classes\relax }}{48}{figure.caption.37}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Map Visualization of Clustered Trackings (Red: \texttt {URBAN}, Orange: \texttt {SUBURBAN}, Blue: \texttt {TOWN}, Green: \texttt {RURAL})\relax }}{49}{figure.caption.38}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Confusion Matrix of Random Forest Classifier\relax }}{50}{figure.caption.39}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Feature Importance Barchart of Random Forest Classifier\relax }}{51}{figure.caption.40}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Normalized Mean Feature Values by Predicted Class\relax }}{51}{figure.caption.41}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces PCA Projection of Test Set with Predicted Labels\relax }}{52}{figure.caption.42}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces SHAP Summary for all Classes\relax }}{53}{figure.caption.43}%
+\contentsline {figure}{\numberline {5.11}{\ignorespaces SHAP summary plots for all classes\relax }}{53}{figure.caption.44}%
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Sample Predictions on Test Set\relax }}{54}{figure.caption.45}%
 \addvspace {10\p@ }
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
