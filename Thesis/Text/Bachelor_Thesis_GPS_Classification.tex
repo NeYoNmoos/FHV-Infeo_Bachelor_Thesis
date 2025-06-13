@@ -182,6 +182,8 @@ bekannten und neuen Gebieten zu schaffen. Die vollständige Integration dieser
 zusätzlichen Datenquellen ist jedoch nicht Teil dieser Bachelorarbeit
 , sondern bleibt zukünftigen Arbeiten vorbehalten.
 
+% OLD ABSTRACT:
+
 % In der Abfallwirtschaft ist die strategische Tourenplanung ein wichtiger
 % Prozess, in dem durch optimale Gebietsaufteilung eine maximal effiziente
 % Fuhrparkauslastung bei möglichst geringen Kosten ermittelt wird. Dies geschieht
@@ -254,8 +256,6 @@ Geografische Datenanalyse, Maschinelles Lernen, Automatisierung
 % analysis using only GPS data.
 
 % OLD ABSTRACT:
-
-% TODO: Abstract anpassen, da es mit OSM nicht ganz genau die originalen anforderungen gelungen ist
 In waste management, strategic route planning is a central
 process in which an efficient allocation of areas is intended to achieve
 optimum
@@ -703,7 +703,10 @@ collected by
 waste collection vehicles.
 
 \chapter{Problem Definition and Solution Approach}
-% TODO: put small introduction to chapter
+This chapter introduces the core problem addressed by the thesis, describes the
+dataset used, and outlines the solution approach. The proposed method involves
+analyzing GPS tracking data from waste collection vehicles using machine
+learning techniques to support planning decisions for new service areas.
 
 \section{Big Picture}
 
@@ -715,7 +718,7 @@ keeping necessary route information, and then saved in a centralized database.
 The data provided is a subset approved by \textit{infeo GmbH} for analysis in
 this thesis.
 
-The aim of this thesis is to develop a pipeline that can autoamtically classify
+The aim of this thesis is to develop a pipeline that can automatically classify
 GPS trackings to four categories (e.g., rural, town, suburban and urban).
 
 The proposed solution follows a high-level workflow with the following steps:
@@ -733,9 +736,10 @@ The proposed solution follows a high-level workflow with the following steps:
         clusters based on similarity using K-Means.
   \item \textbf{Classification:} A Classifier is trained to generalize the
         clustering results and allow automated classification of new trackings.
+  \item \textbf{API:} The classifier is integrated into an API to allow the
+        classification of trackings via REST calls.
 \end{enumerate}
 
-% Image eventually to detailed for big picture -> might use further down with implementation
 \begin{figure}[htbp]
   \centering
 
@@ -753,20 +757,20 @@ information can be extracted from the dataset, and which cannot.
 
 \subsection{Overview}
 The dataset used is a collection of GPS tracking data collected by
-wastecollection vehicles from various wastecollection businesses and provided
+wastecollection vehicles from various waste collection businesses and provided
 by \textit{infeo GmbH}. It represents real-world data
-collected during regular wastecollection operation in the DACH region.
+collected during regular waste collection operation in the DACH region.
 
 \subsection{Source and Collection Method}
 The data was obtained by the onboard tracking systems installed by
 \textit{infeo GmbH},
 which collects GPS coordinates in regular intervals during regular operation.
-Each tracking represents a complete wastecollection route taken and includes
-metadata aswell as a list of GPS coordinates.
+Each tracking represents a complete waste collection route taken and includes
+metadata as well as a list of GPS coordinates.
 
 \subsection{Structure of the Data}
 Each dataset entry represents a single recorded route refered to as
-\textit{tracking} and contains metadata aswell as a time ordered list of gps
+\textit{tracking} and contains metadata as well as a ordered list of gps
 coordinates.
 
 Each tracking contains the following fields:
@@ -942,7 +946,7 @@ The most common issues were:
         for long periods of time, outside of operational hours, such as
         overnight,
         resulting in long trackings with little movement.
-  \item \textbf{Large Signal gagps:} Some trackings suffered from significant
+  \item \textbf{Large Signal gaps:} Some trackings suffered from significant
         gaps in the GPS track, resulting from signal loss of the tracker or
         possibly from the compression step introduced by \textit{infeo GmbH}.
 \end{itemize}
@@ -988,11 +992,13 @@ identify features useful for future automatic classification.
   \label{fig:sample_mapgrid}
 \end{figure}
 \FloatBarrier
-The mapgrid shows spatial layout of each tracking route overlayed on a visual
+The mapgrid (Figure \ref{fig:sample_mapgrid}) shows spatial layout of each
+tracking route overlayed on a visual
 map. Each subplot corresponds to a single tracking and is colorcoded with the
-assigned lable (RURAL=Red, SUBURBAN=Orange, TOWN=Blue, URBAN=Green). This
+assigned label (RURAL=Red, SUBURBAN=Orange, TOWN=Blue, URBAN=Green). This
 visual representation clearly shows the difference in route shapes and sizes
-between the four different area types.
+between the four different area types, which are arranged from highest to
+lowest urban density.
 
 \textbf{Urban:}
 \begin{itemize}
@@ -1001,19 +1007,22 @@ between the four different area types.
   \item Often confined to a small cluster of city blocks or neighborhoods.
 \end{itemize}
 
+\textbf{Suburban:}
+\begin{itemize}
+  \item Routes are more spread out than urban routes, but still relatively
+        dense.
+  \item Represent transition areas between dense city cores and surrounding
+        areas.
+  \item Moderately spaced routes, covering residential areas with more open
+        space and lower building density.
+\end{itemize}
+
 \textbf{Town:}
 \begin{itemize}
   \item Coverage is slightly more dispersed than urban routes.
-  \item Still relatively compact but less tightly packed.
-  \item Serves a central area and nearby residential surroundings.
-\end{itemize}
-
-\textbf{Suburban:}
-\begin{itemize}
-  \item Routes extend farther and cover wider areas than town routes.
-  \item Show transitional behavior between urban and rural structures.
-  \item Less dense stop distribution, indicating more spaced-out residential
-        zones.
+  \item More dispered than suburban areas, with less consistent street layout.
+  \item Collection point are more spaced out, and routes often span small
+        settlements with connecting streets.
 \end{itemize}
 
 \textbf{Rural:}
@@ -1032,12 +1041,16 @@ between the four different area types.
 \end{figure}
 \FloatBarrier
 
-The pairplot compares the relationships between the extracted features (eg.,
-length, duration, number of points, bounding box area, point density, average
-segmengt distance and number of stops). Rural and urban trackings show a clear
-difference in multiple features. Point density and average segment distance are
-especially good discriminators. Suburban and town trackings show more variance
-and occasionally overlap with eachother, giving a not so clear distinction.
+The pairplot (Figure \ref{fig:sample_pairplot}) visualizes the relationships
+between all pairs of extracted features.
+While the small sample size limits the generalization, the plot suggests clear
+seperattion between the extremese \texttt{URBAN} and \texttt{RURAL}, especially
+in dimensions such as point density and bounding box area.
+
+The main utility of this plot lies in
+confirming basic trends: urban routes appear denser and more compact, while
+rural routes cover larger spatial areas with lower density. Suburban and town
+routes fall in between but exhibit more overlap and variability.
 
 \begin{figure}[htbp]
   \centering
@@ -1048,16 +1061,20 @@ and occasionally overlap with eachother, giving a not so clear distinction.
 \end{figure}
 \FloatBarrier
 
-The Correlation Matrix highlights the strong correlations between features in
-the selected sample.
-A high posive correlation between length, duration and number of points can be
-observerd. Additionally the point density has a strong negative correlation
-with the tracking length, number of points and average segment distance.
+The correlation matrix (Figure \ref{fig:sample_correlation_matrix}) highlights
+expected and useful relationship between features.
+Strong positive correlation between \texttt{length}, \texttt{duration},
+\texttt{num\_points} exists, as these features all describe the scale of the
+tracking.
+\texttt{point\_density} shows a strong negative correlation with those same
+features, indicating that shorter, more cmpact routes have denser GPS point
+coverage.
+\texttt{straightness} and \texttt{mean\_heading\_change} show a moderate
+correlation to other features, suggesting that they add additional orthogonal
+information about the geometric of the tracking.
 
-This correlation is to be expected and confirms the consistency of the data,
-since the points (GPS coordinates) are recorded in uniform intervals. This plot
-also indicates the possible redundance of features such as number of points and
-number of stops.
+These relationships validate the consistency of the data and show the value of
+using this sample as a baseline weighting for future stages in the pipeline.
 
 \begin{figure}[h]
   \centering
@@ -1073,8 +1090,11 @@ labels. Urban trackings appear to have the highest density and rural trackings
 the lowest, with suburban and town trackings falling in the middle with a wider
 variability.
 
-This validates that the point density is a strong feature for classifying
-trackings to the four labels.
+This strong monotonic pattern across labels supports that point density is a
+valuable feature for clustering and classification. (Other features, such as
+bounding box area and average segment distance	 show similar characteristics
+as
+shown in Chapter 5)
 
 \section{Solution Approach}
 This chapter outlines the methods used to analyse and classify the GPS tracking
@@ -1181,7 +1201,7 @@ Removing these faulty datapoints was curcial for ensuring the quality of the
 clustering and reducing the computation times.
 
 \subsection{Clustering and Pattern Discovery}
-To discover patterns in the unlabeled dataset, clustering algorithhms were
+To discover patterns in the unlabeled dataset, clustering algorithms were
 applied.
 Initially, K-Means++ was used to cluster the data into four clusters. However
 the result showed that one cluster mostly consisted of outlier routes, with
@@ -1401,8 +1421,6 @@ Each Filter step reduces the dataset by this many trackings:
 \FloatBarrier
 
 \section{Feature Extraction}
-TODO: small text for section
-
 This section describes how raw GPS tracking data was transformed into
 meaningful features that enable the use of machine learning methods in later
 steps.
@@ -1426,10 +1444,9 @@ The full duration from the first to the last recorded waypoint, in
 100-nanosecond intervals.
 
 \subsection{Computed Features from Waypoints}
-TODO: small text for subsection
-These features are derived from the sequence of waypoint for each tracking.
-They enrich the metadata by describing the geometry and dynamics of each
-tracking.
+The computed features enrich the metadata by describing the geometry and
+dynamics of each
+tracking in numerical values.
 All calculations were implemented using the \texttt{geopy} library for geodesic
 distances and \texttt{numpy} for vectorized operations.
 The most relevant features are described below.
@@ -2079,6 +2096,45 @@ route classification, with potential applications in waste collection
 planning, infrastructure analysis, and beyond. With further validation and
 integration of additional geospatial data, the framework has the potential to
 evolve into a robust decision support tool.
+
+\section{Expert Feedback}
+
+During the development of the thesis, a meeting with Reischer Florian the
+founder and CEO of \texttt{infeo GmbH} was held.
+The of the meeting was to present intermediate results and gather feedback on
+the applicability of the developed pipeline in a production setting.
+
+Reischer emphasized that the classification of the GPS trackings into
+structural categories is a solid starting point, the dataset in this thesis
+alone is not sufficient for the comparison between new and existing service
+areas. He pointed out, that for a final deployable solution, additional data
+sources, such as detailed road networks or geographic information such as
+population, road and intersection count are needed.
+With that additional information, accurate comparisons between existing
+trackings and new areas seem possible for automating the planning support.
+
+A key point of discussion was the feature \texttt{point\_density}, which showed
+strong discriminative power in the analysis and played a central role in both
+clustering and classification (see
+Figures~\ref{fig:sample_pairplot,fig:feature_weights_for_kmeans,fig:feature_importance_random_forest}).
+
+However, Reischer was concerned about the robustness of calculated features
+such as \texttt{point\_density}, as these features rely on the amount of points
+present in the dataset, which is impacted by the internal compression by
+\textit{infeo GmbH}.
+This compression removed points with the same coordinates and thinned out point
+on long straights to reduce filesizes.
+
+While \texttt{point\_density} proved to be useful in this thesis, its
+reliability might be limited.
+Comparison with non-compressed trackings could determine how the compression
+step impacts featuress reliant on the amount of waypoints, such as
+\texttt{poin\_density}.
+
+Overall, while further progress is necessary for a live deployment, Reischer
+concluded that this thesis gatheres important information and builds a strong
+foundation for the long-term goal of automating area comparison and suggesting
+planning parameters.
 
 \chapter{Conclusion}
 
