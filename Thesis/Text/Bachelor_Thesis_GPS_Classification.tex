@@ -190,6 +190,32 @@ Geografische Datenanalyse, Maschinelles Lernen, Automatisierung
   A Case Study of
   Waste Collection Vehicles}
 
+% In waste management, efficient route planning is crucial for minimizing
+% operational costs and improving service delivery. Particularly when bidding for
+% new service areas without prior operational experience, planners face
+% significant uncertainty. One way to reduce this is by comparing new areas to
+% structurally similar regions based on movement data from existing operations.
+
+% This thesis presents a machine learning-based approach to classify GPS track
+% data of waste collection vehicles into structural categories such as urban,
+% suburban, town, and rural. A comprehensive feature extraction pipeline was
+% implemented to capture both geometric and behavioral characteristics of each
+% route. These features were used to train a Random Forest classifier
+
+% To enable real-world use, the trained model was deployed through a
+% FastAPI-based web service. The API allows external systems, such as the
+% existing software of \textit{infeo GmbH}, to request a classification of a
+% given GPS tracking in real time. This modular component serves as a first step
+% toward the broader goal of matching structural patterns in unfamiliar regions,
+% thereby reducing uncertainty in route planning and tender bid calculations.
+
+% While the classification of unknown areas based on external geospatial data
+% remains a future goal, this thesis delivers a working foundation that
+% demonstrates the feasibility and practical value of data-driven structural
+% analysis using only GPS data.
+
+% OLD ABSTRACT:
+
 % TODO: Abstract anpassen, da es mit OSM nicht ganz genau die originalen anforderungen gelungen ist
 In waste management, strategic route planning is a crucial process where
 optimal fleet utilization is determined through the efficient division of
@@ -213,7 +239,7 @@ using artificial intelligence. Furthermore, the consideration of which
 geographical structural data are meaningful for comparison should, if
 necessary, also be supported by AI technologies.
 
-The practical goal of this work is to implement a sandbox service that can be
+The practical goal of this thesis is to implement a sandbox service that can be
 called and populated with data by the existing software of \textit{infeo GmbH},
 enabling the
 creation of classifications and comparisons of GPS data and tender structural
@@ -251,21 +277,28 @@ Data Analysis, Machine Learning, Automation
 \phantomsection
 \addcontentsline{toc}{chapter}{List of Abbreviations}
 % evtl. ersetzen durch \addcontentsline{toc}{chapter}{Abkürzungsverzeichnis}
-\chapter*{List of Abbreviations} % evtl. ersetzen durch \chapter*{Abkürzungsverzeichnis}
-\begin{acronym}[GPS]
-  \acro{GPS}{Global Positioning System}
+\chapter*{List of Abbreviations}
+\begin{acronym}[WGS84]
   \acro{AI}{Artificial Intelligence}
-  \acro{ML}{Machine Learning}
   \acro{API}{Application Programming Interface}
-  \acro{CSV}{Comma-Seperated Values}
-  \acro{DACH}{Germany, Austria and Switzerland}
-  \acro{DBSCAN}{Density-Based Algorithm for Discovering Clusters in Large
-    Spatial Databases with Noise}
+  \acro{AWS}{Amazon Web Services}
+  \acro{CSV}{Comma-Separated Values}
+  \acro{DBSCAN}{Density-Based Spatial Clustering of Applications with Noise}
+  \acro{DACH}{Germany (D), Austria (A), and Switzerland (CH)}
+  \acro{F1-score}{Harmonic Mean of Precision and Recall}
+  \acro{GIS}{Geographic Information System}
+  \acro{GPS}{Global Positioning System}
+  \acro{JSON}{JavaScript Object Notation}
+  \acro{ML}{Machine Learning}
+  \acro{OSM}{OpenStreetMap}
+  \acro{PCA}{Principal Component Analysis}
+  \acro{RF}{Random Forest}
+  \acro{SHAP}{SHapley Additive exPlanations}
+  \acro{URL}{Uniform Resource Locator}
+  \acro{WGS84}{World Geodetic System 1984}
 \end{acronym}
 
 \chapter{Introduction}
-
-% TODO: REWRITE, since i didnt implement the osm parameter calulation
 
 \begin{quote}
   \textit{``The world's most valuable resource is no longer oil, but data''}
@@ -292,20 +325,10 @@ waste management industry.
   4.5\% from 2024 to 2030.''\cite{noauthor_europe_nodate}
 \end{quote}
 
-This growth reflects the increasing need for efficient and sustainable waste
-management practices, in response to rising waste volumes across residential,
-commercial, and industrial sectors.
-
-\begin{quote}
-  ``The rapid population growth, urbanisation and economic development over the
-  last decades has led to an increase in the generation of solid waste across
-  the
-  world. Providing high-quality waste management services is crucial to
-  safeguard
-  public health and protect the environment, but also to support resource
-  efficiency, climate change mitigation and job creation.''
-  \cite{noauthor_solid_nodate}
-\end{quote}
+Such growth reflects the increasing need for scalabe, efficient and sustainable
+waste
+management practices, in response to rising waste volumes across urban,
+suburban and rural areas \cite{noauthor_solid_nodate}.
 
 The waste management sector is considered critical infrastructure and is under
 growing pressure to adapt to personnel shortages, blackouts, and rising costs.
@@ -313,9 +336,13 @@ In many cases, the only viable solution is to optimize and automate operational
 processes. Digital transformation plays a key role in making day-to-day
 operations significantly more robust and
 efficient.\cite{noauthor_gemeinsam_nodate}
+In this context, the application of machine learning and data analytics
+promises to enhance strategic planningand reduce operational uncertainty.
 
-This is the mission of \textit{infeo GmbH}, the software company for which this
-thesis is being conducted:
+This thesis is conducted in collaborationo with \textit{infeo GmbH}, a software
+company specialized in digital transformation in the waste management
+sector. Their mission emphasizes the need to improve existing infrastructure
+with innovative tools:
 
 \begin{quotation}
   ``Die Abfallwirtschaft ist ein systemkritischer Wirtschaftsbereich und zählt
@@ -325,41 +352,41 @@ thesis is being conducted:
   maßgeblich robuster und effektiver machen. ''\cite{noauthor_gemeinsam_nodate}
 \end{quotation}
 
-This thesis supports the mission of \textit{infeo GmbH} to revolutionize
-digital processes in the
-waste management sector by implementing AI-powered tools to automatically
-classify and compare GPS track data and geographical structural data. The
-resulting service enables waste management companies to efficiently gather
-planning-relevant parameters from existing service areas and apply them to new
-regions, reducing uncertainty, increasing planning accuracy, and
-accelerating decision-making.
-
 \section{Problem Statement}
 
 Companies operating in the waste collection business have trouble calculating
-accurate bids for new service areas when expaning their field of business. They
+accurate cost estimates for new service areas when expanding their field of
+business into
+areas with no prior operational data.
+They
 often have to make assumptions and rough estimates on several paremters
 concerning the operation cost in new service areas. A data driven estimation
 can help create more accurate and less risky assessments for unknown collection
 locations. This can help reduce uncertainties and improve the accuracy of bid
 calculations.
+Since GPS tracking data is already collected in existing service
+areas, there is potential to extract meaningful patterns from this data to
+support more accurate decision-making in new contexts.
 
 \section{Solution Approach and Goal}
 
-Therefore, the goal of this work is to reduce uncertainty for waste collection
-companies expanding their business to new service areas using existing GPS
-tracking data.
-The approach involves classifying the GPS tracking data from known service
-areas into four categories ranging from urban to rural.
-AI methods are then used to cluster the data into these categories and to
-train a classifier able to automate the categorization.
-Furthermore, algorithms and AI techniques to compare patterns found in the
-exisiting data with
-public geographic data from OpenStreetMap.
-This functionality is then bundled into a
-ready to use API service.
-The endgoal is to provide an API which suggests planning parameters for a
-given input geofence.
+The primary goal of this thesis is to explore how GPS tracking data from waste
+collection vehicles can be analyzed to gain meaningful insight and
+automatically classified to support better planning decisions.
+
+To achieve this, a machine learning pipeline was developed that
+involves extracting meaningful features from GPS waypoint data, applying
+semi-supervised clustering in order to group similar trackings, assigning
+interpretble labels (eg., \texttt{URBAN}, \texttt{SUBUBRBAN}, \texttt{TOWN} and
+\texttt{RURAL}) based on structural characteristics and training a supervised
+classification model to automate label prediction for new data.
+The resulting classifier was built into an API, allowing classification of any
+given tracking via a API enpoint given its tracking ID.
+
+While the long-term vision proposed by \textit{infeo GmbH} involves a service
+for full automation of planning parameter suggestions for new geofences, based
+on OpenStreetMap and internal tracking data, this thesis focuses on building a
+foundational component: the GPS-based route classification system.
 
 \chapter{Background and Related Work}
 This chapter provides an overview of the technical and scientific basis
@@ -386,7 +413,7 @@ Key features commonly used in literature include: speed, acceleration, bearing
 and distance between consecutive points~\cite{etemad_predicting_2018}.
 These extracted features serve as a representation of the underlying movement
 behavior of the GPS route.
-In this work, a combination of geometric (e.g., bounding box area, point
+In this thesis, a combination of geometric (e.g., bounding box area, point
 density) and dynamic (e.g., heading change) features were used to represent
 each waste collection tracking.
 
@@ -540,7 +567,7 @@ While much research conerned with GPS-Data analysis and classification problems
 focused on transportation mode detection and trajectory mining. Few studies
 have investigated the classification of urban structure
 based on waste collection trackings.
-This work addresses this gap by proposing a pipeline to distinguish between
+This thesis addresses this gap by proposing a pipeline to distinguish between
 urban, suburban, town and rural structures from tracking data alone.
 
 \subsection{Urban structure analytics}
@@ -1965,12 +1992,24 @@ The clustering and classification pipeline effectively distinguishes between
 urban structures based on GPS tracking data, with the classifier achieving high
 accuracy with over \textbf{97\%} in all
 key metrics. While the clustering silhouette score was moderate, visual and
-statistical inspection validate the cluster integrity.
+statistical inspection validate the coherence of the clusters.
 
-However the negative silhouette score on the test set shows some significant
-overlap between classes. This could
-indicate the need to lower the amount of clusters to three, which
-might prove a better distinction between classes with less overlap.
+Despite the promising results, some limitations of the evaluation setup must be
+considered. The classifier was trained and tested using labels generated
+through semi-supervised K-Means clustering. While the clustering was guided by
+meaningful initial centroids and validated visually and statistically, the
+resulting labels do not represent objective ground truth. Consequently, the
+classifier's high accuracy of \textbf{98.3\%} reflects strong alignment with
+the underlying clustering logic rather than verified real-world
+classifications. The model has yet to be validated against expert-labeled or
+GIS-based reference data, and its generalizability beyond the current dataset
+remains an open question.
+
+The negative silhouette score on the test set shows some significant
+overlap between classes in the high-dimensional space. This could
+be adressed in future iterations by reducing te number of clusters (e.g.,
+merging \texttt{SUBURBAN} and \texttt{TOWN}) or by incorporating additional
+features from OpenStreetMap.
 
 The features \texttt{bbox\_area}, \texttt{point\_density} and
 \texttt{duration},
@@ -1982,8 +2021,12 @@ classification results show that \texttt{avg\_segment\_distance} and
 \texttt{mean\_heading\_change} also follow motonic behavior among classes,
 reinforcing the efficteveness of this pipeline.
 
-The methods used demostrate a reproducible and scalable framework for GPS-based
-route classification, appllicable to waste management and beyond.
+Overall, the presented method offers a reproducible and scalable approach for
+GPS-based
+route classification, with potential applications in waste collection
+planning, infrastructure analysis, and beyond. With further validation and
+integration of additional geospatial data, the framework has the potential to
+evolve into a robust decision support tool.
 
 \chapter{Conclusion}
 
@@ -1997,7 +2040,7 @@ classification.
 
 \section{Future Directions}
 
-Several opportunities exist to improve and extend this work.
+Several opportunities exist to improve and extend this thesis.
 
 One promising direction involves the integration of OpenStreetMap (OSM) data to
 augment the GPS based features with real-world structural information. On the
@@ -2026,7 +2069,7 @@ optimization.
 Despite the promising results of the classification pipeline, several
 limitations must be acknoladged.
 
-Firstly, the dataset used in this work is not raw GPS data but rather a
+Firstly, the dataset used in this thesis is not raw GPS data but rather a
 compressed and preprocessed version provided by \textit{infeo GmbH}.
 While this process is necessary for storage and performance, it might have
 removed information that could improve the clustering and classification
