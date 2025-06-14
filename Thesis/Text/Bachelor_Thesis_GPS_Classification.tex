@@ -258,7 +258,7 @@ Geografische Datenanalyse, Maschinelles Lernen, Automatisierung
 % OLD ABSTRACT:
 In waste management, strategic route planning is a central
 process in which an efficient allocation of areas is intended to achieve
-optimum
+optimal
 utilization of the vehicle fleet while minimizing costs. However, waste
 management companies are often faced with uncertainties, especially when
 planning operations in new, unknown areas, as
@@ -387,7 +387,7 @@ processes. Digital transformation plays a key role in making day-to-day
 operations significantly more robust and
 efficient.\cite{noauthor_gemeinsam_nodate}
 In this context, the application of machine learning and data analytics
-promises to enhance strategic planningand reduce operational uncertainty.
+promises to enhance strategic planning and reduce operational uncertainty.
 
 This thesis is conducted in collaboration with \textit{infeo GmbH}, a software
 company specialized in digital transformation in the waste management
@@ -447,7 +447,7 @@ This chapter provides an overview of the technical and scientific basis
 relevant for this thesis.
 Relevant methods include feature extraction to gain meaningful information
 from GPS data, clustering algorithms for unsupervised learning and related work
-showing approaches to similar problems.The presented work builds upon already
+showing approaches to similar problems. The presented work builds upon already
 existing methods by combining
 clustering and classification to identify structural properties of waste
 collection routes from GPS trackings.
@@ -472,6 +472,7 @@ density) and dynamic (e.g., heading change) features were used to represent
 each waste collection tracking.
 
 \subsection{Clustering Algorithms}
+% TODO: here add a small paragraph written by myself
 \begin{quote}
   ``Clustering is a useful tool in data science. It is a method for
   finding cluster structure in a data set that is characterized by
@@ -549,7 +550,7 @@ requiring the number of clusters as input, unlike other clustering algorithms
 such as K-Means and CLARANS, making it effective for outlier detection.
 \cite{ester_density-based_nodate}
 
-\subsubsection{k-means Clustering}
+\subsubsection{K-Means Clustering}
 K-Means is the first unsupervised algorithm used to cluster data in an
 euclidean space and is still widely used to partition a dataset
 $ \{x_1, x_2, \dots, x_n\}$ of size
@@ -564,9 +565,9 @@ following function:
 The implementation of the algorithm uses an iterative refinement technique,
 also known as Lloyd's Algorithm.
 An initial set of \textit{k} means is selected, randomly or are more
-sophisticatedly initialized in adaptations such as k-means++.
+sophisticatedly initialized in adaptations such as K-Means++.
 Then the algorithm repeats the following two steps until the assignments do not
-change and k-means therefore converges:
+change and K-Means therefore converges:
 
 \begin{enumerate}
   \item \textbf{Assignment:} Assign each data point to the cluster with the
@@ -583,13 +584,13 @@ change and k-means therefore converges:
         \]
 \end{enumerate}
 
-\subsubsection{Combining DBSCAN and k-means}
+\subsubsection{Combining DBSCAN and K-Means}
 DBSCAN can be used to identify anomalies by dividing the data set into two
 clusters. Cluster 0 with the valid data and cluster -1 with anomalies. Using
 the output of DBSCAN and removing the detected anomaly cluster -1 as the input
-for k-means, a more effective partitioning of the data into k number of groups
+for K-Means, a more effective partitioning of the data into k number of groups
 can be achieved.
-Without DBSCAN, k-means clustering will likely assign one cluster to outliers
+Without DBSCAN, K-Means clustering will likely assign one cluster to outliers
 of faulty data.
 In the context of waste collection, where GPS signals may be faulty, this
 combined method improves the robustness of the clustering by eliminating
@@ -599,7 +600,7 @@ irregular datapoints, which do not show regular operation of the vehicle.
   \centering
 
   \includegraphics[width=0.7\textwidth]{Figures/background/k-means-and-DBSCAN-clustering-results-on-Chainlink-data-set.png}
-  \caption{Comparison: k-means, DBSCAN clustering algorithms
+  \caption{Comparison: K-Means, DBSCAN clustering algorithms
     \cite{liang_graph-based_2024}}
   \label{fig:dbscan_against_k-means}
 \end{figure}
@@ -610,7 +611,7 @@ irregular datapoints, which do not show regular operation of the vehicle.
 To enable the integration of machine learning models into other applications,
 model deployment via Application Programming Interfaces (APIs) is a crucial
 step.
-APIs allow the models to be exposed and queried by external systems and return
+APIs allow the model to be exposed and queried by external systems and return
 predictions based on the user-provided inputs.
 This thesis uses FastAPI to deploy the trained model and follows modern
 software engineering
@@ -633,6 +634,7 @@ buildings~\cite{song_access_2021}. While Zhou et al., proposes a big data
 approach to
 analyse the urban spatial structures of different
 areas~\cite{zhou_research_2022}.
+% TODO: write here  small sentence myself how i do the analysis
 
 \subsection{Transportation Mode Prediction with Feature Engineering}
 Etemad, Soared and Matwin~\cite{etemad_predicting_2018} propose a five step
@@ -675,7 +677,7 @@ on workdays and offdays and extract features in combination with
 
 The features derived from the DCD are combined with OD matrix
 features
-and are used in a k-means clustering algorithm to group the users into three
+and are used in a K-Means clustering algorithm to group the users into three
 behavior groups. The study analyses the resulting clusters with two newly
 proposed
 metrics: \textit{User Commonality} (percentage of users that visited each
@@ -699,7 +701,7 @@ as it demonstrates that structural characteristics can be derived from
 engineered features
 and effectively used for clustering and classification. Although the papers
 focus is on
-gps traces of individual people and captures data with mobile phones, the
+GPS traces of individual people and captures data with mobile phones, the
 underlying methods can
 be applied for identifying patterns and similarities in GPS track data
 collected by
@@ -708,8 +710,10 @@ waste collection vehicles.
 \chapter{Problem Definition and Solution Approach}
 This chapter introduces the core problem addressed by the thesis, describes the
 dataset used, and outlines the solution approach. The proposed method involves
-analyzing GPS tracking data from waste collection vehicles using machine
-learning techniques to support planning decisions for new service areas.
+analyzing GPS tracking data from waste collection vehicles, extracting features
+and using machine
+learning techniques to classify the structure of waste collection vehicle
+trackings.
 
 \section{Big Picture}
 
@@ -755,8 +759,9 @@ The proposed solution follows a high-level workflow with the following steps:
 \section{Description of the Dataset}
 Gaining an understanding of the provided data structure is crucial for
 identifying the available information and its limitations.
-This analysis enables the derivation of meaningful features and which types of
-information can be extracted from the dataset, and which cannot.
+This analysis helps identify which types of
+information can be extracted from the dataset and enables the derivation of
+meaningful features.
 
 \subsection{Overview}
 The dataset used is a collection of GPS tracking data collected by
@@ -878,7 +883,6 @@ Each GPS point contains the following relevant fields:
   \label{tab:gps_point_structure}
 \end{table}
 
-\clearpage
 \subsection{Size and Coverage}
 
 The dataset consists of 101,353 individual trackings with a combined number of
@@ -1335,29 +1339,29 @@ notebook. This reduced the further computatinal times for clustering and
 training the classifier model. The SQL query implementing these filters
 as follows:
 \begin{lstlisting}[style=sql,caption={SQL query used for filtering the GPS tracking dataset},label={lst:sql-filter}]
-  SELECT 
-      wp.id_tracking, wp.id, wp.time, wp.type, wp.sequence, wp.comment, 
-      wp.speed, wp.heading, wp.duration, wp.block_type, wp.log, 
+  SELECT
+      wp.id_tracking, wp.id, wp.time, wp.type, wp.sequence, wp.comment,
+      wp.speed, wp.heading, wp.duration, wp.block_type, wp.log,
       wp.latitude, wp.longitude, wp.altitude, wp.meta_tag, wp.meta_value,
-      t.length AS tracking_length, 
+      t.length AS tracking_length,
       t.duration AS tracking_duration
   FROM waypoint wp
   JOIN tracking t ON wp.id_tracking = t.id
-  WHERE 
-      t.duration BETWEEN 18000000000 AND 360000000000  
+  WHERE
+      t.duration BETWEEN 18000000000 AND 360000000000
       -- 0.5 to 10 hours
       AND t.length BETWEEN 50 AND 850  -- 50 to 850 km
       AND EXISTS (
-          SELECT 1 FROM waypoint w 
+          SELECT 1 FROM waypoint w
           WHERE w.id_tracking = t.id
           HAVING COUNT(*) > 10  -- Min. 10 waypoints
       )
       AND (
-          (SELECT MAX(latitude) FROM waypoint WHERE id_tracking = t.id) - 
+          (SELECT MAX(latitude) FROM waypoint WHERE id_tracking = t.id) -
           (SELECT MIN(latitude) FROM waypoint WHERE id_tracking = t.id)
       ) > 0.0005  -- Min. ~50m latitude span
       AND (
-          (SELECT MAX(longitude) FROM waypoint WHERE id_tracking = t.id) - 
+          (SELECT MAX(longitude) FROM waypoint WHERE id_tracking = t.id) -
           (SELECT MIN(longitude) FROM waypoint WHERE id_tracking = t.id)
       ) > 0.0005;  -- Min. ~50m longitude span
   \end{lstlisting}
@@ -1540,7 +1544,7 @@ outliers to one class.
 
 \subsection{Semi-Supervised Clustering with Weighted and Seeded K-Means}
 
-% TODO: Rewrite this entire section -> 100% AI 
+% TODO: Rewrite this entire section -> 100% AI
 
 To improve the interpretability and performance of clustering, a
 semi-supervised approach was used to guide the K-Means algorithm. A manually
