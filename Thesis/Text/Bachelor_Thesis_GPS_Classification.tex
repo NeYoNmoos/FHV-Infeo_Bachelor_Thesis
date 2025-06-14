@@ -329,8 +329,8 @@ Data Analysis, Machine Learning, Automation
 \begin{acronym}[WGS84]
   \acro{AI}{Artificial Intelligence}
   \acro{API}{Application Programming Interface}
-  \acro{AWS}{Amazon Web Services}
   \acro{CSV}{Comma-Separated Values}
+  \acro{PKL}{Python Pickle File}
   \acro{DBSCAN}{Density-Based Spatial Clustering of Applications with Noise}
   \acro{DACH}{Germany (D), Austria (A), and Switzerland (CH)}
   \acro{F1-score}{Harmonic Mean of Precision and Recall}
@@ -352,13 +352,14 @@ Data Analysis, Machine Learning, Automation
   \textit{``The world's most valuable resource is no longer oil, but data''}
   \cite{noauthor_worlds_nodate}
 \end{quote}
-In today's digital age, where electronic devices are a part of everyones daily
+In today's digital age, where electronic devices are a part of everyone's daily
 lives, increasing amounts of data
 are being generated every day, and this trend shows no signs of slowing down.
 \cite{petroc_data_nodate}
 With this increase in data, businesses ranging across all industries recognize
 the importance of leveraging it for decision-making and operational efficiency.
-This has lead to a growing demand for technolgies that can gather insights from
+This has lead to a growing demand for technologies that can gather insights
+from
 data and integrate seamlessly into strategic processes.
 
 One industry in which data-driven decision-making is becoming increasingly
@@ -388,7 +389,7 @@ efficient.\cite{noauthor_gemeinsam_nodate}
 In this context, the application of machine learning and data analytics
 promises to enhance strategic planningand reduce operational uncertainty.
 
-This thesis is conducted in collaborationo with \textit{infeo GmbH}, a software
+This thesis is conducted in collaboration with \textit{infeo GmbH}, a software
 company specialized in digital transformation in the waste management
 sector. Their mission emphasizes the need to improve existing infrastructure
 with innovative tools:
@@ -411,7 +412,7 @@ accurate cost estimates for new service areas when expanding their field of
 business into
 areas with no prior operational data.
 They
-often have to make assumptions and rough estimates on several paremters
+often have to make assumptions and rough estimates on several paramters
 concerning the operation cost in new service areas. A data driven estimation
 can help create more accurate and less risky assessments for unknown collection
 locations. This can help reduce uncertainties and improve the accuracy of bid
@@ -423,17 +424,18 @@ support more accurate decision-making in new contexts.
 \section{Solution Approach and Goal}
 
 The primary goal of this thesis is to explore how GPS tracking data from waste
-collection vehicles can be analyzed to gain meaningful insight and
+collection vehicles can be analysed to gain meaningful insight and
 automatically classified to support better planning decisions.
 
 To achieve this, a machine learning pipeline was developed that
 involves extracting meaningful features from GPS waypoint data, applying
 semi-supervised clustering in order to group similar trackings, assigning
-interpretble labels (eg., \texttt{URBAN}, \texttt{SUBUBRBAN}, \texttt{TOWN} and
+interpretable labels (eg., \texttt{URBAN}, \texttt{SUBUBRBAN}, \texttt{TOWN}
+and
 \texttt{RURAL}) based on structural characteristics and training a supervised
 classification model to automate label prediction for new data.
 The resulting classifier was built into an API, allowing classification of any
-given tracking via a API enpoint given its tracking ID.
+given tracking via an API enpoint given its tracking ID.
 
 While the long-term vision proposed by \textit{infeo GmbH} involves a service
 for full automation of planning parameter suggestions for new geofences, based
@@ -446,7 +448,7 @@ relevant for this thesis.
 Relevant methods include feature extraction to gain meaningful information
 from GPS data, clustering algorithms for unsupervised learning and related work
 showing approaches to similar problems.The presented work builds upon already
-existing methods by combinding
+existing methods by combining
 clustering and classification to identify structural properties of waste
 collection routes from GPS trackings.
 
@@ -562,7 +564,7 @@ following function:
 The implementation of the algorithm uses an iterative refinement technique,
 also known as Lloyd's Algorithm.
 An initial set of \textit{k} means is selected, randomly or are more
-sophisticatedly initilaized in adaptations such as k-means++.
+sophisticatedly initialized in adaptations such as k-means++.
 Then the algorithm repeats the following two steps until the assignments do not
 change and k-means therefore converges:
 
@@ -589,7 +591,7 @@ for k-means, a more effective partitioning of the data into k number of groups
 can be achieved.
 Without DBSCAN, k-means clustering will likely assign one cluster to outliers
 of faulty data.
-In the context of waste colletion, where GPS signals may be faulty, this
+In the context of waste collection, where GPS signals may be faulty, this
 combined method improves the robustness of the clustering by eliminating
 irregular datapoints, which do not show regular operation of the vehicle.
 
@@ -615,7 +617,8 @@ software engineering
 principles~\cite{voron_building_2023,noauthor_deploying_nodate}.
 
 \section{Related Work}
-While much research conerned with GPS-Data analysis and classification problems
+While much research concerned with GPS-Data analysis and classification
+problems
 focused on transportation mode detection and trajectory mining. Few studies
 have investigated the classification of urban structure
 based on waste collection trackings.
@@ -623,7 +626,7 @@ This thesis addresses this gap by proposing a pipeline to distinguish between
 urban, suburban, town and rural structures from tracking data alone.
 
 \subsection{Urban structure analytics}
-The strucutre of urban areas has been analysed in many studies.
+The structure of urban areas has been analysed in many studies.
 Song et al., proposes a framework that uses access structure to describe and
 evaluate spatial relationships between streets, plots and
 buildings~\cite{song_access_2021}. While Zhou et al., proposes a big data
@@ -634,9 +637,9 @@ areas~\cite{zhou_research_2022}.
 \subsection{Transportation Mode Prediction with Feature Engineering}
 Etemad, Soared and Matwin~\cite{etemad_predicting_2018} propose a five step
 framework to predict the
-underlying transportation mode from GPS traces. The framewok
+underlying transportation mode from GPS traces. The framework
 includes in order the preparation of data, point feature extraction (e.g.,
-distance, speed, bearing rate and its derivatitves), trajectory feature
+distance, speed, bearing rate and its derivatives), trajectory feature
 extraction (e.g., min, max, mean and std., percentiles), noise removal and
 normalization.
 
@@ -664,7 +667,7 @@ collection routes, which is the focus of this thesis.
 Koh et al.~\cite{koh_clustering_2022} present a framework to cluster users
 based on their movement patterns captured via an application on their mobile
 phones.
-The authors propose a new metric, \textit{Daily Characteristic Dinstance
+The authors propose a new metric, \textit{Daily Characteristic Distance
   (DCD)},
 which is used to create a fair comparison between working and nonworking users
 on workdays and offdays and extract features in combination with
@@ -675,7 +678,7 @@ features
 and are used in a k-means clustering algorithm to group the users into three
 behavior groups. The study analyses the resulting clusters with two newly
 proposed
-metrics: \textit{User Commonality} (percenctage of users that visited each
+metrics: \textit{User Commonality} (percentage of users that visited each
 point of interest (POI) category) and \textit{Average Frequency} (average
 percentage of trips to each POI category).~\cite{koh_clustering_2022}
 
@@ -690,7 +693,7 @@ percentage of trips to each POI category).~\cite{koh_clustering_2022}
 \FloatBarrier
 
 The work of Koh et al. shows that meaningful patterns can be extracted from GPS
-data using unsupervised clustering methods. This approach is highly relevent
+data using unsupervised clustering methods. This approach is highly relevant
 for this thesis,
 as it demonstrates that structural characteristics can be derived from
 engineered features
@@ -757,7 +760,7 @@ information can be extracted from the dataset, and which cannot.
 
 \subsection{Overview}
 The dataset used is a collection of GPS tracking data collected by
-wastecollection vehicles from various waste collection businesses and provided
+waste collection vehicles from various waste collection businesses and provided
 by \textit{infeo GmbH}. It represents real-world data
 collected during regular waste collection operation in the DACH region.
 
@@ -769,15 +772,13 @@ Each tracking represents a complete waste collection route taken and includes
 metadata as well as a list of GPS coordinates.
 
 \subsection{Structure of the Data}
-Each dataset entry represents a single recorded route refered to as
-\textit{tracking} and contains metadata as well as a ordered list of gps
+Each dataset entry represents a single recorded route referred to as
+\textit{tracking} and contains metadata as well as a ordered list of GPS
 coordinates.
 
-Each tracking contains the following fields:
+Each tracking contains the following relevant fields:
 \begin{table}[H]
   \centering
-  \caption{Structure of a Tracking Entry}
-  \label{tab:tracking_structure}
   \begin{tabular}{|l|l|p{8cm}|}
     \hline
     \textbf{Field}       & \textbf{Type}  & \textbf{Description}
@@ -824,13 +825,13 @@ Each tracking contains the following fields:
     \\
     \hline
   \end{tabular}
+  \label{tab:tracking_structure}
+  \caption{Structure of a Tracking Entry}
 \end{table}
 
-Each GPS point contains the following fields:
+Each GPS point contains the following relevant fields:
 \begin{table}[H]
   \centering
-  \caption{Structure of a GPS Waypoint Entry}
-  \label{tab:gps_point_structure}
   \begin{tabular}{|l|l|p{8cm}|}
     \hline
     \textbf{Field}         & \textbf{Type} & \textbf{Description}
@@ -850,8 +851,7 @@ Each GPS point contains the following fields:
     \texttt{longitude}     & Float         & Longitude coordinate.
     \\
     \hline
-    \texttt{speed}         & Float         & Instantaneous speed at the time
-    (in km/h).
+    \texttt{speed}         & Float         & Instantaneous speed at the time.
     \\
     \hline
     \texttt{heading}       & Float         & Direction of movement in degrees.
@@ -874,12 +874,14 @@ Each GPS point contains the following fields:
     \\
     \hline
   \end{tabular}
+  \caption{Structure of a GPS Waypoint Entry}
+  \label{tab:gps_point_structure}
 \end{table}
 
 \clearpage
 \subsection{Size and Coverage}
 
-The dataset consists of 101.353 individual trackings with a combined number of
+The dataset consists of 101,353 individual trackings with a combined number of
 123,785,460 waypoints.
 Trackings were recorded by waste collection vehicles during real-world
 operation in the DACH
@@ -978,7 +980,7 @@ by 2 tracking routes in the sample data to
 ensure a balanced representation.
 
 Feature extraction was performed to calculate route-level metrics such as
-length, duration, bounding box area, point density, number of stops and average
+bounding box area, point density and average
 distance between points.
 
 The goal of this sample is to explore patterns, validate assumptions, and
@@ -1021,7 +1023,7 @@ lowest urban density.
 \begin{itemize}
   \item Coverage is slightly more dispersed than urban routes.
   \item More dispered than suburban areas, with less consistent street layout.
-  \item Collection point are more spaced out, and routes often span small
+  \item Collection points are more spaced out, and routes often span small
         settlements with connecting streets.
 \end{itemize}
 
@@ -1044,7 +1046,7 @@ lowest urban density.
 The pairplot (Figure \ref{fig:sample_pairplot}) visualizes the relationships
 between all pairs of extracted features.
 While the small sample size limits the generalization, the plot suggests clear
-seperattion between the extremese \texttt{URBAN} and \texttt{RURAL}, especially
+seperation between the extremese \texttt{URBAN} and \texttt{RURAL}, especially
 in dimensions such as point density and bounding box area.
 
 The main utility of this plot lies in
@@ -1064,14 +1066,15 @@ routes fall in between but exhibit more overlap and variability.
 The correlation matrix (Figure \ref{fig:sample_correlation_matrix}) highlights
 expected and useful relationship between features.
 Strong positive correlation between \texttt{length}, \texttt{duration},
-\texttt{num\_points} exists, as these features all describe the scale of the
+\texttt{num\_points} and \texttt{bbox\_area} exists, as these features all
+describe the scale of the
 tracking.
 \texttt{point\_density} shows a strong negative correlation with those same
-features, indicating that shorter, more cmpact routes have denser GPS point
+features, indicating that shorter, more compact routes have denser GPS point
 coverage.
 \texttt{straightness} and \texttt{mean\_heading\_change} show a moderate
 correlation to other features, suggesting that they add additional orthogonal
-information about the geometric of the tracking.
+information about the geometric characteristics of the tracking.
 
 These relationships validate the consistency of the data and show the value of
 using this sample as a baseline weighting for future stages in the pipeline.
@@ -1091,10 +1094,9 @@ the lowest, with suburban and town trackings falling in the middle with a wider
 variability.
 
 This strong monotonic pattern across labels supports that point density is a
-valuable feature for clustering and classification. (Other features, such as
+valuable feature for clustering and classification. Other features, such as
 bounding box area and average segment distance	 show similar characteristics
-as
-shown in Chapter 5)
+as shown in Chapter 5.
 
 \section{Solution Approach}
 This chapter outlines the methods used to analyse and classify the GPS tracking
@@ -1119,13 +1121,17 @@ The selected trackings were labeled to four categories, two trackings per
 category.
 
 \begin{itemize}
-  \item Urban (Dense building structures, complex road networks, and minimal
-        spacing between stops)
-  \item Suburban (Moderately spaced residential areas with organized street
-        layouts)
-  \item Town (Smaller clustered settlements with simpler road structures)
-  \item Rural (Sparse housing, long roads, large distances between collection
-        points)
+  \item \textbf{Urban:} Dense building structures, complex road networks, and
+        minimal
+        spacing between stops
+  \item \textbf{Suburban:} Moderately spaced residential areas with organized
+        street
+        layouts
+  \item \textbf{Town:} Smaller clustered settlements with simpler road
+        structures
+  \item \textbf{Rural:} Sparse housing, long roads, large distances between
+        collection
+        points
 \end{itemize}
 
 With the manually selected trackings varying in geographical structure, a
@@ -1165,10 +1171,6 @@ al.~\cite{koh_clustering_2022}
         box area. This feature indicates how closes packed the points are.
   \item \textbf{Average Segment Distance:} The mean distance between
         consecutive waypoints, computed using geodisc distance.
-  \item \textbf{Total Distance:} The sum of all segment distances between
-        consecutive waypoints. (Later removed, since it is a more unreliable
-        length
-        metric compared to the length in the tracking metadata)
   \item \textbf{Straightness:} The ratio between the geodesic distance from the
         first to the last point and the total distance of the route. Values
         close to 1
@@ -1178,8 +1180,6 @@ al.~\cite{koh_clustering_2022}
         consecutive segments of the path, in radians. It reflects how often and
         how
         severe the vehicle changes direction.
-  \item \textbf{Number of Stops:} Waypoints with speed of zero. (Later removed,
-        due to low variance as most waypoints have a speed of zero)
 \end{enumerate}
 
 \subsection{Filtering and Preprocessing the Full Dataset}
@@ -1283,25 +1283,16 @@ of the pipeline introduced int Chapter 3.
 \FloatBarrier
 
 \section{Data Handling and Preprocessing}
-Preprocessing is a crucial step in the machine learning pipeline.
-
-Each row in the dataset is a single GPS waypoint and consist of the following
-relevant columns:
-
-\begin{itemize}
-  \item \textbf{id\_tracking:} Unique identifier for each tracking.
-  \item \textbf{sequence:} The order of the waypoint in the tracking.
-  \item \textbf{latitude/longitude:} GPS coordinates.
-  \item \textbf{speed:} Vehicle speed at the waypoint.
-  \item \textbf{tracking\_duration:} Total time of the tracking.
-  \item \textbf{tracking\_length:} Total dinstance of the tracking in km.
-\end{itemize}
+Efficient handling and preprocessing were essential to manage the large dataset
+and prepare it for the feature extraction step.
+This section describes the loading, filtering and preparing the raw GPS
+tracking data for feature extraction.
 
 \subsection{Data volume and loading}
 
 The data was provided via a MySQL database, containing two main tables relevant
 for this analysis.
-Trackings table containing the metadata of 101353 trackings and the waypoints
+Trackings table containing the metadata of 101,353 trackings and the waypoints
 table containing the corresponding GPS waypoints of the trackings.
 Due to the substantial size of database \textbf{~13.5 GB} in total, with
 \textbf{~12.6 MB} from the tracking table and \textbf{~11.6 GB} from the
@@ -1333,17 +1324,15 @@ criteria:
         or above 850km were excluded.
   \item \textbf{Minimal Waypoint Count:} Trackings with less than 10 recorded
         waypoints were excluded.
-  \item \textbf{Minimal Bounding Box:} Trackings with a bounding box smaller
-        than about 50 meters in latitude or longitude were excluded. This was a
-        helpful
-        step to reduce the amount of trackings that were exclusively recorded
-        in a
-        parking lot.
+  \item \textbf{Minimal Coordinate Span:} Trackings with less than 0.0005 span
+        in latitude or longitude were excluded. Equaling to about 50 meters
+        north-south
+        and 37 meter east-west in the DACH region.
 \end{itemize}
 
 The filters were directly implemented as a SQL query executed in an jupyter
 notebook. This reduced the further computatinal times for clustering and
-training the classifier model. The SQL query implementing these filters looked
+training the classifier model. The SQL query implementing these filters
 as follows:
 \begin{lstlisting}[style=sql,caption={SQL query used for filtering the GPS tracking dataset},label={lst:sql-filter}]
   SELECT 
@@ -1373,52 +1362,7 @@ as follows:
       ) > 0.0005;  -- Min. ~50m longitude span
   \end{lstlisting}
 
-Each Filter step reduces the dataset by this many trackings:
-\begin{table}[ht]
-  \centering
-  \begin{tabular}{|l|r|r|r|}
-    \hline
-    \textbf{Filter Step}     & \textbf{Remaining Trackings} &
-    \textbf{Removed}
-                             &
-    \textbf{Reduction (\%)}
-    \\
-    \hline
-    All trackings            & 101353                       & --
-                             & --
-    \\
-    Duration filter          & 66477                        &
-    34876
-                             &
-    34.410\%
-    \\
-    Length filter            & 45668                        &
-    20809
-                             &
-    31.303\%
-    \\
-    Minimal Waypoints filter & 45599                        &
-    69
-                             &
-    0.151\%
-    \\
-    Min Lat/Long span filter & 45598                        &
-    1
-                             &
-    0.002\%
-    \\
-    \hline
-    \textbf{Total Remaining} & \textbf{45598}               &
-    \textbf{55755}
-                             &
-    \textbf{55.011\%}
-    \\
-    \hline
-  \end{tabular}
-  \caption{Tracking reduction per filtering step}
-  \label{tab:filtering_summary}
-\end{table}
-\FloatBarrier
+In total the filtering steps reduced the dataset by 55755 (55\%) trackings.
 
 \section{Feature Extraction}
 This section describes how raw GPS tracking data was transformed into
@@ -1431,8 +1375,8 @@ classifier. Each feature was extracted using Python libraries such as
 \texttt{pandas}, \texttt{numpy}, and \texttt{geopy} and stored in a CSV file.
 
 \subsection{Available Metadata Features}
-
-Metadata features are directly provided in the dataset for each tracking. They
+Metadata features are calculated by \textit{infeo GmbH} and directly provided
+in the dataset for each tracking. They
 serve as a
 baseline for route length and duration.
 
@@ -1491,12 +1435,6 @@ The average geodesic distance between consequtive waypoints:
 \]
 where $d(\cdot, \cdot)$ refers to geodesic distance.
 
-\paragraph{Total Distance}
-The cumulative travel distance:
-\[
-  total\_distance = \sum_{i=1}^{n-1} d(p_i, p_{i+1})
-\]
-
 \paragraph{Straightness}
 Ratio between the start-end distance and the total path length:
 \[
@@ -1518,12 +1456,6 @@ with bearings $\theta_i$ computed via:
   \right)
 \]
 ~\cite{etemad_predicting_2018}
-
-\paragraph{Number of Stops}
-Amount of waypoints where the truck had a speed of zero:
-\[
-  num\_stops = \sum_{i=1}^{n} \mathbb{1}(speed_i = 0)
-\]
 
 \subsection{Feature Storage and Output}
 
@@ -1553,10 +1485,6 @@ the next steps of the pipeline.
     between
     consecutive waypoints
     \\
-    \texttt{total\_distance}        & m             & Total geodesic distance
-    covered by the
-    tracking
-    \\
     \texttt{straightness}           & Ratio (0–1)   & Direct distance from
     start to end /
     total distance
@@ -1564,9 +1492,6 @@ the next steps of the pipeline.
     \texttt{mean\_heading\_change}  & rad           & Average absolute angle
     change
     between segments
-    \\
-    \texttt{num\_stops}             & Count         & Number of waypoints with
-    speed = 0
     \\
     \texttt{duration}               & 100 ns        & Total tracking
     duration in nanoseconds
@@ -1581,36 +1506,37 @@ the next steps of the pipeline.
 \end{table}
 
 \section{Clustering Implementation}
-
-% \begin{figure}[htbp]
-%   \centering
-
-%   \includegraphics[width=1\textwidth]{Figures/histogram_feature_data_pre_clustering.png}
-%   \caption{Histogram}
-%   \label{fig:histogram-feature-engineered-data}
-% \end{figure}
-% \FloatBarrier
-
-% \begin{figure}[htbp]
-%   \centering
-
-%   \includegraphics[width=1\textwidth]{Figures/correlation_matrix_pre_clustering.png}
-%   \caption{Correlation matrix}
-%   \label{fig:correlation-matrix}
-% \end{figure}
-% \FloatBarrier
+Through clustering the unlabeled trackings were labeled, enabling the further
+application of supervised machine learning in the next.
+A two stage approach was used, first DBSCAN for detecting and filtering
+outliers and second a K-Means clustering was applied to label the trackings.
+The implemented approach used a semi-supervised K-Means clustering. By
+calculating feature weights and inital centroid position for each cluster from
+a manually selected sample set to improve the clustering process.
 
 \subsection{Outlier Removal with DBSCAN}
+To remove extreme outliers from the dataset, DBSCAN (Density-Based Clusering
+of Applications with Noise) algorithm was used to filter outliers from the
+dataset.
+Outliers were assigned the cluster label of -1 and excluded from the dataset
+before applying the K-Means clustering.
 
-% doesnt belong here (goes down to evaluation)
-% \begin{figure}[htbp]
-%   \centering
+It was chosen for its effective noise point detection, without the need of
+implementing manual logic.
 
-%   \includegraphics[width=0.9\textwidth]{Figures/dbscan_diagram_feature_data.png}
-%   \caption{DBSCAN}
-%   \label{fig:dbscan-clustering-outlier-removal}
-% \end{figure}
-% \FloatBarrier
+Through testing and fine tuning the final implementation of DBSCAN used the
+following parameters:
+\begin{itemize}
+  \item \texttt{eps} = 1
+  \item \texttt{min\_samples} = 40
+\end{itemize}
+
+DBSCAN removed 1,539 trackings from the dataset leaving a cleaner distribution
+for the K-Means clustering.
+This step was crucial for removing invalid trackings especially with large gps
+gaps. Without the outlier removal, the subsequent K-Means clustering would
+always assign
+outliers to one class.
 
 \subsection{Semi-Supervised Clustering with Weighted and Seeded K-Means}
 
@@ -1699,7 +1625,7 @@ data, and interpretability via feature importance.
 \subsection{Model Selection and Training}
 
 The full labeled dataset, enriched with cluster labels from the K-Means
-process, was split into a training and a test set using a 2:1 ratio. A grid
+algorithm, was split into a training and a test set using a 2:1 ratio. A grid
 search with 3-fold cross-validation was performed to identify the best
 hyperparameters for the Random Forest model. The following parameter grid was
 used:
@@ -1712,76 +1638,18 @@ used:
   \item Class weight: \texttt{[None, 'balanced']}
 \end{itemize}
 
-The best model was found with 300 trees, a maximum depth of 20, and default
-class weights. The model achieved an accuracy of
+The best model was found with 300 estimators, a maximum depth of 20,
+2 minimum smaples split, 1 minimum sample leaf and default
+class weights. The trained model achieved an accuracy of
 98.3\% on the test set.
-
-% \subsection{Model Evaluation}
-
-% The classifier was evaluated using standard metrics:
-
-% \begin{itemize}
-%   \item \textbf{Accuracy:} 0.983
-%   \item \textbf{Macro F1-score:} 0.981
-%   \item \textbf{Weighted F1-score:} 0.983
-%   \item \textbf{Cohen's Kappa:} High agreement with actual labels
-% \end{itemize}
-
-% A confusion matrix and class distribution bar plots were created to assess
-% prediction quality. All classes were well-separated with minimal confusion. The
-% silhouette score of -0.1393, although typical for high-dimensional data,
-% reflects some overlap near decision boundaries.
-
-% \subsection{Feature Importance Analysis}
-
-% The feature importance plot revealed which GPS tracking characteristics had the
-% strongest influence on classification. The most informative features included
-% bounding box area, point density and length.
-
-% SHAP (SHapley Additive exPlanations) values were also computed to explain
-% individual predictions. Global and per-class SHAP summary plots confirmed the
-% consistency of the feature contributions with domain expectations.
-
-% \subsection{Prediction Analysis and Visualization}
-
-% Several visual analyses were performed on the test set:
-
-% \begin{itemize}
-%   \item \textbf{Boxplots} showing feature distribution across predicted labels
-%   \item \textbf{Normalized heatmaps} comparing average feature values per
-%         predicted class
-%   \item \textbf{PCA scatterplot} visualizing predicted clusters in 2D space
-%   \item \textbf{Geographic maps} of randomly sampled predicted routes for each
-%         label
-% \end{itemize}
-
-% These visualizations support that the classifier not only performs well
-% statistically but also produces geographically and behaviorally consistent
-% results.
 
 \subsection{Saving and Exporting the Classifier}
 
 The trained Random Forest model was serialized using \texttt{joblib} and
-exported as a \texttt{.pkl} file. This model can be directly
+exported as a PKL file. This model can be directly
 integrated into production pipelines or reused for further research.
 Predictions from the classifier were stored for visualization and evaluation
 purposes in a CSV file.
-
-% \subsection{Cross-Validation Results}
-
-% To validate model stability, 10-fold stratified cross-validation was applied to
-% the full dataset. The mean accuracy across folds was approximately
-% 98\% with a very low standard deviation, confirming the generalizability of the
-% classifier.
-
-\subsection{Conclusion}
-
-The Random Forest classifier achieved high performance and provided
-interpretable insights into how GPS tracking data reflects urban, suburban,
-town, and rural driving patterns. The combination of clustering,
-semi-supervised learning, and explainable machine learning techniques created a
-robust
-classification pipeline for real-world tracking analysis.
 
 \section{Integration with API}
 
@@ -1792,7 +1660,7 @@ exposes a single endpoint which takes a
 the \textit{infeo GmbH} API, and processes the tracking data through the same
 preprocessing pipeline used during the model training.
 
-The API loads the trained classifier from a serialized \texttt{.pkl} file and
+The API loads the trained classifier from a serialized PKL file and
 predicts the label of processed tracking.
 The endpoint then returns the \texttt{tracking\_id} and the predicted class
 label in a \textit{json} format.
@@ -1817,9 +1685,8 @@ Figure~\ref{fig:fastapi_docs} shows the automatically generated \textit{Swagger
 \end{figure}
 
 \chapter{Evaluation and Discussion}
-% TODO: EXpertenmeinung zu den ergebnissen der classification von florian einbauen (evtl eigene section)
-
-This chapter presents a comprehensive evaluation of the clustering and
+This chapter presents a comprehensive evaluation of the filtering, clustering
+and
 classification results.
 It provides insights into the performance, limitations, and robustess of the
 developed system.
@@ -1832,6 +1699,62 @@ The final labeled dataset was split into training and test sets using a 2:1
 ratio to evaluate the classifier's generalization ability.
 
 \section{Evaluation of the Results}
+
+\subsection{Filtering Results}
+Each Filter step in the SQL statement reduces the dataset by this many
+trackings:
+\begin{table}[ht]
+  \centering
+  \begin{tabular}{|l|r|r|r|}
+    \hline
+    \textbf{Filter Step}     & \textbf{Remaining Trackings} &
+    \textbf{Removed}
+                             &
+    \textbf{Reduction (\%)}
+    \\
+    \hline
+    All trackings            & 101353                       & --
+                             & --
+    \\
+    Duration filter          & 66477                        &
+    34876
+                             &
+    34.410\%
+    \\
+    Length filter            & 45668                        &
+    20809
+                             &
+    31.303\%
+    \\
+    Minimal Waypoints filter & 45599                        &
+    69
+                             &
+    0.151\%
+    \\
+    Min Lat/Long span filter & 45598                        &
+    1
+                             &
+    0.002\%
+    \\
+    \hline
+    \textbf{Total Remaining} & \textbf{45598}               &
+    \textbf{55755}
+                             &
+    \textbf{55.011\%}
+    \\
+    \hline
+  \end{tabular}
+  \caption{Tracking reduction per filtering step}
+  \label{tab:filtering_summary}
+\end{table}
+\FloatBarrier
+
+The filtering was effective at reducing the amount of faulty trackings in the
+dataset, but could not filter out all of them.
+The latitude and longitude span suggested by \textit{infeo GmbH} did not filter
+out many trackings. This could be due to the filtering of stationary trackings
+from the filters applied before the coordinate span filter, or indicate the
+need to increaste the minimum span.
 
 \subsection{Clustering Results}
 
@@ -2343,6 +2266,10 @@ laying the foundation for smarter, data-driven waste management systems.
 %   \includegraphics[width=0.8\textwidth]{AI_Sheet_quer.pdf}
 %   \caption{Data Sheet on the Use of AI}
 % \end{figure}
+
+% \appendix
+% \chapter{Use of AI tools}
+% sdfsfsdfsfsd
 
 \chapter*{Affidavit}
 \addcontentsline{toc}{chapter}{Affidavit}

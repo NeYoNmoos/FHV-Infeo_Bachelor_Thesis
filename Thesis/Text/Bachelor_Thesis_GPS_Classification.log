@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.10.25)  13 JUN 2025 16:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.10.25)  14 JUN 2025 23:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -925,16 +925,16 @@ LaTeX Warning: Hyper reference `acro:API' on page 11 undefined on input line 331
 LaTeX Warning: Hyper reference `acro:API' on page 11 undefined on input line 331.
 
 
-LaTeX Warning: Hyper reference `acro:AWS' on page 11 undefined on input line 332.
+LaTeX Warning: Hyper reference `acro:CSV' on page 11 undefined on input line 332.
 
 
-LaTeX Warning: Hyper reference `acro:AWS' on page 11 undefined on input line 332.
+LaTeX Warning: Hyper reference `acro:CSV' on page 11 undefined on input line 332.
 
 
-LaTeX Warning: Hyper reference `acro:CSV' on page 11 undefined on input line 333.
+LaTeX Warning: Hyper reference `acro:PKL' on page 11 undefined on input line 333.
 
 
-LaTeX Warning: Hyper reference `acro:CSV' on page 11 undefined on input line 333.
+LaTeX Warning: Hyper reference `acro:PKL' on page 11 undefined on input line 333.
 
 
 LaTeX Warning: Hyper reference `acro:DBSCAN' on page 11 undefined on input line 334.
@@ -1037,7 +1037,7 @@ Class scrreprt Warning: \float@addtolists detected!
 [12
 
 ]
-Overfull \hbox (0.78136pt too wide) in paragraph at lines 429--437
+Overfull \hbox (0.78136pt too wide) in paragraph at lines 430--439
 \T1/cmr/m/n/12 tract-ing mean-ing-ful fea-tures from GPS way-point data, ap-ply-ing semi-supervised
  []
 
@@ -1046,63 +1046,63 @@ chapter 2.
 [14
 
 ]
-<Figures/background/dbscan_core_points_and_border_points.png, id=354, 383.93437pt x 96.36pt>
+<Figures/background/dbscan_core_points_and_border_points.png, id=350, 383.93437pt x 96.36pt>
 File: Figures/background/dbscan_core_points_and_border_points.png Graphic file (type png)
 <use Figures/background/dbscan_core_points_and_border_points.png>
-Package pdftex.def Info: Figures/background/dbscan_core_points_and_border_points.png  used on input line 517.
+Package pdftex.def Info: Figures/background/dbscan_core_points_and_border_points.png  used on input line 519.
 (pdftex.def)             Requested size: 281.62292pt x 70.68625pt.
-<Figures/background/dbscan_density_reachability_connectivity.png, id=358, 375.4025pt x 93.34875pt>
+<Figures/background/dbscan_density_reachability_connectivity.png, id=354, 375.4025pt x 93.34875pt>
 File: Figures/background/dbscan_density_reachability_connectivity.png Graphic file (type png)
 <use Figures/background/dbscan_density_reachability_connectivity.png>
-Package pdftex.def Info: Figures/background/dbscan_density_reachability_connectivity.png  used on input line 538.
+Package pdftex.def Info: Figures/background/dbscan_density_reachability_connectivity.png  used on input line 540.
 (pdftex.def)             Requested size: 281.62292pt x 70.03416pt.
  [15 <./Figures/background/dbscan_core_points_and_border_points.png>] [16 <./Figures/background/dbscan_density_reachability_connectivity.png>]
-<Figures/background/k-means-and-DBSCAN-clustering-results-on-Chainlink-data-set.png, id=385, 204.765pt x 81.1833pt>
+<Figures/background/k-means-and-DBSCAN-clustering-results-on-Chainlink-data-set.png, id=381, 204.765pt x 81.1833pt>
 File: Figures/background/k-means-and-DBSCAN-clustering-results-on-Chainlink-data-set.png Graphic file (type png)
 <use Figures/background/k-means-and-DBSCAN-clustering-results-on-Chainlink-data-set.png>
-Package pdftex.def Info: Figures/background/k-means-and-DBSCAN-clustering-results-on-Chainlink-data-set.png  used on input line 599.
+Package pdftex.def Info: Figures/background/k-means-and-DBSCAN-clustering-results-on-Chainlink-data-set.png  used on input line 601.
 (pdftex.def)             Requested size: 281.62292pt x 111.66269pt.
  [17 <./Figures/background/k-means-and-DBSCAN-clustering-results-on-Chainlink-data-set.png>]
-<Figures/related_work/etemad_pipeline.png, id=400, 1088.868pt x 418.56375pt>
+<Figures/related_work/etemad_pipeline.png, id=396, 1088.868pt x 418.56375pt>
 File: Figures/related_work/etemad_pipeline.png Graphic file (type png)
 <use Figures/related_work/etemad_pipeline.png>
-Package pdftex.def Info: Figures/related_work/etemad_pipeline.png  used on input line 645.
+Package pdftex.def Info: Figures/related_work/etemad_pipeline.png  used on input line 648.
 (pdftex.def)             Requested size: 402.32022pt x 154.6554pt.
 
 Underfull \vbox (badness 1122) has occurred while \output is active []
 
  [18 <./Figures/related_work/etemad_pipeline.png>]
-<Figures/related_work/koh_clustering_framwork_flowchart.png, id=413, 936.49875pt x 325.215pt>
+<Figures/related_work/koh_clustering_framwork_flowchart.png, id=409, 936.49875pt x 325.215pt>
 File: Figures/related_work/koh_clustering_framwork_flowchart.png Graphic file (type png)
 <use Figures/related_work/koh_clustering_framwork_flowchart.png>
-Package pdftex.def Info: Figures/related_work/koh_clustering_framwork_flowchart.png  used on input line 685.
+Package pdftex.def Info: Figures/related_work/koh_clustering_framwork_flowchart.png  used on input line 688.
 (pdftex.def)             Requested size: 402.32022pt x 139.71565pt.
  [19 <./Figures/related_work/koh_clustering_framwork_flowchart.png>]
 chapter 3.
-<Diagrams/drawio/big_picture.png, id=422, 462.72874pt x 457.71pt>
+<Diagrams/drawio/big_picture.png, id=418, 462.72874pt x 457.71pt>
 File: Diagrams/drawio/big_picture.png Graphic file (type png)
 <use Diagrams/drawio/big_picture.png>
-Package pdftex.def Info: Diagrams/drawio/big_picture.png  used on input line 746.
+Package pdftex.def Info: Diagrams/drawio/big_picture.png  used on input line 749.
 (pdftex.def)             Requested size: 321.85739pt x 318.36943pt.
 [20
 
 ] [21 <./Diagrams/drawio/big_picture.png>]
-Underfull \hbox (badness 3758) in paragraph at lines 791--795
+Underfull \hbox (badness 3758) in paragraph at lines 792--796
 []\T1/cmr/m/n/12 Name of the track-ing (ran-dom-ized for
  []
 
 
-Underfull \hbox (badness 2142) in paragraph at lines 796--799
+Underfull \hbox (badness 2142) in paragraph at lines 797--800
 []\T1/cmr/m/n/12 Route meta-data, of-ten in-cludes in-ter-nal
  []
 
 
-Underfull \hbox (badness 2057) in paragraph at lines 815--818
+Underfull \hbox (badness 2057) in paragraph at lines 816--819
 []\T1/cmr/m/n/12 ID of the as-so-ci-ated tour (nul-li-fied for
  []
 
 
-Overfull \hbox (0.66364pt too wide) in paragraph at lines 781--827
+Overfull \hbox (0.66364pt too wide) in paragraph at lines 782--829
  [][] 
  []
 
@@ -1110,239 +1110,243 @@ Overfull \hbox (0.66364pt too wide) in paragraph at lines 781--827
 Underfull \vbox (badness 1888) has occurred while \output is active []
 
  [22] [23]
-<Figures/problem_definition/Aufzeichnune-komprimieren-winkelreduktion.png, id=447, 347.2975pt x 144.54pt>
+<Figures/problem_definition/Aufzeichnune-komprimieren-winkelreduktion.png, id=443, 347.2975pt x 144.54pt>
 File: Figures/problem_definition/Aufzeichnune-komprimieren-winkelreduktion.png Graphic file (type png)
 <use Figures/problem_definition/Aufzeichnune-komprimieren-winkelreduktion.png>
-Package pdftex.def Info: Figures/problem_definition/Aufzeichnune-komprimieren-winkelreduktion.png  used on input line 919.
+Package pdftex.def Info: Figures/problem_definition/Aufzeichnune-komprimieren-winkelreduktion.png  used on input line 921.
 (pdftex.def)             Requested size: 281.62292pt x 117.21127pt.
  [24
 
  <./Figures/problem_definition/Aufzeichnune-komprimieren-winkelreduktion.png>]
-<Figures/sample_tracking_routes_mapgrid.png, id=461, 1445.4pt x 722.7pt>
+<Figures/sample_tracking_routes_mapgrid.png, id=457, 1445.4pt x 722.7pt>
 File: Figures/sample_tracking_routes_mapgrid.png Graphic file (type png)
 <use Figures/sample_tracking_routes_mapgrid.png>
-Package pdftex.def Info: Figures/sample_tracking_routes_mapgrid.png  used on input line 990.
+Package pdftex.def Info: Figures/sample_tracking_routes_mapgrid.png  used on input line 992.
 (pdftex.def)             Requested size: 402.32022pt x 201.15262pt.
  [25] [26 <./Figures/sample_tracking_routes_mapgrid.png>]
-<Figures/sample_pairplot.png, id=474, 2063.7903pt x 1952.0127pt>
+<Figures/sample_pairplot.png, id=470, 1706.0538pt x 1597.8897pt>
 File: Figures/sample_pairplot.png Graphic file (type png)
 <use Figures/sample_pairplot.png>
-Package pdftex.def Info: Figures/sample_pairplot.png  used on input line 1038.
-(pdftex.def)             Requested size: 402.32022pt x 380.50691pt.
- [27] [28 <./Figures/sample_pairplot.png>]
-<Figures/sample_correlation_matrix.png, id=485, 493.1223pt x 408.3255pt>
+Package pdftex.def Info: Figures/sample_pairplot.png  used on input line 1040.
+(pdftex.def)             Requested size: 402.32022pt x 376.79637pt.
+ [27 <./Figures/sample_pairplot.png>]
+<Figures/sample_correlation_matrix.png, id=477, 493.1223pt x 408.3255pt>
 File: Figures/sample_correlation_matrix.png Graphic file (type png)
 <use Figures/sample_correlation_matrix.png>
-Package pdftex.def Info: Figures/sample_correlation_matrix.png  used on input line 1057.
+Package pdftex.def Info: Figures/sample_correlation_matrix.png  used on input line 1059.
 (pdftex.def)             Requested size: 402.32022pt x 333.15305pt.
- [29 <./Figures/sample_correlation_matrix.png>]
-<Figures/sample_point_density_boxplot.png, id=492, 435.7881pt x 327.8649pt>
+ [28 <./Figures/sample_correlation_matrix.png>]
+<Figures/sample_point_density_boxplot.png, id=484, 435.7881pt x 327.8649pt>
 File: Figures/sample_point_density_boxplot.png Graphic file (type png)
 <use Figures/sample_point_density_boxplot.png>
-Package pdftex.def Info: Figures/sample_point_density_boxplot.png  used on input line 1082.
+Package pdftex.def Info: Figures/sample_point_density_boxplot.png  used on input line 1085.
 (pdftex.def)             Requested size: 402.32022pt x 302.68495pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [30 <./Figures/sample_point_density_boxplot.png>] [31] [32] [33] [34]
+ [29 <./Figures/sample_point_density_boxplot.png>] [30] [31] [32] [33]
 chapter 4.
-<Diagrams/drawio/big_picture_implementation.png, id=532, 815.045pt x 798.985pt>
+<Diagrams/drawio/big_picture_implementation.png, id=522, 815.045pt x 798.985pt>
 File: Diagrams/drawio/big_picture_implementation.png Graphic file (type png)
 <use Diagrams/drawio/big_picture_implementation.png>
 Package pdftex.def Info: Diagrams/drawio/big_picture_implementation.png  used on input line 1279.
 (pdftex.def)             Requested size: 321.85739pt x 315.51637pt.
-[35
+[34
 
- <./Diagrams/drawio/big_picture_implementation.png>] [36] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+ <./Diagrams/drawio/big_picture_implementation.png>] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
-)
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 1348.
+) [35]
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 1337.
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 1349.
- [37]
-Overfull \hbox (40.09035pt too wide) in paragraph at lines 1379--1418
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 1338.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [36]
+Overfull \hbox (20.33795pt too wide) detected at line 1415
+\OML/cmm/m/it/12 h \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 d\OT1/cmr/m/n/12 ((\OML/cmm/m/it/12 lat[]; long[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 lat[]; long[]\OT1/cmr/m/n/12 ))\OML/cmm/m/it/12 ;  w \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 d\OT1/cmr/m/n/12 ((\OML/cmm/m/it/12 lat[]; lon[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 lat[]; long[]\OT1/cmr/m/n/12 ))
+ []
+
+[37]
+Overfull \hbox (98.8869pt too wide) in paragraph at lines 1469--1504
  [][] 
  []
 
 [38]
-Overfull \hbox (20.33795pt too wide) detected at line 1471
-\OML/cmm/m/it/12 h \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 d\OT1/cmr/m/n/12 ((\OML/cmm/m/it/12 lat[]; long[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 lat[]; long[]\OT1/cmr/m/n/12 ))\OML/cmm/m/it/12 ;  w \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 d\OT1/cmr/m/n/12 ((\OML/cmm/m/it/12 lat[]; lon[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 lat[]; long[]\OT1/cmr/m/n/12 ))
- []
-
-[39]
-Overfull \hbox (98.8869pt too wide) in paragraph at lines 1537--1579
- [][] 
- []
-
-
-Overfull \hbox (0.21478pt too wide) in paragraph at lines 1619--1626
+Overfull \hbox (0.21478pt too wide) in paragraph at lines 1545--1552
 \T1/cmr/m/n/12 To im-prove the in-ter-pretabil-ity and per-for-mance of clus-ter-ing, a semi-supervised
  []
 
-<Diagrams/drawio/implementation/clustering_pipeline.png, id=588, 814.04124pt x 302.12875pt>
+[39]
+<Diagrams/drawio/implementation/clustering_pipeline.png, id=583, 814.04124pt x 302.12875pt>
 File: Diagrams/drawio/implementation/clustering_pipeline.png Graphic file (type png)
 <use Diagrams/drawio/implementation/clustering_pipeline.png>
-Package pdftex.def Info: Diagrams/drawio/implementation/clustering_pipeline.png  used on input line 1630.
+Package pdftex.def Info: Diagrams/drawio/implementation/clustering_pipeline.png  used on input line 1556.
 (pdftex.def)             Requested size: 362.08574pt x 134.38463pt.
-[40] [41 <./Diagrams/drawio/implementation/clustering_pipeline.png>] [42] [43]
-<Diagrams/drawio/api/api_implementation.png, id=613, 492.84125pt x 442.65375pt>
+ [40 <./Diagrams/drawio/implementation/clustering_pipeline.png>] [41]
+<Diagrams/drawio/api/api_implementation.png, id=597, 492.84125pt x 442.65375pt>
 File: Diagrams/drawio/api/api_implementation.png Graphic file (type png)
 <use Diagrams/drawio/api/api_implementation.png>
-Package pdftex.def Info: Diagrams/drawio/api/api_implementation.png  used on input line 1806.
+Package pdftex.def Info: Diagrams/drawio/api/api_implementation.png  used on input line 1674.
 (pdftex.def)             Requested size: 362.08574pt x 325.22838pt.
-<Figures/api/fastapi_documentation.png, id=614, 1091.87926pt x 861.81975pt>
+<Figures/api/fastapi_documentation.png, id=598, 1091.87926pt x 861.81975pt>
 File: Figures/api/fastapi_documentation.png Graphic file (type png)
 <use Figures/api/fastapi_documentation.png>
-Package pdftex.def Info: Figures/api/fastapi_documentation.png  used on input line 1814.
+Package pdftex.def Info: Figures/api/fastapi_documentation.png  used on input line 1682.
 (pdftex.def)             Requested size: 362.08574pt x 285.78218pt.
- [44 <./Diagrams/drawio/api/api_implementation.png>] [45 <./Figures/api/fastapi_documentation.png>]
+ [42] [43 <./Diagrams/drawio/api/api_implementation.png>] [44 <./Figures/api/fastapi_documentation.png>]
 chapter 5.
-<Figures/dbscan_diagram_feature_data.png, id=626, 722.7pt x 433.62pt>
-File: Figures/dbscan_diagram_feature_data.png Graphic file (type png)
-<use Figures/dbscan_diagram_feature_data.png>
-Package pdftex.def Info: Figures/dbscan_diagram_feature_data.png  used on input line 1847.
-(pdftex.def)             Requested size: 362.08574pt x 217.25276pt.
-[46
+
+Overfull \hbox (40.09035pt too wide) in paragraph at lines 1708--1747
+ [][] 
+ []
+
+[45
 
 ]
-<Figures/feature_weights.png, id=633, 858.5676pt x 496.7358pt>
+<Figures/dbscan_diagram_feature_data.png, id=619, 722.7pt x 433.62pt>
+File: Figures/dbscan_diagram_feature_data.png Graphic file (type png)
+<use Figures/dbscan_diagram_feature_data.png>
+Package pdftex.def Info: Figures/dbscan_diagram_feature_data.png  used on input line 1770.
+(pdftex.def)             Requested size: 362.08574pt x 217.25276pt.
+<Figures/feature_weights.png, id=622, 858.5676pt x 496.7358pt>
 File: Figures/feature_weights.png Graphic file (type png)
 <use Figures/feature_weights.png>
-Package pdftex.def Info: Figures/feature_weights.png  used on input line 1871.
+Package pdftex.def Info: Figures/feature_weights.png  used on input line 1794.
 (pdftex.def)             Requested size: 362.08574pt x 209.4841pt.
-<Figures/kmeans_diagram_feature_data.png, id=634, 722.7pt x 433.62pt>
+<Figures/kmeans_diagram_feature_data.png, id=623, 722.7pt x 433.62pt>
 File: Figures/kmeans_diagram_feature_data.png Graphic file (type png)
 <use Figures/kmeans_diagram_feature_data.png>
-Package pdftex.def Info: Figures/kmeans_diagram_feature_data.png  used on input line 1879.
+Package pdftex.def Info: Figures/kmeans_diagram_feature_data.png  used on input line 1802.
 (pdftex.def)             Requested size: 362.08574pt x 217.25276pt.
- [47 <./Figures/dbscan_diagram_feature_data.png>] [48 <./Figures/feature_weights.png> <./Figures/kmeans_diagram_feature_data.png>]
-<Figures/classifier/shap_summary_for_all_classes.png, id=646, 578.16pt x 339.669pt>
+ [46 <./Figures/dbscan_diagram_feature_data.png>] [47 <./Figures/feature_weights.png> <./Figures/kmeans_diagram_feature_data.png>]
+<Figures/classifier/shap_summary_for_all_classes.png, id=635, 578.16pt x 339.669pt>
 File: Figures/classifier/shap_summary_for_all_classes.png Graphic file (type png)
 <use Figures/classifier/shap_summary_for_all_classes.png>
-Package pdftex.def Info: Figures/classifier/shap_summary_for_all_classes.png  used on input line 1888.
+Package pdftex.def Info: Figures/classifier/shap_summary_for_all_classes.png  used on input line 1811.
 (pdftex.def)             Requested size: 362.08574pt x 212.72278pt.
-<Figures/clustering_map/clustering_result_map_rural_area1.png, id=647, 1040.08575pt x 626.34pt>
+<Figures/clustering_map/clustering_result_map_rural_area1.png, id=636, 1040.08575pt x 626.34pt>
 File: Figures/clustering_map/clustering_result_map_rural_area1.png Graphic file (type png)
 <use Figures/clustering_map/clustering_result_map_rural_area1.png>
-Package pdftex.def Info: Figures/clustering_map/clustering_result_map_rural_area1.png  used on input line 1900.
+Package pdftex.def Info: Figures/clustering_map/clustering_result_map_rural_area1.png  used on input line 1823.
 (pdftex.def)             Requested size: 199.14653pt x 119.92331pt.
-<Figures/clustering_map/clustering_result_map_konstanz_area_town1.png, id=648, 1044.90375pt x 628.14674pt>
+<Figures/clustering_map/clustering_result_map_konstanz_area_town1.png, id=637, 1044.90375pt x 628.14674pt>
 File: Figures/clustering_map/clustering_result_map_konstanz_area_town1.png Graphic file (type png)
 <use Figures/clustering_map/clustering_result_map_konstanz_area_town1.png>
-Package pdftex.def Info: Figures/clustering_map/clustering_result_map_konstanz_area_town1.png  used on input line 1908.
+Package pdftex.def Info: Figures/clustering_map/clustering_result_map_konstanz_area_town1.png  used on input line 1831.
 (pdftex.def)             Requested size: 199.14653pt x 119.71333pt.
-<Figures/clustering_map/clustering_result_map_linz_urban1.png, id=649, 1045.506pt x 629.9535pt>
+<Figures/clustering_map/clustering_result_map_linz_urban1.png, id=638, 1045.506pt x 629.9535pt>
 File: Figures/clustering_map/clustering_result_map_linz_urban1.png Graphic file (type png)
 <use Figures/clustering_map/clustering_result_map_linz_urban1.png>
-Package pdftex.def Info: Figures/clustering_map/clustering_result_map_linz_urban1.png  used on input line 1918.
+Package pdftex.def Info: Figures/clustering_map/clustering_result_map_linz_urban1.png  used on input line 1841.
 (pdftex.def)             Requested size: 199.14653pt x 119.99039pt.
-<Figures/clustering_map/clustering_result_map_vorarlberg_closeup.png, id=650, 1042.49475pt x 626.34pt>
+<Figures/clustering_map/clustering_result_map_vorarlberg_closeup.png, id=639, 1042.49475pt x 626.34pt>
 File: Figures/clustering_map/clustering_result_map_vorarlberg_closeup.png Graphic file (type png)
 <use Figures/clustering_map/clustering_result_map_vorarlberg_closeup.png>
-Package pdftex.def Info: Figures/clustering_map/clustering_result_map_vorarlberg_closeup.png  used on input line 1926.
+Package pdftex.def Info: Figures/clustering_map/clustering_result_map_vorarlberg_closeup.png  used on input line 1849.
 (pdftex.def)             Requested size: 199.14653pt x 119.64616pt.
- [49 <./Figures/classifier/shap_summary_for_all_classes.png>] [50 <./Figures/clustering_map/clustering_result_map_rural_area1.png> <./Figures/clustering_map/clustering_result_map_konstanz_area_town1.png> <./Figures/clustering_map/clustering_result_map_linz_urban1.png> <./Figures/clustering_map/clustering_result_map_vorarlberg_closeup.png>]
-Overfull \hbox (4.87614pt too wide) in paragraph at lines 1946--1950
+ [48 <./Figures/classifier/shap_summary_for_all_classes.png>] [49 <./Figures/clustering_map/clustering_result_map_rural_area1.png> <./Figures/clustering_map/clustering_result_map_konstanz_area_town1.png> <./Figures/clustering_map/clustering_result_map_linz_urban1.png> <./Figures/clustering_map/clustering_result_map_vorarlberg_closeup.png>]
+Overfull \hbox (4.87614pt too wide) in paragraph at lines 1869--1873
 []\T1/cmr/m/n/12 The fea-ture im-por-tance anal-y-sis (Fig-ure  []5.7[]) high-lighted \T1/cmtt/m/n/12 [\T1/cmr/m/n/12 length], \T1/cmtt/m/n/12 bbox_area\T1/cmr/m/n/12 ,
  []
 
-<Figures/classifier/confusion_matric_label_prediction.png, id=667, 578.16pt x 433.62pt>
+<Figures/classifier/confusion_matric_label_prediction.png, id=656, 578.16pt x 433.62pt>
 File: Figures/classifier/confusion_matric_label_prediction.png Graphic file (type png)
 <use Figures/classifier/confusion_matric_label_prediction.png>
-Package pdftex.def Info: Figures/classifier/confusion_matric_label_prediction.png  used on input line 1954.
+Package pdftex.def Info: Figures/classifier/confusion_matric_label_prediction.png  used on input line 1877.
 (pdftex.def)             Requested size: 362.08574pt x 271.561pt.
-<Figures/classifier/feature_importance_random_forest.png, id=668, 722.7pt x 433.62pt>
+<Figures/classifier/feature_importance_random_forest.png, id=657, 722.7pt x 433.62pt>
 File: Figures/classifier/feature_importance_random_forest.png Graphic file (type png)
 <use Figures/classifier/feature_importance_random_forest.png>
-Package pdftex.def Info: Figures/classifier/feature_importance_random_forest.png  used on input line 1962.
+Package pdftex.def Info: Figures/classifier/feature_importance_random_forest.png  used on input line 1885.
 (pdftex.def)             Requested size: 362.08574pt x 217.25276pt.
 
-Overfull \hbox (1.69775pt too wide) in paragraph at lines 1967--1976
+Overfull \hbox (1.69775pt too wide) in paragraph at lines 1890--1899
 \T1/cmr/m/n/12 tonic re-la-tion-ships be-tween classes in in-creas-ing ru-ral-ity (e.g.,\T1/cmtt/m/n/12 URBAN \T1/cmr/m/n/12 to \T1/cmtt/m/n/12 SUBURBAN
  []
 
 
-Overfull \hbox (39.06815pt too wide) in paragraph at lines 1967--1976
+Overfull \hbox (39.06815pt too wide) in paragraph at lines 1890--1899
 \T1/cmr/m/n/12 to \T1/cmtt/m/n/12 TOWN \T1/cmr/m/n/12 to \T1/cmtt/m/n/12 RURAL\T1/cmr/m/n/12 ) for the fea-tures \T1/cmtt/m/n/12 bbox_area\T1/cmr/m/n/12 , \T1/cmtt/m/n/12 point_density\T1/cmr/m/n/12 , \T1/cmtt/m/n/12 avg_segment_distance
  []
 
-<Figures/classifier/feature_values_normalized.png, id=670, 722.7pt x 433.62pt>
+<Figures/classifier/feature_values_normalized.png, id=659, 722.7pt x 433.62pt>
 File: Figures/classifier/feature_values_normalized.png Graphic file (type png)
 <use Figures/classifier/feature_values_normalized.png>
-Package pdftex.def Info: Figures/classifier/feature_values_normalized.png  used on input line 1980.
+Package pdftex.def Info: Figures/classifier/feature_values_normalized.png  used on input line 1903.
 (pdftex.def)             Requested size: 362.08574pt x 217.25276pt.
-[51 <./Figures/classifier/confusion_matric_label_prediction.png>] [52 <./Figures/classifier/feature_importance_random_forest.png> <./Figures/classifier/feature_values_normalized.png>]
-<Figures/classifier/pca_projection_test_set.png, id=683, 578.16pt x 433.62pt>
+[50 <./Figures/classifier/confusion_matric_label_prediction.png>] [51 <./Figures/classifier/feature_importance_random_forest.png> <./Figures/classifier/feature_values_normalized.png>]
+<Figures/classifier/pca_projection_test_set.png, id=671, 578.16pt x 433.62pt>
 File: Figures/classifier/pca_projection_test_set.png Graphic file (type png)
 <use Figures/classifier/pca_projection_test_set.png>
-Package pdftex.def Info: Figures/classifier/pca_projection_test_set.png  used on input line 1989.
+Package pdftex.def Info: Figures/classifier/pca_projection_test_set.png  used on input line 1912.
 (pdftex.def)             Requested size: 362.08574pt x 271.561pt.
 File: Figures/classifier/shap_summary_for_all_classes.png Graphic file (type png)
 <use Figures/classifier/shap_summary_for_all_classes.png>
-Package pdftex.def Info: Figures/classifier/shap_summary_for_all_classes.png  used on input line 1998.
+Package pdftex.def Info: Figures/classifier/shap_summary_for_all_classes.png  used on input line 1921.
 (pdftex.def)             Requested size: 362.08574pt x 212.72278pt.
-<Figures/classifier/shap/shap_summary_for_URBAN.png, id=684, 578.16pt x 339.669pt>
+<Figures/classifier/shap/shap_summary_for_URBAN.png, id=672, 578.16pt x 339.669pt>
 File: Figures/classifier/shap/shap_summary_for_URBAN.png Graphic file (type png)
 <use Figures/classifier/shap/shap_summary_for_URBAN.png>
-Package pdftex.def Info: Figures/classifier/shap/shap_summary_for_URBAN.png  used on input line 2009.
+Package pdftex.def Info: Figures/classifier/shap/shap_summary_for_URBAN.png  used on input line 1932.
 (pdftex.def)             Requested size: 199.14653pt x 116.99416pt.
-<Figures/classifier/shap/shap_summary_for_SUBURBAN.png, id=685, 578.16pt x 339.669pt>
+<Figures/classifier/shap/shap_summary_for_SUBURBAN.png, id=673, 578.16pt x 339.669pt>
 File: Figures/classifier/shap/shap_summary_for_SUBURBAN.png Graphic file (type png)
 <use Figures/classifier/shap/shap_summary_for_SUBURBAN.png>
-Package pdftex.def Info: Figures/classifier/shap/shap_summary_for_SUBURBAN.png  used on input line 2017.
+Package pdftex.def Info: Figures/classifier/shap/shap_summary_for_SUBURBAN.png  used on input line 1940.
 (pdftex.def)             Requested size: 199.14653pt x 116.99416pt.
-<Figures/classifier/shap/shap_summary_for_TOWN.png, id=686, 578.16pt x 339.669pt>
+<Figures/classifier/shap/shap_summary_for_TOWN.png, id=674, 578.16pt x 339.669pt>
 File: Figures/classifier/shap/shap_summary_for_TOWN.png Graphic file (type png)
 <use Figures/classifier/shap/shap_summary_for_TOWN.png>
-Package pdftex.def Info: Figures/classifier/shap/shap_summary_for_TOWN.png  used on input line 2027.
+Package pdftex.def Info: Figures/classifier/shap/shap_summary_for_TOWN.png  used on input line 1950.
 (pdftex.def)             Requested size: 199.14653pt x 116.99416pt.
-<Figures/classifier/shap/shap_summary_for_RURAL.png, id=687, 578.16pt x 339.669pt>
+<Figures/classifier/shap/shap_summary_for_RURAL.png, id=675, 578.16pt x 339.669pt>
 File: Figures/classifier/shap/shap_summary_for_RURAL.png Graphic file (type png)
 <use Figures/classifier/shap/shap_summary_for_RURAL.png>
-Package pdftex.def Info: Figures/classifier/shap/shap_summary_for_RURAL.png  used on input line 2035.
+Package pdftex.def Info: Figures/classifier/shap/shap_summary_for_RURAL.png  used on input line 1958.
 (pdftex.def)             Requested size: 199.14653pt x 116.99416pt.
-<Figures/classifier/four_final_predictions_per_class.png, id=689, 1445.4pt x 1445.4pt>
+<Figures/classifier/four_final_predictions_per_class.png, id=677, 1445.4pt x 1445.4pt>
 File: Figures/classifier/four_final_predictions_per_class.png Graphic file (type png)
 <use Figures/classifier/four_final_predictions_per_class.png>
-Package pdftex.def Info: Figures/classifier/four_final_predictions_per_class.png  used on input line 2052.
+Package pdftex.def Info: Figures/classifier/four_final_predictions_per_class.png  used on input line 1975.
 (pdftex.def)             Requested size: 402.32022pt x 402.30525pt.
- [53 <./Figures/classifier/pca_projection_test_set.png>] [54 <./Figures/classifier/shap/shap_summary_for_URBAN.png> <./Figures/classifier/shap/shap_summary_for_SUBURBAN.png> <./Figures/classifier/shap/shap_summary_for_TOWN.png> <./Figures/classifier/shap/shap_summary_for_RURAL.png>] [55 <./Figures/classifier/four_final_predictions_per_class.png>] [56]
+ [52 <./Figures/classifier/pca_projection_test_set.png>] [53 <./Figures/classifier/shap/shap_summary_for_URBAN.png> <./Figures/classifier/shap/shap_summary_for_SUBURBAN.png> <./Figures/classifier/shap/shap_summary_for_TOWN.png> <./Figures/classifier/shap/shap_summary_for_RURAL.png>] [54 <./Figures/classifier/four_final_predictions_per_class.png>] [55]
 
-LaTeX Warning: Reference `fig:sample_pairplot,fig:feature_weights_for_kmeans,fig:feature_importance_random_forest' on page 57 undefined on input line 2119.
+LaTeX Warning: Reference `fig:sample_pairplot,fig:feature_weights_for_kmeans,fig:feature_importance_random_forest' on page 56 undefined on input line 2042.
 
-[57]
+[56]
 chapter 6.
-[58
+[57
 
-] [59]
-Overfull \hbox (6.04228pt too wide) in paragraph at lines 2217--2217
+] [58]
+Overfull \hbox (6.04228pt too wide) in paragraph at lines 2140--2140
 \T1/cmr/m/it/12 Economist\T1/cmr/m/n/12 , \T1/cmr/m/sc/12 issn\T1/cmr/m/n/12 : 0013-0613. [On-line]. Avail-able: []$\T1/cmtt/m/n/12 https : / / www . economist .
  []
 
 
-Overfull \hbox (17.13297pt too wide) in paragraph at lines 2217--2217
+Overfull \hbox (17.13297pt too wide) in paragraph at lines 2140--2140
 \T1/cmtt/m/n/12 publication / 340813602 _ Unsupervised _ K -[] Means _ Clustering _ Algorithm$[]
  []
 
-[60
+[59
 
 
 ]
-Overfull \hbox (24.76076pt too wide) in paragraph at lines 2217--2217
+Overfull \hbox (24.76076pt too wide) in paragraph at lines 2140--2140
 \T1/cmr/m/n/12 Learn-ing. [On-line]. Avail-able: []$\T1/cmtt/m/n/12 https : / / www . geeksforgeeks . org / deploying -[]
  []
 
 
-Overfull \hbox (4.28598pt too wide) in paragraph at lines 2217--2217
+Overfull \hbox (4.28598pt too wide) in paragraph at lines 2140--2140
 \T1/cmtt/m/n/12 / / www . sciencedirect . com / science / article / pii / S1018364722000684$[]
  []
 
 
-Overfull \hbox (16.63297pt too wide) in paragraph at lines 2217--2217
+Overfull \hbox (16.63297pt too wide) in paragraph at lines 2140--2140
 \T1/cmtt/m/n/12 wiki . awm . infeo . at / index . php / Route _ zum _ Nachfahren _ bereitstellen #
  []
 
-[61] [62] [63
+[60] [61] [62
 
 ] (./Bachelor_Thesis_GPS_Classification.aux)
 
@@ -1363,18 +1367,18 @@ Package logreq Info: Writing requests to 'Bachelor_Thesis_GPS_Classification.run
 
  ) 
 Here is how much of TeX's memory you used:
- 32505 strings out of 478287
- 584978 string characters out of 5849288
- 1557514 words of memory out of 5000000
- 49998 multiletter control sequences out of 15000+600000
+ 32498 strings out of 478287
+ 584907 string characters out of 5849288
+ 1583546 words of memory out of 5000000
+ 49996 multiletter control sequences out of 15000+600000
  483159 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,11n,106p,10675b,3678s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on Bachelor_Thesis_GPS_Classification.pdf (63 pages, 62049302 bytes).
+ 108i,11n,106p,10675b,3671s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on Bachelor_Thesis_GPS_Classification.pdf (62 pages, 61666137 bytes).
 PDF statistics:
- 1191 PDF objects out of 1200 (max. 8388607)
- 1001 compressed objects within 11 object streams
- 278 named destinations out of 1000 (max. 500000)
- 834 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1168 PDF objects out of 1200 (max. 8388607)
+ 982 compressed objects within 10 object streams
+ 273 named destinations out of 1000 (max. 500000)
+ 818 words of extra memory for PDF output out of 10000 (max. 10000000)
 
