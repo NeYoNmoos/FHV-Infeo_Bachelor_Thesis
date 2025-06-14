@@ -978,7 +978,7 @@ four categories.
 A small, manually selected sample of 8 tracking routes was selected for initial
 exploratory data analysis. Each route was inspected on the
 \textit{AWM-Map-Tool} and
-then categorized into on of the four area type labels: \texttt{URBAN},
+then categorized into one of the four area type labels: \texttt{URBAN},
 \texttt{SUBURBAN}, \texttt{TOWN} or \texttt{RURAL}. Each Label is represented
 by 2 tracking routes in the sample data to
 ensure a balanced representation.
@@ -1025,7 +1025,7 @@ lowest urban density.
 
 \textbf{Town:}
 \begin{itemize}
-  \item Coverage is slightly more dispersed than urban routes.
+  \item Routes are fairly spread out but less spread out than rural areas.
   \item More dispered than suburban areas, with less consistent street layout.
   \item Collection points are more spaced out, and routes often span small
         settlements with connecting streets.
@@ -1116,7 +1116,7 @@ Rural.
 
 The foundation of this thesis is the dataset provided by \textit{infeo GmbH}.
 It contains anonymized GPS track data collected by waste collection vehicles
-during real world operation. Due to its large size of more than 100.000 GPS
+during real world operation. Due to its large size of more than 100,000 GPS
 tracks and its anonymization, a clear picture of the data needed to be
 established as the first step.
 With visual examination of different random trackings a sample of eight
@@ -1127,15 +1127,14 @@ category.
 \begin{itemize}
   \item \textbf{Urban:} Dense building structures, complex road networks, and
         minimal
-        spacing between stops
+        spacing between stops.
   \item \textbf{Suburban:} Moderately spaced residential areas with organized
         street
-        layouts
+        layouts.
   \item \textbf{Town:} Smaller clustered settlements with simpler road
-        structures
+        structures.
   \item \textbf{Rural:} Sparse housing, long roads, large distances between
-        collection
-        points
+        collection points.
 \end{itemize}
 
 With the manually selected trackings varying in geographical structure, a
@@ -1172,7 +1171,7 @@ al.~\cite{koh_clustering_2022}
   \item \textbf{Bounding Box Area:} The area of the minimum bounding box that
         encloses all latitude and longitude waypoints in one tracking.
   \item \textbf{Point density:} The number of waypoints divided by the bounding
-        box area. This feature indicates how closes packed the points are.
+        box area. This feature indicates how closely packed the points are.
   \item \textbf{Average Segment Distance:} The mean distance between
         consecutive waypoints, computed using geodisc distance.
   \item \textbf{Straightness:} The ratio between the geodesic distance from the
@@ -1478,28 +1477,35 @@ the next steps of the pipeline.
     \texttt{num\_points}            & Count         & Number of GPS waypoints
     in a tracking
     \\
+    \hline
     \texttt{bbox\_area}             & $m^2$         & Area of bounding box
     enclosing all GPS points
     \\
+    \hline
     \texttt{point\_density}         & points/m$^2$  & Number of points per
     square meter
     of bounding box
     \\
+    \hline
     \texttt{avg\_segment\_distance} & m             & Mean geodesic distance
     between
     consecutive waypoints
     \\
+    \hline
     \texttt{straightness}           & Ratio (0–1)   & Direct distance from
     start to end /
     total distance
     \\
+    \hline
     \texttt{mean\_heading\_change}  & rad           & Average absolute angle
     change
     between segments
     \\
+    \hline
     \texttt{duration}               & 100 ns        & Total tracking
     duration in nanoseconds
     \\
+    \hline
     \texttt{length}                 & km            & Total tracking length
     from the database
     \\
@@ -1537,7 +1543,7 @@ following parameters:
 
 DBSCAN removed 1,539 trackings from the dataset leaving a cleaner distribution
 for the K-Means clustering.
-This step was crucial for removing invalid trackings especially with large gps
+This step was crucial for removing invalid trackings especially with large GPS
 gaps. Without the outlier removal, the subsequent K-Means clustering would
 always assign
 outliers to one class.
@@ -1703,6 +1709,7 @@ The final labeled dataset was split into training and test sets using a 2:1
 ratio to evaluate the classifier's generalization ability.
 
 \section{Evaluation of the Results}
+% TODO: add a little introduction text
 
 \subsection{Filtering Results}
 Each Filter step in the SQL statement reduces the dataset by this many
