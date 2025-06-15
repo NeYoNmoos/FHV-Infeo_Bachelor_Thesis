@@ -1710,6 +1710,8 @@ ratio to evaluate the classifier's generalization ability.
 
 \section{Evaluation of the Results}
 % TODO: add a little introduction text
+This section provides the rsults of each step in the pipeline, highlighting
+numerical results and visual representations of classified trackings.
 
 \subsection{Filtering Results}
 Each Filter step in the SQL statement reduces the dataset by this many
@@ -2016,13 +2018,13 @@ features from OpenStreetMap.
 
 The features \texttt{bbox\_area}, \texttt{point\_density} and
 \texttt{duration},
-initally deemed suitable for distinction between classes, because of their
-motonic
+initially deemed suitable for distinction between classes, because of their
+monotonic
 behavior, were confirmed to be indicative discriminators.
 Furthermore, the
 classification results show that \texttt{avg\_segment\_distance} and
-\texttt{mean\_heading\_change} also follow motonic behavior among classes,
-reinforcing the efficteveness of this pipeline.
+\texttt{mean\_heading\_change} also follow monotonic behavior among classes,
+reinforcing the effectiveness of this pipeline.
 
 Overall, the presented method offers a reproducible and scalable approach for
 GPS-based
@@ -2156,131 +2158,124 @@ laying the foundation for smarter, data-driven waste management systems.
 
 % \section{Use of AI tools}
 
-% \begin{table}[h]
-%   \centering
-%   \caption{Use of AI tools during the creation process}
-%   \label{tab:ai_usage}
-%   \resizebox{\textwidth}{!}{%
-%     \begin{tabular}{|p{3.2cm}|c|c|p{5.5cm}|}
-%       \hline
-%       \textbf{Working step}                  & \textbf{AI used}
-%                                              & \textbf{AI
-%       tool(s)}                               &
-%       \textbf{Experiences / recommendations / irritations}
-%       \\
-%       \hline
-%       Find a topic idea                      & no
-%                                              & -
-%                                              & -
-%       \\
-%       \hline
-%       Narrow down topic / Formulate question & no
-%                                              & -
-%                                              & -
-%       \\
-%       \hline
-%       Find sources                           & yes
-%                                              & OpenAI GPT-4o
-%                                              & Helped identify relevant
-%       keywords and
-%       topic clusters.
-%       \\
-%       \hline
-%       Explain terms                          & yes
-%                                              & OpenAI GPT-4o
-%                                              & Useful for quick definitions and
-%       simple explanations.
-%       \\
-%       \hline
-%       Design text structure                  & yes
-%                                              & OpenAI GPT-4o
-%                                              & Good for outlining sections.
-%       Required manual adjustments.
-%       \\
-%       \hline
-%       Have content read aloud                & no
-%                                              & -
-%                                              & -
-%       \\
-%       \hline
-%       Translate content                      & no
-%                                              & -
-%                                              & -
-%       \\
-%       \hline
-%       Dictate content                        & no
-%                                              & -
-%                                              & -
-%       \\
-%       \hline
-%       Paraphrase content, summarise          & yes
-%                                              & OpenAI GPT-4o
-%                                              & Helpful to generate
-%       concise summaries of long text.
-%       \\
-%       \hline
-%       Write introduction                     & yes
-%                                              & OpenAI GPT-4o
-%                                              & Provided inspiration but
-%       required rewording.
-%       \\
-%       \hline
-%       Write main chapter                     & yes
-%                                              & OpenAI GPT-4o
-%                                              & Used for structuring and
-%       rephrasing, not full writing.
-%       \\
-%       \hline
-%       Write a summary                        & yes
-%                                              & OpenAI GPT-4o
-%                                              & Used to condense main points
-%       effectively.
-%       \\
-%       \hline
-%       Obtain text feedback                   & yes
-%                                              & OpenAI GPT-4o
-%                                              & Used to review tone, clarity,
-%       and consistency.
-%       \\
-%       \hline
-%       Revise text statement                  & yes
-%                                              & OpenAI GPT-4o
-%                                              & Helpful for reformulating
-%       statements.
-%       \\
-%       \hline
-%       Revise text formulation                & yes
-%                                              & OpenAI GPT-4o
-%                                              & Polished sentences and
-%       improved flow.
-%       \\
-%       \hline
-%       Correct text formally                  & yes
-%                                              & OpenAI GPT-4o
-%                                              & Assisted with grammar and
-%       punctuation checking.
-%       \\
-%       \hline
-%       Code generation                        & yes
-%                                              & OpenAI GPT-4o, Github Copilot
-%                                              & Assisted with generating code
-%       and fixing bugs
-%       \\
-%       \hline
-%     \end{tabular}%
-%   }
-% \end{table}
-% \appendix
-% \chapter{Data Sheet on the Use of AI}
-% \begin{figure}[H]
-%   \centering
-%   \includegraphics[width=0.8\textwidth]{AI_Sheet_quer.pdf}
-%   \caption{Data Sheet on the Use of AI}
-% \end{figure}
-
-% \appendix
-% \chapter{Use of AI tools}
-% sdfsfsdfsfsd
+\appendix
+\chapter{Data Sheet on the Use of AI}
+\begin{table}[h]
+  \centering
+  \resizebox{\textwidth}{!}{%
+    \begin{tabular}{|p{4cm}|c|c|p{7cm}|}
+      \hline
+      \textbf{Creatiion process Working steps} & \textbf{have
+        used AI}
+                                               & \textbf{AI
+      tool(s)}                                 &
+      \textbf{Experiences / recommendations / irritations}
+      \\
+      \hline
+      Find a topic idea                        & no
+                                               & -
+                                               & -
+      \\
+      \hline
+      Narrow down topic / Formulate question   & no
+                                               & -
+                                               & -
+      \\
+      \hline
+      Find sources                             & yes
+                                               & OpenAI GPT-4o, Perplexity.ai
+                                               & Helped identify relevant
+      keywords and
+      topic clusters.
+      \\
+      \hline
+      Explain terms                            & yes
+                                               & OpenAI GPT-4o
+                                               & Useful for quick definitions
+      and
+      simple explanations.
+      \\
+      \hline
+      Design text structure                    & yes
+                                               & OpenAI GPT-4o
+                                               & Good for outlining sections.
+      Required manual adjustments.
+      \\
+      \hline
+      Have content read aloud                  & no
+                                               & -
+                                               & -
+      \\
+      \hline
+      Translate content                        & yes
+                                               & DeepL
+                                               & Very good at translating
+      between english and german.
+      \\
+      \hline
+      Dictate content                          & no
+                                               & -
+                                               & -
+      \\
+      \hline
+      Paraphrase content, summarise            & yes
+                                               & OpenAI GPT-4o
+                                               & Helpful to generate
+      concise summaries of long text.
+      \\
+      \hline
+      Write introduction                       & yes
+                                               & OpenAI GPT-4o
+                                               & Provided inspiration but
+      required rewording.
+      \\
+      \hline
+      Write main chapter                       & yes
+                                               & OpenAI GPT-4o
+                                               & Used for structuring and
+      rephrasing, not full writing.
+      \\
+      \hline
+      Write a summary                          & yes
+                                               & OpenAI GPT-4o
+                                               & Used to summarize main points
+      effectively.
+      \\
+      \hline
+      Obtain text feedback                     & yes
+                                               & OpenAI GPT-4o
+                                               & Used to review tone, clarity,
+      and consistency.
+      \\
+      \hline
+      Revise text statement                    & yes
+                                               & OpenAI GPT-4o
+                                               & Helpful for reformulating
+      statements.
+      \\
+      \hline
+      Revise text formulation                  & yes
+                                               & OpenAI GPT-4o
+                                               & Polished sentences and
+      improved flow.
+      \\
+      \hline
+      Correct text formally                    & yes
+                                               & OpenAI GPT-4o
+                                               & Assisted with grammar and
+      punctuation checking.
+      \\
+      \hline
+      Code generation                          & yes
+                                               & OpenAI GPT-4o, Claude Sonnet 4
+                                               & Assisted with generating code
+      and fixing bugs
+      \\
+      \hline
+    \end{tabular}%
+  }
+  \caption{Data sheet on the use of AI}
+\end{table}
 
 \chapter*{Affidavit}
 \addcontentsline{toc}{chapter}{Affidavit}

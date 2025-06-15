@@ -78,5 +78,6 @@
 \contentsline {section}{\numberline {6.2}Limitations}{57}{section.6.2}%
 \contentsline {section}{\numberline {6.3}Final Remarks}{58}{section.6.3}%
 \contentsline {chapter}{Bibliography}{59}{section*.46}%
-\contentsline {chapter}{Affidavit}{62}{chapter*.48}%
+\contentsline {chapter}{\numberline {A}Data Sheet on the Use of AI}{62}{appendix.A}%
+\contentsline {chapter}{Affidavit}{63}{chapter*.49}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
