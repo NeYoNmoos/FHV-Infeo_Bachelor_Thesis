@@ -66,17 +66,19 @@ but is reserved for future work.
 
 ## Project Structure
 
-bachelor_thesis_infeo
-├── src
-│ └── 1_Data_Analysis
-│ └── 2_Feature_Extraction
-│ └── 3_Analysis_on_Extracted_Data
-│ └── 4_Train_Classifier
-│ └── 5_API
-├── Thesis
+```
+├── src/
+│ └── 1_Data_Analysis/
+│ └── 2_Feature_Extraction/
+│ └── 3_Analysis_on_Extracted_Data/
+│ └── 4_Train_Classifier/
+│ └── Data_Preperation/
+│ └── utilities/
+├── Thesis/
 │ └── Bachelor_Thesis_GPS_Classification.pdf
 │ └── Bachelor_Thesis_GPS_Classification.tex (main thesis document)
 └── README.md
+```
 
 ## Results
 
@@ -99,3 +101,4 @@ You can find the full thesis PDF in the `Thesis/` folder. All formulas, figures,
 ## Acknowledgements
 
 Special thanks to **infeo GmbH** for providing the dataset and insights into real-world waste collection logistics.
+And to **Dipl.-Ing. Dr. techn. Ralph Hoch** for providing guidance throughout the development of this thesis.
