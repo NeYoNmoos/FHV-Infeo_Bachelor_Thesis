@@ -6,3 +6,4 @@
 /src/AWM_Database/**
 *.parquet
 *.json
+*.csv
