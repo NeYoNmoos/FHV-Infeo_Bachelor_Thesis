@@ -1,20 +1,20 @@
-[0] Config.pm:307> INFO - This is Biber 2.17
-[0] Config.pm:310> INFO - Logfile is 'Bachelor_Thesis_GPS_Classification.blg'
-[74] biber:340> INFO - === Thu Jun 12, 2025, 18:12:33
-[92] Biber.pm:418> INFO - Reading 'Bachelor_Thesis_GPS_Classification.bcf'
-[148] Biber.pm:972> INFO - Found 18 citekeys in bib section 0
-[159] Biber.pm:4383> INFO - Processing section 0
-[170] Biber.pm:4574> INFO - Looking for bibtex file 'references.bib' for section 0
-[171] bibtex.pm:1713> INFO - LaTeX decoding ...
-[180] bibtex.pm:1518> INFO - Found BibTeX data source 'references.bib'
-[181] Biber.pm:4574> INFO - Looking for bibtex file 'Bachelor_Thesis_GPS_Classification/Bachelor_Thesis_GPS_Classification.bib' for section 0
-[186] bibtex.pm:1713> INFO - LaTeX decoding ...
-[241] bibtex.pm:1518> INFO - Found BibTeX data source 'Bachelor_Thesis_GPS_Classification/Bachelor_Thesis_GPS_Classification.bib'
-[351] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[351] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[351] Biber.pm:4203> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[351] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-US'
-[365] bbl.pm:654> INFO - Writing 'Bachelor_Thesis_GPS_Classification.bbl' with encoding 'UTF-8'
-[374] bbl.pm:757> INFO - Output to Bachelor_Thesis_GPS_Classification.bbl
-[374] Biber.pm:130> WARN - ISBN '978-1-83763-274-9 978-1-83763-726-3' in entry 'voron_building_2023' is invalid - run biber with '--validate_datamodel' for details.
-[374] Biber.pm:132> INFO - WARNINGS: 1
+[1] Config.pm:307> INFO - This is Biber 2.17
+[1] Config.pm:310> INFO - Logfile is 'Bachelor_Thesis_GPS_Classification.blg'
+[340] biber:340> INFO - === Mon Jun 16, 2025, 23:50:57
+[537] Biber.pm:418> INFO - Reading 'Bachelor_Thesis_GPS_Classification.bcf'
+[720] Biber.pm:972> INFO - Found 19 citekeys in bib section 0
+[755] Biber.pm:4383> INFO - Processing section 0
+[860] Biber.pm:4574> INFO - Looking for bibtex file 'references.bib' for section 0
+[868] bibtex.pm:1713> INFO - LaTeX decoding ...
+[901] bibtex.pm:1518> INFO - Found BibTeX data source 'references.bib'
+[926] Biber.pm:4574> INFO - Looking for bibtex file 'Bachelor_Thesis_GPS_Classification/Bachelor_Thesis_GPS_Classification.bib' for section 0
+[946] bibtex.pm:1713> INFO - LaTeX decoding ...
+[1210] bibtex.pm:1518> INFO - Found BibTeX data source 'Bachelor_Thesis_GPS_Classification/Bachelor_Thesis_GPS_Classification.bib'
+[1875] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1875] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1876] Biber.pm:4203> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[1876] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-US'
+[2030] bbl.pm:654> INFO - Writing 'Bachelor_Thesis_GPS_Classification.bbl' with encoding 'UTF-8'
+[2059] bbl.pm:757> INFO - Output to Bachelor_Thesis_GPS_Classification.bbl
+[2059] Biber.pm:130> WARN - ISBN '978-1-83763-274-9 978-1-83763-726-3' in entry 'voron_building_2023' is invalid - run biber with '--validate_datamodel' for details.
+[2059] Biber.pm:132> INFO - WARNINGS: 1

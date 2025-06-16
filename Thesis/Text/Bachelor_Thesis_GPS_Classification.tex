@@ -59,7 +59,7 @@
 
 %% Einstellungen:
 \setcounter{secnumdepth}{4}
-\setcounter{tocdepth}{4}   % Tiefe der Gliederung im In haltsverzeichnis
+\setcounter{tocdepth}{2}   % Tiefe der Gliederung im In haltsverzeichnis
 
 %% ERSETZEN VON ECKIGEN KLAMMERN:
 % Ersetzen Sie den Text in den eckigen Klammern!
@@ -165,7 +165,7 @@ entwickelt, das
 GPS-Wegpunktdaten verarbeitet, Merkmale extrahiert, die Daten mit einem
 semi-supervised clustering Verfahren strukturiert und anschließend ein
 Klassifikationsmodell trainiert, das neue Datensätze automatisch
-klassifiziert. Die Klassifizierung von
+klassifiziert. Die Klassifizierung
 wird in vier Strukturklassen durchgeführt: \texttt{URBAN},
 \texttt{SUBURBAN}, \texttt{TOWN} und \texttt{RURAL}.
 
@@ -435,12 +435,38 @@ and
 \texttt{RURAL}) based on structural characteristics and training a supervised
 classification model to automate label prediction for new data.
 The resulting classifier was built into an API, allowing classification of any
-given tracking via an API enpoint given its tracking ID.
+given tracking via an API endpoint given its tracking ID.
 
 While the long-term vision proposed by \textit{infeo GmbH} involves a service
 for full automation of planning parameter suggestions for new geofences, based
 on OpenStreetMap and internal tracking data, this thesis focuses on building a
 foundational component: the GPS-based route classification system.
+
+\section{Structure of the Work}
+
+The remainder of this thesis is structured in the following chapters:
+
+\begin{itemize}
+  \item \textbf{Chapter 2: Background and Related Work: } Provides an overview
+        of the technical and scientific basis relevant for this thesis.
+  \item \textbf{Chapter 3: Problem Definition and Solution approach:}
+        Introduces the core problem addressed by the thesis, describes the
+        dataset
+        used, and outlines the solution approach.
+  \item \textbf{Chapter 4: Implementation:} Provides a detailed description of
+        how the previously introduced methods and algorithms were implemented.
+        This
+        includes the data preprocessing, feature extraction, clustering
+        pipeline and
+        classifier training.
+  \item \textbf{Chapter 5: Evaluation and Discussion:} Presents the results of
+        the clustering and classification. Performance metrics, visualizations,
+        and
+        analysis of the results are discussed alongside future research and
+        application.
+  \item \textbf{Chapter 6: Conclusion:} Summarization of the contributions of
+        the thesis, highlighting key takeaways and shortcomings.
+\end{itemize}
 
 \chapter{Background and Related Work}
 This chapter provides an overview of the technical and scientific basis
@@ -472,7 +498,6 @@ density) and dynamic (e.g., heading change) features were used to represent
 each waste collection tracking.
 
 \subsection{Clustering Algorithms}
-% TODO: here add a small paragraph written by myself
 \begin{quote}
   ``Clustering is a useful tool in data science. It is a method for
   finding cluster structure in a data set that is characterized by
@@ -482,7 +507,6 @@ each waste collection tracking.
 \end{quote}
 
 \subsubsection{Density-Based Clustering with DBSCAN}
-% TODO: refine section with more detail and sources
 
 \textit{DBSCAN} (Density-Based Algorithm for Discovering clusters in Large
 Spatial Databases with Noise) was
@@ -560,14 +584,14 @@ The goal to minimize the within-cluster sum of squares (WCSS) can be shown with
 following function:
 \[
   J = \sum_{i=1}^{k} \sum_{x_j \in S_i} \| x_j - \mu_i \|^2
-\]
+\]~\cite{sinaga_pdf_2024}
 
 The implementation of the algorithm uses an iterative refinement technique,
 also known as Lloyd's Algorithm.
 An initial set of \textit{k} means is selected, randomly or are more
 sophisticatedly initialized in adaptations such as K-Means++.
 Then the algorithm repeats the following two steps until the assignments do not
-change and K-Means therefore converges:
+change and K-Means therefore converges~\cite{sinaga_pdf_2024}:
 
 \begin{enumerate}
   \item \textbf{Assignment:} Assign each data point to the cluster with the
@@ -634,7 +658,6 @@ buildings~\cite{song_access_2021}. While Zhou et al., proposes a big data
 approach to
 analyse the urban spatial structures of different
 areas~\cite{zhou_research_2022}.
-% TODO: write here  small sentence myself how i do the analysis
 
 \subsection{Transportation Mode Prediction with Feature Engineering}
 Etemad, Soared and Matwin~\cite{etemad_predicting_2018} propose a five step
@@ -673,7 +696,7 @@ The authors propose a new metric, \textit{Daily Characteristic Distance
   (DCD)},
 which is used to create a fair comparison between working and nonworking users
 on workdays and offdays and extract features in combination with
-\textit{Origin-Destination (OD)} matrix features.
+\textit{Origin-Destination (OD)} matrix features ~\cite{koh_clustering_2022}.
 
 The features derived from the DCD are combined with OD matrix
 features
@@ -923,8 +946,8 @@ The dataset used in this thesis is pre-compressed internaly by \textit{infeo
           \vspace{-1em}
 
           \includegraphics[width=0.7\textwidth]{Figures/problem_definition/Aufzeichnune-komprimieren-winkelreduktion.png}
-          \caption{Waypoint curvature calculation used for compression by
-            \textit{infeo GmbH}}~\cite{noauthor_route_nodate}
+          \caption{Waypoint curvature calculation used for
+            compression~\cite{noauthor_route_nodate}}
           \label{fig:waypoint_curvature_calculation}
           \vspace{-1em}
         \end{figure}
@@ -969,7 +992,7 @@ some valid trackings were wrongfully discarded.
 Before a classification model can be developed, it is important to understand
 the underlying data it will be trained on.
 This section presents an exploratory data analysis of the cleaned dataset with
-the goal of identifying relationsships of extracted features that help separate
+the goal of identifying relationships of extracted features that help separate
 the
 four categories.
 
@@ -1160,7 +1183,7 @@ al.~\cite{koh_clustering_2022}
   \item \textbf{Length:} Total distance of the tracking, in kilometers as
         recorded in the database.
   \item \textbf{Duration:} Total time duration for the tracking, captured and
-        recorded in the databse.
+        recorded in the database.
 \end{enumerate}
 
 \subsubsection{Features Extracted from Waypoints}
@@ -1200,13 +1223,13 @@ remove invalid and irrelevant data from the dataset. These included:
         device errors or compression errors introduced by \textit{infeo GmbH}).
 \end{enumerate}
 
-Removing these faulty datapoints was curcial for ensuring the quality of the
+Removing these faulty datapoints was crucial for ensuring the quality of the
 clustering and reducing the computation times.
 
 \subsection{Clustering and Pattern Discovery}
 To discover patterns in the unlabeled dataset, clustering algorithms were
 applied.
-Initially, K-Means++ was used to cluster the data into four clusters. However
+Initially, K-Means++ was used to cluster the data into four clusters. However,
 the result showed that one cluster mostly consisted of outlier routes, with
 unrealistic GPS jumps.
 
@@ -1217,7 +1240,6 @@ filtering the outliers with DBSCAN, K-Means clustering was applied again,
 resulting clusters that represented the four defined categories better.
 
 \subsection{Training a Classification Model}
-% TODO: need to write more in this section
 To automatically classify new trackings into one of the four categories (Urban,
 Suburban, Town, Rural), a supervised machine learning model was trained using
 the labeled dataset from the clustering step.
@@ -1236,28 +1258,8 @@ data directly from the \textit{infeo GmbH} platform, preprocess it using the
 same logic as the training pipeline, and apply the Random Forest classifier to
 return the predicted label.
 
-\section{Structure of the Work}
-
-The remainder of this thesis is structured in the following chapters:
-
-\begin{itemize}
-  \item \textbf{Chapter 4: Implementation:} Provides a detailed description of
-        how the previously introduced methos and algorithms were implemented.
-        This
-        includes the data preprocessing, feature extraction, clustering
-        pipeline and
-        classifier training.
-  \item \textbf{Chapter 5: Evaluation and Discussion:} Presents the results of
-        the clustering and classification. Performance metrics, visualizations,
-        and
-        analysis of the results are discussed alongside future reasearch and
-        application.
-  \item \textbf{Chapter 6: Conclusion:} Summarization of the contributions of
-        the thesis, highlighting key takeaways and shortcomings.
-\end{itemize}
-
 This structure follows the development of the project, from understanding the
-problem and analysing the data, to buildinng and evaluating a solution to
+problem and analising the data, to buildinng and evaluating a solution to
 address the objective of classifying GPS trackings into structural categories.
 \chapter{Implementation}
 
@@ -1268,7 +1270,7 @@ clustering and classification, was implemented in modular Jupyter Notebooks
 using libraries such as \texttt{pandas}, \texttt{scikit-learn}, \texttt{geopy}
 and \texttt{pyarrow}.Each module was designed to run independently, allowing
 for quick
-experimentation and reproducability of results.
+experimentation and reproducibility of results.
 
 % \section{Implementation of the Big Picture}
 
@@ -1334,7 +1336,7 @@ criteria:
 \end{itemize}
 
 The filters were directly implemented as a SQL query executed in an jupyter
-notebook. This reduced the further computatinal times for clustering and
+notebook. This reduced the further computational times for clustering and
 training the classifier model. The SQL query implementing these filters
 as follows:
 \begin{lstlisting}[style=sql,caption={SQL query used for filtering the GPS tracking dataset},label={lst:sql-filter}]
@@ -1384,7 +1386,7 @@ serve as a
 baseline for route length and duration.
 
 \paragraph{Tracking length}
-The total recorded travel distane in kilometers, as stored in the metadata.
+The total recorded travel distance in kilometers, as stored in the metadata.
 
 \paragraph{Tracking duration}
 The full duration from the first to the last recorded waypoint, in
@@ -1436,7 +1438,8 @@ The average geodesic distance between consequtive waypoints:
 \[
   avg\_segment\_distance = \frac{1}{n-1} \sum_{i=1}^{n-1} d(p_i, p_{i+1})
 \]
-where $d(\cdot, \cdot)$ refers to geodesic distance.
+where $d(\cdot, \cdot)$ refers to geodesic
+distance~\cite{franti_averaging_2021}.
 
 \paragraph{Straightness}
 Ratio between the start-end distance and the total path length:
@@ -1469,7 +1472,7 @@ the next steps of the pipeline.
 
 \begin{table}[ht]
   \centering
-  \begin{tabular}{|l|l|l|}
+  \begin{tabular}{|l|l|p{6.5cm}|}
     \hline
     \textbf{Feature}                & \textbf{Unit} & \textbf{Description}
     \\
@@ -1521,7 +1524,7 @@ application of supervised machine learning in the next.
 A two stage approach was used, first DBSCAN for detecting and filtering
 outliers and second a K-Means clustering was applied to label the trackings.
 The implemented approach used a semi-supervised K-Means clustering. By
-calculating feature weights and inital centroid position for each cluster from
+calculating feature weights and initial centroid position for each cluster from
 a manually selected sample set to improve the clustering process.
 
 \subsection{Outlier Removal with DBSCAN}
@@ -1549,8 +1552,6 @@ always assign
 outliers to one class.
 
 \subsection{Semi-Supervised Clustering with Weighted and Seeded K-Means}
-
-% TODO: Rewrite this entire section -> 100% AI
 
 To improve the interpretability and performance of clustering, a
 semi-supervised approach was used to guide the K-Means algorithm. A manually
@@ -1626,7 +1627,6 @@ distribution and improved the stability and interpretability of the clustering
 outcome compared to random initialization.
 
 \section{Classification Model}
-% TODO: Rewrite entire section -> written 100% by AI
 To predict the category of new or unlabeled GPS trackings, a classification
 model was trained using the extracted and clustered features. A Random Forest
 classifier was chosen due to its robustness, ability to handle high-dimensional
@@ -1649,7 +1649,7 @@ used:
 \end{itemize}
 
 The best model was found with 300 estimators, a maximum depth of 20,
-2 minimum smaples split, 1 minimum sample leaf and default
+2 minimum samples split, 1 minimum sample leaf and default
 class weights. The trained model achieved an accuracy of
 98.3\% on the test set.
 
@@ -1698,7 +1698,7 @@ Figure~\ref{fig:fastapi_docs} shows the automatically generated \textit{Swagger
 This chapter presents a comprehensive evaluation of the filtering, clustering
 and
 classification results.
-It provides insights into the performance, limitations, and robustess of the
+It provides insights into the performance, limitations, and robustness of the
 developed system.
 
 \section{Definition of the data sets used for the evaluation}
@@ -1709,8 +1709,7 @@ The final labeled dataset was split into training and test sets using a 2:1
 ratio to evaluate the classifier's generalization ability.
 
 \section{Evaluation of the Results}
-% TODO: add a little introduction text
-This section provides the rsults of each step in the pipeline, highlighting
+This section provides the results of each step in the pipeline, highlighting
 numerical results and visual representations of classified trackings.
 
 \subsection{Filtering Results}
@@ -1767,7 +1766,7 @@ dataset, but could not filter out all of them.
 The latitude and longitude span suggested by \textit{infeo GmbH} did not filter
 out many trackings. This could be due to the filtering of stationary trackings
 from the filters applied before the coordinate span filter, or indicate the
-need to increaste the minimum span.
+need to increase the minimum span.
 
 \subsection{Clustering Results}
 

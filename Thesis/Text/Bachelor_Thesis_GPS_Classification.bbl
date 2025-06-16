@@ -148,6 +148,59 @@
       \verb https://infeo.at/index.php/revolution/
       \endverb
     \endentry
+    \entry{etemad_predicting_2018}{incollection}{}
+      \name{author}{3}{}{%
+        {{hash=f017c3c650ac42e467f154e2b9271814}{%
+           family={Etemad},
+           familyi={E\bibinitperiod},
+           given={Mohammad},
+           giveni={M\bibinitperiod}}}%
+        {{hash=9a0aa7f4190eadb62d1d979d9a350ab9}{%
+           family={Junior},
+           familyi={J\bibinitperiod},
+           given={Amilcar\bibnamedelima Soares},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=104f2eda5c4afa015b91946b8b3d2c13}{%
+           family={Matwin},
+           familyi={M\bibinitperiod},
+           given={Stan},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{7f8ad816df071f52c480da9d2f83971b}
+      \strng{fullhash}{7f8ad816df071f52c480da9d2f83971b}
+      \strng{bibnamehash}{7f8ad816df071f52c480da9d2f83971b}
+      \strng{authorbibnamehash}{7f8ad816df071f52c480da9d2f83971b}
+      \strng{authornamehash}{7f8ad816df071f52c480da9d2f83971b}
+      \strng{authorfullhash}{7f8ad816df071f52c480da9d2f83971b}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Understanding transportation mode from GPS (Global Positioning System) traces is an essential topic in the data mobility domain. In this paper, a framework is proposed to predict transportation modes. This framework follows a sequence of five steps: (i) data preparation, where GPS points are grouped in trajectory samples; (ii) point features generation; (iii) trajectory features extraction; (iv) noise removal; (v) normalization. We show that the extraction of the new point features: bearing rate, the rate of rate of change of the bearing rate and the global and local trajectory features, like medians and percentiles enables many classifiers to achieve high accuracy (96.5\%) and f1 (96.3\%) scores. We also show that the noise removal task affects the performance of all the models tested. Finally, the empirical tests where we compare this work against state-of-art transportation mode prediction strategies show that our framework is competitive and outperforms most of them.}
+      \field{note}{arXiv:1802.10164 [cs]}
+      \field{title}{Predicting {Transportation} {Modes} of {GPS} {Trajectories} using {Feature} {Engineering} and {Noise} {Removal}}
+      \field{urlday}{5}
+      \field{urlmonth}{6}
+      \field{urlyear}{2025}
+      \field{volume}{10832}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \field{pages}{259\bibrangedash 264}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1007/978-3-319-89656-4_24
+      \endverb
+      \verb{file}
+      \verb Preprint PDF:files/66/Etemad et al. - 2018 - Predicting Transportation Modes of GPS Trajectories using Feature Engineering and Noise Removal.pdf:application/pdf;Snapshot:files/67/1802.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1802.10164
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1802.10164
+      \endverb
+      \keyw{Computer Science - Other Computer Science}
+    \endentry
     \entry{sinaga_pdf_2024}{article}{}
       \name{author}{2}{}{%
         {{hash=facda63ebde26a940d44851b8801b7a2}{%
@@ -460,59 +513,6 @@
       \endverb
       \keyw{Geography,POI,Polycentric,Space syntax,Urban spatial structure}
     \endentry
-    \entry{etemad_predicting_2018}{incollection}{}
-      \name{author}{3}{}{%
-        {{hash=f017c3c650ac42e467f154e2b9271814}{%
-           family={Etemad},
-           familyi={E\bibinitperiod},
-           given={Mohammad},
-           giveni={M\bibinitperiod}}}%
-        {{hash=9a0aa7f4190eadb62d1d979d9a350ab9}{%
-           family={Junior},
-           familyi={J\bibinitperiod},
-           given={Amilcar\bibnamedelima Soares},
-           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
-        {{hash=104f2eda5c4afa015b91946b8b3d2c13}{%
-           family={Matwin},
-           familyi={M\bibinitperiod},
-           given={Stan},
-           giveni={S\bibinitperiod}}}%
-      }
-      \strng{namehash}{7f8ad816df071f52c480da9d2f83971b}
-      \strng{fullhash}{7f8ad816df071f52c480da9d2f83971b}
-      \strng{bibnamehash}{7f8ad816df071f52c480da9d2f83971b}
-      \strng{authorbibnamehash}{7f8ad816df071f52c480da9d2f83971b}
-      \strng{authornamehash}{7f8ad816df071f52c480da9d2f83971b}
-      \strng{authorfullhash}{7f8ad816df071f52c480da9d2f83971b}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Understanding transportation mode from GPS (Global Positioning System) traces is an essential topic in the data mobility domain. In this paper, a framework is proposed to predict transportation modes. This framework follows a sequence of five steps: (i) data preparation, where GPS points are grouped in trajectory samples; (ii) point features generation; (iii) trajectory features extraction; (iv) noise removal; (v) normalization. We show that the extraction of the new point features: bearing rate, the rate of rate of change of the bearing rate and the global and local trajectory features, like medians and percentiles enables many classifiers to achieve high accuracy (96.5\%) and f1 (96.3\%) scores. We also show that the noise removal task affects the performance of all the models tested. Finally, the empirical tests where we compare this work against state-of-art transportation mode prediction strategies show that our framework is competitive and outperforms most of them.}
-      \field{note}{arXiv:1802.10164 [cs]}
-      \field{title}{Predicting {Transportation} {Modes} of {GPS} {Trajectories} using {Feature} {Engineering} and {Noise} {Removal}}
-      \field{urlday}{5}
-      \field{urlmonth}{6}
-      \field{urlyear}{2025}
-      \field{volume}{10832}
-      \field{year}{2018}
-      \field{urldateera}{ce}
-      \field{pages}{259\bibrangedash 264}
-      \range{pages}{6}
-      \verb{doi}
-      \verb 10.1007/978-3-319-89656-4_24
-      \endverb
-      \verb{file}
-      \verb Preprint PDF:files/66/Etemad et al. - 2018 - Predicting Transportation Modes of GPS Trajectories using Feature Engineering and Noise Removal.pdf:application/pdf;Snapshot:files/67/1802.html:text/html
-      \endverb
-      \verb{urlraw}
-      \verb http://arxiv.org/abs/1802.10164
-      \endverb
-      \verb{url}
-      \verb http://arxiv.org/abs/1802.10164
-      \endverb
-      \keyw{Computer Science - Other Computer Science}
-    \endentry
     \entry{koh_clustering_2022}{misc}{}
       \name{author}{6}{}{%
         {{hash=b8103ab595f980d142fe5e2043369586}{%
@@ -602,8 +602,8 @@
       \endverb
     \endentry
     \entry{noauthor_welcome_nodate}{misc}{}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labeltitlesource}{title}
       \field{title}{Welcome to {GeoPy}’s documentation! — {GeoPy} 2.4.1 documentation}
       \field{urlday}{11}
@@ -620,6 +620,56 @@
       \verb https://geopy.readthedocs.io/en/stable/
       \endverb
     \endentry
+    \entry{franti_averaging_2021}{article}{}
+      \name{author}{2}{}{%
+        {{hash=614bb1650747649217741abb174af339}{%
+           family={Fränti},
+           familyi={F\bibinitperiod},
+           given={Pasi},
+           giveni={P\bibinitperiod}}}%
+        {{hash=2cfe23a9f9db75051298ef45e73d12db}{%
+           family={Mariescu-Istodor},
+           familyi={M\bibinithyphendelim I\bibinitperiod},
+           given={Radu},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{b16411ab08a4fdefca04ec8ec4cff542}
+      \strng{fullhash}{b16411ab08a4fdefca04ec8ec4cff542}
+      \strng{bibnamehash}{b16411ab08a4fdefca04ec8ec4cff542}
+      \strng{authorbibnamehash}{b16411ab08a4fdefca04ec8ec4cff542}
+      \strng{authornamehash}{b16411ab08a4fdefca04ec8ec4cff542}
+      \strng{authorfullhash}{b16411ab08a4fdefca04ec8ec4cff542}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Averaging GPS trajectories is needed in applications such as automatic generation of road network and finding representative movement patterns. We organized a challenge where participants submitted proposals to solve the averaging problem. In this paper, we review the proposals and evaluate their performance. We present a synthesis of the submitted methods and develop a new baseline composed of the well-performing components. The new baseline outperforms all existing averaging methods. All datasets, submissions and evaluations can be accessed on the competition webpage: http://cs.uef.fi/sipu/segments.}
+      \field{issn}{0031-3203}
+      \field{journaltitle}{Pattern Recognition}
+      \field{month}{4}
+      \field{title}{Averaging {GPS} segments competition 2019}
+      \field{urlday}{16}
+      \field{urlmonth}{6}
+      \field{urlyear}{2025}
+      \field{volume}{112}
+      \field{year}{2021}
+      \field{urldateera}{ce}
+      \field{pages}{107730}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.patcog.2020.107730
+      \endverb
+      \verb{file}
+      \verb ScienceDirect Snapshot:files/111/S0031320320305331.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0031320320305331
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0031320320305331
+      \endverb
+      \keyw{Gps trajectories,Representative segment,Time series,Trajectory averaging}
+    \endentry
     \entry{benhamou_how_2004}{article}{}
       \name{author}{1}{}{%
         {{hash=1ee267eb7bba2d398fd8c7cebafa4ed7}{%
@@ -634,8 +684,8 @@
       \strng{authorbibnamehash}{1ee267eb7bba2d398fd8c7cebafa4ed7}
       \strng{authornamehash}{1ee267eb7bba2d398fd8c7cebafa4ed7}
       \strng{authorfullhash}{1ee267eb7bba2d398fd8c7cebafa4ed7}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{The tortuosity of an animal's path is a key parameter in orientation and searching behaviours. The tortuosity of an oriented path is inversely related to the efficiency of the orientation mechanism involved, the best mechanism being assumed to allow the animal to reach its goal along a straight line movement. The tortuosity of a random search path controls the local searching intensity, allowing the animal to adjust its search effort to the local profitability of the environment. This paper shows that (1) the efficiency of an oriented path can be reliably estimated by a straightness index computed as the ratio between the distance from the starting point to the goal and the path length travelled to reach the goal, but such a simple index, ranging between 0 and 1, cannot be applied to random search paths; (2) the tortuosity of a random search path, ranging between straight line movement and Brownian motion, can be reliably estimated by a sinuosity index which combines the mean cosine of changes of direction with the mean step length; and (3) in the current state of the art, the fractal analysis of animals’ paths, which may appear as an alternative and promising way to measure the tortuosity of a random search path as a fractal dimension ranging between 1 (straight line movement) and 2 (Brownian motion), is only liable to generate artifactual results. This paper also provides some help for distinguishing between oriented and random search paths, and depicts a general, comprehensive framework for analysing individual animals’ paths in a two-dimensional space.}

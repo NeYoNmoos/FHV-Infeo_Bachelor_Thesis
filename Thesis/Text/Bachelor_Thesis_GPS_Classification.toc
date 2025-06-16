@@ -1,83 +1,83 @@
 \babel@toc {english}{}\relax 
-\contentsline {chapter}{List of Figures}{8}{section*.9}%
-\contentsline {chapter}{List of Tables}{10}{section*.11}%
-\contentsline {chapter}{List of Abbreviations}{11}{section*.13}%
-\contentsline {chapter}{\numberline {1}Introduction}{12}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Motivation}{12}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Problem Statement}{13}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Solution Approach and Goal}{13}{section.1.3}%
-\contentsline {chapter}{\numberline {2}Background and Related Work}{14}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Technical Background}{14}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Feature Engineering for Geographic data}{14}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}Clustering Algorithms}{14}{subsection.2.1.2}%
-\contentsline {subsubsection}{\numberline {2.1.2.1}Density-Based Clustering with DBSCAN}{15}{subsubsection.2.1.2.1}%
-\contentsline {subsubsection}{\numberline {2.1.2.2}K-Means Clustering}{16}{subsubsection.2.1.2.2}%
-\contentsline {subsubsection}{\numberline {2.1.2.3}Combining DBSCAN and K-Means}{17}{subsubsection.2.1.2.3}%
-\contentsline {subsection}{\numberline {2.1.3}Machine Learning Model Deployment with APIs}{17}{subsection.2.1.3}%
-\contentsline {section}{\numberline {2.2}Related Work}{17}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Urban structure analytics}{18}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Transportation Mode Prediction with Feature Engineering}{18}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}Clustering of GPS Data using Distance-based Features}{19}{subsection.2.2.3}%
-\contentsline {chapter}{\numberline {3}Problem Definition and Solution Approach}{20}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Big Picture}{20}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Description of the Dataset}{21}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Overview}{21}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Source and Collection Method}{22}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Structure of the Data}{22}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.2.4}Size and Coverage}{23}{subsection.3.2.4}%
-\contentsline {subsection}{\numberline {3.2.5}Data compression}{23}{subsection.3.2.5}%
-\contentsline {subsection}{\numberline {3.2.6}Limitations}{24}{subsection.3.2.6}%
-\contentsline {section}{\numberline {3.3}Dataset Analysis}{24}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Sample Analysis}{25}{subsection.3.3.1}%
-\contentsline {section}{\numberline {3.4}Solution Approach}{30}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Exploratory Data Analysis}{30}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Feature Extraction from Sample Dataset}{30}{subsection.3.4.2}%
-\contentsline {subsubsection}{\numberline {3.4.2.1}Features Available in Trackings}{31}{subsubsection.3.4.2.1}%
-\contentsline {subsubsection}{\numberline {3.4.2.2}Features Extracted from Waypoints}{31}{subsubsection.3.4.2.2}%
-\contentsline {subsection}{\numberline {3.4.3}Filtering and Preprocessing the Full Dataset}{31}{subsection.3.4.3}%
-\contentsline {subsection}{\numberline {3.4.4}Clustering and Pattern Discovery}{32}{subsection.3.4.4}%
-\contentsline {subsection}{\numberline {3.4.5}Training a Classification Model}{32}{subsection.3.4.5}%
-\contentsline {subsection}{\numberline {3.4.6}API Integration}{32}{subsection.3.4.6}%
-\contentsline {section}{\numberline {3.5}Structure of the Work}{32}{section.3.5}%
-\contentsline {chapter}{\numberline {4}Implementation}{34}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Data Handling and Preprocessing}{35}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Data volume and loading}{35}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Filtering Faulty Trackings}{35}{subsection.4.1.2}%
-\contentsline {section}{\numberline {4.2}Feature Extraction}{37}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Available Metadata Features}{37}{subsection.4.2.1}%
-\contentsline {paragraph}{\numberline {4.2.1.0.1}Tracking length}{37}{paragraph.4.2.1.0.1}%
-\contentsline {paragraph}{\numberline {4.2.1.0.2}Tracking duration}{37}{paragraph.4.2.1.0.2}%
-\contentsline {subsection}{\numberline {4.2.2}Computed Features from Waypoints}{37}{subsection.4.2.2}%
-\contentsline {paragraph}{\numberline {4.2.2.0.1}Number of points}{37}{paragraph.4.2.2.0.1}%
-\contentsline {paragraph}{\numberline {4.2.2.0.2}Bounding box area}{37}{paragraph.4.2.2.0.2}%
-\contentsline {paragraph}{\numberline {4.2.2.0.3}Point density}{38}{paragraph.4.2.2.0.3}%
-\contentsline {paragraph}{\numberline {4.2.2.0.4}Average segment distance}{38}{paragraph.4.2.2.0.4}%
-\contentsline {paragraph}{\numberline {4.2.2.0.5}Straightness}{38}{paragraph.4.2.2.0.5}%
-\contentsline {paragraph}{\numberline {4.2.2.0.6}Mean Heading Change}{38}{paragraph.4.2.2.0.6}%
-\contentsline {subsection}{\numberline {4.2.3}Feature Storage and Output}{38}{subsection.4.2.3}%
-\contentsline {section}{\numberline {4.3}Clustering Implementation}{39}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Outlier Removal with DBSCAN}{39}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Semi-Supervised Clustering with Weighted and Seeded K-Means}{40}{subsection.4.3.2}%
-\contentsline {subsubsection}{\numberline {4.3.2.1}Feature Weighting Based on Sample Label Spread}{40}{subsubsection.4.3.2.1}%
-\contentsline {subsubsection}{\numberline {4.3.2.2}Seeded Cluster Initialization}{41}{subsubsection.4.3.2.2}%
-\contentsline {subsubsection}{\numberline {4.3.2.3}Constrained K-Means Clustering}{41}{subsubsection.4.3.2.3}%
-\contentsline {section}{\numberline {4.4}Classification Model}{41}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Model Selection and Training}{42}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Saving and Exporting the Classifier}{42}{subsection.4.4.2}%
-\contentsline {section}{\numberline {4.5}Integration with API}{42}{section.4.5}%
-\contentsline {chapter}{\numberline {5}Evaluation and Discussion}{45}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Definition of the data sets used for the evaluation}{45}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Evaluation of the Results}{45}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Filtering Results}{45}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Clustering Results}{46}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.2.3}Classifier Results}{50}{subsection.5.2.3}%
-\contentsline {section}{\numberline {5.3}Reflection on the Results}{55}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Expert Feedback}{55}{section.5.4}%
-\contentsline {chapter}{\numberline {6}Conclusion}{57}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Future Directions}{57}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Limitations}{57}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Final Remarks}{58}{section.6.3}%
-\contentsline {chapter}{Bibliography}{59}{section*.46}%
-\contentsline {chapter}{\numberline {A}Data Sheet on the Use of AI}{62}{appendix.A}%
-\contentsline {chapter}{Affidavit}{63}{chapter*.49}%
+\contentsline {chapter}{List of Figures}{7}{section*.9}%
+\contentsline {chapter}{List of Tables}{8}{section*.11}%
+\contentsline {chapter}{List of Abbreviations}{9}{section*.13}%
+\contentsline {chapter}{\numberline {1}Introduction}{10}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Motivation}{10}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Problem Statement}{11}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Solution Approach and Goal}{11}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Structure of the Work}{12}{section.1.4}%
+\contentsline {chapter}{\numberline {2}Background and Related Work}{13}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Technical Background}{13}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Feature Engineering for Geographic data}{13}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Clustering Algorithms}{13}{subsection.2.1.2}%
+\contentsline {subsubsection}{\numberline {2.1.2.1}Density-Based Clustering with DBSCAN}{14}{subsubsection.2.1.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.2.2}K-Means Clustering}{15}{subsubsection.2.1.2.2}%
+\contentsline {subsubsection}{\numberline {2.1.2.3}Combining DBSCAN and K-Means}{16}{subsubsection.2.1.2.3}%
+\contentsline {subsection}{\numberline {2.1.3}Machine Learning Model Deployment with APIs}{16}{subsection.2.1.3}%
+\contentsline {section}{\numberline {2.2}Related Work}{16}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Urban structure analytics}{17}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Transportation Mode Prediction with Feature Engineering}{17}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Clustering of GPS Data using Distance-based Features}{18}{subsection.2.2.3}%
+\contentsline {chapter}{\numberline {3}Problem Definition and Solution Approach}{19}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Big Picture}{19}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Description of the Dataset}{20}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Overview}{20}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Source and Collection Method}{21}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Structure of the Data}{21}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Size and Coverage}{22}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}Data compression}{22}{subsection.3.2.5}%
+\contentsline {subsection}{\numberline {3.2.6}Limitations}{23}{subsection.3.2.6}%
+\contentsline {section}{\numberline {3.3}Dataset Analysis}{23}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Sample Analysis}{24}{subsection.3.3.1}%
+\contentsline {section}{\numberline {3.4}Solution Approach}{29}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Exploratory Data Analysis}{29}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Feature Extraction from Sample Dataset}{29}{subsection.3.4.2}%
+\contentsline {subsubsection}{\numberline {3.4.2.1}Features Available in Trackings}{30}{subsubsection.3.4.2.1}%
+\contentsline {subsubsection}{\numberline {3.4.2.2}Features Extracted from Waypoints}{30}{subsubsection.3.4.2.2}%
+\contentsline {subsection}{\numberline {3.4.3}Filtering and Preprocessing the Full Dataset}{30}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.4.4}Clustering and Pattern Discovery}{31}{subsection.3.4.4}%
+\contentsline {subsection}{\numberline {3.4.5}Training a Classification Model}{31}{subsection.3.4.5}%
+\contentsline {subsection}{\numberline {3.4.6}API Integration}{31}{subsection.3.4.6}%
+\contentsline {chapter}{\numberline {4}Implementation}{32}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Data Handling and Preprocessing}{33}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Data volume and loading}{33}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Filtering Faulty Trackings}{33}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}Feature Extraction}{35}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Available Metadata Features}{35}{subsection.4.2.1}%
+\contentsline {paragraph}{\numberline {4.2.1.0.1}Tracking length}{35}{paragraph.4.2.1.0.1}%
+\contentsline {paragraph}{\numberline {4.2.1.0.2}Tracking duration}{35}{paragraph.4.2.1.0.2}%
+\contentsline {subsection}{\numberline {4.2.2}Computed Features from Waypoints}{35}{subsection.4.2.2}%
+\contentsline {paragraph}{\numberline {4.2.2.0.1}Number of points}{35}{paragraph.4.2.2.0.1}%
+\contentsline {paragraph}{\numberline {4.2.2.0.2}Bounding box area}{35}{paragraph.4.2.2.0.2}%
+\contentsline {paragraph}{\numberline {4.2.2.0.3}Point density}{36}{paragraph.4.2.2.0.3}%
+\contentsline {paragraph}{\numberline {4.2.2.0.4}Average segment distance}{36}{paragraph.4.2.2.0.4}%
+\contentsline {paragraph}{\numberline {4.2.2.0.5}Straightness}{36}{paragraph.4.2.2.0.5}%
+\contentsline {paragraph}{\numberline {4.2.2.0.6}Mean Heading Change}{36}{paragraph.4.2.2.0.6}%
+\contentsline {subsection}{\numberline {4.2.3}Feature Storage and Output}{36}{subsection.4.2.3}%
+\contentsline {section}{\numberline {4.3}Clustering Implementation}{37}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Outlier Removal with DBSCAN}{37}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Semi-Supervised Clustering with Weighted and Seeded K-Means}{38}{subsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.2.1}Feature Weighting Based on Sample Label Spread}{38}{subsubsection.4.3.2.1}%
+\contentsline {subsubsection}{\numberline {4.3.2.2}Seeded Cluster Initialization}{39}{subsubsection.4.3.2.2}%
+\contentsline {subsubsection}{\numberline {4.3.2.3}Constrained K-Means Clustering}{39}{subsubsection.4.3.2.3}%
+\contentsline {section}{\numberline {4.4}Classification Model}{40}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Model Selection and Training}{40}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Saving and Exporting the Classifier}{40}{subsection.4.4.2}%
+\contentsline {section}{\numberline {4.5}Integration with API}{40}{section.4.5}%
+\contentsline {chapter}{\numberline {5}Evaluation and Discussion}{43}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Definition of the data sets used for the evaluation}{43}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Evaluation of the Results}{43}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Filtering Results}{43}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Clustering Results}{44}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Classifier Results}{48}{subsection.5.2.3}%
+\contentsline {section}{\numberline {5.3}Reflection on the Results}{53}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Expert Feedback}{53}{section.5.4}%
+\contentsline {chapter}{\numberline {6}Conclusion}{55}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Future Directions}{55}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Limitations}{55}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Final Remarks}{56}{section.6.3}%
+\contentsline {chapter}{Bibliography}{57}{section*.46}%
+\contentsline {chapter}{\numberline {A}Data Sheet on the Use of AI}{60}{appendix.A}%
+\contentsline {chapter}{Affidavit}{61}{chapter*.49}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
