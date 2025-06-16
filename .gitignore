@@ -1,3 +1,8 @@
 /src/Credentials/**
+/src/OSM_enriched_version(experimental)/**
+/src/OSM_API/**
+/src/AWM_API/**
+/src/api/**
+/src/AWM_Database/**
 *.parquet
 *.json
