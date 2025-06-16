@@ -1,7 +1,7 @@
 /src/Credentials/**
 /src/OSM_enriched_version(experimental)/**
 /src/OSM_API/**
-/src/AWM_API/**
+/src/AWM_API/awm_api_test.ipynb
 /src/api/**
 /src/AWM_Database/**
 *.parquet
