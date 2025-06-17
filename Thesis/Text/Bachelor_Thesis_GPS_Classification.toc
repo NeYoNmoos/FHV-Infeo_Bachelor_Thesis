@@ -1,7 +1,7 @@
 \babel@toc {english}{}\relax 
-\contentsline {chapter}{List of Figures}{7}{section*.9}%
-\contentsline {chapter}{List of Tables}{8}{section*.11}%
-\contentsline {chapter}{List of Abbreviations}{9}{section*.13}%
+\contentsline {chapter}{List of Figures}{7}{section*.8}%
+\contentsline {chapter}{List of Tables}{8}{section*.9}%
+\contentsline {chapter}{List of Abbreviations}{9}{section*.10}%
 \contentsline {chapter}{\numberline {1}Introduction}{10}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Motivation}{10}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Problem Statement}{11}{section.1.2}%
@@ -77,7 +77,7 @@
 \contentsline {section}{\numberline {6.1}Future Directions}{55}{section.6.1}%
 \contentsline {section}{\numberline {6.2}Limitations}{55}{section.6.2}%
 \contentsline {section}{\numberline {6.3}Final Remarks}{56}{section.6.3}%
-\contentsline {chapter}{Bibliography}{57}{section*.46}%
-\contentsline {chapter}{\numberline {A}Data Sheet on the Use of AI}{60}{appendix.A}%
-\contentsline {chapter}{Affidavit}{61}{chapter*.49}%
-\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
+\contentsline {chapter}{Bibliography}{57}{section*.43}%
+\contentsline {chapter}{\numberline {A}Code Repository}{60}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Data Sheet on the Use of AI}{61}{appendix.B}%
+\contentsline {chapter}{Affidavit}{62}{chapter*.46}%

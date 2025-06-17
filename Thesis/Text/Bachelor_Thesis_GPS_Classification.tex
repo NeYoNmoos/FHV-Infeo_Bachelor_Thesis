@@ -1,15 +1,7 @@
 \documentclass[a4paper,12pt,twoside]{scrreprt}
-% Autor der Vorlage: Klaus Rheinberger, FH Vorarlberg
-% 2017-02-20
+% Autor: Matthias Hefel, FH Vorarlberg
+% 2025-06-17
 
-%% Hilfe: z.B.
-% empfohlener Einstieg: http://latex.tugraz.at/
-% https://de.wikibooks.org/wiki/LaTeX-Kompendium:_Schnellkurs:_Erste_Schritte
-% https://de.wikibooks.org/wiki/LaTeX-Kompendium:_Schnellkurs
-% https://de.wikibooks.org/wiki/LaTeX-Kompendium
-
-%% Pakete:
-% Der Befehl \usepackage[latin9]{inputenc} ermöglicht die direkte Angabe von Umlauten. Übrigens lässt sich so auch das Euro-Zeichen direkt eingeben. Auf Betriebssystemen, wie zum Beispiel allen neueren Linux-Distributionen, verwendet man statt \usepackage[latin9]{inputenc} besser \usepackage[utf8]{inputenc}, auf Applesystemen verwendet man \usepackage[macce]{inputenc} (oder das für ältere Modelle gültige \usepackage[applemac]{inputenc}).
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}    % Silbentrennung bei Sonderzeichen
 \usepackage{graphicx}	    % Bilder einbinden
@@ -43,48 +35,22 @@
 % for sub figures
 \usepackage{subcaption}
 
+\usepackage{tocloft}
+
 \usepackage{amsfonts}
 
 \usepackage[a-2b,mathxmp]{pdfx}[2018/12/22]
 
 \usepackage[style=ieee,citestyle=ieee,backend=biber]{biblatex}
-% Literaturverweise
-%\usepackage[style=numeric,citestyle=numeric,backend=biber]{biblatex}
-% biblatex comes with a variety of built-in bibliography/citation style families (numeric, alphabetic, authoryear, authortitle, verbose), and there's a growing number of custom styles:
-% https://de.sharelatex.com/learn/Biblatex_citation_styles
-% https://de.sharelatex.com/learn/Biblatex_bibliography_styles
 \addbibresource{references.bib}
 \addbibresource{Bachelor_Thesis_GPS_Classification/Bachelor_Thesis_GPS_Classification.bib}
-% Anstatt die Bibtex-Datei selber zu erstellen, kann sie z. B. aus einer Zotero-Sammlung zu BibTeX exportiert werden.
 
-%% Einstellungen:
+%% settings for table of contents:
 \setcounter{secnumdepth}{4}
-\setcounter{tocdepth}{2}   % Tiefe der Gliederung im In haltsverzeichnis
-
-%% ERSETZEN VON ECKIGEN KLAMMERN:
-% Ersetzen Sie den Text in den eckigen Klammern!
+\setcounter{tocdepth}{2}   % Depth
 
 \begin{document}
 
-% evtl. Sperrvermerkseite
-% \thispagestyle{empty}
-
-% \noindent
-% [Achtung: Verwenden Sie einen Sperrvermerk nur in sehr gut begründeten Fällen
-% ]
-
-% \section*{[evtl. Sperrvermerk]}   % evtl. ersetzen durch \section*{Sperrvermerk}
-% Die vorliegende Arbeit ist bis zum [DATUM] für die öffentliche Nutzung zu
-% sperren. Veröffentlichung, Vervielfältigung und Einsichtnahme sind ohne meine
-% ausdrückliche Genehmigung nicht gestattet. Der Titel der Arbeit sowie das
-% Kurzreferat/Abstract dürfen veröffentlicht werden.
-
-% \vspace{3cm}
-
-% \noindent Dornbirn, \hfill Unterschrift Verfasser*in
-
-% Titelblatt:
-% \newpage\mbox{}\newpage
 \cleardoublepage   % force output to a right page
 \thispagestyle{empty}
 \begin{titlepage}
@@ -116,11 +82,10 @@
 
     Submitted by\newline
     Matthias Hefel\newline
-    Dornbirn, May 2025
+    Dornbirn, June 2025
   \end{flushleft}
 \end{titlepage}
 
-% evtl. Widmung:
 \newpage
 
 \section*{Dedication}
@@ -182,42 +147,6 @@ bekannten und neuen Gebieten zu schaffen. Die vollständige Integration dieser
 zusätzlichen Datenquellen ist jedoch nicht Teil dieser Bachelorarbeit
 , sondern bleibt zukünftigen Arbeiten vorbehalten.
 
-% OLD ABSTRACT:
-
-% In der Abfallwirtschaft ist die strategische Tourenplanung ein wichtiger
-% Prozess, in dem durch optimale Gebietsaufteilung eine maximal effiziente
-% Fuhrparkauslastung bei möglichst geringen Kosten ermittelt wird. Dies geschieht
-% in Entsorgungsbetrieben sowohl für bestehende Auftragsgebiete, als auch bei der
-% Kalkulation von neuen Ausschreibungen. Vor Allem bei Regionen, in denen keine
-% Erfahrungswerte vorliegen müssen für eine robuste Tourenplanung zahlreiche
-% unscharfe Annahmen getroffen und manchmal auch Schätzungen vorgenommen werden.
-% Um diese Unsicherheiten durch die Analyse von geographischen Strukturen zur
-% verringern soll eine Technologie in die bestehende Tourenplanungssoftware der
-% Firma integriert werden, die folgende Aufgabenstellung automatisiert lösen
-% kann: Anhand von bestehenden GPS-Aufzeichnungen sollen strukturelle
-% Eigenschaften der jeweilige Sammelgebiete numerisch bewertet und klassifiziert
-% werden. Gleichermaßen sollen anhand von geographischen (und möglichst frei
-% verfügbaren Strukturdaten) aus noch unbekannten Gebieten erhoben werden können
-% um diese auf die selbe Art und Weise klassifizieren zu können. Dadurch entsteht
-% einerseits eine Referenzdatenmenge (von bestehenden Sammeltouren) und eine
-% Vergleichsdatenmenge (aus den neuen Ausschreibungsgebieten). Dort wo die
-% Klassifizierungsdaten übereinstimmen, kann davon ausgegangen werden, dass die
-% planungsrelevanten Kennzahlen aus bestehenden Auftragsgebieten ohne gewagte
-% Annahmen einfach übernommen werden können. Die Klassifizierung von GPS-Daten
-% und geographischen Strukturdaten soll mit Hilfe von künstlicher Intelligenz
-% automatisiert erstellt werden können. Auch die Überlegung, welche
-% geographischen Strukturdaten denn überhaupt aussagekräftig sind um einen
-% Vergleich anzustreben, sollen ggf. mit Hilfe von KI Technologien erfolgen.
-
-% Das Ziel der praktischen Arbeit ist es einen Sandbox-Service zu implementieren,
-% der von der bestehenden Software der \textit{infeo GmbH} aufgerufen und mit
-% Daten befüllt
-% werden kann um so "auf Knopfdruck" Klassifizierungen und Vergleiche von
-% GPS-Daten und Ausschreibungs-Strukturdaten zu erstellen. Die Anwender:innen
-% haben dadurch die Möglichkeit für neue Ausschreibungen entsprechend passende
-% Planungsparameter aus ihren bestehenden Auftragsgebieten zu berechnen und somit
-% die Unsicherheiten bei der Ausschreibungskalkulation deutlich zu reduzieren.
-
 \vspace{0.5cm}
 
 \noindent
@@ -231,31 +160,6 @@ Geografische Datenanalyse, Maschinelles Lernen, Automatisierung
   A Case Study of
   Waste Collection Vehicles}
 
-% In waste management, efficient route planning is crucial for minimizing
-% operational costs and improving service delivery. Particularly when bidding for
-% new service areas without prior operational experience, planners face
-% significant uncertainty. One way to reduce this is by comparing new areas to
-% structurally similar regions based on movement data from existing operations.
-
-% This thesis presents a machine learning-based approach to classify GPS track
-% data of waste collection vehicles into structural categories such as urban,
-% suburban, town, and rural. A comprehensive feature extraction pipeline was
-% implemented to capture both geometric and behavioral characteristics of each
-% route. These features were used to train a Random Forest classifier
-
-% To enable real-world use, the trained model was deployed through a
-% FastAPI-based web service. The API allows external systems, such as the
-% existing software of \textit{infeo GmbH}, to request a classification of a
-% given GPS tracking in real time. This modular component serves as a first step
-% toward the broader goal of matching structural patterns in unfamiliar regions,
-% thereby reducing uncertainty in route planning and tender bid calculations.
-
-% While the classification of unknown areas based on external geospatial data
-% remains a future goal, this thesis delivers a working foundation that
-% demonstrates the feasibility and practical value of data-driven structural
-% analysis using only GPS data.
-
-% OLD ABSTRACT:
 In waste management, strategic route planning is a central
 process in which an efficient allocation of areas is intended to achieve
 optimal
@@ -300,15 +204,11 @@ but is reserved for future work.
 GPS Data Classification, Waste Management, Artificial Intelligence, Geographic
 Data Analysis, Machine Learning, Automation
 
-% evtl. Vorwort:
-% \newpage
-% \section*{Preface}   % evtl. ersetzen durch \section*{Widmung}
-
-%  [Preface Text]
-
-% Inhaltsverzeichnis:
 \cleardoublepage   % force output to a right page
+\begingroup
+\setlength{\cftbeforechapskip}{6pt}
 \tableofcontents
+\endgroup
 
 \clearpage
 \phantomsection
@@ -320,11 +220,9 @@ Data Analysis, Machine Learning, Automation
 \addcontentsline{toc}{chapter}{List of Tables}
 \listoftables
 
-% evtl. Abkürzungsverzeichnis:
 \clearpage
 \phantomsection
 \addcontentsline{toc}{chapter}{List of Abbreviations}
-% evtl. ersetzen durch \addcontentsline{toc}{chapter}{Abkürzungsverzeichnis}
 \chapter*{List of Abbreviations}
 \begin{acronym}[WGS84]
   \acro{AI}{Artificial Intelligence}
@@ -503,7 +401,7 @@ each waste collection tracking.
   finding cluster structure in a data set that is characterized by
   the greatest similarity within the same cluster and the
   greatest dissimilarity between different
-  clusters.''\cite{sinaga_pdf_2024}
+  clusters.~\cite{sinaga_pdf_2024}
 \end{quote}
 
 \subsubsection{Density-Based Clustering with DBSCAN}
@@ -516,7 +414,7 @@ identify
 clusters of arbitrary shape in spatial databases and distinguish noise. It
 relies on the notion of density-reachability among points based on a distance
 threshold \textit{Eps} and a minimum number of points
-\textit{MinPts}.\cite{ester_density-based_nodate}
+\textit{MinPts}.~\cite{ester_density-based_nodate}
 
 Let \textit{D} be a database of points and let \textit{dist(p, q)} be the
 distance between points \textit{p} and \textit{q} (typically Euclidean).
@@ -544,7 +442,7 @@ distance between points \textit{p} and \textit{q} (typically Euclidean).
           \includegraphics[width=0.7\textwidth]{Figures/background/dbscan_core_points_and_border_points.png}
           \caption{DBSCAN: Core points and border points
             \cite{ester_density-based_nodate}}
-          \label{fig:dbscan-reachability-and-connectivity}
+          \label{fig:dbscan-core_points}
         \end{figure}
 
   \item A point $q$ is \textbf{density-reachable} from $p$ if there is a chain
@@ -1084,8 +982,7 @@ routes fall in between but exhibit more overlap and variability.
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=\textwidth]{Figures/sample_correlation_matrix.png}
-  \caption{Correlation Matrix of selected GPS route features grouped by area
-    label}
+  \caption{Correlation Matrix of sample trackings}
   \label{fig:sample_correlation_matrix}
 \end{figure}
 \FloatBarrier
@@ -1271,8 +1168,6 @@ using libraries such as \texttt{pandas}, \texttt{scikit-learn}, \texttt{geopy}
 and \texttt{pyarrow}.Each module was designed to run independently, allowing
 for quick
 experimentation and reproducibility of results.
-
-% \section{Implementation of the Big Picture}
 
 The
 Figure~\ref{fig:big_picture_implemetation_diagram} shows a more detailed view
@@ -2150,14 +2045,10 @@ laying the foundation for smarter, data-driven waste management systems.
 \addcontentsline{toc}{chapter}{Bibliography}
 \printbibliography
 
-% \chapter*{[evtl. Anhang]}  % evtl. ersetzen mit \chapter*{Anhang}
-% \addcontentsline{toc}{chapter}{[evtl. Anhang]}
-% % evtl. ersetzen mit \addcontentsline{toc}{chapter}{Anhang}
-% Formatvorlage für den Fließtext.
-
-% \section{Use of AI tools}
-
 \appendix
+\chapter{Code Repository}
+The implementation and source code related to this thesis are available at:
+\url{https://github.com/NeYoNmoos/FHV-Infeo_Bachelor_Thesis}
 \chapter{Data Sheet on the Use of AI}
 \begin{table}[h]
   \centering
@@ -2288,6 +2179,6 @@ nor has it been published.
 
 \vspace{3cm}
 \noindent
-Dornbirn, on 15. May 2025\hfill Matthias Hefel
+Dornbirn, on 17. June 2025\hfill Matthias Hefel
 
 \end{document}

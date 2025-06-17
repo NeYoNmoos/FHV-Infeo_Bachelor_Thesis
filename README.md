@@ -1,10 +1,10 @@
-# Classification of GPS Track Data Using AI Methods: A Case Study of Waste Collection Vehicles
+# Classification of GPS Track Data Using AI Methods:
 
-This repository contains the full implementation and documentation for my Bachelor Thesis:
+## A Case Study of Waste Collection Vehicles
 
-**"Classification of GPS Track Data Using Machine Learning Methods: A Case Study of Waste Collection Vehicles"**
+This repository contains the full implementation and documentation for my Bachelor Thesis at FH Vorarlberg.
 
-## Abstract
+### Abstract
 
 In waste management, strategic route planning is a central
 process in which an efficient allocation of areas is intended to achieve
@@ -45,7 +45,7 @@ and new areas. However, the complete integration of these
 additional data sources is not part of this bachelor project,
 but is reserved for future work.
 
-## Technologies Used
+### Technologies Used
 
 - **Python** (Jupyter Notebooks)
 - `pandas`, `numpy`, `scikit-learn`, `matplotlib`, `seaborn`
@@ -54,7 +54,7 @@ but is reserved for future work.
 - `FastAPI` for prototype REST API
 - LaTeX for documentation
 
-## Core Concepts
+### Core Concepts
 
 - GPS data preprocessing and outlier filtering (DBSCAN)
 - Feature extraction (bounding box, point density, heading changes, etc.)
@@ -64,7 +64,7 @@ but is reserved for future work.
 - SHAP explainability
 - PCA and map visualizations
 
-## Project Structure
+### Project Structure
 
 ```
 ├── src/
@@ -81,25 +81,24 @@ but is reserved for future work.
 └── README.md
 ```
 
-## Results
+### Results
 
 - **Classifier Accuracy:** 98.3%
 - **Macro F1-Score:** 98.1%
 - **Silhouette Score (Clustering):** 0.26
 - **SHAP Insights:** Key features such as `bbox_area`, `point_density`, and `avg_segment_distance` show strong monotonic behavior across urban categories.
 
-## Future Work
+### Future Work
 
 - Integration with OpenStreetMap (OSM) for structural context
 - Filtering non-operational transit segments
 - Expanded sampling for better clustering seeds
-- Deployment as an API for live use by municipalities or route planning software
 
-## Thesis Document
+### Thesis Document
 
 You can find the full thesis PDF in the `Thesis/` folder. All formulas, figures, and evaluations are included and explained in detail.
 
-## Acknowledgements
+### Acknowledgements
 
 Special thanks to **infeo GmbH** for providing the dataset and insights into real-world waste collection logistics.
 And to **Dipl.-Ing. Dr. techn. Ralph Hoch** for providing guidance throughout the development of this thesis.
